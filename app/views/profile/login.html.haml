@@ -1,0 +1,11 @@
+%h2 FootballBingo
+
+= form_tag login_path do
+
+  = label :user, :email, 'Email'
+  = text_field :email, 'email'
+
+  = label :user, :password, 'Password'
+  = text_field :user, :password, 'password'
+
+  = submit_tag 'Login'
