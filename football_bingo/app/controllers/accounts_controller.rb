@@ -1,11 +1,11 @@
-class UsersController < ApplicationController
+class AccountsController < ApplicationController
   
-  def user_params
+  def account_params
     params.require(:user, :email).permit(:name, :password) # company, (school-year,major,etc.)
   end
 
   def login
-    # does password match username?
+
   end
 
   def new

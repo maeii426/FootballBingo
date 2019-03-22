@@ -1,0 +1,11 @@
+%br
+
+= form_tag home_index_path, :method => :get do
+
+  = label :user, :email, 'Email'
+  = text_field :email, {:class => 'login', :placeholder => 'email'}
+
+  = label :user, :password, 'Password'
+  = text_field :password, {:class => 'login', :placeholder => 'password'}
+
+  = submit_tag 'Login'
