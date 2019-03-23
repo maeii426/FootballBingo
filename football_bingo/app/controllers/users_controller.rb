@@ -73,6 +73,11 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def share
+    render 'share'
+  end
+  
 
   private
     def set_user
