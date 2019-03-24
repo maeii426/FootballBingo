@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+games = [{:gameid => 'TAMU10', :date => '24-Nov-2018', :instant_winner => 'Jeffrey Hoberman', :whoop_winner => 'Frank Flanigan'},
+    	 {:gameid => 'TAMU12', :date => '10-Nov-2018'},
+	]
+
+games.each do |game|
+  Game.create!(game)
+end

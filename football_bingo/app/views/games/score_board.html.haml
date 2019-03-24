@@ -1,0 +1,23 @@
+%h2 Congratulations!
+
+%table#games
+  %thead
+    %tr
+      %th Game
+      %th Date
+      %th Instant Winner
+      %th Whoop Winner
+  %tbody
+    - @games.each do |game|
+      %tr
+        %td= game.gameid 
+        %td= game.date
+        %td= game.instant_winner
+        %td= game.whoop_winner
+
+
+    
+    
+
+
+
