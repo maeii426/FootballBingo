@@ -12,4 +12,8 @@ class GamesController < ApplicationController
     return @games
   end
 
+  def game_play
+
+  end
+
 end
