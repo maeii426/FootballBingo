@@ -16,7 +16,7 @@ class GamesController < ApplicationController
     play1 = 'This is Play 1'
     play2 = 'Play 2'
     play3 = 'Play 3'
-    play4 = 'predicted plays from game controller'
+    play4 = 'Play 4'
     play5 = 'Play 5'
     play6 = 'Play 6'
     play7 = 'Play 7'
