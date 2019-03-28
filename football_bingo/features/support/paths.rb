@@ -14,7 +14,8 @@ module NavigationHelpers
     case page_name
     
     when /^the score board page$/ then '/score_board'
-    
+    when /^the help page$/ then '/help'
+    when /^the log in page$/ then '/login'
     when /^the home page$/ then '/#home'
 
     when /^the edit page for "(.*)"$/
