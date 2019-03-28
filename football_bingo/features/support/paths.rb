@@ -16,6 +16,7 @@ module NavigationHelpers
     when /^the score board page$/ then '/score_board'
     when /^the help page$/ then '/help'
     when /^the log in page$/ then '/login'
+    when /^the sign up page$/ then '/signup'
     when /^the home page$/ then '/#home'
 
     when /^the edit page for "(.*)"$/

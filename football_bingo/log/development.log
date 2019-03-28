@@ -12669,3 +12669,28 @@ Processing by SessionsController#new as HTML
   Rendered layouts/_header.html.erb (0.4ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Defining a route where `to` is a symbol is deprecated. Please change `to: :score_board` to `action: :score_board`. (called from block in <top (required)> at /home/ec2-user/environment/FootballBingo/football_bingo/config/routes.rb:10)
+DEPRECATION WARNING: Defining a route where `to` is a symbol is deprecated. Please change `to: :game_play` to `action: :game_play`. (called from block in <top (required)> at /home/ec2-user/environment/FootballBingo/football_bingo/config/routes.rb:11)
+
+
+Started GET "/" for 128.194.2.155 at 2019-03-28 03:48:32 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 230ms (Views: 221.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 128.194.2.155 at 2019-03-28 03:48:35 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.7ms)
+  Rendered users/_form.html.erb (12.0ms)
+  Rendered users/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 46.4ms | ActiveRecord: 1.8ms)
