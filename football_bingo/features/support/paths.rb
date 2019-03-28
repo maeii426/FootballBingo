@@ -18,6 +18,7 @@ module NavigationHelpers
     when /^the log in page$/ then '/login'
     when /^the sign up page$/ then '/signup'
     when /^the home page$/ then '/#home'
+    when /^the share page$/ then '/share'
 
     when /^the edit page for "(.*)"$/
         movie_id = Movie.find_by(title: $1).id
