@@ -23,3 +23,8 @@ Scenario: Logging in with invalid credentials
   When I fill in "Password" with "12345678"
   And I press "Log in"
   Then I should see "Invalid email/password combination"
+  
+Scenario: Click on signup and then login
+  Given I am on the log in page
+  When I follow "Sign up now!"
+  Then I should be on the signup page

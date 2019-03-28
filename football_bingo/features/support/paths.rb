@@ -19,10 +19,13 @@ module NavigationHelpers
     when /^the sign up page$/ then '/signup'
     when /^the home page$/ then '/#home'
     when /^the share page$/ then '/share'
+    when /^the edit page for "(.*)"$/ 
+      user_id = User.find_by(name: $1).id
+      edit_user_path(user_id)
 
-    when /^the edit page for "(.*)"$/
-        movie_id = Movie.find_by(title: $1).id
-        edit_movie_path(movie_id)
+    # when /^the edit page for "(.*)"$/
+    #     movie_id = Movie.find_by(title: $1).id
+    #     edit_movie_path(movie_id)
     when /^the details page for "(.*)"$/  
         movie = Movie.find_by(title: $1)
         movie_path(movie)

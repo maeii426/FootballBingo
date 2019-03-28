@@ -74,7 +74,7 @@ Given /^the account is set up$/ do
                 :password => '12345678',
                 :email => 'joe@snow.com'})
   visit '/login'
-  fill_in 'Email', :with => 'admin'
+  fill_in 'Email', :with => 'joe@snow.com'
   fill_in 'Password', :with => '12345678'
   click_button 'Log in'
 end
