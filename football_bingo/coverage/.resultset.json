@@ -1,12 +1,12 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/models/game.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/models/game.rb": [
         1,
         null,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/models/user.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/models/user.rb": [
         1,
         2,
         1,
@@ -17,7 +17,7 @@
         1,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/controllers/sessions_controller.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -39,13 +39,13 @@
         null,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/controllers/application_controller.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/helpers/application_helper.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -58,11 +58,11 @@
         null,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/helpers/games_helper.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/helpers/games_helper.rb": [
         1,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/helpers/sessions_helper.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/helpers/sessions_helper.rb": [
         1,
         null,
         null,
@@ -105,16 +105,16 @@
         null,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/helpers/static_pages_helper.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/helpers/static_pages_helper.rb": [
         1,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/helpers/users_helper.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/helpers/users_helper.rb": [
         1,
         null,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/controllers/games_controller.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/controllers/games_controller.rb": [
         1,
         null,
         1,
@@ -129,9 +129,13 @@
         1,
         null,
         null,
+        1,
+        null,
+        null,
+        null,
         null
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/controllers/static_pages_controller.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/controllers/static_pages_controller.rb": [
         0,
         0,
         0,
@@ -140,7 +144,7 @@
         0,
         0
       ],
-      "/home/xiaojing/606/FootballBingo/football_bingo/app/controllers/users_controller.rb": [
+      "/home/ec2-user/environment/FootballBingo/football_bingo/app/controllers/users_controller.rb": [
         0,
         null,
         0,
@@ -246,6 +250,6 @@
         0
       ]
     },
-    "timestamp": 1553414375
+    "timestamp": 1553737481
   }
 }
