@@ -13081,3 +13081,216 @@ Processing by UsersController#edit as HTML
   Rendered layouts/_header.html.erb (0.5ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: Defining a route where `to` is a symbol is deprecated. Please change `to: :score_board` to `action: :score_board`. (called from block in <top (required)> at /home/ec2-user/environment/FootballBingo/football_bingo/config/routes.rb:10)
+DEPRECATION WARNING: Defining a route where `to` is a symbol is deprecated. Please change `to: :game_play` to `action: :game_play`. (called from block in <top (required)> at /home/ec2-user/environment/FootballBingo/football_bingo/config/routes.rb:11)
+
+
+Started GET "/" for 128.194.2.155 at 2019-03-28 05:52:12 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered static_pages/home.html.erb within layouts/application (20.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 252ms (Views: 241.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 128.194.2.155 at 2019-03-28 05:52:19 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 128.194.2.155 at 2019-03-28 05:52:20 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/game_play" for 128.194.2.155 at 2019-03-28 05:52:21 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#game_play as HTML
+  Rendered games/game_play.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 128.194.2.155 at 2019-03-28 05:52:27 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 128.194.2.155 at 2019-03-28 05:52:28 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2/edit" for 128.194.2.155 at 2019-03-28 05:52:30 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered shared/_error_messages.html.erb (3.2ms)
+  Rendered users/edit.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 60.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/score_board" for 128.194.2.155 at 2019-03-28 05:52:34 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#score_board as HTML
+  [1m[36mGame Load (0.3ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/score_board.html.haml within layouts/application (11.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/share" for 128.194.2.155 at 2019-03-28 05:52:42 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#share as HTML
+  Rendered users/share.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2/edit" for 128.194.2.155 at 2019-03-28 05:52:46 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/edit.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 128.194.2.155 at 2019-03-28 05:52:48 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for 128.194.2.155 at 2019-03-28 05:52:53 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 128.194.2.155 at 2019-03-28 05:53:00 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 128.194.2.155 at 2019-03-28 05:53:02 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 128.194.2.155 at 2019-03-28 05:53:07 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 128.194.2.155 at 2019-03-28 05:53:08 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 128.194.2.155 at 2019-03-28 05:53:10 +0000
+Cannot render console from 128.194.2.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.3ms)

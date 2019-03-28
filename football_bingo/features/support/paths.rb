@@ -19,6 +19,10 @@ module NavigationHelpers
     when /^the sign up page$/ then '/signup'
     when /^the home page$/ then '/#home'
     when /^the share page$/ then '/share'
+    when /^the game play page$/ then '/game_play'
+    when /^the profile page for "(.*)"$/
+      user_id = User.find_by(name: $1).id
+      user_path(user_id)
     when /^the edit page for "(.*)"$/ 
       user_id = User.find_by(name: $1).id
       edit_user_path(user_id)
