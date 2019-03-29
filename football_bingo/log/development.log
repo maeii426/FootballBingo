@@ -15007,3 +15007,193 @@ Processing by CardsController#temp_card as HTML
 Completed 200 OK in 178ms (Views: 167.9ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/login" for 47.218.247.148 at 2019-03-29 10:13:48 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (39.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (12.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 469ms (Views: 458.7ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/login" for 47.218.247.148 at 2019-03-29 10:13:57 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pxHMqbmqEl+yTpM9Tch29WxCrX1NqcwgVFGOraTzaUvNIkfph/16EWpQV5+gqDdOH7X/uyRV94aR5IFHrNTwbw==", "session"=>{"email"=>"Someone@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "someone@gmail.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 180ms (Views: 175.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 47.218.247.148 at 2019-03-29 10:14:00 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for 47.218.247.148 at 2019-03-29 10:14:02 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 53.8ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/users" for 47.218.247.148 at 2019-03-29 10:14:10 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GD9jRHNdUt2yZiuq9Ja7xIEjULbKP2HrFQJ8DnVQQR1yDOgETQo6k2p47wgZ9vp/8tQCcKPDWk3Qt3PkfXfYOQ==", "user"=>{"name"=>"Someone", "email"=>"someone@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "someone@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Someone"], ["email", "someone@gmail.com"], ["created_at", "2019-03-29 10:14:10.924046"], ["updated_at", "2019-03-29 10:14:10.924046"], ["password_digest", "$2a$10$LeQ/dBfcZAhJ7dAWwrAx3.4eTiqL7AMLs3CVkwvAVHNH/.AtpX2XG"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://whoop-maeii426.c9users.io/users/1
+Completed 302 Found in 83ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/users/1" for 47.218.247.148 at 2019-03-29 10:14:11 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 45.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1" for 47.218.247.148 at 2019-03-29 10:14:13 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/active_card" for 47.218.247.148 at 2019-03-29 10:14:16 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CardsController#temp_card as HTML
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" WHERE "cards"."cardid" = $1 ORDER BY "cards"."id" ASC LIMIT $2[0m  [["cardid", "1"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.4ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "1"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.3ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "3"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.4ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "4"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.4ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "2"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.2ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  Rendering cards/_card.html.erb within layouts/application
+  Rendered cards/_card.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 111ms (Views: 73.8ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/score_board" for 47.218.247.148 at 2019-03-29 10:14:21 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#score_board as HTML
+  Rendering games/score_board.html.haml within layouts/application
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  Rendered games/score_board.html.haml within layouts/application (16.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 58.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/active_card" for 47.218.247.148 at 2019-03-29 10:14:23 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CardsController#temp_card as HTML
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" WHERE "cards"."cardid" = $1 ORDER BY "cards"."id" ASC LIMIT $2[0m  [["cardid", "1"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.4ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "1"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.3ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "3"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.2ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "4"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.3ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "2"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.2ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  Rendering cards/_card.html.erb within layouts/application
+  Rendered cards/_card.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 182ms (Views: 172.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/1" for 47.218.247.148 at 2019-03-29 10:15:39 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/active_card" for 47.218.247.148 at 2019-03-29 10:15:46 +0000
+Cannot render console from 47.218.247.148! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CardsController#temp_card as HTML
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" WHERE "cards"."cardid" = $1 ORDER BY "cards"."id" ASC LIMIT $2[0m  [["cardid", "1"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.4ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "1"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.3ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "3"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.3ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "4"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.2ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "2"], ["LIMIT", 1]]
+  [1m[36mChip Load (0.2ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  [1m[36mCACHE Chip Load (0.0ms)[0m  [1m[34mSELECT  "chips".* FROM "chips" WHERE "chips"."chipid" = $1 ORDER BY "chips"."id" ASC LIMIT $2[0m  [["chipid", "5"], ["LIMIT", 1]]
+  Rendering cards/_card.html.erb within layouts/application
+  Rendered cards/_card.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 98ms (Views: 47.7ms | ActiveRecord: 2.4ms)
+
+
