@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post   '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
   get '/score_board' => :score_board, controller: 'games'
-  get '/game_play' => :game_play, controller: 'games'
+  get '/active_card' => :temp_card, controller: 'cards'
   resources :users
   root 'static_pages#home'
   #root 'users#index'
