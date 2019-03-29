@@ -33,7 +33,7 @@ class UsersController < ApplicationController
     if @user.save
       # log in after sign up
       log_in @user
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = "Welcome to the FootballBingo App!"
       redirect_to @user
     else
       render 'new'
