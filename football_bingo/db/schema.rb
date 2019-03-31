@@ -39,14 +39,14 @@ ActiveRecord::Schema.define(version: 2019_03_29_093618) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "games", force: :cascade do |t|
+  create_table "games", id: :serial, force: :cascade do |t|
     t.string "gameid"
     t.datetime "date"
     t.string "instant_winner"
     t.string "whoop_winner"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", id: :serial, force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.datetime "created_at", null: false
