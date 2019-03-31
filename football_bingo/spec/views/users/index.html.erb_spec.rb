@@ -5,14 +5,11 @@ RSpec.describe "users/index", type: :view do
     assign(:users, [
       User.create!(
         :name => "Name",
-        :email => "Email@email.com",
-        :password =>"123456"
+        :email => "Email"
       ),
       User.create!(
         :name => "Name",
-        :email => "Email2@email.com",
-        :password =>"123456"
-
+        :email => "Email"
       )
     ])
   end

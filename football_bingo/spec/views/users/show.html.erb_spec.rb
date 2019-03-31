@@ -2,12 +2,15 @@ require 'rails_helper'
 
 RSpec.describe "users/show", type: :view do
   before(:each) do
-    @user1 = create(:user, name:"test", email:"test@email.com")
+    @user = assign(:user, User.create!(
+      :name => "Name",
+      :email => "Email"
+    ))
   end
 
   it "renders attributes in <p>" do
     render
-    expect(rendered).to include("test")
-    expect(rendered).to match("test@email.com")
+    expect(rendered).to match(/Name/)
+    expect(rendered).to match(/Email/)
   end
 end
