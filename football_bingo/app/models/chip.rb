@@ -1,13 +1,26 @@
 class Chip < ActiveRecord::Base
+    belongs_to :translation
+    # has_many :card_chips
+    # has_many :cards, through: :card_chips
+    has_and_belongs_to_many :cards
+    
     def translate
-        if check
-            return conditional + argument + value.to_s + ' ' + check.to_s
+        translation = Translation.find(translation_id)
+        @conditional = translation.tag
+        in_words = translation.words
+        state_of_chip = check_parse
+        if state_of_chip
+            return in_words + argument + value.to_s, state_of_chip
         end
         
-        return conditional + argument + value.to_s + ' ' + check.to_s
+        return in_words + argument + value.to_s, state_of_chip
     end
     
     def check
+        
+    end
+    
+    def check_parse
        # Fetch and parse HTML document
         doc = Nokogiri::XML(open(Rails.root + 'XML/tam.xml'))    #('https://nokogiri.org/tutorials/installing_nokogiri.html'))
  
@@ -15,7 +28,7 @@ class Chip < ActiveRecord::Base
             # no '_' tokens in the XML tag
             # right now - tags that should have only one instance are assumed to have only one instance
             # ********* CONDITION IS >
-        tokens = conditional.split('_', 2)
+        tokens = @conditional.split('_', 2)
         doc_content = doc.at(tokens[0])
         if doc_content
             entries = doc_content.to_s

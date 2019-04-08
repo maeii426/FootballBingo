@@ -16,4 +16,5 @@ class CardsController < ApplicationController
                             play4:Chip.where(chipid: play4).first.translate,play5:Chip.where(chipid: play5).first.translate,play6:Chip.where(chipid: play6).first.translate,
                             play7:Chip.where(chipid: play7).first.translate,play8:Chip.where(chipid: play8).first.translate,play9:Chip.where(chipid: play9).first.translate }
     end
+    
 end

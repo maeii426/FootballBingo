@@ -7,3 +7,18 @@ Stakeholders include fans, sponsors, and the TAMU Athletics department. The goal
 Github Repo: https://github.com/maeii426/FootballBingo
 
 Pivotal Tracker: https://www.pivotaltracker.com/n/projects/2316586
+
+
+bundle install
+bundle update
+sudo service postgresql start 
+rails db:setup
+rails db:migrate
+rails server -p $PORT -b $IP
+
+
+
+git push heroku master
+--  heroku pg:reset
+heroku rake db:migrate
+heroku run rake db:seed

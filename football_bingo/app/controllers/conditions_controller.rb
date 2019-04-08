@@ -1,0 +1,3 @@
+class ConditionsController < ApplicationController
+    
+end

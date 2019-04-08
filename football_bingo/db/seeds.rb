@@ -5,28 +5,75 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-games = [{:gameid => 'TAMU10', :date => '24-Nov-2018', :instant_winner => 'Jeffrey Hoberman', :whoop_winner => 'Frank Flanigan'},
-    	 {:gameid => 'TAMU12', :date => '10-Nov-2018'},
+games = [{:game_name => 'TAMU10', :date => '24-Nov-2018', :instant_winner => 'Jeffrey Hoberman', :whoop_winner => 'Frank Flanigan'},
+    	 {:game_name => 'TAMU12', :date => '10-Nov-2018'},
 	]
 
 games.each do |game|
   Game.create!(game)
 end
 
-chips = [{:chipid => '1', :conditional => 'penalties_yds', :argument => '>', :value => 100},
-    	 {:chipid => '2', :conditional => 'firstdowns_no', :argument => '>', :value => 30},
-    	 {:chipid => '3', :conditional => 'totals_totoff_yards', :argument => '>', :value => 500},
-    	 {:chipid => '4', :conditional => 'fg_made', :argument => '>', :value => 2},
-    	 {:chipid => '5', :conditional => 'empty', :argument => '>', :value => 0},
-  	 ]
+# translations = [{:tag => 'penalties_yds', :words => 'Number of penalty yards'},
+#     	 {:tag => 'firstdowns_no', :words => 'Total first downs'},
+#     	 {:tag => 'totals_totoff_yards', :words => 'Total offensive yards gained'},
+#     	 {:tag => 'fg_made', :words => 'Number of field goals made'},
+#     	 {:tag => 'empty', :words => 'Some condition here'},
+#   	 ]
 
-chips.each do |chip|
-  Chip.create!(chip)
-end
+# translations.each do |translation|
+#   Translation.create!(translation)
+# end
 
-cards = [{:cardid => '1', :b11 => '1', :b12 => '2', :b13 => '5', :b21 => '3', :b22 => '5', :b23 => '5', :b31 => '4', :b32 => '5', :b33 => '5'},
+# chips = [{:chip_id => '1', :translation_id => '1', :argument => '>', :value => 100},
+#     	 {:chip_id => '2', :translation_id => '2', :argument => '>', :value => 30},
+#     	 {:chip_id => '3', :translation_id => '3', :argument => '>', :value => 500},
+#     	 {:chip_id => '4', :translation_id => '4', :argument => '>', :value => 2},
+#     	 {:chip_id => '5', :translation_id => '5', :argument => '>', :value => 0},
+#   	 ]
+
+@trans = Translation.create!({:tag => 'penalties_yds', :words => 'Number of penalty yards'})
+@trans.chips.create(:argument => '>', :value => 100)
+
+@trans = Translation.create!({:tag => 'firstdowns_no', :words => 'Total first downs'})
+@trans.chips.create(:argument => '>', :value => 30)
+
+@trans = Translation.create!({:tag => 'totals_totoff_yards', :words => 'Total offensive yards gained'})
+@trans.chips.create!(:argument => '>', :value => 500)
+
+@trans = Translation.create!({:tag => 'fg_made', :words => 'Number of field goals made'})
+@trans.chips.create!(:argument => '>', :value => 2)
+
+@trans = Translation.create!({:tag => 'empty', :words => 'Some condition here'})
+@trans.chips.create!(:argument => '>', :value => 0)
+
+# chips.each do |chip|
+#   Chip.create!(chip)
+# end
+
+cards = [{:user_id => '1'},
     ]
     
 cards.each do|card|
-    Card.create!(card)
+    @card = Card.create!(card)
+    #@card.chip_ids = card.chip_ids < chip.id
+    @card.chip_ids = [1,2,3,4,5,5,5,5,5]
+    @card.save
 end
+
+    # chip.card_ids = chip.card_ids < card.id
+    # chip.save
+
+# card_chips = [{:card_id => '1', :chip_id => '1'},
+#   {:card_id => '1', :chip_id => '2'},
+#   {:card_id => '1', :chip_id => '3'},
+#   {:card_id => '1', :chip_id => '4'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#     ]
+    
+# card_chips.each do|cc|
+#     Cards_Chips.create!(cc)
+# end

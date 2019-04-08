@@ -166,3 +166,11 @@ input {
     color: $state-danger-text;
   }
 }
+
+/* bingo card */
+.bingotrue {
+  background-color: #BA8888 !important;
+}
+.bingofalse {
+  background-color: none !important;
+}

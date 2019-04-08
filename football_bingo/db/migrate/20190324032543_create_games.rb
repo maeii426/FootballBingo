@@ -1,10 +1,10 @@
 class CreateGames < ActiveRecord::Migration[5.2]
   def change
     create_table :games do |t|
-      t.string :gameid
+      t.string :game_name
       t.datetime :date
-      t.string :instant_winner
-      t.string :whoop_winner
+      t.boolean :instant_winner
+      t.boolean :whoop_winner
     end
   end
 end

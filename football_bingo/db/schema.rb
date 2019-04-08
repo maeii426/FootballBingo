@@ -16,37 +16,51 @@ ActiveRecord::Schema.define(version: 2019_03_29_093618) do
   enable_extension "plpgsql"
 
   create_table "cards", force: :cascade do |t|
-    t.string "cardid"
-    t.string "b11"
-    t.string "b12"
-    t.string "b13"
-    t.string "b21"
-    t.string "b22"
-    t.string "b23"
-    t.string "b31"
-    t.string "b32"
-    t.string "b33"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_cards_on_user_id"
+  end
+
+  create_table "cards_chips", id: false, force: :cascade do |t|
+    t.bigint "card_id"
+    t.bigint "chip_id"
+    t.index ["card_id"], name: "index_cards_chips_on_card_id"
+    t.index ["chip_id"], name: "index_cards_chips_on_chip_id"
   end
 
   create_table "chips", force: :cascade do |t|
-    t.string "chipid"
-    t.string "conditional"
+    t.bigint "translation_id"
     t.string "argument"
     t.float "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["translation_id"], name: "index_chips_on_translation_id"
   end
 
-  create_table "games", id: :serial, force: :cascade do |t|
-    t.string "gameid"
+  create_table "conditions", force: :cascade do |t|
+    t.bigint "translation_id"
+    t.bigint "game_id"
+    t.float "value"
+    t.index ["game_id"], name: "index_conditions_on_game_id"
+    t.index ["translation_id"], name: "index_conditions_on_translation_id"
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.string "game_name"
     t.datetime "date"
-    t.string "instant_winner"
-    t.string "whoop_winner"
+    t.boolean "instant_winner"
+    t.boolean "whoop_winner"
   end
 
-  create_table "users", id: :serial, force: :cascade do |t|
+  create_table "translations", force: :cascade do |t|
+    t.string "tag"
+    t.string "words"
+    t.bigint "condition_id"
+    t.bigint "chip_id"
+  end
+
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.datetime "created_at", null: false
