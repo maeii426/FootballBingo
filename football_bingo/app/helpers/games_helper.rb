@@ -8,6 +8,28 @@ def game_helper_load
         # no '_' tokens in the XML tag
         # right now - tags that should have only one instance are assumed to have only one instance
         # ********* CONDITION IS >
+        
+    # Game metadata
+    
+    # PER TEAM
+    # Linescore
+    # Totals
+    # Player
+    
+    # Scores
+    
+    # fgas
+    
+    # drives
+    
+    # PER QTR
+    # plays
+    # drivestart
+    # drivesum
+    # score
+    # qtr summary
+    
+    
     tokens = @conditional.split('_', 2)
     doc_content = doc.at(tokens[0])
     if doc_content

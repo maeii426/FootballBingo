@@ -1,4 +1,16 @@
 FactoryBot.define do
+  factory :total do
+    
+  end
+  factory :linescore do
+    
+  end
+  factory :team do
+    
+  end
+  factory :venue do
+    
+  end
   factory :translation do
     
   end
