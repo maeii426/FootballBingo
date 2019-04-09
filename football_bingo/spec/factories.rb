@@ -11,6 +11,10 @@ FactoryBot.define do
     email "test@test.com"
     #sequence(:email) { |n| "user_#{n}@factory.com" }
     password "123456"
+
+    trait :admin do
+      role 'admin'
+    end
   end
   
   factory :users do
