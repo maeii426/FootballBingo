@@ -19,6 +19,9 @@
               Account <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
+              <% if admin_user? %>
+              <li><%= link_to "Admin", rails_admin.dashboard_path %></li>
+              <% end %>
               <li><%= link_to "Profile", current_user %></li>
               <%#<li><%= link_to "Bingo Card", active_card_path  %><%#</li>%>
               <li><%= link_to "Settings", edit_user_path(current_user) %></li>
