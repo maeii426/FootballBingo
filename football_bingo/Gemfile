@@ -6,8 +6,8 @@ ruby '2.6.2'
 gem 'rails'#, '4.2.5'
 gem 'bootstrap-sass'#, '3.3.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.7'
-# gem 'pg', '~> 0.20'
+#gem 'sqlite3', '~> 1.3.7' 
+gem 'pg'#, '~> 0.20'
 # Use SCSS for stylesheets
 gem 'sass-rails'#, '~> 5.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -70,6 +70,6 @@ group :test do
   gem 'simplecov', :require => false
 end
 
-group :production do
-  gem 'pg','0.20'
-end
+# group :production do
+#   gem 'pg'#,'0.20'
+# end

@@ -5,13 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
 admin_users = [{:name => 'admin', :email => 'admin@gmail.com', :password => '123456', :role => :admin},]
 admin_users.each do |admin_user|
     User.create!(admin_user)
 end
 
-games = [{:game_name => 'TAMU10', :date => '24-Nov-2018', :instant_winner => 'Jeffrey Hoberman', :whoop_winner => 'Frank Flanigan'},
-    	 {:game_name => 'TAMU12', :date => '10-Nov-2018'},
+games = [{:name => 'TAMU10', :date => '24-Nov-2018', :instant_winner => 'Jeffrey Hoberman', :whoop_winner => 'Frank Flanigan'},
+    	 {:name => 'TAMU12', :date => '10-Nov-2018'},
 	]
 
 games.each do |game|
