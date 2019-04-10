@@ -1,0 +1,47 @@
+<h2> Congratulations!
+
+<table class="games">
+
+<style>
+      table {
+        border-collapse: collapse;
+        margin: 0;
+        width: 100%;
+      }
+      td, th {
+        padding: 1em;
+        text-align: center;
+      }
+</style>
+
+<thead>
+<tr>
+  <th>Game</th>
+  <th>Date</th>
+  <th>Instant Winner</th>
+  <th>Whoop Winner</th>
+  <% if admin_user? %>
+      <th>Send Email?</th>
+  <% end %>
+</tr>
+</thead>
+
+<tbody>
+
+<% @games.each do |game| %>
+<tr>
+
+  <td><%= game.game_name%></td>
+  <td><%= game.date%></td>
+  <td><%= game.instant_winner%></td>
+  <td><%= game.whoop_winner%></td>
+  <% if admin_user? %>
+      <td>
+        <%= link_to '<button type="button">Send</button>'.html_safe, send_email_path() %>
+      </td>
+  <% end %>
+</tr>
+<% end %>
+
+</tbody>
+</table>

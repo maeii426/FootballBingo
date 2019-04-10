@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     # HARDCODED GAME
     @game_path = 'XML/tam.xml'
     #game_helper_load
-    
+
     @user = User.find(params[:id])
     @cards = Card.where(user_id: @user.id)
     show_user_cards
@@ -31,6 +31,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+
   # POST /users
   # POST /users.json
   def create
@@ -44,7 +45,7 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
-    
+
     # respond_to do |format|
     #   if @user.save
     #     format.html { redirect_to @user, notice: 'User was successfully created.' }
@@ -79,11 +80,11 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
   def share
     render 'share'
   end
-  
+
 
   private
     def set_user
@@ -93,7 +94,7 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
-    
+
     def logged_in_user
       unless logged_in?
         store_location
@@ -101,7 +102,7 @@ class UsersController < ApplicationController
         redirect_to login_url
       end
     end
-    
+
     def correct_user
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
