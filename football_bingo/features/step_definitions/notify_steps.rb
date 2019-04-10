@@ -6,6 +6,14 @@ Then("I should see {string}") do |string|
   end
 end
 
+Then("I should not see {string}") do |string|
+  if page.respond_to? :should
+    page.should have_no_content(string)
+  else
+    assert page.has_no_content?(string)
+  end
+end
+
 Then("I press {string}") do |string|
   click_button(string)
 end
