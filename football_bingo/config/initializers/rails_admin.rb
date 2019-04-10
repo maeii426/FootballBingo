@@ -24,8 +24,8 @@ RailsAdmin.config do |config|
   # config.show_gravatar = true
 
   config.authorize_with do
-    unless User.find_by(id: session[:user_id]).is_admin?
-      redirect_to main_app.root_path, notice: 'Not authorized!'
+    unless User.find_by(id: session[:user_id]).is_admin?      
+      redirect_to main_app.root_path, notice: 'You are not an admin user!'
     end
   end
 

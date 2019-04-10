@@ -57,11 +57,11 @@ When /^(?:|I )follow "([^"]*)$/ do |link|
   click_link(link)
 end
 
-When /^(?:|I )press "([^"]*)"$/ do |button|
+When /^(?:|I )press "([^"]*)$/ do |button|
   click_button(button)
 end
 
-When /^(?:|I )follow "([^"]*)"$/ do |link|
+When /^(?:|I )follow "([^"]*)$/ do |link|
   click_link(link)
 end
 
@@ -72,7 +72,19 @@ end
 Given /^the account is set up$/ do
   User.create!({:name => 'admin',
                 :password => '12345678',
-                :email => 'joe@snow.com'})
+                :email => 'joe@snow.com',
+                :role => 'user'})
+  visit '/login'
+  fill_in 'Email', :with => 'joe@snow.com'
+  fill_in 'Password', :with => '12345678'
+  click_button 'Log in'
+end
+
+Given /^the admin account is set up$/ do
+  User.create!({:name => 'admin',
+                :password => '12345678',
+                :email => 'joe@snow.com',
+                :role => 'admin'})
   visit '/login'
   fill_in 'Email', :with => 'joe@snow.com'
   fill_in 'Password', :with => '12345678'
@@ -104,15 +116,15 @@ When /^(?:|I )select "([^"]*)" from "([^"]*)"$/ do |value, field|
   select(value, :from => field)
 end
 
-When /^(?:|I )check "([^"]*)"$/ do |field|
+When /^(?:|I )check "([^"]*)$/ do |field|
   check(field)
 end
 
-When /^(?:|I )uncheck "([^"]*)"$/ do |field|
+When /^(?:|I )uncheck "([^"]*)$/ do |field|
   uncheck(field)
 end
 
-When /^(?:|I )choose "([^"]*)"$/ do |field|
+When /^(?:|I )choose "([^"]*)$/ do |field|
   choose(field)
 end
 
@@ -120,7 +132,7 @@ When /^(?:|I )attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
   attach_file(field, File.expand_path(path))
 end
 
-Then /^(?:|I )should see "([^"]*)"$/ do |text|
+Then /^(?:|I )should see "([^"]*)$/ do |text|
   if page.respond_to? :should
     page.should have_content(text)
   else
@@ -138,7 +150,7 @@ Then /^(?:|I )should see \/([^\/]*)\/$/ do |regexp|
   end
 end
 
-Then /^(?:|I )should not see "([^"]*)"$/ do |text|
+Then /^(?:|I )should not see "([^"]*)$/ do |text|
   if page.respond_to? :should
     page.should have_no_content(text)
   else
@@ -156,7 +168,7 @@ Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
   end
 end
 
-Then /^the "([^"]*)" field(?: within (.*))? should contain "([^"]*)"$/ do |field, parent, value|
+Then /^the "([^"]*) field(?: within (.*))? should contain "([^"]*)$/ do |field, parent, value|
   with_scope(parent) do
     field = find_field(field)
     field_value = (field.tag_name == 'textarea') ? field.text : field.value
@@ -168,7 +180,7 @@ Then /^the "([^"]*)" field(?: within (.*))? should contain "([^"]*)"$/ do |field
   end
 end
 
-Then /^the "([^"]*)" field(?: within (.*))? should not contain "([^"]*)"$/ do |field, parent, value|
+Then /^the "([^"]*) field(?: within (.*))? should not contain "([^"]*)$/ do |field, parent, value|
   with_scope(parent) do
     field = find_field(field)
     field_value = (field.tag_name == 'textarea') ? field.text : field.value
@@ -180,7 +192,7 @@ Then /^the "([^"]*)" field(?: within (.*))? should not contain "([^"]*)"$/ do |f
   end
 end
 
-Then /^the "([^"]*)" field should have the error "([^"]*)"$/ do |field, error_message|
+Then /^the "([^"]*) field should have the error "([^"]*)$/ do |field, error_message|
   element = find_field(field)
   classes = element.find(:xpath, '..')[:class].split(' ')
 
@@ -211,7 +223,7 @@ Then /^the "([^"]*)" field should have the error "([^"]*)"$/ do |field, error_me
   end
 end
 
-Then /^the "([^"]*)" field should have no error$/ do |field|
+Then /^the "([^"]*) field should have no error$/ do |field|
   element = find_field(field)
   classes = element.find(:xpath, '..')[:class].split(' ')
   if classes.respond_to? :should
@@ -223,7 +235,7 @@ Then /^the "([^"]*)" field should have no error$/ do |field|
   end
 end
 
-Then /^the "([^"]*)" checkbox(?: within (.*))? should be checked$/ do |label, parent|
+Then /^the "([^"]*) checkbox(?: within (.*))? should be checked$/ do |label, parent|
   with_scope(parent) do
     field_checked = find_field(label)['checked']
     if field_checked.respond_to? :should
@@ -234,7 +246,7 @@ Then /^the "([^"]*)" checkbox(?: within (.*))? should be checked$/ do |label, pa
   end
 end
 
-Then /^the "([^"]*)" checkbox(?: within (.*))? should not be checked$/ do |label, parent|
+Then /^the "([^"]*) checkbox(?: within (.*))? should not be checked$/ do |label, parent|
   with_scope(parent) do
     field_checked = find_field(label)['checked']
     if field_checked.respond_to? :should
