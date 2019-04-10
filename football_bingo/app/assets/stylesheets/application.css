@@ -14,9 +14,3 @@
  *= require social-share-button
  *= require_self
  */
-table#games {
-  margin: 10px;
-  border-collapse: collapse;
-  width: 100%;
-  border-bottom: 1px solid black;
-}

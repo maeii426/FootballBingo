@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
 
   def game_params
-    params.require(:game).permit(:gameid, :date, :instant_winner, :whoop_winner)
+    params.require(:game).permit(:game_name, :date, :instant_winner, :whoop_winner)
   end
 
   def score_board
@@ -12,6 +12,10 @@ class GamesController < ApplicationController
     return @games
   end
 
- 
+  def send_email
+    @games = Game.all
+    redirect_to '/score_board', notice: 'Winners are notified !'
+  end
+
 
 end
