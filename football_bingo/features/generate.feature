@@ -13,6 +13,8 @@ Scenario:
   Given the game data actions  
   Then the inclusive game actions are not generated contiguously in bingo cards
   
-Scenario: 
-  Given the number of prizes 
-  Then the winners are under the number 
+  
+# Add owner scenario feature 
+# As an owner
+# I would like my winners to be under certain number
+# so that I can give out available amount of prizes 
