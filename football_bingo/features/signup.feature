@@ -18,6 +18,8 @@ Scenario: Sign up with new email
   When I fill in "Password confirmation" with "11111111"
   And I press "Create my account"
   Then I should see "user2"
+  Then I should see "Welcome to the FootballBingo App!"
+
   
 Scenario: Sign up with existing email
   Given I am on the sign up page

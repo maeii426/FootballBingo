@@ -12,7 +12,7 @@ module NavigationHelpers
   #
   def path_to(page_name)
     case page_name
-    when /^the admin page$/ then '/admin'
+    when /^the admin page$/ then '/admin/'
     when /^the score board page$/ then '/score_board'
     when /^the help page$/ then '/help'
     when /^the log in page$/ then '/login'

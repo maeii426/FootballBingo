@@ -6,5 +6,10 @@ Feature: See admin panel
 
 Scenario: Current user is an admin user
   Given the admin account is set up
-  When I am on the admin page
-  Then I should see "user0"
+  When I follow "Admin"
+  Then I should be on the admin page
+  And I should see "Site Administration"
+
+Scenario: Current user is not an admin user
+  Given the account is set up
+  Then I should not see "Admin"
