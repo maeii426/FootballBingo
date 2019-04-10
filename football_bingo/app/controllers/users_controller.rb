@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   #before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :logged_in_user, only: [:edit, :update]
   before_action :correct_user,   only: [:edit, :update]
-
   # GET /users
   # GET /users.json
   def index
@@ -19,6 +18,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @cards = Card.where(user_id: @user.id)
     show_user_cards
+
   end
 
   # GET /users/new
