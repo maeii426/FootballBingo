@@ -4,6 +4,8 @@ class Chip < ActiveRecord::Base
     # has_many :cards, through: :card_chips
     has_and_belongs_to_many :cards
     
+
+
     def translate
         translation = Translation.find(translation_id)
         @conditional = translation.tag
@@ -42,4 +44,5 @@ class Chip < ActiveRecord::Base
         end
         false
     end
+
 end
