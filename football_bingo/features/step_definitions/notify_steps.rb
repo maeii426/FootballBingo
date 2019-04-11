@@ -21,7 +21,7 @@ end
 When("I press {string} at {string}") do |string, string2|
   visit path_to('the send page')
   game = Game.find_by(game_name: string2)
-  a=send_email_path()
+  a=send_email_path(game)
 end
 
 When("I follow {string}") do |string|

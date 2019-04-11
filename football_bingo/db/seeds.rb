@@ -10,6 +10,11 @@ admin_users.each do |admin_user|
     User.create!(admin_user)
 end
 
+general_users = [{:name => 'Frank Flanigan', :email => 'whoop606super@gmail.com', :password => '123123', :role => :user},]
+general_users.each do |general_user|
+    User.create!(general_users)
+end
+
 games = [{:game_name => 'TAMU10', :date => '24-Nov-2018', :instant_winner => 'Jeffrey Hoberman', :whoop_winner => 'Frank Flanigan',:notify_by_email => 0},
     	 {:game_name => 'TAMU12', :date => '10-Nov-2018', :notify_by_email => 0},
 	]
