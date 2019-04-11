@@ -15,13 +15,16 @@ Scenario: Edit with wrong email format
   And I press "Save changes"
   Then I should see "Email is invalid"
 
-  Scenario: Edit with correct information
-  	  Given the account is set up
-  	  When I go to the edit page for "newuser"
-  	  Then I should see "Update your profile"
-  	  Then I fill in "Name" with "newname"
-  	  And I fill in "Email" with "newemail@whoop.com"
-  	  And I fill in "Password" with "newpassword"
+Scenario: Edit with correct information
+  Given the account is set up
+  When I go to the edit page for "newuser"
+  Then I should see "Update your profile"
+  Then I fill in "Name" with "newname"
+  And I fill in "Email" with "newemail@whoop.com"
+  And I fill in "Password" with "newpassword"
+  And I fill in "Confirmation" with "newpassword"
+  And I press "Save changes"
+  Then I should see "User was successfully updated."
 
 Scenario: Edit with unmatched password
   Given the account is set up
