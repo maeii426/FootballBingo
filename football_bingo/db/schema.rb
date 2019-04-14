@@ -52,8 +52,8 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
     t.string "source"
     t.string "version"
     t.string "generated"
-    t.bigint "hometeam_id"
-    t.bigint "visteam_id"
+    t.string "hometeam_id"
+    t.string "visteam_id"
   end
 
   create_table "linescores", force: :cascade do |t|

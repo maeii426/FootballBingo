@@ -9,8 +9,8 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.string :source
       t.string :version
       t.string :generated
-      t.bigint :hometeam_id
-      t.bigint :visteam_id
+      t.string :hometeam_id
+      t.string :visteam_id
     end
   end
 end
