@@ -5,11 +5,12 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.datetime :date
       t.string :instant_winner #these should be relations between users and games
       t.string :whoop_winner
+      t.integer :notify_by_email
       t.string :source
       t.string :version
       t.string :generated
-      t.bigint :hometeam_id
-      t.bigint :visteam_id
+      t.string :hometeam_id
+      t.string :visteam_id
     end
   end
 end

@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_04_09_211930) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -47,10 +48,11 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
   end
 
   create_table "games", force: :cascade do |t|
-    t.string "name"
+    t.string "game_name"
     t.datetime "date"
     t.string "instant_winner"
     t.string "whoop_winner"
+    t.integer "notify_by_email"
     t.string "source"
     t.string "version"
     t.string "generated"
@@ -59,7 +61,7 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
   end
 
   create_table "linescores", force: :cascade do |t|
-    t.bigint "game_id"
+    t.integer "game_id"
     t.integer "prds"
     t.integer "score"
     t.datetime "created_at", null: false
@@ -97,7 +99,7 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
   end
 
   create_table "venues", force: :cascade do |t|
-    t.bigint "game_id"
+    t.integer "game_id"
     t.string "gameid"
     t.date "date"
     t.integer "attend"

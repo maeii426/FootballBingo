@@ -3,28 +3,30 @@ Feature: Login functionality
   As a user
   So that I can use Whoop
   I want to log in with username and password
-  Background: users are in the database
- 
-  Given the following users exist:
-  | name | password | email |
-  | user0 | 12345678 | user0@whoop.com |
-  | user1 | 00000000 | user1@whoop.com | 
+
+Scenario: Logging in without sign up first
+  Given I do not exist as a user
+  When I log in with valid credentials
+  Then I see an invalid login message
+  And I should be logged out
 
 Scenario: Logging in with valid credentials
-  Given I am on the log in page
-  When I fill in "Email" with "user0@whoop.com"
-  When I fill in "Password" with "12345678"
-  And I press "Log in"
-  Then I should see "user0"
-  
+  Given I exist as a user
+  And I am not logged in
+  When I log in with valid credentials
+  Then I should be logged in
+  And I should see my name
+
 Scenario: Logging in with invalid credentials
-  Given I am on the log in page
-  When I fill in "Email" with "user1@whoop.com"
-  When I fill in "Password" with "12345678"
-  And I press "Log in"
-  Then I should see "Invalid email/password combination"
-  
-Scenario: Click on signup and then login
-  Given I am on the log in page
-  When I follow "Sign up now!"
-  Then I should be on the signup page
+  Given I exist as a user
+  And I am not logged in
+  When I log in with a wrong password
+  Then I see an invalid login message
+  And I should be logged out
+
+Scenario: Logging in with invalid credentials
+  Given I exist as a user
+  And I am not logged in
+  When I log in with a wrong email
+  Then I see an invalid login message
+  And I should be logged out  

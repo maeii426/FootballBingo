@@ -1,2 +1,2 @@
-class Total < ApplicationRecord
+class Total < ActiveRecord::Base
 end
