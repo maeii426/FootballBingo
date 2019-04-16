@@ -12,6 +12,21 @@ class GamesController < ApplicationController
     return @games
   end
 
+  def stats
+    # get the current game
+    @games = Game.all
+    if @games.nil?
+      flash[:warning] = "No record."
+    end
+    @current_game = @games.first
+    if @current_game.nil?
+      redirect_to '/game_stats', notice: 'No game stats !'
+    else
+      render 'game_stats'
+    end
+    return @current_game
+  end
+
   def send_email
 
     @game=Game.find_by(whoop_winner: params[:whoop_winner])
