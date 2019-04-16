@@ -13,9 +13,19 @@ class GamesController < ApplicationController
   end
 
   def send_email
-    @games = Game.all
-    redirect_to '/score_board', notice: 'Winners are notified !'
-  end
 
+    @game=Game.find_by(whoop_winner: params[:whoop_winner])
+    if @game.nil?
+      redirect_to '/score_board', notice: 'No game information !'
+    else
+      @user=User.find_by(name: @game.whoop_winner)
+      if @user.nil?
+        redirect_to '/score_board', notice: 'No winner account information !'
+      else
+        WhoopMailer.send_email(@user).deliver_now
+        redirect_to '/score_board', notice: 'Winners are notified !'
+      end
+    end
+  end
 
 end

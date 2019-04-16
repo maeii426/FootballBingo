@@ -37,7 +37,7 @@
   <td><%= game.whoop_winner%></td>
   <% if admin_user? %>
       <td>
-        <%= link_to '<button type="button">Send</button>'.html_safe, send_email_path() %>
+        <%= link_to '<button type="button">Send</button>'.html_safe, send_email_path(:whoop_winner => game.whoop_winner) %>
       </td>
   <% end %>
 </tr>

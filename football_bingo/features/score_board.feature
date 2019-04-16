@@ -14,4 +14,12 @@ Background: games are in the database
 Scenario: Go to score board
   Given the account is set up
   When I am on the score board page
-  Then  I should see "Congratulations!"
+  Then I should see "Congratulations!"
+ 
+ Given the following games exist:
+  | game_name | date | instant_winner | whoop_winner | 
+
+Scenario: No game exists
+  Given the account is set up
+  When I am on the score board page
+  Then I should see "No record."

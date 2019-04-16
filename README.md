@@ -22,3 +22,5 @@ git push heroku master
 --  heroku pg:reset
 heroku rake db:migrate
 heroku run rake db:seed
+
+-- heroku git:remote -a 

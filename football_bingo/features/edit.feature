@@ -17,14 +17,8 @@ Scenario: Edit with wrong email format
 
 Scenario: Edit with correct information
   Given the account is set up
-<<<<<<< HEAD
   When I go to the edit page for "newuser"
   Then I should see "Update your profile"
-=======
-  When I follow "Settings"
-  Then I should be on the edit page for "admin"
-  Then I should see "Update your profile" 
->>>>>>> 1cfe184c08e53a5d66e5f9636cb9d33110fe4aca
   Then I fill in "Name" with "newname"
   And I fill in "Email" with "newemail@whoop.com"
   And I fill in "Password" with "newpassword"
