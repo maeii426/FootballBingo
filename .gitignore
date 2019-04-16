@@ -2,15 +2,15 @@
 .DS_Store
 
 # Ignore bundler config.
-football_bingo/.bundle
+/.bundle
 
 # Ignore the default SQLite database.
-football_bingo/db/*.sqlite3
-football_bingo/db/*.sqlite3-journal
-football_bingo/db/schema.rb
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/schema.rb
 
 # Ignore all logfiles and tempfiles.
-football_bingo/log/*
+/log/*
 !/log/.keep
-football_bingo/tmp
+/tmp
 */log
