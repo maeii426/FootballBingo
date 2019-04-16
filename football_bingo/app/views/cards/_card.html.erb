@@ -1,33 +1,42 @@
+<div class="container">
+  <div class="row">
 
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        --game info--
-        <br/>
-        <br>
-      </h1>
-<div id-"card_container" style="width:100%;height;50%;">
-      <div class="btn-group" role="group" aria-label="Block1" style="width:100%;font-size:12px">
-        <button type="button" class="btn btn-default <%= states[0] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= plays[0] %></button>
-        <button type="button" class="btn btn-default <%= states[1] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= plays[1] %></button>
-        <button type="button" class="btn btn-default <%= states[2] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[2] %></button>
-      </div>
-    
-      <div class="btn-group" role="group" aria-label="Block2" style="width:100%;">
-        <button type="button" class="btn btn-default <%= states[3] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= plays[3] %></button>
-        <button type="button" class="btn btn-default <%= states[4] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[4] %></button>
-        <button type="button" class="btn btn-default <%= states[5] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[5] %></button>
-      </div>
+        <h1>
+          --game info--
+          <br/>
+          <br>
+        </h1>
 
-    <div class="btn-group" role="group" aria-label="Block3" style="width:100%;">
-      <button type="button" class="btn btn-default <%= states[6] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[6] %></button>
-      <button type="button" class="btn btn-default <%= states[7] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[7] %></button>
-      <button type="button" class="btn btn-default <%= states[8] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[8] %></button>
-    </div>
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col-6">
+        2 of 3 (wider)
+        <div id-"card_container" style="width:100%;height;50%;">
+          <div class="btn-group" role="group" aria-label="Block1" style="width:100%;font-size:12px">
+            <button type="button" class="btn btn-default <%= states[0] ? "bingotrue" : "bingofalse" %>" id="cardstyle1" onclick="activebuttonCSS1()"><%= plays[0] %></button>
+            <button type="button" class="btn btn-default <%= states[1] ? "bingotrue" : "bingofalse" %>" id="cardstyle2" onclick="activebuttonCSS2()"><%= plays[1] %></button>
+            <button type="button" class="btn btn-default <%= states[2] ? "bingotrue" : "bingofalse" %>" id="cardstyle3" onclick="activebuttonCSS3()"><%= plays[2] %></button>
+          </div>
+      
+          <div class="btn-group" role="group" aria-label="Block2" style="width:100%;">
+            <button type="button" class="btn btn-default <%= states[3] ? "bingotrue" : "bingofalse" %>" id="cardstyle4" onclick="activebuttonCSS4()"><%= plays[3] %></button>
+            <button type="button" class="btn btn-default <%= states[4] ? "bingotrue" : "bingofalse" %>" id="cardstyle5" onclick="activebuttonCSS5()"><%= plays[4] %></button>
+            <button type="button" class="btn btn-default <%= states[5] ? "bingotrue" : "bingofalse" %>" id="cardstyle6" onclick="activebuttonCSS6()"><%= plays[5] %></button>
+          </div>
+
+          <div class="btn-group" role="group" aria-label="Block3" style="width:100%;">
+            <button type="button" class="btn btn-default <%= states[6] ? "bingotrue" : "bingofalse" %>" id="cardstyle7" onclick="activebuttonCSS7()"><%= plays[6] %></button>
+            <button type="button" class="btn btn-default <%= states[7] ? "bingotrue" : "bingofalse" %>" id="cardstyle8" onclick="activebuttonCSS8()"><%= plays[7] %></button>
+            <button type="button" class="btn btn-default <%= states[8] ? "bingotrue" : "bingofalse" %>" id="cardstyle9" onclick="activebuttonCSS9()"><%= plays[8] %></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
   </div>
-     
-   
-  </section>
-  </aside>
 </div>
+  
+ 
+

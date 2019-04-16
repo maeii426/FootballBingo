@@ -2,23 +2,114 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#cardstyle {
+
+/* chip and  styles*/ 
+#cardstyle1{
     //background-color: #fff5e6;
     border: 1px solid #800000;
     color: #800000; 
     width:33%;
-    height:100px;
+    height:110px;
     white-space: normal;
     word-wrap: break-word;
 }
 
+#cardstyle2 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
 
+#cardstyle3 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#cardstyle4 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
 // #cardstyle:visited {
 //     background-color: #ccddff;
 //     cursor: pointer;
 // }
 
+#cardstyle5 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#cardstyle6 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#cardstyle7 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#cardstyle8 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#cardstyle9 {
+    //background-color: #fff5e6;
+    border: 1px solid #800000;
+    color: #800000; 
+    width:33%;
+    height:110px;
+    white-space: normal;
+    word-wrap: break-word;
+}
 #cardstyle:hover {
     background-color: #ccddff;
     cursor: pointer;
 }
+
+/* bingo card */
+.bingotrue {
+    background-color: #BA8888 !important;
+  }
+  .bingofalse {
+    background-color: none !important;
+  }
+  
+  .changebackground{
+    background-color: #ffe6cc !important;
+  }

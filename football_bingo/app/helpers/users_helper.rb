@@ -10,7 +10,6 @@ def show_user_cards
         chips_in_words.push(words)
         chip_states.push(state)
       end
-      flash[:notice] = "help"
       render 'cards/_card', locals: { plays:chips_in_words, states:chip_states }
     end 
 end
