@@ -1,4 +1,4 @@
-class Playercondition < ApplicationRecord
+class Playercondition < ActiveRecord::Base
     belongs_to :player
     belongs_to :translation
 end

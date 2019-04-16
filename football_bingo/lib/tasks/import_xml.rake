@@ -13,8 +13,13 @@ namespace :import do
 				:source => node['source'],
 				:version => node['version'],
 				:generated => node['generated'],
+<<<<<<< HEAD
 				:hometeam => sections.css('venue').first['homeid'],
 				:visteam => sections.css('venue').first['visid'],
+=======
+				:hometeam => children.css('venue').first['homeid'],
+				:visteam => children.css('venue').first['visid'],
+>>>>>>> 5be59bc4f4fdc471c9b7f30acf9ec43ccc08d9f0
 						# :gamename => :hometeam_id + " vs " + :visteam_id
 			}
 
