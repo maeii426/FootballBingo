@@ -6,22 +6,6 @@ class CreateCardsandChips < ActiveRecord::Migration[5.2]
       
       t.timestamps
     end
-    
-    create_table :conditions do |t|
-      t.belongs_to :translation, index: true
-      t.belongs_to :game, index: true
-      t.float :value
-    end
-    
-    create_table :translations do |t|
-      # t.has_many :conditions, index: true
-      # t.has_many :chips, index: true
-      #t.index :translationid
-      t.string :tag
-      t.string :words
-      t.bigint :condition_id
-      t.bigint :chip_id
-    end
  
     create_table :chips do |t|
       t.belongs_to :translation
