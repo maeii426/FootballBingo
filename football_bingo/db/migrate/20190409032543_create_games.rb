@@ -1,7 +1,7 @@
 class CreateGames < ActiveRecord::Migration[5.2]
   def change
     create_table :games do |t|
-      t.string :name
+      t.string :game_name
       t.datetime :date
       t.string :instant_winner #these should be relations between users and games
       t.string :whoop_winner
@@ -9,8 +9,8 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.string :source
       t.string :version
       t.string :generated
-      t.string :hometeam_id
-      t.string :visteam_id
+      t.string :hometeam
+      t.string :visteam
     end
   end
 end

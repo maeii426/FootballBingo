@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_09_211930) do
-
+ActiveRecord::Schema.define(version: 2019_04_16_170018) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +46,42 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
     t.index ["translation_id"], name: "index_conditions_on_translation_id"
   end
 
+  create_table "drives", force: :cascade do |t|
+    t.bigint "game_id"
+    t.bigint "team_id"
+    t.string "start"
+    t.string "end"
+    t.integer "plays"
+    t.integer "yards"
+    t.string "top"
+    t.string "start_how"
+    t.string "start_qtr"
+    t.string "start_time"
+    t.string "start_spot"
+    t.string "end_how"
+    t.string "end_qtr"
+    t.string "end_time"
+    t.string "end_spot"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_drives_on_game_id"
+    t.index ["team_id"], name: "index_drives_on_team_id"
+  end
+
+  create_table "fgas", force: :cascade do |t|
+    t.bigint "game_id"
+    t.bigint "team_id"
+    t.string "kicker"
+    t.string "qtr"
+    t.string "clock"
+    t.integer "distance"
+    t.boolean "result"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_fgas_on_game_id"
+    t.index ["team_id"], name: "index_fgas_on_team_id"
+  end
+
   create_table "games", force: :cascade do |t|
     t.string "game_name"
     t.datetime "date"
@@ -56,17 +91,76 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
     t.string "source"
     t.string "version"
     t.string "generated"
-    t.bigint "hometeam_id"
-    t.bigint "visteam_id"
+    t.string "hometeam"
+    t.string "visteam"
+  end
+
+  create_table "linescoreconditions", force: :cascade do |t|
+    t.bigint "linescore_id"
+    t.bigint "translation_id"
+    t.float "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["linescore_id"], name: "index_linescoreconditions_on_linescore_id"
+    t.index ["translation_id"], name: "index_linescoreconditions_on_translation_id"
   end
 
   create_table "linescores", force: :cascade do |t|
-    t.integer "game_id"
+    t.bigint "game_id"
+    t.bigint "team_id"
     t.integer "prds"
     t.integer "score"
+    t.string "line"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["game_id"], name: "index_linescores_on_game_id"
+    t.index ["team_id"], name: "index_linescores_on_team_id"
+  end
+
+  create_table "playerconditions", force: :cascade do |t|
+    t.bigint "player_id"
+    t.bigint "translation_id"
+    t.float "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["player_id"], name: "index_playerconditions_on_player_id"
+    t.index ["translation_id"], name: "index_playerconditions_on_translation_id"
+  end
+
+  create_table "players", force: :cascade do |t|
+    t.bigint "game_id"
+    t.bigint "team_id"
+    t.string "name"
+    t.string "shortname"
+    t.string "class"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_players_on_game_id"
+    t.index ["team_id"], name: "index_players_on_team_id"
+  end
+
+  create_table "scores", force: :cascade do |t|
+    t.bigint "game_id"
+    t.bigint "team_id"
+    t.string "qtr"
+    t.string "clock"
+    t.string "type"
+    t.string "how"
+    t.string "yds"
+    t.string "scorer"
+    t.string "passer"
+    t.string "patby"
+    t.string "pattype"
+    t.string "patres"
+    t.integer "plays"
+    t.integer "drive"
+    t.string "top"
+    t.integer "vscore"
+    t.integer "hscore"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_scores_on_game_id"
+    t.index ["team_id"], name: "index_scores_on_team_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -76,9 +170,27 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "totals", force: :cascade do |t|
+  create_table "totalconditions", force: :cascade do |t|
+    t.bigint "total_id"
+    t.bigint "translation_id"
+    t.float "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["total_id"], name: "index_totalconditions_on_total_id"
+    t.index ["translation_id"], name: "index_totalconditions_on_translation_id"
+  end
+
+  create_table "totals", force: :cascade do |t|
+    t.bigint "game_id"
+    t.bigint "team_id"
+    t.string "qtr"
+    t.integer "totoff_plays"
+    t.integer "totoff_yards"
+    t.float "totoff_avg"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_totals_on_game_id"
+    t.index ["team_id"], name: "index_totals_on_team_id"
   end
 
   create_table "translations", force: :cascade do |t|
@@ -99,7 +211,7 @@ ActiveRecord::Schema.define(version: 2019_04_09_211930) do
   end
 
   create_table "venues", force: :cascade do |t|
-    t.integer "game_id"
+    t.bigint "game_id"
     t.string "gameid"
     t.date "date"
     t.integer "attend"

@@ -1,4 +1,5 @@
 class Linescore < ActiveRecord::Base
     belongs_to :game
-    has_many :conditions
+    belongs_to :team
+    has_many :linescoreconditions
 end

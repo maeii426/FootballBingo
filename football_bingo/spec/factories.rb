@@ -1,4 +1,25 @@
 FactoryBot.define do
+  factory :drife, class: 'Drive' do
+    
+  end
+  factory :fga do
+    
+  end
+  factory :score do
+    
+  end
+  factory :playercondition do
+    
+  end
+  factory :player do
+    
+  end
+  factory :totalcondition do
+    
+  end
+  factory :linescorecondition do
+    
+  end
   factory :total do
     
   end
@@ -12,9 +33,6 @@ FactoryBot.define do
     
   end
   factory :translation do
-    
-  end
-  factory :condition do
     
   end
   
