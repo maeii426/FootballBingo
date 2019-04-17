@@ -12,25 +12,22 @@
 
 ActiveRecord::Schema.define(version: 2019_04_16_204452) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "cards", force: :cascade do |t|
-    t.bigint "user_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_cards_on_user_id"
   end
 
   create_table "cards_chips", id: false, force: :cascade do |t|
-    t.bigint "card_id"
-    t.bigint "chip_id"
+    t.integer "card_id"
+    t.integer "chip_id"
     t.index ["card_id"], name: "index_cards_chips_on_card_id"
     t.index ["chip_id"], name: "index_cards_chips_on_chip_id"
   end
 
   create_table "chips", force: :cascade do |t|
-    t.bigint "translation_id"
+    t.integer "translation_id"
     t.string "argument"
     t.float "value"
     t.datetime "created_at", null: false
@@ -39,8 +36,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "drives", force: :cascade do |t|
-    t.bigint "game_id"
-    t.bigint "team_id"
+    t.integer "game_id"
+    t.integer "team_id"
     t.string "start"
     t.string "end"
     t.integer "plays"
@@ -61,8 +58,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "fgas", force: :cascade do |t|
-    t.bigint "game_id"
-    t.bigint "team_id"
+    t.integer "game_id"
+    t.integer "team_id"
     t.string "kicker"
     t.string "qtr"
     t.string "clock"
@@ -88,8 +85,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "linescoreconditions", force: :cascade do |t|
-    t.bigint "linescore_id"
-    t.bigint "translation_id"
+    t.integer "linescore_id"
+    t.integer "translation_id"
     t.float "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -98,8 +95,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "linescores", force: :cascade do |t|
-    t.bigint "game_id"
-    t.bigint "team_id"
+    t.integer "game_id"
+    t.integer "team_id"
     t.integer "prds"
     t.integer "score"
     t.string "line"
@@ -110,8 +107,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "playerconditions", force: :cascade do |t|
-    t.bigint "player_id"
-    t.bigint "translation_id"
+    t.integer "player_id"
+    t.integer "translation_id"
     t.float "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -120,11 +117,11 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "players", force: :cascade do |t|
-    t.bigint "game_id"
-    t.bigint "team_id"
+    t.integer "game_id"
+    t.integer "team_id"
     t.string "name"
     t.string "shortname"
-    t.string "class"
+    t.string "class_attr"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["game_id"], name: "index_players_on_game_id"
@@ -132,8 +129,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "scores", force: :cascade do |t|
-    t.bigint "game_id"
-    t.bigint "team_id"
+    t.integer "game_id"
+    t.integer "team_id"
     t.string "qtr"
     t.string "clock"
     t.string "type"
@@ -163,8 +160,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "totalconditions", force: :cascade do |t|
-    t.bigint "total_id"
-    t.bigint "translation_id"
+    t.integer "total_id"
+    t.integer "translation_id"
     t.float "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -173,8 +170,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "totals", force: :cascade do |t|
-    t.bigint "game_id"
-    t.bigint "team_id"
+    t.integer "game_id"
+    t.integer "team_id"
     t.string "qtr"
     t.integer "totoff_plays"
     t.integer "totoff_yards"
@@ -201,7 +198,7 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
   end
 
   create_table "venues", force: :cascade do |t|
-    t.bigint "game_id"
+    t.integer "game_id"
     t.string "gameid"
     t.date "date"
     t.integer "attend"

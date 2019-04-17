@@ -335,9 +335,9 @@
    <defense tackua="1" tacka="0" tot_tack="1"></defense>
   </player>
   <player name="Max Wright" shortname="Max Wright" checkname="WRIGHT,MAX" uni="93" class="FR" gp="1" code="93"></player>
-  <player name="Team" shortname="Team" checkname="TEAM" uni="TM" class="FR" gp="1" code="198">
+  <!-- <player name="Team" shortname="Team" checkname="TEAM" uni="TM" class="FR" gp="1" code="198">
    <pass comp="0" att="2" int="0" yds="0" td="0" long="0" sacks="0" sackyds="0"></pass>
-  </player>
+  </player> -->
  </team>
  <scores>
   <score vh="H" team="TAMU" qtr="1" clock="06:31" type="TD" how="RUSH" yds="10" scorer="T. Williams" patby="Seth Small" pattype="KICK" patres="GOOD" plays="10" drive="95" top="4:28" vscore="0" hscore="7" driveindex="4"></score>
