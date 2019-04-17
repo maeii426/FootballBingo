@@ -1,4 +1,11 @@
 
+Given /^the game stats exist$/ do
+	# @user = FactoryBot.create(:user)
+	# @venue = FactoryBot.create(:venue)
+	@game = FactoryBot.create(:game)
+end
+
+
 Given /the following games exist/ do |games_table|
   games_table.hashes.each do |game|
     Game.create game

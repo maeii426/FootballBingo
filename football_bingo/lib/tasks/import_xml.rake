@@ -12,7 +12,6 @@ namespace :import do
 				:source => node['source'],
 				:version => node['version'],
 				:generated => node['generated'],
-
 				:hometeam => children.css('venue').first['homeid'],
 				:visteam => children.css('venue').first['visid'],
 				# :gamename => :hometeam_id + " vs " + :visteam_id
@@ -62,7 +61,7 @@ namespace :import do
 				
 				team_stuff.css('totals').first do |tot|			# there should only be one per team!
 					total_param = {
-						:qtr => "all"
+						:qtr => "all",
 						:totoff_plays => tot["totoff_plays"].to_i,
 						:totoff_yards => tot["totoff_yards"].to_i,
 						:totoff_avg => tot["totoff_avg"].to_f
@@ -105,8 +104,8 @@ namespace :import do
 						:patby => score["patby"],
 						:pattype => score["pattype"],
 						:patres => score["patres"],
-						:plays => score["plays"]to_i,
-						:drive => score["drive"]to_i,
+						:plays => score["plays"].to_i,
+						:drive => score["drive"].to_i,
 						:top => score["top"],
 						:vscore => score["vscore"],
 						:hscore => score["hscore"]

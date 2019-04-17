@@ -38,7 +38,7 @@ end
 def create_user
   create_visitor_as_user
   # delete_user
-  @user = FactoryBot.create(:user, email: @visitor[:email])
+  @user = FactoryBot.create(:user, name: @visitor[:name], email: @visitor[:email], password: @visitor[:password])
 end
 
 def create_admin

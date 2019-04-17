@@ -16,10 +16,10 @@ RSpec.describe User, type: :model do
     end
     
     it "has a email that is not case_sensitive" do
-        user2 = build(:user, email: "TEST@TEST.COM")
+        email2 = @user1.email.upcase
+        user2 = build(:user, email: email2)
         expect(user2).to_not be_valid
-    end
-        
+    end    
     
     it "is not valid without a username" do
         user2 = build(:user, name: nil)

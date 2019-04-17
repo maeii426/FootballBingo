@@ -1,7 +1,20 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/user.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/game.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/user.rb": [
         1,
         null,
         1,
@@ -12,7 +25,7 @@
         null,
         null,
         1,
-        44,
+        45,
         null,
         null,
         1,
@@ -26,7 +39,7 @@
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/sessions_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -50,7 +63,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/application_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -59,32 +72,32 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/application_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/application_helper.rb": [
         1,
         null,
         1,
-        63,
-        63,
+        64,
+        64,
         4,
         null,
-        59,
+        60,
         null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/cards_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/cards_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/chips_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/chips_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/conditions_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/conditions_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/games_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/games_helper.rb": [
         1,
         null,
         1,
@@ -133,7 +146,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/sessions_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/sessions_helper.rb": [
         1,
         null,
         null,
@@ -143,14 +156,14 @@
         null,
         null,
         1,
-        247,
-        179,
+        252,
+        184,
         null,
         null,
         null,
         null,
         1,
-        73,
+        74,
         null,
         null,
         null,
@@ -160,7 +173,7 @@
         null,
         null,
         1,
-        43,
+        44,
         null,
         null,
         null,
@@ -181,11 +194,11 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/static_pages_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/static_pages_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/users_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/users_helper.rb": [
         1,
         null,
         1,
@@ -205,7 +218,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/users_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -317,7 +330,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/card.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/card.rb": [
         1,
         1,
         null,
@@ -331,19 +344,19 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/mailers/application_mailer.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/cards_chip.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/cards_chip.rb": [
         1,
         null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/cards_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/cards_controller.rb": [
         1,
         null,
         1,
@@ -365,23 +378,9 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/chip.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/chip.rb": [
         1,
         1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
         null,
         null,
         1,
@@ -389,13 +388,6 @@
         null,
         null,
         1,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
         0,
         0,
         0,
@@ -403,41 +395,63 @@
         0,
         0,
         null,
-        0,
-        0,
-        null,
-        null,
         null,
         0,
         null,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/chips_controller.rb": [
+        null,
         1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
         null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/condition.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/chips_controller.rb": [
         1,
-        1,
-        1,
+        null,
+        null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/conditions_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/conditions_controller.rb": [
         1,
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/game.rb": [
-        1,
-        1,
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/drive.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/games_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/fga.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/games_controller.rb": [
         1,
         null,
         1,
@@ -456,6 +470,21 @@
         null,
         1,
         1,
+        0,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
         1,
         null,
         0,
@@ -470,13 +499,39 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/linescore.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/linescore.rb": [
+        1,
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/static_pages_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/linescorecondition.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/player.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/playercondition.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/score.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/static_pages_controller.rb": [
         1,
         1,
         null,
@@ -485,26 +540,86 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/team.rb": [
-        1,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/total.rb": [
-        1,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/translation.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/team.rb": [
         1,
         1,
         1,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/venue.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/mailers/whoop_mailer.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/teams_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/total.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/totalcondition.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/translation.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/venue.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/mailers/whoop_mailer.rb": [
         1,
         1,
         null,
@@ -517,11 +632,11 @@
         null
       ]
     },
-    "timestamp": 1554981522
+    "timestamp": 1555473757
   },
   "RSpec": {
     "coverage": {
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/application_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -534,19 +649,19 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/cards_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/cards_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/chips_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/chips_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/conditions_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/conditions_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/games_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/games_helper.rb": [
         1,
         null,
         1,
@@ -595,7 +710,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/sessions_helper.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/sessions_helper.rb": [
         1,
         null,
         null,
@@ -639,93 +754,27 @@
         null,
         1,
         0,
-        null,
-        null,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/static_pages_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/helpers/users_helper.rb": [
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
         null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/cards_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/static_pages_helper.rb": [
         1,
-        null,
-        1,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/application_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/users_helper.rb": [
         1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/chips_controller.rb": [
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/conditions_controller.rb": [
-        1,
-        null,
-        null
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/sessions_controller.rb": [
-        1,
-        1,
-        null,
         null,
         1,
         0,
         0,
         0,
         0,
-        null,
+        0,
+        0,
         0,
         0,
         null,
-        null,
-        null,
-        1,
         0,
         0,
         null,
@@ -733,7 +782,73 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/static_pages_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/cards_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/chips_controller.rb": [
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/conditions_controller.rb": [
+        1,
+        null,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/static_pages_controller.rb": [
         1,
         1,
         null,
@@ -742,7 +857,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/users_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -854,7 +969,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/mailers/whoop_mailer.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/mailers/whoop_mailer.rb": [
         1,
         1,
         null,
@@ -866,25 +981,64 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/mailers/application_mailer.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/condition.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/drive.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/translation.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/fga.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/user.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/linescorecondition.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/player.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/playercondition.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/score.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/totalcondition.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/translation.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/user.rb": [
         1,
         null,
         1,
@@ -909,24 +1063,26 @@
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/venue.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/venue.rb": [
+        1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/linescore.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/linescore.rb": [
+        0,
         0,
         0,
         0,
         0
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/cards_chip.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/cards_chip.rb": [
         0,
         null,
         null,
         0
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/card.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/card.rb": [
         0,
         0,
         null,
@@ -940,76 +1096,150 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/total.rb": [
-        0,
-        0
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/team.rb": [
-        0,
-        0
-      ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/chip.rb": [
-        0,
-        0,
-        null,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/total.rb": [
         0,
         0,
         0,
         0,
         0
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/models/game.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/team.rb": [
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/chip.rb": [
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/game.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0
+      ],
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/teams_controller.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
         0,
         0,
         0,
         0
       ],
-      "/Users/yingwang/606/iter2/FootballBingo/football_bingo/app/controllers/games_controller.rb": [
+      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/games_controller.rb": [
         0,
         null,
         0,
         0,
         0,
         null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -1037,6 +1267,6 @@
         0
       ]
     },
-    "timestamp": 1554974155
+    "timestamp": 1555466420
   }
 }
