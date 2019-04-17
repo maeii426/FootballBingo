@@ -1,0 +1,3 @@
+class Rcv < ActiveRecord::Base
+	belongs_to :total
+end
