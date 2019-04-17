@@ -12,23 +12,33 @@ namespace :import do
 				:source => node['source'],
 				:version => node['version'],
 				:generated => node['generated'],
-				:hometeam => children.css('venue').first['homeid'],
-				:visteam => children.css('venue').first['visid'],
+				:hometeam => sections.css('venue').first['homeid'],
+				:visteam => sections.css('venue').first['visid'],
 				# :gamename => :hometeam_id + " vs " + :visteam_id
 			}
 
 			game = Game.new(game_param)
-			game.save
-			
-			sections.css('venue').first do |v|					# there should only be one venue
+			if game.save
+				puts "game imported!"
+			else
+				puts "game failed!"
+			end
+
+			sections.css('venue').each do |v|		# there should only be one venue
+
 				venue_param = {
-					:gameid => v['gameid'].to_i,
-					:date => v['date'],
-					:attend => v['attend'],
-					:location => v['location']
+					:gameid => v['gameid'],
+					:date => Date.strptime(v['date'], '%m/%d/%Y'),
+					:attend => v['attend'].to_i,
+					:location => v['location']				
 				}
-				venue = Venue.new(venue_param) 
-				venue.save
+
+				venue = Venue.new(venue_param) 				
+				if venue.save
+					puts "venue imported!"
+				else
+					puts "venue failed!"
+				end
 				venue.update_attributes(:game => game)
 				game.update_attributes(:venue => venue)
 			end
@@ -39,16 +49,26 @@ namespace :import do
 					:nameid => t['id']
 				}
 				team = Team.new(team_param) 
-				team.save
+				if team.save
+					puts "team imported!"
+				else
+					puts "team failed!"
+				end
 				
 				team_stuff = t.children
-				team_stuff.css('linescore').first do |ls|		# there should only be one per team!
+				team_stuff.css('linescore').each do |ls|		# there should only be one per team!
 					linescore_param = {
 						:prds => ls['prds'].to_i,
 						:score => ls['score'].to_i
 					}
 					linescore = Linescore.new(linescore_param) 
-					linescore.save
+					
+					if linescore.save
+						puts "linescore imported!"
+					else
+						puts "linescore failed!"
+					end
+
 					linescore.update_attributes(:game => game)
 					linescore.update_attributes(:team => team)
 					#game.update_attributes(:linescore =>linescore)
@@ -59,7 +79,7 @@ namespace :import do
 					end
 				end
 				
-				team_stuff.css('totals').first do |tot|			# there should only be one per team!
+				team_stuff.css('totals').each do |tot|			# there should only be one per team!
 					total_param = {
 						:qtr => "all",
 						:totoff_plays => tot["totoff_plays"].to_i,
@@ -67,7 +87,11 @@ namespace :import do
 						:totoff_avg => tot["totoff_avg"].to_f
 					}
 					total = Total.new(total_param) 
-					total.save
+					if total.save
+						puts "total imported!"
+					else
+						puts "total failed!"
+					end
 					total.update_attributes(:game => game)
 					total.update_attributes(:team => team)
 					
@@ -76,20 +100,24 @@ namespace :import do
 					#   OR update the migrations to account for each of the conditions - and add translations as necessary
 				end
 				
-				team_stuff.css('player').each do |py|
-					player_param = {
-						:name => py["name"],
-						:shortname => py["shortname"],
-						:class => py["class"]
-					}	
-					player = Player.new(player_param)
-					player.save
-					player.update_attributes(:game => game)
-					player.update_attributes(:team => team)
-				end
+				# team_stuff.css('player').each do |py|
+				# 	puts py['name']
+				# 	player_param = {
+				# 		:name => py['name'],
+				# 		:shortname => py['shortname'],
+				# 		:class => py['class']
+				# 	}	
+				# 	puts py['name']
+				# 	player = Player.new(player_param)
+				# 	puts py['name']
+
+				# 	player.save
+				# 	player.update_attributes(:game => game)
+				# 	player.update_attributes(:team => team)
+				# end
 			end
 
-			sections.css("scores").first do |s| 					# there should only be one 'scores' section
+			sections.css("scores").each do |s| 					# there should only be one 'scores' section
 				scores = s.children
 				
 				scores.css('score').each do |score|
@@ -107,13 +135,49 @@ namespace :import do
 						:plays => score["plays"].to_i,
 						:drive => score["drive"].to_i,
 						:top => score["top"],
-						:vscore => score["vscore"],
-						:hscore => score["hscore"]
+						:vscore => score["vscore"].to_i,
+						:hscore => score["hscore"].to_i
 					}	
-					score = Score.new(score_param)
-					score.save
-					score.update_attributes(:game => game)
-					score.update_attributes(:team => team)
+					score_ = Score.new(score_param)
+					if score_.save
+						puts "score imported!"
+					else
+						puts "score failed!"
+					end
+					score_.update_attributes(:game => game)
+					team = Team.where(:name => score["team"]).first
+					score_.update_attributes(:team => team)
+				end
+			end
+
+			sections.css("fgas").each do |f| 			# there should only be one 'fgas' section
+				fgas = f.children
+				fgas.css('fga').each do |fga|
+					if fga["result"] == "good"
+						result = true
+					else
+						result = false
+					end
+
+					fga_param = {
+						:kicker => fga["kicker"],
+						:qtr => fga["qtr"],
+						:clock => fga["clock"],
+						:distance => fga["distance"].to_i,
+						:result => result
+					}
+					fga = Fga.new(fga_param)
+					
+					if fga.save
+						puts "fga imported!"
+					else
+						puts "fga failed!"
+					end
+
+					fga.update_attributes(:game => game)
+					team = Team.where(:name => fga["team"]).first
+					fga.update_attributes(:team => team)
+
 				end
 			end
 

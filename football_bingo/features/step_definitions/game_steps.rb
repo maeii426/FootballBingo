@@ -1,7 +1,5 @@
 
 Given /^the game stats exist$/ do
-	# @user = FactoryBot.create(:user)
-	# @venue = FactoryBot.create(:venue)
 	@game = FactoryBot.create(:game)
 end
 

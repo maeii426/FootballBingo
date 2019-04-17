@@ -6,7 +6,8 @@ class CreateScores < ActiveRecord::Migration[5.2]
       
       t.string :qtr
       t.string :clock
-      t.string :type
+      t.string :type 
+      # type is restricted word, you can't use it as a column name in ActiveRecord models
       t.string :how
       t.string :yds
       t.string :scorer
