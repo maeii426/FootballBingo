@@ -1,4 +1,4 @@
-class Drive < ActiveRecord::Base
+class Drife < ActiveRecord::Base
     belongs_to :game
     belongs_to :team
 end
