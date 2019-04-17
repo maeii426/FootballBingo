@@ -6,7 +6,7 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       
       t.string :name
       t.string :shortname
-      t.string :class
+      t.string :class_attr  #class is reserved, changed to class_attr
       t.timestamps
     end
   end

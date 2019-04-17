@@ -100,21 +100,21 @@ namespace :import do
 					#   OR update the migrations to account for each of the conditions - and add translations as necessary
 				end
 				
-				# team_stuff.css('player').each do |py|
-				# 	puts py['name']
-				# 	player_param = {
-				# 		:name => py['name'],
-				# 		:shortname => py['shortname'],
-				# 		:class => py['class']
-				# 	}	
-				# 	puts py['name']
-				# 	player = Player.new(player_param)
-				# 	puts py['name']
-
-				# 	player.save
-				# 	player.update_attributes(:game => game)
-				# 	player.update_attributes(:team => team)
-				# end
+				team_stuff.css('player').each do |py|
+					player_param = {
+						:name => py['name'],
+						:shortname => py['shortname'],
+						:class_attr => py['class']
+					}	
+					player = Player.new(player_param)
+					if player.save
+						puts "player imported!"
+					else
+						puts "player failed!"
+					end
+					player.update_attributes(:game => game)
+					player.update_attributes(:team => team)
+				end
 			end
 
 			sections.css("scores").each do |s| 					# there should only be one 'scores' section
@@ -167,7 +167,7 @@ namespace :import do
 						:result => result
 					}
 					fga = Fga.new(fga_param)
-					
+
 					if fga.save
 						puts "fga imported!"
 					else
