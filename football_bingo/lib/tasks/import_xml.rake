@@ -181,6 +181,41 @@ namespace :import do
 				end
 			end
 
+
+			sections.css("drives").each do |d| 			# there should only be one 'fgas' section
+				drives = d.children
+				drives.css('drive').each do |dr|
+
+					drive_param = {
+						:start => dr["start"],
+						:end => dr["end"],
+						:plays => dr["plays"].to_i,
+						:yards => dr["yards"].to_i,
+						:top => dr["top"],
+						:start_how => dr["start_how"],
+						:start_qtr => dr["start_qtr"],
+						:start_time => dr["start_time"],
+						:start_spot => dr["start_spot"],
+						:end_how => dr["end_how"],
+						:end_qtr => dr["end_qtr"],
+						:end_time => dr["end_time"],
+						:end_spot => dr["end_spot"]
+					}
+					drive = Drive.new(drive_param)
+
+					if drive.save
+						puts "drive imported!"
+					else
+						puts "drive failed!"
+					end
+
+					drive.update_attributes(:game => game)
+					team = Team.where(:name => dr["team"]).first
+					drive.update_attributes(:team => team)
+
+				end
+			end
+
 			# sections.css('team').first do |t|
 			# 	ls = t.children
 			# 	linescore_param = {
