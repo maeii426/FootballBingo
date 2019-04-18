@@ -5,16 +5,13 @@ class CreateCardsandChips < ActiveRecord::Migration[5.2]
       #t.timestamps
       t.belongs_to :user, index: true 
       t.text :content
-      t.references :user
+      #t.references :user, foreign_key: true
       t.timestamps
+
     end
-    add_index :cards, [:user_id, :created_at]
+    #add_index :cards, [:user_id, :created_at]
   
-  
-  
-  
-  
-    
+
     create_table :conditions do |t|
       t.belongs_to :translation, index: true
       t.belongs_to :game, index: true

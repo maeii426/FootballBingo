@@ -2,30 +2,15 @@ class CardsController < ApplicationController
     
     # Generate cards
     # remove ftns later 
-    def index
+    def index 
+        #render '/home/ec2-user/environment/FootballBingo/football_bingo/app/views/cards/card.html.erb'
+        redirect_to root_path
+        #head :ok
     end
-    
-    def show 
-    end
-    
-    def new 
-    end
-    
-    def edit
-    end
-    
-    def create
-    end
-    
-    def update 
-    end
-    
-    def destory 
-    end
-    
-    
+
     # remove later 
-    def temp_card  #from this function we will send the play to the specific cards
+    def temp_card  
+        #from this function we will send the play to the specific cards
         #this is still hardcoded
         @card = Card.where(cardid: '1').first
         play1 = @card.b11

@@ -63,6 +63,8 @@ end
 
 cards = [{:user_id => '1'},
     ]
+    
+ 
 
 cards.each do|card|
     @card = Card.create!(card)

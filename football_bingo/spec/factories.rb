@@ -1,4 +1,8 @@
 FactoryBot.define do
+  factory :card do
+    content "MyText"
+    user nil
+  end
   factory :total do
     
   end

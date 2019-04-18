@@ -11,7 +11,10 @@ Rails.application.routes.draw do
   get '/score_board' => :score_board, controller: 'games'
   get '/send_email' => :send_email, controller: 'games'
   #get '/active_card' => :user_cards, controller: 'cards'
-  get '/card' => 'cards#new'
+
+  # Testing html page connection 
+  get '/cards' => 'cards#index'
+  
   resources :users
   root 'static_pages#home'
   #root 'users#index'
