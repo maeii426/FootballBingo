@@ -44,4 +44,13 @@ def game_helper_load
     end
     false
 end
+
+def get_stats(tag_input, is_home)
+    trans = Translation.where(:tag => tag_input).first
+    if is_home
+        return Totalcondition.where(:total => @home_totals, :translation =>trans).first.value
+    else
+        return Totalcondition.where(:total => @vis_totals, :translation =>trans).first.value
+    end
+end
 end

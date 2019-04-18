@@ -11,6 +11,8 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.string :generated
       t.string :hometeam
       t.string :visteam
+      t.integer :state
+      
     end
   end
 end

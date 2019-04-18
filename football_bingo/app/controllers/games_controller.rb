@@ -15,16 +15,23 @@ class GamesController < ApplicationController
   def stats
     # get the current game
     @games = Game.all
+
     if @games.nil?
       flash[:warning] = "No record."
     end
-    @current_game = @games.first
+
+    @current_game = Game.where(:state => "upcoming").first # todo change to ongoing
+    visteam = Team.where(:nameid => @current_game.visteam).first
+    hometeam = Team.where(:nameid => @current_game.hometeam).first
+    @vis_totals = Total.where(:team => visteam, :game => @current_game).first
+    @home_totals = Total.where(:team => hometeam, :game => @current_game).first
+
+
     if @current_game.nil?
-      redirect_to '/game_stats', notice: 'No game stats !'
+      render 'game_stats'
     else
       render 'game_stats'
     end
-    return @current_game
   end
 
   def send_email

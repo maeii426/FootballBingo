@@ -78,6 +78,22 @@ namespace :import do
 						#UPDATE linescoreconditions to migration of lineprds for timestamps on the scores :)
 					end
 				end
+
+				team_stuff.css('player').each do |py|
+					player_param = {
+						:name => py['name'],
+						:shortname => py['shortname'],
+						:class_attr => py['class']
+					}	
+					player = Player.new(player_param)
+					if player.save
+						puts "player imported!"
+					else
+						puts "player failed!"
+					end
+					player.update_attributes(:game => game)
+					player.update_attributes(:team => team)
+				end
 				
 				team_stuff.css('totals').each do |tot|			# there should only be one per team!
 					total_param = {
@@ -135,7 +151,12 @@ namespace :import do
 						end
 
 					end
+
+
 				end
+
+
+
 			end
 
 			sections.css("scores").each do |s| 					# there should only be one 'scores' section

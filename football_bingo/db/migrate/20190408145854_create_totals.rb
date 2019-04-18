@@ -8,6 +8,10 @@ class CreateTotals < ActiveRecord::Migration[5.2]
       t.integer :totoff_plays
       t.integer :totoff_yards
       t.float :totoff_avg
+
+
+
+      
       t.timestamps
     end
   end
