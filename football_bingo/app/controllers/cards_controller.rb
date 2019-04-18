@@ -3,8 +3,8 @@ class CardsController < ApplicationController
     # Generate cards
     # remove ftns later 
     def index 
-        #render '/home/ec2-user/environment/FootballBingo/football_bingo/app/views/cards/card.html.erb'
-        redirect_to root_path
+        render 'cards/card.html.erb'
+        #redirect_to root_path
         #head :ok
     end
 
