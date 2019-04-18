@@ -1,11 +1,19 @@
 class CreateCardsandChips < ActiveRecord::Migration[5.2]
   def change
     create_table :cards do |t|
-      t.belongs_to :user, index: true
-      #t.index :cardid
-      
+      #t.belongs_to :user, index: true
+      #t.timestamps
+      t.belongs_to :user, index: true 
+      t.text :content
+      t.references :user
       t.timestamps
     end
+    add_index :cards, [:user_id, :created_at]
+  
+  
+  
+  
+  
     
     create_table :conditions do |t|
       t.belongs_to :translation, index: true

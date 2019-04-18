@@ -1,5 +1,13 @@
 class CardsController < ApplicationController
     
+    # Create the new card 
+    def new 
+    
+    
+    end
+    
+    
+    
     def temp_card  #from this function we will send the play to the specific cards
         #this is still hardcoded
         @card = Card.where(cardid: '1').first
