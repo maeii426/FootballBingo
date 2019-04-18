@@ -1,13 +1,30 @@
 class CardsController < ApplicationController
     
-    # Create the new card 
+    # Generate cards
+    # remove ftns later 
+    def index
+    end
+    
+    def show 
+    end
+    
     def new 
+    end
     
+    def edit
+    end
     
+    def create
+    end
+    
+    def update 
+    end
+    
+    def destory 
     end
     
     
-    
+    # remove later 
     def temp_card  #from this function we will send the play to the specific cards
         #this is still hardcoded
         @card = Card.where(cardid: '1').first
