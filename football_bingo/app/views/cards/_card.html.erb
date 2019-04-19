@@ -13,7 +13,7 @@
         <button type="button" class="btn btn-default <%= states[1] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= plays[1] %></button>
         <button type="button" class="btn btn-default <%= states[2] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[2] %></button>
       </div>
-    
+
       <div class="btn-group" role="group" aria-label="Block2" style="width:100%;">
         <button type="button" class="btn btn-default <%= states[3] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= plays[3] %></button>
         <button type="button" class="btn btn-default <%= states[4] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[4] %></button>
@@ -26,8 +26,11 @@
       <button type="button" class="btn btn-default <%= states[8] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= plays[8] %></button>
     </div>
   </div>
-     
-   
+
+  <td>
+    <%= link_to '<button type="button">Do I Win?</button>'.html_safe, check_win_path() %>
+  </td>
+
   </section>
   </aside>
 </div>

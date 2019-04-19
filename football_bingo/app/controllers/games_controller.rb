@@ -6,6 +6,7 @@ class GamesController < ApplicationController
 
   def score_board
     @games = Game.all
+
     if @games.nil?
       flash[:warning] = "No record."
     end

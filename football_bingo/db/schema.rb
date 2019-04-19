@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(version: 2019_04_16_204452) do
     t.string "generated"
     t.string "hometeam"
     t.string "visteam"
+    t.integer "state"
   end
 
   create_table "linescoreconditions", force: :cascade do |t|

@@ -17,7 +17,7 @@ class Game < ActiveRecord::Base
 
 	def is_upcoming?
 		self.state == "upcoming"
-	end	
+	end
 
     has_one :venue
     has_many :linescores

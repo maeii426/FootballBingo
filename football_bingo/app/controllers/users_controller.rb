@@ -85,6 +85,25 @@ class UsersController < ApplicationController
     render 'share'
   end
 
+  def check_win
+    @user = current_user
+    @cards = Card.where(user_id: @user.id)
+    win_card_num = check_states_winner_rule
+
+    if win_card_num > 0
+      @game = Game.first
+      if @game.nil?
+        redirect_to @user, notice: "No Game Ongoing"
+      else
+        @game.update(:whoop_winner=>@user.name)
+        redirect_to @user, notice: "Whoop! You are the winner! Go to check score board!"
+      end
+    else
+      redirect_to @user, notice: "Not yet. Good luck is on your way!"
+    end
+
+
+  end
 
   private
     def set_user

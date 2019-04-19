@@ -1,20 +1,39 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/game.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/game.rb": [
+        1,
+        null,
         1,
         1,
         null,
+        1,
+        7,
         null,
         null,
+        1,
+        0,
         null,
         null,
+        1,
+        0,
         null,
         null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/user.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/user.rb": [
         1,
         null,
         1,
@@ -25,7 +44,7 @@
         null,
         null,
         1,
-        45,
+        44,
         null,
         null,
         1,
@@ -39,7 +58,7 @@
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/sessions_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -63,7 +82,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/application_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -72,32 +91,32 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/application_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/application_helper.rb": [
         1,
         null,
         1,
-        64,
-        64,
+        63,
+        63,
         4,
         null,
-        60,
+        59,
         null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/cards_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/cards_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/chips_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/chips_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/conditions_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/conditions_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/games_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/games_helper.rb": [
         1,
         null,
         1,
@@ -143,10 +162,19 @@
         null,
         null,
         0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/sessions_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/sessions_helper.rb": [
         1,
         null,
         null,
@@ -156,14 +184,14 @@
         null,
         null,
         1,
-        252,
-        184,
+        247,
+        179,
         null,
         null,
         null,
         null,
         1,
-        74,
+        73,
         null,
         null,
         null,
@@ -173,7 +201,7 @@
         null,
         null,
         1,
-        44,
+        43,
         null,
         null,
         null,
@@ -194,11 +222,11 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/static_pages_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/static_pages_helper.rb": [
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/helpers/users_helper.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/helpers/users_helper.rb": [
         1,
         null,
         1,
@@ -218,7 +246,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/users_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -330,7 +358,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/card.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/card.rb": [
         1,
         1,
         null,
@@ -344,19 +372,19 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/mailers/application_mailer.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/cards_chip.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/cards_chip.rb": [
         1,
         null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/cards_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/cards_controller.rb": [
         1,
         null,
         1,
@@ -378,7 +406,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/chip.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/chip.rb": [
         1,
         1,
         null,
@@ -428,30 +456,30 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/chips_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/chips_controller.rb": [
         1,
         null,
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/conditions_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/conditions_controller.rb": [
         1,
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/drive.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/drife.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/fga.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/fga.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/games_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/games_controller.rb": [
         1,
         null,
         1,
@@ -469,16 +497,23 @@
         1,
         null,
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         1,
         0,
         null,
         1,
-        1,
-        0,
         null,
-        1,
-        null,
-        1,
         null,
         null,
         1,
@@ -499,39 +534,42 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/linescore.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/linescore.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/linescorecondition.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/linescorecondition.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/player.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/player.rb": [
         1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/playercondition.rb": [
+        null,
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/score.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/playercondition.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/static_pages_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/score.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/static_pages_controller.rb": [
         1,
         1,
         null,
@@ -540,7 +578,7 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/team.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/team.rb": [
         1,
         1,
         1,
@@ -553,7 +591,7 @@
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/controllers/teams_controller.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/controllers/teams_controller.rb": [
         1,
         1,
         null,
@@ -592,20 +630,9 @@
         null,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/total.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/total.rb": [
         1,
         1,
-        1,
-        1,
-        null
-      ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/totalcondition.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/translation.rb": [
         1,
         1,
         1,
@@ -613,13 +640,27 @@
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/models/venue.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/totalcondition.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/yingwang/606/iter3/FootballBingo/football_bingo/app/mailers/whoop_mailer.rb": [
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/translation.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/models/venue.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/xiaojing/606/FootballBingo_iter3/football_bingo/app/mailers/whoop_mailer.rb": [
         1,
         1,
         null,
@@ -632,7 +673,7 @@
         null
       ]
     },
-    "timestamp": 1555473757
+    "timestamp": 1555641116
   },
   "RSpec": {
     "coverage": {

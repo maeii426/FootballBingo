@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
   get '/score_board' => :score_board, controller: 'games'
   get '/send_email' => :send_email, controller: 'games'
+  get '/check_win' => :check_win, controller: 'users'
   get '/game_stats' => 'games#stats'
   #get '/active_card' => :user_cards, controller: 'cards'
   resources :users
