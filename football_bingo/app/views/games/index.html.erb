@@ -1,4 +1,8 @@
-<% provide(:title, @user.name) %>
+<% provide(:title, "Games") %>
+
+<h2> All Games
+
+<table class="games">
 
 <style>
       table {
@@ -11,21 +15,6 @@
         text-align: center;
       }
 </style>
-
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= @user.name %>
-      </h1>
-      <p>
-        <br/>
-        All active <%= link_to 'bingo cards', games_path%> associated with this user, neatly displayed.
-      </p>
-    </section>
-  </aside>
-
-<table class="games">
 
 <thead>
 <tr>
@@ -41,16 +30,16 @@
 
 <tbody>
 
-<% @mygames.each do |gu| %>
+<% @games.each do |game| %>
 <tr>
-<% game = gu.game %>
+
   <td><%= game.game_name%></td>
   <td><%= game.date%></td>
   <td><%= game.hometeam%></td>
   <td><%= game.visteam%></td>
   <td><%= get_state(game)%></td>
   <td><% if !game.is_finished? %>
-  <%=link_to '<button type="button">Play!</button>'.html_safe, user_game_play_path(current_user, game) %>
+  <%=link_to '<button type="button">Play!</button>'.html_safe, user_game_join_path(current_user, game) %>
   <% end %>
   </td>
   <td><%=link_to "More about #{game.game_name}", game_path(game)%></td> 
@@ -59,4 +48,3 @@
 
 </tbody>
 </table>
-</div>

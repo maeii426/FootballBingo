@@ -8,12 +8,20 @@ Rails.application.routes.draw do
   get    '/login' => 'sessions#new'
   post   '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
-  get '/score_board' => :score_board, controller: 'games'
-  get '/send_email' => :send_email, controller: 'games'
-  get '/check_win' => :check_win, controller: 'users'
-  get '/game_stats' => 'games#stats'
+  get '/score_board' => 'games#score_board'
+  get '/send_email' => 'games#send_email'
+  get '/check_win' => 'users#check_win'
   #get '/active_card' => :user_cards, controller: 'cards'
-  resources :users
+  
+  resources :users do
+    resources :games do
+      get '/play' => 'games#play_game'
+      get '/join' => 'games#join'
+    end
+  end
+
   root 'static_pages#home'
   #root 'users#index'
+  resources :games do
+  end
 end

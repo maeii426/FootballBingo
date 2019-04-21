@@ -53,4 +53,15 @@ def get_stats(tag_input, is_home)
         return Totalcondition.where(:total => @vis_totals, :translation =>trans).first.value
     end
 end
+
+def get_state(game)
+    if game.is_finished?
+        return "Finished" 
+    elsif game.is_ongoing?
+        return "Ongoing"
+    else
+        return "Upcoming"
+    end
+end
+
 end

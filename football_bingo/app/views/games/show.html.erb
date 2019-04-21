@@ -1,21 +1,21 @@
-<% provide(:title, "Game Statistics") %>
+<% provide(:title, @game.game_name) %>
 <h1>Game Statistics</h1>
 
 <table border=0 width=100%>
-	<tr bgcolor=#c0c0c0><td><center>&nbsp;
-	<h3><font face=verdana>Overall Team Statistics</font></h3>
+  <tr bgcolor=#c0c0c0><td><center>&nbsp;
+  <h3><font face=verdana>Overall Team Statistics</font></h3>
 &nbsp;</center></td>
-	</tr>
+  </tr>
 </table>
-<% if !@current_game.nil? %>
+<% if !@game.nil? %>
 
 <center>
 <br>
 <table border=0 cellspacing=0 cellpadding=2>
 <tr bgcolor="#800000">
 <td align=left  bgcolor="#800000"><font face=verdana size=1 color="#ffffff"><b>TEAM STATISTICS&nbsp;</b></td>
-<td align=center  bgcolor="#800000"><font face=verdana size=1 color="#ffffff"><b><%= @current_game.hometeam%>&nbsp;</b></td>
-<td align=center  bgcolor="#800000"><font face=verdana size=1 color="#ffffff"><b><%= @current_game.visteam%>&nbsp;</b></td>
+<td align=center  bgcolor="#800000"><font face=verdana size=1 color="#ffffff"><b><%= @game.hometeam%>&nbsp;</b></td>
+<td align=center  bgcolor="#800000"><font face=verdana size=1 color="#ffffff"><b><%= @game.visteam%>&nbsp;</b></td>
 </tr>
 <tr bgcolor="#ffffff">
 <td align=left><font face=verdana size=1 color="#000000"><b>SCORING</b>&nbsp;</td>
@@ -294,3 +294,7 @@
 </tr> -->
 </table></center>
 <% end %>
+
+<tbody>
+
+
