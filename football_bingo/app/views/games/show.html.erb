@@ -1,5 +1,6 @@
 <% provide(:title, @game.game_name) %>
 <h1>Game Statistics</h1>
+<%= link_to '<button type="button">Return to Profile</button>'.html_safe, user_path(current_user) %> 
 
 <table border=0 width=100%>
   <tr bgcolor=#c0c0c0><td><center>&nbsp;

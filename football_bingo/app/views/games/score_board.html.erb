@@ -20,7 +20,6 @@
   <th>Date</th>
   <th>Instant Winner</th>
   <th>Whoop Winner</th>
-  <th>Play Now?</th>
   <% if admin_user? %>
       <th>Send Email?</th>
   <% end %>
@@ -34,11 +33,24 @@
 
   <td><%= game.game_name%></td>
   <td><%= game.date%></td>
-  <td><%= game.instant_winner%></td>
-  <td><%= game.whoop_winner%></td>
+  
+  <td>
+  <%if instant_winner?(game) %>
+  <%= instant_winner(game).name %>
+  <%end%>
+  </td>
+
+  <td>
+  <%if whoop_winner?(game) %>
+  <%= whoop_winner(game).name %>
+  <%end%>
+  </td>
   <% if admin_user? %>
       <td>
-        <%= link_to '<button type="button">Send</button>'.html_safe, send_email_path(:whoop_winner => game.whoop_winner) %>
+      <%if whoop_winner?(game) %>
+        <%= link_to '<button type="button">Send</button>'.html_safe, send_email_path(:whoop_winner_id => whoop_winner(game).id) %>
+          <%end%>
+
       </td>
   <% end %>
 </tr>

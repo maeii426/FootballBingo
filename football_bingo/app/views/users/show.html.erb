@@ -13,14 +13,14 @@
 </style>
 
 <div class="row">
-  <aside class="col-md-4">
+  <aside class="col-md-8">
     <section class="user_info">
-      <h1>
+      <h3>
         <%= @user.name %>
-      </h1>
+      </h3>
       <p>
         <br/>
-        All active <%= link_to 'bingo cards', games_path%> associated with this user, neatly displayed.
+        You have played <%= played_games(@user).length %> games and won <%= win_games(@user).length %> of them, <%= instant_games(@user).length %> as an instant winner and <%= whoop_games(@user).length%> as a whoop winner. 
       </p>
     </section>
   </aside>
@@ -31,9 +31,8 @@
 <tr>
   <th>Game</th>
   <th>Date</th>
-  <th>Home Team</th>
-  <th>Visiting Team</th>
   <th>Status</th>
+  <th>Results</th>
   <th>Play Now?</th>
   <th>More Info</th>
 </tr>
@@ -41,16 +40,20 @@
 
 <tbody>
 
-<% @mygames.each do |gu| %>
+<% all_games(@user).each do |gu| %>
 <tr>
 <% game = gu.game %>
   <td><%= game.game_name%></td>
   <td><%= game.date%></td>
-  <td><%= game.hometeam%></td>
-  <td><%= game.visteam%></td>
   <td><%= get_state(game)%></td>
-  <td><% if !game.is_finished? %>
+  <td><%= check_winner(game, current_user)%></td>
+  <td><% if game.ongoing? %>
   <%=link_to '<button type="button">Play!</button>'.html_safe, user_game_play_path(current_user, game) %>
+  <% elsif game.upcoming? %> 
+    Wait ..
+  <% else %>
+  <%=link_to '<button type="button">Check play history</button>'.html_safe, user_game_play_path(current_user, game) %>
+
   <% end %>
   </td>
   <td><%=link_to "More about #{game.game_name}", game_path(game)%></td> 

@@ -3,7 +3,12 @@
 <p>
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-     <h3> <%= link_to '<button type="button">Get a new card!</button>'.html_safe, user_game_get_new_card_path(current_user, @current_game) %> </h3>
+  	 <% if @current_game.ongoing? %>
+     <h4> <%= link_to '<button type="button">Get a new card!</button>'.html_safe, user_game_get_new_card_path(current_user, @current_game) %>
+     <%= link_to '<button type="button">Get a whoop card!</button>'.html_safe, user_game_get_whoop_card_path(current_user, @current_game) %>
+     <% end %>  
+     <%= link_to '<button type="button">Return to Profile</button>'.html_safe, user_path(current_user) %> 
+     </h4>
   </div>
  </div> 
 </p>

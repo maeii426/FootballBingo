@@ -38,8 +38,12 @@
   <td><%= game.hometeam%></td>
   <td><%= game.visteam%></td>
   <td><%= get_state(game)%></td>
-  <td><% if !game.is_finished? %>
+  <td><% if game.ongoing? %>
   <%=link_to '<button type="button">Play!</button>'.html_safe, user_game_join_path(current_user, game) %>
+  <% elsif game.upcoming? %> 
+    Wait ..
+  <% else %>
+  <%=link_to '<button type="button">Check play history</button>'.html_safe, user_game_play_path(current_user, game) %>
   <% end %>
   </td>
   <td><%=link_to "More about #{game.game_name}", game_path(game)%></td> 

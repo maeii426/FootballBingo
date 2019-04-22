@@ -10,9 +10,7 @@ class GamesController < ApplicationController
     hometeam = Team.where(:nameid => @game.hometeam).first
     @vis_totals = Total.where(:team => visteam, :game => @game).first
     @home_totals = Total.where(:team => hometeam, :game => @game).first
-
     render 'show'
-
   end
 
   def game_params
@@ -45,12 +43,29 @@ class GamesController < ApplicationController
     end
   end
 
-  def play_game
-      
+  def play_game     
       @cards = Card.where(:user_id => params[:user_id], :game_id => params[:game_id])
       @current_game = Game.where(:id => params[:game_id]).first
-
       render 'play'
+  end
+
+  def get_whoop_card
+      @new_card = Card.new        
+      @new_card.save
+      chip_ids = [3, 1, 5, 1, 2, 3, 4, 3, 1]
+      for i in chip_ids do
+        cc_param = {
+          :card_id => @new_card.id,
+          :chip_id => i
+        }
+        cc = CardChip.new(cc_param)
+        cc.save
+      end
+      @new_card.update_attributes(:game_id => params[:game_id])
+      @new_card.update_attributes(:user_id => params[:user_id])
+
+      flash[:sucess] = "Congrats! You just got a new whoop card!"
+      redirect_to user_game_play_path(params[:user_id], params[:game_id])
   end
 
   def get_new_card
@@ -59,7 +74,6 @@ class GamesController < ApplicationController
 
         # TODO:
         # Change the prob if possible
-
         # Get chips with a certain probability
         chip_ids = []
         chip_ids.push(Chip.where(:game_id => params[:game_id], :level => "higher").order("RANDOM()").limit(1).first.id)
@@ -91,19 +105,26 @@ class GamesController < ApplicationController
   end
 
   def send_email
-
-    @game=Game.find_by(whoop_winner: params[:whoop_winner])
-    if @game.nil?
-      redirect_to '/score_board', notice: 'No game information !'
-    else
-      @user=User.find_by(name: @game.whoop_winner)
-      if @user.nil?
+    @user = User.find_by(id: params[:whoop_winner_id])
+    if @user.nil?
         redirect_to '/score_board', notice: 'No winner account information !'
-      else
+    else
         WhoopMailer.send_email(@user).deliver_now
         redirect_to '/score_board', notice: 'Winners are notified !'
-      end
     end
+
+    # @game=Game.find_by(whoop_winner: params[:whoop_winner])
+    # if @game.nil?
+    #   redirect_to '/score_board', notice: 'No game information !'
+    # else
+    #   @user=User.find_by(name: @game.whoop_winner)
+    #   if @user.nil?
+    #     redirect_to '/score_board', notice: 'No winner account information !'
+    #   else
+    #     WhoopMailer.send_email(@user).deliver_now
+    #     redirect_to '/score_board', notice: 'Winners are notified !'
+    #   end
+    # end
   end
 
 end

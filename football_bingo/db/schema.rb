@@ -78,6 +78,8 @@ ActiveRecord::Schema.define(version: 2019_04_21_033333) do
   end
 
   create_table "game_users", force: :cascade do |t|
+    t.integer "state", default: 0
+    t.integer "whoops", default: 0
     t.integer "game_id"
     t.integer "user_id"
     t.index ["game_id"], name: "index_game_users_on_game_id"
@@ -87,15 +89,13 @@ ActiveRecord::Schema.define(version: 2019_04_21_033333) do
   create_table "games", force: :cascade do |t|
     t.string "game_name"
     t.datetime "date"
-    t.string "instant_winner"
-    t.string "whoop_winner"
     t.integer "notify_by_email"
     t.string "source"
     t.string "version"
     t.string "generated"
     t.string "hometeam"
     t.string "visteam"
-    t.integer "state"
+    t.integer "state", default: 0
   end
 
   create_table "linescoreconditions", force: :cascade do |t|

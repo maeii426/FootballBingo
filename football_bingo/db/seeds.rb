@@ -6,23 +6,55 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-admin_users = [{:name => 'admin', :email => 'admin@gmail.com', :password => '123456', :role => :admin},]
-admin_users.each do |admin_user|
-    User.create!(admin_user)
-end
+admin_user_param = {:name => 'admin', :email => 'admin@gmail.com', :password => '123456', :role => :admin}
+admin_user = User.create!(admin_user_param)
 
-general_users = [{:name => 'Frank Flanigan', :email => 'whoop606super@gmail.com', :password => '123123', :role => :user},]
+general_users = [
+  {
+    :name => 'Frank Flanigan', 
+    :email => 'whoop606super@gmail.com', 
+    :password => '123123', 
+    :role => :user
+  },
+  {
+    :name => 'Jeffrey Hoberman',
+    :email => 'instant@gmail.com',
+    :password => '123456',
+    :role => :user
+  },
+]
+
 general_users.each do |general_user|
-    User.create!(general_users)
+    User.create!(general_user)
 end
 
-games = [{:game_name => 'TAMU10', :date => '24-Nov-2018', :instant_winner => 'Jeffrey Hoberman', :whoop_winner => 'Frank Flanigan',:notify_by_email => 0},
-    	 {:game_name => 'TAMU12', :date => '10-Nov-2018', :notify_by_email => 0},
+games = [
+    {
+      :game_name => 'TAMU vs GEORGIA', 
+      :date => '24-Nov-2018', 
+      :hometeam => 'TAMU',
+      :visteam => 'GEORGIA',
+      :notify_by_email => 0
+    },
+    	 
+    {
+      :game_name => 'TAMU vs CLEMSON', 
+      :date => '10-Nov-2018', 
+      :hometeam => 'TAMU',
+      :visteam => 'CLEMSON',
+      :notify_by_email => 0
+    },
 	]
 
 games.each do |game|
-  Game.create!(game)
+  g = Game.create!(game)
+  g.update(state: 'finished')
 end
+
+GameUser.create!({:user_id => 1, :game_id => 1, :state => 'whoop_winner'})
+GameUser.create!({:user_id => 1, :game_id => 2, :state => 'instant_winner'})
+GameUser.create!({:user_id => 2, :game_id => 2, :state => 'whoop_winner'})
+GameUser.create!({:user_id => 3, :game_id => 1, :state => 'instant_winner'})
 
 # translations = [{:tag => 'penalties_yds', :words => 'Number of penalty yards'},
 #     	 {:tag => 'firstdowns_no', :words => 'Total first downs'},
@@ -43,19 +75,20 @@ end
 #   	 ]
 
 @trans = Translation.create!({:tag => 'penalties_yds', :words => 'Number of penalty yards'})
-@trans.chips.create(:argument => '>', :value => 100)
+@trans.chips.create(:argument => '>', :value => 100, :probablity => 0.7)
 
 @trans = Translation.create!({:tag => 'firstdowns_no', :words => 'Total first downs'})
-@trans.chips.create(:argument => '>', :value => 30)
+@trans.chips.create(:argument => '>', :value => 30, :probablity => 0.5)
 
 @trans = Translation.create!({:tag => 'totals_totoff_yards', :words => 'Total offensive yards gained'})
-@trans.chips.create!(:argument => '>', :value => 500)
+@trans.chips.create!(:argument => '>', :value => 500, :probablity => 0.2)
 
 @trans = Translation.create!({:tag => 'fg_made', :words => 'Number of field goals made'})
-@trans.chips.create!(:argument => '>', :value => 2)
+@trans.chips.create!(:argument => '>', :value => 2, :probablity => 0.3)
 
-@trans = Translation.create!({:tag => 'empty', :words => 'Some condition here'})
-@trans.chips.create!(:argument => '>', :value => 0)
+@trans = Translation.create!({:tag => 'firstdowns_rush', :words => 'Total rushing first downs'})
+@trans.chips.create!(:argument => '>', :value => 10, :probablity => 1.0)
+
 
 translations = [
 {:tag => 'firstdowns_rush', :words => 'Total rushing first downs'},
@@ -184,8 +217,17 @@ end
 #   Chip.create!(chip)
 # end
 
-cards = [{:user_id => '1'},
-    ]
+cards = [
+  {
+    :user_id => admin_user.id,
+    :game_id => 1
+  },
+  {
+    :user_id => admin_user.id,
+    :game_id => 2
+  },
+]
+
 
 cards.each do|card|
     @card = Card.create!(card)
@@ -197,17 +239,30 @@ end
     # chip.card_ids = chip.card_ids < card.id
     # chip.save
 
-card_chips = [{:card_id => '1', :chip_id => '1'},
-  {:card_id => '1', :chip_id => '2'},
-  {:card_id => '1', :chip_id => '3'},
-  {:card_id => '1', :chip_id => '4'},
-  {:card_id => '1', :chip_id => '5'},
-  {:card_id => '1', :chip_id => '5'},
-  {:card_id => '1', :chip_id => '5'},
-  {:card_id => '1', :chip_id => '5'},
-  {:card_id => '1', :chip_id => '5'},
-    ]
+# card_chips = [{:card_id => '1', :chip_id => '1'},
+#   {:card_id => '1', :chip_id => '2'},
+#   {:card_id => '1', :chip_id => '3'},
+#   {:card_id => '1', :chip_id => '4'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#   {:card_id => '1', :chip_id => '5'},
+#     ]
 
-card_chips.each do|cc|
-    CardChip.create!(cc)
+cards_ids = [1, 2]
+chips_ids = [5, 2, 5, 1, 1, 3, 4, 3, 1]
+for j in cards_ids do
+  for i in chips_ids do
+    cc_param = {
+      :card_id => j, 
+      :chip_id => i
+    }
+    cc = CardChip.create!(cc_param)
+  end
 end
+
+# card_chips.each do|cc|
+#     CardChip.create!(cc)
+# end
+

@@ -1,22 +1,10 @@
 class Game < ActiveRecord::Base
 
-	enum state: [:upcoming, :ongoing, :finished]
-	after_initialize :set_default_state, :if => :new_record?
+	enum state: {upcoming: 0, ongoing: 1, finished: 2 }
+	# after_initialize :set_default_state, :if => :new_record?
 
 	def set_default_state
 		self.state ||= :upcoming
-	end
-
-	def is_finished?
-		self.state == "finished"
-	end
-
-	def is_ongoing?
-		self.state == "ongoing"
-	end
-
-	def is_upcoming?
-		self.state == "upcoming"
 	end
 
     has_one :venue

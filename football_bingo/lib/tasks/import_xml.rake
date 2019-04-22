@@ -24,6 +24,7 @@ namespace :import do
 			else
 				puts "game failed!"
 			end
+  			game.update(state: 'ongoing')
 
 			sections.css('venue').each do |v|		# there should only be one venue
 

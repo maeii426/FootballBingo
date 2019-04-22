@@ -17,7 +17,6 @@ class UsersController < ApplicationController
 
     @user = User.find(params[:id])
     @cards = Card.where(user_id: @user.id)
-    @mygames = GameUser.where(user: @user)
     # show_user_cards
     render 'show'
   end
@@ -88,22 +87,26 @@ class UsersController < ApplicationController
 
   def check_win
     @user = current_user
-    @cards = Card.where(user_id: @user.id)
-    win_card_num = check_states_winner_rule
-
-    if win_card_num > 0
-      @game = Game.first
-      if @game.nil?
-        redirect_to @user, notice: "No Game Ongoing"
-      else
-        @game.update(:whoop_winner=>@user.name)
-        redirect_to @user, notice: "Whoop! You are the winner! Go to check score board!"
-      end
+    @gus = playing_games(@user).first
+    if @gus.nil?
+      flash[:warning] = "No Game Ongoing"
+      redirect_to @user
     else
-      redirect_to @user, notice: "Not yet. Good luck is on your way!"
+        game = @gus.game
+        @cards = Card.where(:user_id => @user.id, :game_id => game.id)
+        win_card_num = check_states_winner_rule
+        if win_card_num > 0
+          gu = GameUser.where(:user_id => @user.id, :game => game.id).first
+          gu.update(:state => "whoop_winner")
+          gu.update(:whoops => win_card_num)
+          # @game.update(:whoop_winner => @user.name)
+          flash[:success] = "Whoop! You are the winner! Go to check score board!"
+          redirect_to @user
+        else
+          flash[:warning] = "Not yet. Good luck is on your way!"
+          redirect_to @user
+        end
     end
-
-
   end
 
   private

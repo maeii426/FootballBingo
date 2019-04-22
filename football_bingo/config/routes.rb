@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       get '/play' => 'games#play_game'
       get '/join' => 'games#join'
       get '/get_new_card' => 'games#get_new_card'
+      get '/get_whoop_card' => 'games#get_whoop_card'
     end
   end
 

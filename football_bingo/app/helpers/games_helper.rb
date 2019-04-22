@@ -55,12 +55,66 @@ def get_stats(tag_input, is_home)
 end
 
 def get_state(game)
-    if game.is_finished?
+    if game.finished?
         return "Finished" 
-    elsif game.is_ongoing?
+    elsif game.ongoing?
         return "Ongoing"
     else
         return "Upcoming"
+    end
+end
+
+def instant_winner(game)
+    if !game.upcoming?
+        gu = GameUser.where(:game => game, :state => "instant_winner").first
+        if(!gu.nil?)
+            return gu.user
+        end  
+    end
+end
+
+def instant_winner?(game)
+    if !game.upcoming?
+        gu = GameUser.where(:game => game, :state => "instant_winner").first
+        if(!gu.nil?)
+            return true
+        else
+            return false
+        end 
+    end
+end
+
+def whoop_winner?(game)
+    if !game.upcoming?
+        gu = GameUser.where(:game => game, :state => "whoop_winner").first
+        if(!gu.nil?)
+            return true
+        else
+            return false
+        end
+    end
+end
+
+def whoop_winner(game)
+    if !game.upcoming?
+        gu = GameUser.where(:game => game, :state => "whoop_winner").first
+        return gu.user
+    end
+end
+
+def check_winner(game, user)
+    if whoop_winner?(game) && user == whoop_winner(game)
+        return "Whoop Winner!"
+    elsif instant_winner?(game) && user == instant_winner(game)
+        return "Instant Winner!"
+    else
+        if game.finished?
+            return "Good Luck Next Time.."
+        elsif game.ongoing?
+            return "Try!"
+        else
+            return ""
+        end
     end
 end
 
