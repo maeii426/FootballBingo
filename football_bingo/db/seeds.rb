@@ -67,24 +67,24 @@ cards = [{:user_id => '1'},
 cards.each do|card|
     @card = Card.create!(card)
     #@card.chip_ids = card.chip_ids < chip.id
-    @card.chip_ids = [1,2,3,4,5,5,5,5,5]
+    # @card.chip_ids = [1,2,3,4,5,5,5,5,5]
     @card.save
 end
 
     # chip.card_ids = chip.card_ids < card.id
     # chip.save
 
-# card_chips = [{:card_id => '1', :chip_id => '1'},
-#   {:card_id => '1', :chip_id => '2'},
-#   {:card_id => '1', :chip_id => '3'},
-#   {:card_id => '1', :chip_id => '4'},
-#   {:card_id => '1', :chip_id => '5'},
-#   {:card_id => '1', :chip_id => '5'},
-#   {:card_id => '1', :chip_id => '5'},
-#   {:card_id => '1', :chip_id => '5'},
-#   {:card_id => '1', :chip_id => '5'},
-#     ]
+card_chips = [{:card_id => '1', :chip_id => '1'},
+  {:card_id => '1', :chip_id => '2'},
+  {:card_id => '1', :chip_id => '3'},
+  {:card_id => '1', :chip_id => '4'},
+  {:card_id => '1', :chip_id => '5'},
+  {:card_id => '1', :chip_id => '5'},
+  {:card_id => '1', :chip_id => '5'},
+  {:card_id => '1', :chip_id => '5'},
+  {:card_id => '1', :chip_id => '5'},
+    ]
 
-# card_chips.each do|cc|
-#     Cards_Chips.create!(cc)
-# end
+card_chips.each do|cc|
+    CardsChip.create!(cc)
+end

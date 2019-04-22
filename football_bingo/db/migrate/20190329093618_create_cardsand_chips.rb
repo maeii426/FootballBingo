@@ -3,7 +3,7 @@ class CreateCardsandChips < ActiveRecord::Migration[5.2]
     create_table :cards do |t|
       t.belongs_to :user, index: true
       #t.index :cardid
-      
+      t.belongs_to :game, index: true
       t.timestamps
     end
  

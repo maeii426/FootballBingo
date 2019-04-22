@@ -1,4 +1,4 @@
 class CardsChip < ActiveRecord::Base
-    # belongs_to :card
-    # belongs_to :chip
+    belongs_to :card
+    belongs_to :chip
 end

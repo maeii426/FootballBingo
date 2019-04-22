@@ -34,7 +34,6 @@ class GamesController < ApplicationController
           :game_id => params[:game_id]
         }
     @gu = GamesUser.where(gu_param).first
-
     if @gu.nil?
         flash[:success] = "You play this game for the first time!"
         games_user = GamesUser.new(gu_param)
@@ -47,31 +46,36 @@ class GamesController < ApplicationController
   end
 
   def play_game
+      
+      @cards = Card.where(:user_id => params[:user_id], :game_id => params[:game_id])
+      @current_game = Game.where(:id => params[:game_id]).first
+
       render 'play'
-
   end
-  
-  # def stats
-  #   # get the current game
-  #   @games = Game.all
 
-  #   if @games.nil?
-  #     flash[:warning] = "No record."
-  #   end
+  def get_new_card
+        @new_card = Card.new        
+        @new_card.save
 
-  #   @current_game = Game.where(:state => "upcoming").first # todo change to ongoing
-  #   visteam = Team.where(:nameid => @current_game.visteam).first
-  #   hometeam = Team.where(:nameid => @current_game.hometeam).first
-  #   @vis_totals = Total.where(:team => visteam, :game => @current_game).first
-  #   @home_totals = Total.where(:team => hometeam, :game => @current_game).first
+        # TODO:
+        # Generate chip_ids randomly
 
+        chip_ids = [5,5,5,1,2,3,4,5,5]
+        for i in chip_ids do
+          cc_param = {
+            :card_id => @new_card.id,
+            :chip_id => i
+          }
+          cc = CardsChip.new(cc_param)
+          cc.save
+        end
 
-  #   if @current_game.nil?
-  #     render 'game_stats'
-  #   else
-  #     render 'game_stats'
-  #   end
-  # end
+        @new_card.update_attributes(:game_id => params[:game_id])
+        @new_card.update_attributes(:user_id => params[:user_id])
+
+        flash[:sucess] = "Congrats! You just got a new card!"
+        redirect_to user_game_play_path(params[:user_id], params[:game_id])
+  end
 
   def send_email
 

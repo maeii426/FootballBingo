@@ -12,11 +12,12 @@ Rails.application.routes.draw do
   get '/send_email' => 'games#send_email'
   get '/check_win' => 'users#check_win'
   #get '/active_card' => :user_cards, controller: 'cards'
-  
+
   resources :users do
     resources :games do
       get '/play' => 'games#play_game'
       get '/join' => 'games#join'
+      get '/get_new_card' => 'games#get_new_card'
     end
   end
 

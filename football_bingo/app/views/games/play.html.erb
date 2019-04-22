@@ -3,7 +3,12 @@
 <p>
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-     <h3> to do!!! </h3>
+     <h3> <%= link_to '<button type="button">Get a new card!</button>'.html_safe, user_game_get_new_card_path(current_user, @current_game) %> </h3>
   </div>
  </div> 
 </p>
+
+<% @cards.each do |card| %>
+<% show_card(card) %>
+<%= render 'cards/card'%>
+<% end %>

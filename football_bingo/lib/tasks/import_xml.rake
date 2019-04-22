@@ -6,15 +6,16 @@ namespace :import do
 		doc = Nokogiri::XML(open("./XML/tam.xml"))
 		doc.css('fbgame').each do |node|
 			sections = node.children
-
+			hometeam = sections.css('venue').first['homeid']
+			visteam = sections.css('venue').first['visid']
 			game_param = {
 				:date => Date.strptime(sections.css('venue').first['date'], '%m/%d/%Y'),
 				:source => node['source'],
 				:version => node['version'],
 				:generated => node['generated'],
-				:hometeam => sections.css('venue').first['homeid'],
-				:visteam => sections.css('venue').first['visid'],
-				# :gamename => :hometeam_id + " vs " + :visteam_id
+				:hometeam => hometeam,
+				:visteam => visteam,
+				:game_name => hometeam + " vs " + visteam
 			}
 
 			game = Game.new(game_param)

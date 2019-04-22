@@ -1,8 +1,8 @@
 class Chip < ActiveRecord::Base
     belongs_to :translation
     # has_many :card_chips
-    # has_many :cards, through: :card_chips
-    has_and_belongs_to_many :cards
+    has_many :cards, through: :cards_chips
+    # has_and_belongs_to_many :cards
     
 
 

@@ -64,4 +64,17 @@ def get_state(game)
     end
 end
 
+def show_card(card)
+    @card = card
+    ccs = CardsChip.where(:card => card)
+    print ccs.length
+    @chips_in_words = Array.new
+    @chip_states = Array.new
+    ccs.each do |cc|
+      words, state = Chip.find(cc.chip_id).translate 
+      @chips_in_words.push(words)
+      @chip_states.push(state)
+    end
+end
+
 end

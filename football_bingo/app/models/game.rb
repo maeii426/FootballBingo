@@ -27,4 +27,5 @@ class Game < ActiveRecord::Base
     has_many :fgas
     has_many :drives
     has_many :users, through: :games_users
+    has_many :cards
 end
