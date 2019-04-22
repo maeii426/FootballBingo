@@ -58,9 +58,22 @@ class GamesController < ApplicationController
         @new_card.save
 
         # TODO:
-        # Generate chip_ids randomly
+        # Change the prob if possible
 
-        chip_ids = [5,5,5,1,2,3,4,5,5]
+        # Get chips with a certain probability
+        chip_ids = []
+        chip_ids.push(Chip.where(:game_id => params[:game_id], :level => "higher").order("RANDOM()").limit(1).first.id)
+        chip_ids.push(Chip.where(:game_id => params[:game_id], :level => "high").order("RANDOM()").limit(1).first.id)
+        medium_chips = Chip.where(:game_id => params[:game_id], :level => "medium").order("RANDOM()").limit(5)
+        for i in medium_chips do
+          chip_ids.push(i.id)
+        end
+        chip_ids.push(Chip.where(:game_id => params[:game_id], :level => "lower").order("RANDOM()").limit(1).first.id)
+        chip_ids.push(Chip.where(:game_id => params[:game_id], :level => "low").order("RANDOM()").limit(1).first.id)
+
+        chip_ids = chip_ids.shuffle
+        # chip_ids = [5,5,5,1,2,3,4,5,5]
+
         for i in chip_ids do
           cc_param = {
             :card_id => @new_card.id,

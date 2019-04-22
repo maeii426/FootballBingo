@@ -69,11 +69,14 @@ def show_card(card)
     ccs = CardChip.where(:card => card)
     # print ccs.length
     @chips_in_words = Array.new
+    @chip_probs = Array.new
     @chip_states = Array.new
     ccs.each do |cc|
       words, state = Chip.find(cc.chip_id).translate 
+      prob = Chip.find(cc.chip_id).prob
       @chips_in_words.push(words)
       @chip_states.push(state)
+      @chip_probs.push(prob)
     end
 end
 

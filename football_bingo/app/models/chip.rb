@@ -8,6 +8,10 @@ class Chip < ActiveRecord::Base
 
     enum level: [:high, :higher, :low, :lower, :medium]
 
+    def prob
+        return self.probablity * 100
+    end
+
     def set_level
         if self.probablity > 0.6
             if self.probablity >0.8
