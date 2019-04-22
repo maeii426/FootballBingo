@@ -1,10 +1,30 @@
 class Chip < ActiveRecord::Base
     belongs_to :translation
+    belongs_to :game
     # has_many :card_chips
-    has_many :cards, through: :cards_chips
+    has_many :cards, through: :card_chips
+    has_many :card_chips
     # has_and_belongs_to_many :cards
-    
 
+    enum level: [:high, :higher, :low, :lower, :medium]
+
+    def set_level
+        if self.probablity > 0.6
+            if self.probablity >0.8
+                self.level ||= :higher
+            else
+                self.level ||= :high
+            end
+        else
+            if self.probablity < 0.2
+                self.level ||= :lower
+            elsif self.probablity <= 0.4
+                self.level ||= :low
+            else
+                self.level ||= :medium
+            end
+        end
+    end
 
     def translate
         translation = Translation.find(translation_id)

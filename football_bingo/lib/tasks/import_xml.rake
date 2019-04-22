@@ -128,6 +128,7 @@ namespace :import do
 							t_attrs.each do |atr_name, node_attr|
 								# col_name = 'firstdowns_no', 'firstdowns_rush'...
 								col_name = tag + '_' + atr_name
+								# current_value = t[atr_name].to_i
 								totalcon = Totalcondition.new({:value => t[atr_name].to_i})
 								if totalcon.save
 									puts col_name+" imported!"
@@ -144,6 +145,16 @@ namespace :import do
 									else
 										puts col_name + " translation not saved! "
 									end
+								end
+
+								# Generate some chips with some prob based on the current states
+								probs = [0.85, 0.65, 0.45, 0.25, 0.05]
+								$t = 0
+								for i in probs do
+									$t += 2
+									chip = trans.chips.create!(:argument => '>', :value => (t[atr_name].to_i+$t), :probablity => i)	
+									chip.set_level
+									chip.update_attributes(:game => game)
 								end
 
 								totalcon.update_attributes(:total => total)

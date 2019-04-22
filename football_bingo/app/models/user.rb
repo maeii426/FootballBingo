@@ -12,7 +12,8 @@ class User < ActiveRecord::Base
 	end
 
     has_many :cards
-	has_many :games, through: :games_users
+    has_many :game_users
+	has_many :games, through: :game_users
     before_save { self.email = email.downcase }
     validates :name,  presence: true, length: { maximum: 50 }
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

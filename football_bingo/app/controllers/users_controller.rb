@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
     @user = User.find(params[:id])
     @cards = Card.where(user_id: @user.id)
-    @mygames = GamesUser.where(user: @user)
+    @mygames = GameUser.where(user: @user)
     # show_user_cards
     render 'show'
   end

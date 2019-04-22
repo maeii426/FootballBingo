@@ -66,8 +66,8 @@ end
 
 def show_card(card)
     @card = card
-    ccs = CardsChip.where(:card => card)
-    print ccs.length
+    ccs = CardChip.where(:card => card)
+    # print ccs.length
     @chips_in_words = Array.new
     @chip_states = Array.new
     ccs.each do |cc|

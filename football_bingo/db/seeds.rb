@@ -209,5 +209,5 @@ card_chips = [{:card_id => '1', :chip_id => '1'},
     ]
 
 card_chips.each do|cc|
-    CardsChip.create!(cc)
+    CardChip.create!(cc)
 end

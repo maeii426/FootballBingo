@@ -12,6 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2019_04_21_033333) do
 
+  create_table "card_chips", force: :cascade do |t|
+    t.integer "card_id"
+    t.integer "chip_id"
+    t.index ["card_id"], name: "index_card_chips_on_card_id"
+    t.index ["chip_id"], name: "index_card_chips_on_chip_id"
+  end
+
   create_table "cards", force: :cascade do |t|
     t.integer "user_id"
     t.integer "game_id"
@@ -21,19 +28,16 @@ ActiveRecord::Schema.define(version: 2019_04_21_033333) do
     t.index ["user_id"], name: "index_cards_on_user_id"
   end
 
-  create_table "cards_chips", id: false, force: :cascade do |t|
-    t.integer "card_id"
-    t.integer "chip_id"
-    t.index ["card_id"], name: "index_cards_chips_on_card_id"
-    t.index ["chip_id"], name: "index_cards_chips_on_chip_id"
-  end
-
   create_table "chips", force: :cascade do |t|
+    t.integer "game_id"
     t.integer "translation_id"
     t.string "argument"
     t.float "value"
+    t.float "probablity"
+    t.integer "level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_chips_on_game_id"
     t.index ["translation_id"], name: "index_chips_on_translation_id"
   end
 
@@ -73,6 +77,13 @@ ActiveRecord::Schema.define(version: 2019_04_21_033333) do
     t.index ["team_id"], name: "index_fgas_on_team_id"
   end
 
+  create_table "game_users", force: :cascade do |t|
+    t.integer "game_id"
+    t.integer "user_id"
+    t.index ["game_id"], name: "index_game_users_on_game_id"
+    t.index ["user_id"], name: "index_game_users_on_user_id"
+  end
+
   create_table "games", force: :cascade do |t|
     t.string "game_name"
     t.datetime "date"
@@ -85,13 +96,6 @@ ActiveRecord::Schema.define(version: 2019_04_21_033333) do
     t.string "hometeam"
     t.string "visteam"
     t.integer "state"
-  end
-
-  create_table "games_users", id: false, force: :cascade do |t|
-    t.integer "game_id"
-    t.integer "user_id"
-    t.index ["game_id"], name: "index_games_users_on_game_id"
-    t.index ["user_id"], name: "index_games_users_on_user_id"
   end
 
   create_table "linescoreconditions", force: :cascade do |t|

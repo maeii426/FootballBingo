@@ -33,10 +33,10 @@ class GamesController < ApplicationController
           :user_id => params[:user_id],
           :game_id => params[:game_id]
         }
-    @gu = GamesUser.where(gu_param).first
+    @gu = GameUser.where(gu_param).first
     if @gu.nil?
         flash[:success] = "You play this game for the first time!"
-        games_user = GamesUser.new(gu_param)
+        games_user = GameUser.new(gu_param)
         games_user.save
         redirect_to user_game_play_path(params[:user_id], params[:game_id])
     else      
@@ -66,7 +66,7 @@ class GamesController < ApplicationController
             :card_id => @new_card.id,
             :chip_id => i
           }
-          cc = CardsChip.new(cc_param)
+          cc = CardChip.new(cc_param)
           cc.save
         end
 

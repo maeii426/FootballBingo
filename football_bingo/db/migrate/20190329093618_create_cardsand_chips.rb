@@ -8,15 +8,17 @@ class CreateCardsandChips < ActiveRecord::Migration[5.2]
     end
  
     create_table :chips do |t|
+      t.belongs_to :game, index: true
       t.belongs_to :translation
       #t.index :chipid
       t.string :argument
       t.float :value
-      
+      t.float :probablity
+      t.integer :level
       t.timestamps
     end
     
-    create_table :cards_chips, id: false do |t|
+    create_table :card_chips do |t|
       t.belongs_to :card, index: true
       t.belongs_to :chip, index: true
     end
