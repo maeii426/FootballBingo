@@ -1,32 +1,31 @@
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        -- Card <%=@card.id%> --
-        <br/>
-        <br>
-      </h1>
-<div id-"card_container" style="width:100%;height;50%;">
- <div class="btn-group" role="group" aria-label="Block1" style="width:100%;font-size:12px">
-    <button type="button" class="btn btn-default <%= @chip_states[0] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[0] %>  <%= @chip_probs[0]%>%</button>
-    <button type="button" class="btn btn-default <%= @chip_states[1] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[1] %>  <%= @chip_probs[1]%>%</button>
-    <button type="button" class="btn btn-default <%= @chip_states[2] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= @chips_in_words[2] %>  <%= @chip_probs[2]%>%</button>
-    </div>
 
-    <div class="btn-group" role="group" aria-label="Block2" style="width:100%;">
-    <button type="button" class="btn btn-default <%= @chip_states[3] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[3] %>  <%= @chip_probs[3]%>%</button>
-    <button type="button" class="btn btn-default <%= @chip_states[4] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= @chips_in_words[4] %>  <%= @chip_probs[4]%>%</button>
-    <button type="button" class="btn btn-default <%= @chip_states[5] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= @chips_in_words[5] %>  <%= @chip_probs[5]%>%</button>
-    </div>
+        <div>
+          <h1>
+            <br/>
+            <br/>
+          
+          </h1>
+        </div>
+        <div id="card_container">
+          <div class="btn-group" role="group" aria-label="Block1" style="width:100%;font-size:12px">
+            <button type="button" class="btn btn-default noHover <%= @chip_states[0] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[0] %>  <%= @chip_probs[0]%>%</button>
+            <button type="button" class="btn btn-default noHover <%= @chip_states[1] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[1] %>  <%= @chip_probs[1]%>%</button>
+            <button type="button" class="btn btn-default noHover <%= @chip_states[2] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[2] %>  <%= @chip_probs[2]%>%</button>
+         
+          </div>
+      
+          <div class="btn-group" role="group" aria-label="Block2" style="width:100%;">
+            <button type="button" class="btn btn-default noHover <%= @chip_states[3] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[3] %> <%= @chip_probs[3]%>%</button>
+            <button type="button" class="btn btn-default noHover <%= @chip_states[4] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[4] %>  <%= @chip_probs[4]%>%</button>
+            <button type="button" class="btn btn-default noHover <%= @chip_states[5] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[5] %>  <%= @chip_probs[5]%>%</button>
+          </div>
 
-    <div class="btn-group" role="group" aria-label="Block3" style="width:100%;">
-    <button type="button" class="btn btn-default <%= @chip_states[6] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= @chips_in_words[6] %>  <%= @chip_probs[6]%>%</button>
-    <button type="button" class="btn btn-default <%= @chip_states[7] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= @chips_in_words[7] %>  <%= @chip_probs[7]%>%</button>
-    <button type="button" class="btn btn-default <%= @chip_states[8] ? "bingotrue" : "bingofalse" %> " id="cardstyle"><%= @chips_in_words[8] %>  <%= @chip_probs[8]%>%</button> 
+          <div class="btn-group" role="group" aria-label="Block3" style="width:100%;">
+            <button type="button" class="btn btn-default noHover <%= @chip_states[6] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[6] %>  <%= @chip_probs[6]%>%</button>
+            <button type="button" class="btn btn-default noHover <%= @chip_states[7] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[7] %>  <%= @chip_probs[7]%>%</button>
+            <button type="button" class="btn btn-default noHover <%= @chip_states[8] ? "bingotrue" : "bingofalse" %>" id="cardstyle"><%= @chips_in_words[8] %>  <%= @chip_probs[8]%>%</button>
+          </div>
+        
+        </div>
 
-    </div>
-  </div>
-
-  </section>
-  </aside>
- </div> 
+ 

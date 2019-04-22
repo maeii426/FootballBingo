@@ -2,23 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#cardstyle {
-    //background-color: #fff5e6;
-    border: 1px solid #800000;
-    color: #800000; 
+
+/* chip and  styles*/
+
+#card_container{
+    width:90%;
+    height:50%;
+    margin-left:5%;
+}
+
+
+#cardstyle{
+    // background-color: #fff5e6;
+    border: 1px solid #500000;
+    color: #500000; 
     width:33%;
-    height:100px;
+    height:110px;
     white-space: normal;
     word-wrap: break-word;
 }
 
-
-// #cardstyle:visited {
-//     background-color: #ccddff;
-//     cursor: pointer;
-// }
-
 #cardstyle:hover {
-    background-color: #ccddff;
-    cursor: pointer;
+     background-color: #ccddff;
+}
+
+/* bingo card */
+.bingotrue {
+    background-color: #BA8888 !important;
+  }
+  .bingofalse {
+    background-color: none !important;
+  }
+  
+  .noHover{
+    pointer-events: none;
 }

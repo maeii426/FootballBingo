@@ -1,43 +1,47 @@
-<header class="navbar navbar-fixed-top navbar-inverse" style="background-color: #800000;" >
-  <div class="container" style="background-color: #800000;">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to 'WHOOP!', current_user, class: "navbar-brand" %>
-    </div>
 
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   root_path  %></li>
-        <li><%= link_to "Help",   help_path  %></li>
-        <% if logged_in? %>
-          <li class="dropdown" id="accounts-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <% if admin_user? %>
-              <li><%= link_to "Admin", rails_admin.dashboard_path %></li>
+
+
+<header class="navbar navbar-fixed-top navbar-inverse" style="background-color: #ffffff; border-style: none;" >
+  <div class="container">
+      <div class="row">
+        <div class="col-md-3" > </div>
+        <div class="col-md-6" style="background-color: #500000;"> 
+          <div class="navbar-header">     
+            <%= link_to image_tag('logo.png'), current_user, class: "navbar-brand",style:"height:80%;" %>
+          </div>
+
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Home",   root_path  %></li>
+              <li><%= link_to "Help",   help_path  %></li>
+              <% if logged_in? %>
+                <li class="dropdown" id="accounts-dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Account <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <% if admin_user? %>
+                    <li><%= link_to "Admin", rails_admin.dashboard_path %></li>
+                    <% end %>
+                    <li><%= link_to "Profile", current_user %></li>
+                    <%#<li><%= link_to "Bingo Card", active_card_path  %><%#</li>%>
+                    <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+                    <li><%= link_to "Games", games_path %></li>
+                    <li><%= link_to "Score Board", score_board_path %></li>
+                    <li><%= link_to "Share", share_path %></li>
+                    <li class="divider"></li>
+                    <li>
+                      <%= link_to "Log out", logout_path, method: :delete %>
+                    </li>
+                  </ul>
+                </li>
+              <% else %>
+                <li><%= link_to "Log in", login_path %></li>
               <% end %>
-              <li><%= link_to "Profile", current_user %></li>
-              <%#<li><%= link_to "Bingo Card", active_card_path  %><%#</li>%>
-              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-              <li><%= link_to "Games", games_path %></li>
-	            <li><%= link_to "Score Board", score_board_path %></li>
-              <li><%= link_to "Share", share_path %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: :delete %>
-              </li>
             </ul>
-          </li>
-        <% else %>
-          <li><%= link_to "Log in", login_path %></li>
-        <% end %>
-      </ul>
-    </nav>
+          </nav>
+        </div>
+        <div class="col-md-3"> </div>
+      </div>
   </div>
 </header>
