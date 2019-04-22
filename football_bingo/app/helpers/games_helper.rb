@@ -118,6 +118,14 @@ def check_winner(game, user)
     end
 end
 
+def check_num_whoop_cards(game, user)
+    if whoop_winner?(game) && user == whoop_winner(game)
+        return GameUser.where(:game => game, :state => "whoop_winner").first.whoops
+    else
+        return 0
+    end
+end
+
 def show_card(card)
     @card = card
     ccs = CardChip.where(:card => card)

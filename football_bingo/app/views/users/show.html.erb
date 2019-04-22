@@ -32,7 +32,9 @@
   <th>Game</th>
   <th>Date</th>
   <th>Status</th>
+  <th>#Gamers</th>
   <th>Results</th>
+  <th>#WhoopCards</th>
   <th>Play Now?</th>
   <th>More Info</th>
 </tr>
@@ -44,9 +46,11 @@
 <tr>
 <% game = gu.game %>
   <td><%= game.game_name%></td>
-  <td><%= game.date%></td>
+  <td><%= game.date.to_date%></td>
   <td><%= get_state(game)%></td>
+  <td><%= game.game_user_ids.length%></td>
   <td><%= check_winner(game, current_user)%></td>
+  <td><%= check_num_whoop_cards(game, current_user)%></td>
   <td><% if game.ongoing? %>
   <%=link_to '<button type="button">Play!</button>'.html_safe, user_game_play_path(current_user, game) %>
   <% elsif game.upcoming? %> 

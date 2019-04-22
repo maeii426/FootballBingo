@@ -10,7 +10,8 @@ def played_games(user)
 end
 
 def playing_games(user)
-  return GameUser.where(user: user, state: 'player')
+  ongoing_games = Game.where(state: 'ongoing')
+  return GameUser.where(user: user, game: ongoing_games )#state: 'player'
 end
 
 def win_games(user)

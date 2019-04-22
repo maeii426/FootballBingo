@@ -12,7 +12,11 @@
   </div>
  </div> 
 </p>
-
+  <% if @current_game.ongoing? %>
+  <h4>
+    <%= link_to '<button type="button">Do I Win?</button>'.html_safe, check_win_path() %>
+  </h4>
+  <% end %> 
 <% @cards.each do |card| %>
 <% show_card(card) %>
 <%= render 'cards/card'%>

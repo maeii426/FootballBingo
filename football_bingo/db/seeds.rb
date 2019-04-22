@@ -51,9 +51,9 @@ games.each do |game|
   g.update(state: 'finished')
 end
 
-GameUser.create!({:user_id => 1, :game_id => 1, :state => 'whoop_winner'})
+GameUser.create!({:user_id => 1, :game_id => 1, :state => 'whoop_winner'}, :whoops => 1)
 GameUser.create!({:user_id => 1, :game_id => 2, :state => 'instant_winner'})
-GameUser.create!({:user_id => 2, :game_id => 2, :state => 'whoop_winner'})
+GameUser.create!({:user_id => 2, :game_id => 2, :state => 'whoop_winner'}, :whoops => 1)
 GameUser.create!({:user_id => 3, :game_id => 1, :state => 'instant_winner'})
 
 # translations = [{:tag => 'penalties_yds', :words => 'Number of penalty yards'},
