@@ -26,7 +26,7 @@
   <td><%= game.visteam%></td>
   <td><%= get_state(game)%></td>
   <td><% if game.ongoing? %>
-  <%=link_to '<button type="button">Play!</button>'.html_safe, user_game_join_path(current_user, game) %>
+  <%=button_to 'Play!', user_game_join_path(current_user, game) %>
   <% elsif game.upcoming? %> 
     Wait ..
   <% else %>

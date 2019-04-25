@@ -43,8 +43,9 @@ end
 
 def create_admin
   create_visitor_as_admin
-  delete_user
-  @user = FactoryBot.create(:user, email: @visitor[:email])
+  # delete_user
+  @user = FactoryBot.create(:user, name: @visitor[:name], email: @visitor[:email], password: @visitor[:password])
+  @user.update(:role => "admin")
 end
 
 ### GIVEN ###
@@ -62,6 +63,11 @@ Given /^I exist as a user$/ do
   log_in
 end
 
+Given /^I exist as an admin$/ do
+  create_admin
+  log_in
+end
+
 Given /^I do not exist as a user$/ do
   create_visitor_as_user
   # delete_user
@@ -70,6 +76,10 @@ end
 When /^I log in with valid credentials$/ do
 	create_visitor_as_user
 	log_in
+end
+
+When /^I visit the my profile$/ do
+  visit user_path(@user.id)
 end
 
 When /^I log in with a wrong password$/ do

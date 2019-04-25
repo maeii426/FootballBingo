@@ -13,19 +13,18 @@ class GamesController < ApplicationController
     render 'show'
   end
 
-  def game_params
-    params.require(:game).permit(:game_name, :date, :instant_winner, :whoop_winner)
-  end
-
   def score_board
     @games = Game.all
 
-    if @games.nil?
-      flash[:warning] = "No record."
-    end
+    # if @games.nil?
+    #   flash[:warning] = "No record."
+    #   redirect_to games_path
+    # end
+
     return @games
   end
 
+  # POST /users/1/games/1/join
   def join
     gu_param = {
           :user_id => params[:user_id],
@@ -43,12 +42,14 @@ class GamesController < ApplicationController
     end
   end
 
+  # GET /users/1/games/1/play
   def play_game     
       @cards = Card.where(:user_id => params[:user_id], :game_id => params[:game_id])
       @current_game = Game.where(:id => params[:game_id]).first
       render 'play'
   end
 
+  # POST /users/1/games/1/get_whoop_card
   def get_whoop_card
       @new_card = Card.new        
       @new_card.save
@@ -68,6 +69,7 @@ class GamesController < ApplicationController
       redirect_to user_game_play_path(params[:user_id], params[:game_id])
   end
 
+  # POST /users/1/games/1/get_new_card
   def get_new_card
         @new_card = Card.new        
         @new_card.save
@@ -106,25 +108,10 @@ class GamesController < ApplicationController
 
   def send_email
     @user = User.find_by(id: params[:whoop_winner_id])
-    if @user.nil?
-        redirect_to '/score_board', notice: 'No winner account information !'
-    else
+    if !@user.nil?
         WhoopMailer.send_email(@user).deliver_now
-        redirect_to '/score_board', notice: 'Winners are notified !'
+        flash[:sucess] = "Winners are notified!"
     end
-
-    # @game=Game.find_by(whoop_winner: params[:whoop_winner])
-    # if @game.nil?
-    #   redirect_to '/score_board', notice: 'No game information !'
-    # else
-    #   @user=User.find_by(name: @game.whoop_winner)
-    #   if @user.nil?
-    #     redirect_to '/score_board', notice: 'No winner account information !'
-    #   else
-    #     WhoopMailer.send_email(@user).deliver_now
-    #     redirect_to '/score_board', notice: 'Winners are notified !'
-    #   end
-    # end
+    redirect_to score_board_path
   end
-
 end

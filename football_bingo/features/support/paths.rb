@@ -18,6 +18,7 @@ module NavigationHelpers
     when /^the log in page$/ then '/login'
     when /^the sign up page$/ then '/signup'
     when /^the home page$/ then '/#home'
+    when /^the users page$/ then '/users'
     when /^the share page$/ then '/share'
     when /^the game play page$/ then '/game_play'
     when /^the profile page for "(.*)"$/
@@ -27,6 +28,7 @@ module NavigationHelpers
       user_id = User.find_by(name: $1).id
       edit_user_path(user_id)
     when /^the send page$/ then '/send_email'
+    when /^the games page$/ then '/games'
 
 
 

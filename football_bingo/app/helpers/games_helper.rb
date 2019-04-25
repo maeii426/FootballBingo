@@ -48,9 +48,19 @@ end
 def get_stats(tag_input, is_home)
     trans = Translation.where(:tag => tag_input).first
     if is_home
-        return Totalcondition.where(:total => @home_totals, :translation =>trans).first.value
+        tc = Totalcondition.where(:total => @home_totals, :translation =>trans).first
+        if !tc.nil?
+            return tc.value
+        else
+            # return 0
+        end 
     else
-        return Totalcondition.where(:total => @vis_totals, :translation =>trans).first.value
+        tc = Totalcondition.where(:total => @vis_totals, :translation =>trans).first
+        if !tc.nil?
+            return tc.value
+        else
+            # return 0
+        end
     end
 end
 
@@ -112,8 +122,6 @@ def check_winner(game, user)
             return "Good Luck Next Time.."
         elsif game.ongoing?
             return "Try!"
-        else
-            return ""
         end
     end
 end

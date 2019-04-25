@@ -88,10 +88,7 @@ class UsersController < ApplicationController
   def check_win
     @user = current_user
     @gus = playing_games(@user).first
-    if @gus.nil?
-      flash[:warning] = "No Game Ongoing"
-      redirect_to @user
-    else
+    if !@gus.nil?
         game = @gus.game
         @cards = Card.where(:user_id => @user.id, :game_id => game.id)
         win_card_num = check_states_winner_rule
@@ -100,13 +97,12 @@ class UsersController < ApplicationController
           gu.update(:state => "whoop_winner")
           gu.update(:whoops => win_card_num)
           # @game.update(:whoop_winner => @user.name)
-          flash[:success] = "Whoop! You are the winner! Go to check score board!"
-          redirect_to @user
+          flash[:success] = "Whoop! You are the winner! Go to check score board!" 
         else
           flash[:warning] = "Not yet. Good luck is on your way!"
-          redirect_to @user
         end
     end
+    redirect_to @user
   end
 
   private

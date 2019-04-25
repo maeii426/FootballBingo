@@ -120,13 +120,30 @@
 </tr>
 <tr bgcolor="#ffffff">
 <td align=left><font face=verdana size=1 color="#000000"><b>TOTAL OFFENSE</b>&nbsp;</td>
-<td align=center><font face=verdana size=1 color="#000000"><%=@home_totals.totoff_yards %>&nbsp;</td>
-<td align=center><font face=verdana size=1 color="#000000"><%=@vis_totals.totoff_yards %>&nbsp;</td>
+<td align=center><font face=verdana size=1 color="#000000">
+<%if !@home_totals.nil? %>
+<%= @home_totals.totoff_yards %>
+<% end %>
+&nbsp;</td>
+<td align=center><font face=verdana size=1 color="#000000">
+<%if !@vis_totals.nil? %>
+<%=@vis_totals.totoff_yards %>
+<% end %>
+&nbsp;</td>
 </tr>
 <tr bgcolor="#ffffff">
 <td align=left><font face=verdana size=1 color="#000000">&nbsp;&nbsp;  Total Plays&nbsp;</td>
-<td align=center><font face=verdana size=1 color="#000000"><%=@home_totals.totoff_plays %>&nbsp;</td>
-<td align=center><font face=verdana size=1 color="#000000"><%=@vis_totals.totoff_plays %>&nbsp;</td>
+
+<td align=center><font face=verdana size=1 color="#000000">
+<%if !@home_totals.nil? %>
+<%=@home_totals.totoff_plays %>
+<% end %>
+&nbsp;</td>
+<td align=center><font face=verdana size=1 color="#000000">
+<%if !@vis_totals.nil? %>
+<%=@vis_totals.totoff_plays %>
+<% end %>
+&nbsp;</td>
 </tr>
 <tr bgcolor="#ffffff">
 <!-- <td align=left><font face=verdana size=1 color="#000000">&nbsp;&nbsp;  Average Per Play&nbsp;</td>

@@ -1,13 +1,16 @@
 FactoryBot.define do
 
   factory :user do
-    name Faker::Name.name
-    email Faker::Internet.unique.email
+    sequence(:name)  {Faker::Name.name}
+    sequence(:email) {Faker::Internet.unique.email}
     #sequence(:email) { |n| "user_#{n}@factory.com" }
     password Faker::Internet.password
+    role 'user'
 
-    trait :admin do
+    factory :admin do
       role 'admin'
+    # trait :admin do
+    #   role 'admin'
     end
   end
 
@@ -29,19 +32,19 @@ FactoryBot.define do
   # end
 
 
-  factory :game, class: Game do
+  factory :game, class: 'game' do
 
-    game_name "testgamename"
+    game_name "TAMU vs RICE"
     date Faker::Date.between(2.days.ago, Date.today)
-    instant_winner "instant_winner"
-    whoop_winner "whoop_winner"
     notify_by_email 0
     source "source"
     version "00001"
     generated "01/01/2019"
     hometeam "TAMU"
     visteam "RICE"
+    state "ongoing"
     association :venue
+
     # association :users
     # association :players
     # association :scores
@@ -50,7 +53,43 @@ FactoryBot.define do
     # association :drives
   end
 
-  factory :drive, class: 'Drive' do
+  factory :game_user, class: 'game_user' do
+    state "player"
+  end
+
+  factory :translation, class: 'translation' do
+    tag 'penalty_yds'
+    words 'Number of penalty yards'
+  end
+
+  factory :chip, class: 'chip' do
+    argument '>'
+    value 100
+
+    factory :lower_chip do
+      probablity 0.1
+    end
+    factory :low_chip do
+      probablity 0.3
+    end
+    factory :median_chip do
+      probablity 0.5
+    end
+    factory :high_chip do
+      probablity 0.7
+    end
+    factory :higher_chip do
+      probablity 0.9
+    end
+  end
+
+  factory :card, class: 'card' do
+  end
+
+  factory :card_chip, class: 'card_chip' do
+  end
+
+  factory :drive, class: 'drive' do
     
   end
 
@@ -67,16 +106,20 @@ FactoryBot.define do
   factory :player do
     
   end
-  factory :totalcondition do
-    
+
+  factory :totalcondition, class: 'totalcondition' do
+    value 10
   end
 
   factory :linescorecondition do
     
   end
 
-  factory :total do
-    
+  factory :total, class: 'total' do
+    qtr "test"                  
+    totoff_plays 123
+    totoff_yards 456
+    totoff_avg 423
   end
 
   factory :linescore do
@@ -85,14 +128,14 @@ FactoryBot.define do
     line Faker::Lorem.sentence
   end
 
-  factory :team0 do
-    name Faker::Team.sport
-    nameid Faker::Team.sport
+  factory :team0, class: 'team' do
+    name "TAMU"
+    nameid "TAMU"
   end
 
-  factory :team1 do
-    name Faker::Team.sport
-    nameid Faker::Team.sport
+  factory :team1, class: 'team' do
+    name "RICE"
+    nameid "RICE"
   end
 
   factory :venues do
@@ -101,11 +144,6 @@ FactoryBot.define do
     attend Faker::Number.between(5000, 10000)
     date Faker::Date.between(2.days.ago, Date.today)
   end
-
-  factory :translation do
-    
-  end
-
   
   factory :linescores0 do
     prds Faker::Number.between(0, 30)

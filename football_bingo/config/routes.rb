@@ -9,16 +9,16 @@ Rails.application.routes.draw do
   post   '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
   get '/score_board' => 'games#score_board'
-  get '/send_email' => 'games#send_email'
-  get '/check_win' => 'users#check_win'
+  post '/send_email' => 'games#send_email'
+  post '/check_win' => 'users#check_win'
   #get '/active_card' => :user_cards, controller: 'cards'
 
   resources :users do
     resources :games do
       get '/play' => 'games#play_game'
-      get '/join' => 'games#join'
-      get '/get_new_card' => 'games#get_new_card'
-      get '/get_whoop_card' => 'games#get_whoop_card'
+      post '/join' => 'games#join'
+      post '/get_new_card' => 'games#get_new_card'
+      post '/get_whoop_card' => 'games#get_whoop_card'
     end
   end
 
