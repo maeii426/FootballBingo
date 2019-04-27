@@ -3,21 +3,21 @@
 <p>
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-  	 <% if @current_game.ongoing? %>
-     <h4> <%= button_to 'Get a new card!', user_game_get_new_card_path(current_user, @current_game) %>
-     <%= button_to 'Get a whoop card!', user_game_get_whoop_card_path(current_user, @current_game) %>
+  	 <% if @game.ongoing? %>
+     <h4> <%= button_to 'Get a new card!', user_game_get_new_card_path(current_user, @game) %>
+     <%= button_to 'Get a whoop card!', user_game_get_whoop_card_path(current_user, @game) %>
      <% end %>  
      <%= link_to '<button type="button">Return to Profile</button>'.html_safe, user_path(current_user) %> 
      </h4>
   </div>
  </div> 
 </p>
-  <% if @current_game.ongoing? %>
+  <% if @game.ongoing? %>
   <h4>
-    <%= button_to 'Do I Win?', user_game_check_win_path(current_user, @current_game) %>
+    <%= button_to 'Do I Win?', user_game_check_win_path(current_user, @game) %>
   </h4>
   <% end %> 
 <% @cards.each do |card| %>
-<% show_card(card) %>
+<%= show_card(card) %>
 <%= render 'cards/card'%>
 <% end %>

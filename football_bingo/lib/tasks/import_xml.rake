@@ -154,7 +154,6 @@ namespace :import do
 								for i in probs do
 									$t += 2
 									chip = trans.chips.create!(:argument => '>', :value => (t[atr_name].to_i+$t), :probablity => i)	
-									chip.set_level
 									chip.update_attributes(:game => game)
 								end
 
@@ -165,10 +164,7 @@ namespace :import do
 
 					end
 
-
 				end
-
-
 
 			end
 

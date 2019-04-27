@@ -20,7 +20,7 @@ Scenario: I joined the game before
 Scenario: I got a whoop card
   Given I joined a game for the first time
   When I get a new whoop card
-  Then I should see "Congrats! You just got a new whoop card!"
+  Then I should see "Congrats! You just got a new card!"
   And I see the right whoop card
 
 Scenario: I got a new card

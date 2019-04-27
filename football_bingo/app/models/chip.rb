@@ -7,6 +7,21 @@ class Chip < ActiveRecord::Base
     enum level: [:high, :higher, :low, :lower, :medium]
     before_save :set_level, :if => :new_record?
 
+    scope :random, -> { order(Arel.sql('random()')) }
+    scope :high, -> { where level: 'high' }
+    scope :higher, -> { where level: 'higher' }
+    scope :low, -> { where level: 'low' }
+    scope :lower, -> { where level: 'lower' }
+    scope :medium, -> { where level: 'medium' }
+
+    def self.with_level(l)
+        where(:level => l)
+    end
+
+    def self.game(g)
+        where(:game => g)
+    end
+
     def prob
         return self.probablity * 100
     end
