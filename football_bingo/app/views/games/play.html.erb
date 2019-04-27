@@ -14,7 +14,7 @@
 </p>
   <% if @current_game.ongoing? %>
   <h4>
-    <%= button_to 'Do I Win?', check_win_path() %>
+    <%= button_to 'Do I Win?', user_game_check_win_path(current_user, @current_game) %>
   </h4>
   <% end %> 
 <% @cards.each do |card| %>

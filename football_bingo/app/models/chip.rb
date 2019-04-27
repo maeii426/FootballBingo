@@ -1,12 +1,11 @@
 class Chip < ActiveRecord::Base
     belongs_to :translation
     belongs_to :game
-    # has_many :card_chips
     has_many :cards, through: :card_chips
     has_many :card_chips
-    # has_and_belongs_to_many :cards
 
     enum level: [:high, :higher, :low, :lower, :medium]
+    before_save :set_level, :if => :new_record?
 
     def prob
         return self.probablity * 100

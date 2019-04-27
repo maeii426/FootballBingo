@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
-  #before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_action :logged_in_user, only: [:edit, :update]
-  before_action :correct_user,   only: [:edit, :update]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:edit, :update, :show, :share]
+  before_action :correct_user, only: [:edit, :update, :show]
+  before_action :admin_user, only: [:index, :destroy]
   # GET /users
   # GET /users.json
   def index
     @users = User.all
+
   end
 
   # GET /users/1
@@ -15,7 +17,6 @@ class UsersController < ApplicationController
     @game_path = 'XML/tam.xml'
     #game_helper_load
 
-    @user = User.find(params[:id])
     @cards = Card.where(user_id: @user.id)
     # show_user_cards
     render 'show'
@@ -28,9 +29,12 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = User.find(params[:id])
   end
 
+  # GET /users/1/share
+  def share
+    render 'share'
+  end
 
   # POST /users
   # POST /users.json
@@ -72,17 +76,10 @@ class UsersController < ApplicationController
   end
 
   # DELETE /users/1
-  # DELETE /users/1.json
   def destroy
     @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
-
-  def share
-    render 'share'
+    flash[:success] = "User was successfully destroyed."
+    redirect_to users_url
   end
 
   def check_win
@@ -96,7 +93,6 @@ class UsersController < ApplicationController
           gu = GameUser.where(:user_id => @user.id, :game => game.id).first
           gu.update(:state => "whoop_winner")
           gu.update(:whoops => win_card_num)
-          # @game.update(:whoop_winner => @user.name)
           flash[:success] = "Whoop! You are the winner! Go to check score board!" 
         else
           flash[:warning] = "Not yet. Good luck is on your way!"
@@ -125,5 +121,9 @@ class UsersController < ApplicationController
     def correct_user
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
+    end
+
+    def admin_user
+      redirect_to(root_url) unless current_user.role == "admin"
     end
 end

@@ -70,16 +70,16 @@ end
 
 Given /^I do not exist as a user$/ do
   create_visitor_as_user
-  # delete_user
 end
 
+Given /^another user exists$/ do
+  @another = FactoryBot.create(:user)
+end
+
+### WHEN ###
 When /^I log in with valid credentials$/ do
 	create_visitor_as_user
 	log_in
-end
-
-When /^I visit the my profile$/ do
-  visit user_path(@user.id)
 end
 
 When /^I log in with a wrong password$/ do
@@ -92,6 +92,19 @@ When /^I log in with a wrong email$/ do
   log_in
 end
 
+When /^I visit my profile$/ do
+  visit user_path(@user.id)
+end
+
+When /^I am on the share page$/ do
+  visit user_share_path(@user.id)
+end
+
+When /^I delete the other user$/ do
+  page.first(:link, "Delete").click
+end
+
+### THEN ###
 Then /^I should be logged in$/ do
   page.should have_content "Log out"
   page.should_not have_content "Sign up"
@@ -110,4 +123,10 @@ end
 
 Then /^I should see my name$/ do
   page.should have_content @user[:name]
+end
+
+Then /^the other user is deleted$/ do
+  page.should have_content "User was successfully destroyed."
+  page.should_not have_content @another.name
+  page.should_not have_content @another.email
 end

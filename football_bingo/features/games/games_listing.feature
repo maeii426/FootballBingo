@@ -27,8 +27,7 @@ Scenario: I can see more info of the game
   And the game has more information
   When I am on the games page
   And I press the more info of the game
-  Then I should see "Overall Team Statistics"
-  And I should see the right info of the game
+  Then I should see the right info of the game
 
 Scenario: I cannot see a game I never play in my profile
   Given an ongoing game which I never play exists
@@ -76,12 +75,8 @@ Scenario: Instant winner
   Then I should see "won 1 of them, 1 as an instant winner and 0 as a whoop winner"
   And I should see "Instant Winner!"
 
-Scenario: Instant winner
+Scenario: I can see my name appearing in the score board as an instant winner
   Given a finished game which I played before exists
   And I am a instant winner
   When I follow "Score Board"
   Then I should see my name
-
-Scenario: More info
-  Given a game exists
-  When I follow "Profile"

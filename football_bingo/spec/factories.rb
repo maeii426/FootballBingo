@@ -1,163 +1,182 @@
 FactoryBot.define do
 
-  factory :user do
-    sequence(:name)  {Faker::Name.name}
-    sequence(:email) {Faker::Internet.unique.email}
-    #sequence(:email) { |n| "user_#{n}@factory.com" }
-    password Faker::Internet.password
+  factory :user, class: 'user' do
+    sequence(:name)  { Faker::Name.name }
+    sequence(:email) { Faker::Internet.unique.email }
+    password { Faker::Internet.password }
     role 'user'
 
-    factory :admin do
+    trait :admin do
       role 'admin'
-    # trait :admin do
-    #   role 'admin'
     end
   end
 
-  factory :venue do
-    location Faker::Address.city
+  factory :venue, class: 'venue' do
+    location { Faker::Address.city }
     sequence(:gameid) { |n| "#{n}" }
-    attend Faker::Number.between(5000, 10000)
-    date Faker::Date.between(2.days.ago, Date.today)
+    attend { Faker::Number.between(5000, 10000) }
+    date { Faker::Date.between(2.days.ago, Date.today) }
+    game
   end
 
-  # factory :users do
-  #   name {Faker::Name.unique.name}
-  #   # sequence(:email) { |n| "user_#{n}@factory.com" }
-  #   email { Faker::Internet.unique.email }
-  #   password {Faker::Internet.password}
-  #   trait :users do
-  #     role 'user'
-  #   end  
-  # end
+  factory :team, class: 'team' do
+    name { Faker::University.name }
+    nameid { Faker::University.name }
 
+    trait :tamu do
+      name "TAMU"
+      nameid "TAMU"
+    end
 
-  factory :game, class: 'game' do
+    trait :rice do
+      name "RICE"
+      nameid "RICE"
+    end
+  end
 
-    game_name "TAMU vs RICE"
-    date Faker::Date.between(2.days.ago, Date.today)
+  factory :game, class: 'game' do   
     notify_by_email 0
     source "source"
     version "00001"
     generated "01/01/2019"
     hometeam "TAMU"
     visteam "RICE"
-    state "ongoing"
-    association :venue
+    game_name {"#{hometeam} vs #{visteam}"} # Dependent Attributes
 
-    # association :users
-    # association :players
-    # association :scores
-    # association :totals
-    # association :fgas
-    # association :drives
+    trait :is_ongoing do
+      state "ongoing"
+      date { Date.today }
+    end
+
+    trait :is_finished do
+      state "finished"
+      date { Faker::Date.between(1.month.ago, 1.day.ago) }
+    end
+
+    trait :is_upcoming do
+      state "upcoming"
+      date { Faker::Date.forward(60) }
+    end 
   end
 
   factory :game_user, class: 'game_user' do
-    state "player"
-  end
+    game
+    user
 
-  factory :translation, class: 'translation' do
-    tag 'penalty_yds'
-    words 'Number of penalty yards'
-  end
+    trait :player do
+      state "player"
+    end
 
-  factory :chip, class: 'chip' do
-    argument '>'
-    value 100
+    trait :instant_winner do
+      state "instant_winner"
+    end
 
-    factory :lower_chip do
-      probablity 0.1
-    end
-    factory :low_chip do
-      probablity 0.3
-    end
-    factory :median_chip do
-      probablity 0.5
-    end
-    factory :high_chip do
-      probablity 0.7
-    end
-    factory :higher_chip do
-      probablity 0.9
+    trait :whoop_winner do
+      state "whoop_winner"
     end
   end
 
   factory :card, class: 'card' do
+    user
+    game
+  end
+
+  factory :chip, class: 'chip' do
+    argument '>'
+    value { Faker::Number.between(0, 100) }
+    game
+    translation
+
+    trait :lower do
+      probablity 0.1
+    end
+
+    trait :low do
+      probablity 0.3
+    end
+
+    trait :median do
+      probablity 0.5
+    end
+
+    trait :high do
+      probablity 0.7
+    end
+
+    trait :higher do
+      probablity 0.9
+    end
   end
 
   factory :card_chip, class: 'card_chip' do
-  end
-
-  factory :drive, class: 'drive' do
-    
-  end
-
-  factory :fga do
-    
-  end
-
-  factory :score do
-    
-  end
-  factory :playercondition do
-    
-  end
-  factory :player do
-    
-  end
-
-  factory :totalcondition, class: 'totalcondition' do
-    value 10
-  end
-
-  factory :linescorecondition do
-    
+    card
+    chip
   end
 
   factory :total, class: 'total' do
     qtr "test"                  
-    totoff_plays 123
-    totoff_yards 456
-    totoff_avg 423
+    totoff_plays { Faker::Number.between(0, 150) }
+    totoff_yards { Faker::Number.between(0, 500) }
+    totoff_avg { Faker::Number.between(0, 300) }
+    game
+    team
   end
 
-  factory :linescore do
-    prds Faker::Number.between(0, 30)
-    score Faker::Number.between(0, 99)
-    line Faker::Lorem.sentence
+  factory :translation, class: 'translation' do
+
+    trait :penalty_yds do
+      tag 'penalty_yds'
+      words 'Number of penalty yards'
+    end
+
+    trait :firstdowns_no do
+      tag 'firstdowns_no'
+      words 'Total first downs'
+    end
   end
 
-  factory :team0, class: 'team' do
-    name "TAMU"
-    nameid "TAMU"
+  factory :totalcondition, class: 'totalcondition' do
+    value { Faker::Number.between(0, 30) }
+    total
+    translation
   end
 
-  factory :team1, class: 'team' do
-    name "RICE"
-    nameid "RICE"
+  factory :score, class: 'score' do
+    game
+    team
   end
 
-  factory :venues do
-    location Faker::Address.city
-    sequence(:gameid) { |n| "#{n}" }
-    attend Faker::Number.between(5000, 10000)
-    date Faker::Date.between(2.days.ago, Date.today)
-  end
-  
-  factory :linescores0 do
-    prds Faker::Number.between(0, 30)
-    score Faker::Number.between(0, 99)
-    line Faker::Lorem.sentence
-    association :game
-    association :team0
+  factory :playercondition, class: 'playercondition' do
+    playercondition
+    translation
   end
 
-  factory :linescores1 do
-    prds Faker::Number.between(0, 30)
-    score Faker::Number.between(0, 99)
-    line Faker::Lorem.sentence
-    association :game
-    association :team1
+  factory :player, class: 'player' do
+    game
+    team
   end
+
+  factory :drife, class: 'drife' do # not a typo
+    game
+    team
+  end
+
+  factory :fga, class: 'fga' do
+    game
+    team
+  end
+
+  factory :linescorecondition, class: 'linescorecondition' do
+    linescorecondition
+    translation
+  end
+
+  factory :linescore, class: 'linescore' do
+    prds { Faker::Number.between(0, 30) }
+    score { Faker::Number.between(0, 99) }
+    line { Faker::Lorem.sentence }
+    game
+    team
+  end
+
 end

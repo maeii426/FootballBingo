@@ -6,5 +6,5 @@ Feature: See share page
 
 Scenario: Go to share page
   Given the account is set up
-  When I am on the share page
-  Then  I should see "Share" 
+  When I follow "Share"
+  Then I should see "Share" 

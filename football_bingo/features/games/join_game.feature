@@ -23,6 +23,12 @@ Scenario: I got a whoop card
   Then I should see "Congrats! You just got a new whoop card!"
   And I see the right whoop card
 
+Scenario: I got a new card
+  Given I joined a game for the first time
+  When I get a new card
+  Then I should see "Congrats! You just got a new card!"
+  And I see the right card
+
 Scenario: I get successful message if I win
   Given I joined a game for the first time
   When I get a new whoop card

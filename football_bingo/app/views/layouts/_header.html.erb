@@ -28,7 +28,7 @@
                     <li><%= link_to "Settings", edit_user_path(current_user) %></li>
                     <li><%= link_to "Games", games_path %></li>
                     <li><%= link_to "Score Board", score_board_path %></li>
-                    <li><%= link_to "Share", share_path %></li>
+                    <li><%= link_to "Share", user_share_path(current_user.id) %></li>
                     <li class="divider"></li>
                     <li>
                       <%= link_to "Log out", logout_path, method: :delete %>
