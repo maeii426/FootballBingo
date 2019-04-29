@@ -11,12 +11,13 @@ Rails.application.routes.draw do
   get '/score_board' => 'games#score_board'
   post '/send_email' => 'games#send_email'
   post '/check_win' => :check_win, controller: 'users'
+  post '/games' => :show, controller: 'games'
 
   resources :users do
     get '/share' => 'users#share'
     resources :games do
       get '/play' => 'games#play_game'
-      post '/join' => 'games#join'
+      get '/join' => 'games#join'
       post '/get_new_card' => 'games#get_new_card'
       post '/get_whoop_card' => 'games#get_whoop_card'
     end
@@ -25,5 +26,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   #root 'users#index'
   resources :games do
+
   end
 end

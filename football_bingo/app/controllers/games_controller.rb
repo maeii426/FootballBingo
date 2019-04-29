@@ -1,8 +1,8 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show]  
+  before_action :set_game, only: [:show]
   before_action :set_games, only: [:index, :score_board]
   before_action :set_user_and_game, only: [:get_new_card, :get_whoop_card, :join, :play_game]
-  
+
   def index
   end
 
@@ -23,14 +23,14 @@ class GamesController < ApplicationController
     if @gu.nil?
         flash[:success] = "You play this game for the first time!"
         GameUser.create({:user => @user, :game => @game})
-    else      
+    else
         flash[:warning] = "You can continue this game!"
     end
-    redirect_to (user_game_play_path(@user, @game)) 
+    redirect_to (user_game_play_path(@user, @game))
   end
 
   # GET /users/1/games/1/play
-  def play_game     
+  def play_game
       @cards = Card.where(:user => @user, :game => @game)
       render 'play'
   end
@@ -39,14 +39,14 @@ class GamesController < ApplicationController
   def get_whoop_card
       chip_ids = [3, 1, 5, 1, 2, 3, 4, 3, 1]
       get_card(chip_ids)
-      redirect_to (user_game_play_path(@user, @game)) 
+      redirect_to (user_game_play_path(@user, @game))
   end
 
   # POST /users/1/games/1/get_new_card
   def get_new_card
       list = { "higher" => 1, "high" => 1, "medium" => 5, "low" => 1, "lower" => 1} # They add up to #chips in one card
       get_card(get_random_chips(list))
-      redirect_to (user_game_play_path(@user, @game)) 
+      redirect_to (user_game_play_path(@user, @game))
   end
 
   def send_email
@@ -81,12 +81,12 @@ class GamesController < ApplicationController
     end
 
     def get_card(chip_ids)
-        @new_card = Card.create  
+        @new_card = Card.create
         chip_ids.each do |i|
           CardChip.create( {:card => @new_card, :chip_id => i} )
         end
         @game.cards << @new_card
-        @user.cards << @new_card  
+        @user.cards << @new_card
         flash[:sucess] = "Congrats! You just got a new card!"
     end
 end

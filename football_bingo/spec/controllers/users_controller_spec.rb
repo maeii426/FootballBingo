@@ -30,6 +30,7 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
+
   describe "#destroy" do
     before(:each) do
       @user = create(:user, :id => 1,:name => 'xx', :email => 'ga@gmail.com', :role => 'admin')
