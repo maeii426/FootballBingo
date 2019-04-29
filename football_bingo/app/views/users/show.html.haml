@@ -15,36 +15,38 @@
         as an instant winner and 
         =whoop_games(@user).length 
         as a whoop winner.
-.center
-  %h3 Play History
 .row
-  .col-md-10.col-md-offset-1
-    %table.table.table-hover#game-history
-      %thead
-        %tr
-          %th Game  
-          %th Date      
-          %th Status
-          %th #Gamers
-          %th Results
-          %th #Whoop Cards
-          %th Play Now?
-          %th More Info
-      %tbody
-        - all_games(@user).each do |gu|
-        %tr
-        - game = gu.game
-          %td= game.game_name
-          %td= game.date.to_date
-          %td= get_state(game)
-          %td= game.game_user_ids.length
-          %td= check_winner(game, current_user)
-          %td= check_num_whoop_cards(game, current_user)
-          %td 
-            - if game.ongoing?
-              =link_to 'Play!'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
-            - elsif game.upcoming?
-              Wait ..
-            - else
-              =link_to 'Check play history'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
-          %td= link_to "More about", game_path(game), class: "btn btn-primary maroon"
+  .col-md-10.col-md-offset-1        
+    .panel.panel-default
+      .panel-heading
+        %h3 Play History
+      .panel-body
+        %table.table.table-hover#game-history
+          %thead
+            %tr
+              %th Game  
+              %th Date      
+              %th Status
+              %th #Gamers
+              %th Results
+              %th #Whoop Cards
+              %th Play Now?
+              %th More Info
+          %tbody
+            - all_games(@user).each do |gu|
+            %tr
+            - game = gu.game
+              %td= game.game_name
+              %td= game.date.to_date
+              %td= get_state(game)
+              %td= game.game_user_ids.length
+              %td= check_winner(game, current_user)
+              %td= check_num_whoop_cards(game, current_user)
+              %td 
+                - if game.ongoing?
+                  =link_to 'Play!'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
+                - elsif game.upcoming?
+                  Wait ..
+                - else
+                  =link_to 'Check play history'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
+              %td= link_to "More about", game_path(game), class: "btn btn-primary maroon"

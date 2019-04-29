@@ -1,30 +1,32 @@
 = content_for(:title, "Score Board")
 %br/
-.center
-  %h3 Score Board
 
 .row
   .col-md-8.col-md-offset-2
-    %table.table.table-hover#score-board
-      %thead
-        %tr
-          %th &nbsp;Game&nbsp;&nbsp;&nbsp;
-          %th &nbsp;Date&nbsp;&nbsp;&nbsp;
-          %th &nbsp;Instant Winner&nbsp;
-          %th &nbsp;Whoop Winner&nbsp;
-          - if admin_user?
-            %th &nbsp;Send Email?
-      %tbody
-        - @games.each do |game|
-          %tr
-            %td= game.game_name 
-            %td= game.date.to_date
-            %td
-              - if instant_winner?(game) 
-                = instant_winner(game).name
-            %td 
-              - if whoop_winner?(game)
-                = whoop_winner(game).name
-            - if admin_user?           
-              %td
-                = button_to 'Send', send_email_path(:whoop_winner_id => whoop_winner(game).id), class: "btn btn-primary maroon"
+    .panel.panel-default
+      .panel-heading
+        %h3 Score Board
+      .panel-body
+        %table.table.table-hover#score-board
+          %thead
+            %tr
+              %th &nbsp;Game&nbsp;&nbsp;&nbsp;
+              %th &nbsp;Date&nbsp;&nbsp;&nbsp;
+              %th &nbsp;Instant Winner&nbsp;
+              %th &nbsp;Whoop Winner&nbsp;
+              - if admin_user?
+                %th &nbsp;Send Email?
+          %tbody
+            - @games.each do |game|
+              %tr
+                %td= game.game_name 
+                %td= game.date.to_date
+                %td
+                  - if instant_winner?(game) 
+                    = instant_winner(game).name
+                %td 
+                  - if whoop_winner?(game)
+                    = whoop_winner(game).name
+                - if admin_user?           
+                  %td
+                    = button_to 'Send', send_email_path(:whoop_winner_id => whoop_winner(game).id), class: "btn btn-primary maroon"

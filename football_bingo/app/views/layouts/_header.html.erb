@@ -7,10 +7,11 @@
             <a class="navbar-brand" href="/">
               <%=image_tag("logo.png", alt: "Logo", style:"height:150%")%>
             </a>
-            <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to "Home",   root_path  %></li>
-              <li><%= link_to "Help",   help_path  %></li>
-              <% if logged_in? %>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><%= link_to "Home",   root_path  %></li>
+                <li><%= link_to "Help",   help_path  %></li>
+                <% if logged_in? %>
                 <li class="dropdown" id="accounts-dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     Account <b class="caret"></b>
@@ -30,10 +31,11 @@
                     </li>
                   </ul>
                 </li>
-              <% else %>
-                <li><%= link_to "Log in", login_path %></li>
-              <% end %>
-            </ul>
+                <% else %>
+                  <li><%= link_to "Log in", login_path %></li>
+                <% end %>
+              </ul>
+            </div>
           </nav>
         </div>
         <!-- <div class="col-md-3"> </div> -->
