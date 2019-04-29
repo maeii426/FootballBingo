@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-04-27T15:25:06-05:00">2019-04-27T15:25:06-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-04-27T15:39:46-05:00">2019-04-27T15:39:46-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         15.1
+         15.21
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>420</b> relevant lines. 
-    <span class="green"><b>420</b> lines covered</span> and
+    <b>415</b> relevant lines. 
+    <span class="green"><b>415</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -173,11 +173,11 @@
       <tr>
         <td class="strong"><a href="#a5eecfffb790cc967a4a92d39c573e467d91473c" class="src_link" title="app/helpers/games_helper.rb">app/helpers/games_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>155</td>
-        <td>63</td>
-        <td>63</td>
+        <td>146</td>
+        <td>58</td>
+        <td>58</td>
         <td>0</td>
-        <td>13.3</td>
+        <td>13.9</td>
       </tr>
       
       <tr>
@@ -814,15 +814,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         27.67
+         28.54
        </span>
     </span> hits/line)
   </h2>
   <a name="Helpers"></a>
   <div>
     <b>8</b> files in total.
-    <b>127</b> relevant lines. 
-    <span class="green"><b>127</b> lines covered</span> and
+    <b>122</b> relevant lines. 
+    <span class="green"><b>122</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -882,11 +882,11 @@
       <tr>
         <td class="strong"><a href="#a5eecfffb790cc967a4a92d39c573e467d91473c" class="src_link" title="app/helpers/games_helper.rb">app/helpers/games_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>155</td>
-        <td>63</td>
-        <td>63</td>
+        <td>146</td>
+        <td>58</td>
+        <td>58</td>
         <td>0</td>
-        <td>13.3</td>
+        <td>13.9</td>
       </tr>
       
       <tr>
@@ -3047,8 +3047,8 @@
     <h3>app/helpers/games_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>63</b> relevant lines. 
-      <span class="green"><b>63</b> lines covered</span> and
+      <b>58</b> relevant lines. 
+      <span class="green"><b>58</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3593,394 +3593,340 @@
         <li class="covered" data-hits="8" data-linenumber="90">
           <span class="hits">8</span>
           
-          <code class="ruby">        gu = GameUser.where(:game =&gt; game, :state =&gt; &quot;instant_winner&quot;).first</code>
+          <code class="ruby">        gu = GameUser.where(:game =&gt; game, :state =&gt; &quot;instant_winner&quot;).any?</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="91">
-          <span class="hits">8</span>
+        <li class="never" data-hits="" data-linenumber="91">
           
-          <code class="ruby">        if(!gu.nil?)</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="92">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="92">
           
-          <code class="ruby">            return true</code>
+          
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby">        else</code>
-        </li>
-      
-        <li class="covered" data-hits="6" data-linenumber="94">
-          <span class="hits">6</span>
-          
-          <code class="ruby">            return false</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="95">
-          
-          
-          <code class="ruby">        end </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="96">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="97">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="98">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="99">
+        <li class="covered" data-hits="1" data-linenumber="94">
           <span class="hits">1</span>
           
           <code class="ruby">def whoop_winner?(game)</code>
         </li>
       
-        <li class="covered" data-hits="24" data-linenumber="100">
+        <li class="covered" data-hits="24" data-linenumber="95">
           <span class="hits">24</span>
           
           <code class="ruby">    if !game.upcoming?</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="101">
+        <li class="covered" data-hits="19" data-linenumber="96">
           <span class="hits">19</span>
           
           <code class="ruby">        gu = GameUser.where(:game =&gt; game, :state =&gt; &quot;whoop_winner&quot;).first</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="102">
+        <li class="covered" data-hits="19" data-linenumber="97">
           <span class="hits">19</span>
           
-          <code class="ruby">        if(!gu.nil?)</code>
+          <code class="ruby">        !gu.nil?</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="103">
-          <span class="hits">8</span>
-          
-          <code class="ruby">            return true</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="104">
-          
-          
-          <code class="ruby">        else</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="105">
-          <span class="hits">11</span>
-          
-          <code class="ruby">            return false</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="106">
-          
-          
-          <code class="ruby">        end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="107">
+        <li class="never" data-hits="" data-linenumber="98">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="108">
+        <li class="never" data-hits="" data-linenumber="99">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="109">
+        <li class="never" data-hits="" data-linenumber="100">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="110">
+        <li class="covered" data-hits="1" data-linenumber="101">
           <span class="hits">1</span>
           
           <code class="ruby">def whoop_winner(game)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="111">
+        <li class="covered" data-hits="8" data-linenumber="102">
           <span class="hits">8</span>
           
           <code class="ruby">    if !game.upcoming?</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="112">
+        <li class="covered" data-hits="8" data-linenumber="103">
           <span class="hits">8</span>
           
           <code class="ruby">        gu = GameUser.where(:game =&gt; game, :state =&gt; &quot;whoop_winner&quot;).first</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="113">
+        <li class="covered" data-hits="8" data-linenumber="104">
           <span class="hits">8</span>
           
           <code class="ruby">        return gu.user</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="114">
+        <li class="never" data-hits="" data-linenumber="105">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="115">
+        <li class="never" data-hits="" data-linenumber="106">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="116">
+        <li class="never" data-hits="" data-linenumber="107">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="117">
+        <li class="covered" data-hits="1" data-linenumber="108">
           <span class="hits">1</span>
           
           <code class="ruby">def check_winner(game, user)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="118">
+        <li class="covered" data-hits="7" data-linenumber="109">
           <span class="hits">7</span>
           
           <code class="ruby">    if whoop_winner?(game) &amp;&amp; user == whoop_winner(game)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="119">
+        <li class="covered" data-hits="2" data-linenumber="110">
           <span class="hits">2</span>
           
           <code class="ruby">        return &quot;Whoop Winner!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="120">
+        <li class="covered" data-hits="5" data-linenumber="111">
           <span class="hits">5</span>
           
           <code class="ruby">    elsif instant_winner?(game) &amp;&amp; user == instant_winner(game)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="121">
+        <li class="covered" data-hits="1" data-linenumber="112">
           <span class="hits">1</span>
           
           <code class="ruby">        return &quot;Instant Winner!&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="122">
+        <li class="never" data-hits="" data-linenumber="113">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="123">
+        <li class="covered" data-hits="4" data-linenumber="114">
           <span class="hits">4</span>
           
           <code class="ruby">        if game.finished?</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="124">
+        <li class="covered" data-hits="2" data-linenumber="115">
           <span class="hits">2</span>
           
           <code class="ruby">            return &quot;Good Luck Next Time..&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="125">
+        <li class="covered" data-hits="2" data-linenumber="116">
           <span class="hits">2</span>
           
           <code class="ruby">        elsif game.ongoing?</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="126">
+        <li class="covered" data-hits="2" data-linenumber="117">
           <span class="hits">2</span>
           
           <code class="ruby">            return &quot;Try!&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="127">
+        <li class="never" data-hits="" data-linenumber="118">
           
           
           <code class="ruby">        end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="128">
+        <li class="never" data-hits="" data-linenumber="119">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="129">
+        <li class="never" data-hits="" data-linenumber="120">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="130">
+        <li class="never" data-hits="" data-linenumber="121">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="131">
+        <li class="covered" data-hits="1" data-linenumber="122">
           <span class="hits">1</span>
           
           <code class="ruby">def check_num_whoop_cards(game, user)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="132">
+        <li class="covered" data-hits="7" data-linenumber="123">
           <span class="hits">7</span>
           
           <code class="ruby">    if whoop_winner?(game) &amp;&amp; user == whoop_winner(game)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="133">
+        <li class="covered" data-hits="2" data-linenumber="124">
           <span class="hits">2</span>
           
           <code class="ruby">        return GameUser.where(:game =&gt; game, :state =&gt; &quot;whoop_winner&quot;).first.whoops</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="134">
+        <li class="never" data-hits="" data-linenumber="125">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="135">
+        <li class="covered" data-hits="5" data-linenumber="126">
           <span class="hits">5</span>
           
           <code class="ruby">        return 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="136">
+        <li class="never" data-hits="" data-linenumber="127">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="137">
+        <li class="never" data-hits="" data-linenumber="128">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="138">
+        <li class="never" data-hits="" data-linenumber="129">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="139">
+        <li class="covered" data-hits="1" data-linenumber="130">
           <span class="hits">1</span>
           
           <code class="ruby">def show_card(card)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="140">
+        <li class="covered" data-hits="4" data-linenumber="131">
           <span class="hits">4</span>
           
           <code class="ruby">    @card = card</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="141">
+        <li class="covered" data-hits="4" data-linenumber="132">
           <span class="hits">4</span>
           
           <code class="ruby">    ccs = CardChip.where(:card =&gt; card)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="142">
+        <li class="never" data-hits="" data-linenumber="133">
           
           
           <code class="ruby">    # print ccs.length</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="143">
+        <li class="covered" data-hits="4" data-linenumber="134">
           <span class="hits">4</span>
           
           <code class="ruby">    @chips_in_words = Array.new</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="144">
+        <li class="covered" data-hits="4" data-linenumber="135">
           <span class="hits">4</span>
           
           <code class="ruby">    @chip_probs = Array.new</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="145">
+        <li class="covered" data-hits="4" data-linenumber="136">
           <span class="hits">4</span>
           
           <code class="ruby">    @chip_states = Array.new</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="146">
+        <li class="covered" data-hits="4" data-linenumber="137">
           <span class="hits">4</span>
           
           <code class="ruby">    ccs.each do |cc|</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="147">
+        <li class="covered" data-hits="36" data-linenumber="138">
           <span class="hits">36</span>
           
           <code class="ruby">      words, state = Chip.find(cc.chip_id).translate </code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="148">
+        <li class="covered" data-hits="36" data-linenumber="139">
           <span class="hits">36</span>
           
           <code class="ruby">      prob = Chip.find(cc.chip_id).prob</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="149">
+        <li class="covered" data-hits="36" data-linenumber="140">
           <span class="hits">36</span>
           
           <code class="ruby">      @chips_in_words.push(words)</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="150">
+        <li class="covered" data-hits="36" data-linenumber="141">
           <span class="hits">36</span>
           
           <code class="ruby">      @chip_states.push(state)</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="151">
+        <li class="covered" data-hits="36" data-linenumber="142">
           <span class="hits">36</span>
           
           <code class="ruby">      @chip_probs.push(prob)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="152">
+        <li class="never" data-hits="" data-linenumber="143">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="153">
+        <li class="never" data-hits="" data-linenumber="144">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="154">
+        <li class="never" data-hits="" data-linenumber="145">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="155">
+        <li class="never" data-hits="" data-linenumber="146">
           
           
           <code class="ruby">end</code>

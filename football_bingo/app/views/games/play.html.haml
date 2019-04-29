@@ -1,0 +1,19 @@
+= content_for(:title, "List all the bingo cards in one game")
+
+%h1 Show all the cards associated with this game
+%p
+  .row
+  .col-md-8.col-md-offset-2
+    - if @game.ongoing?
+      %h4 
+        = button_to 'Get a new card!', user_game_get_new_card_path(current_user, @game)
+        = button_to 'Get a whoop card!', user_game_get_whoop_card_path(current_user, @game)
+      = link_to '<button type="button">Return to Profile</button>'.html_safe, user_path(current_user)
+    - if @game.ongoing?
+      %h4 
+        = button_to 'Do I Win?', user_game_check_win_path(current_user, @game)
+  .row
+  .col-md-8.col-md-offset-2
+    - @cards.each do |card|
+      - show_card(card)
+      = render 'cards/card'

@@ -3,16 +3,10 @@ class Chip < ActiveRecord::Base
     belongs_to :game
     has_many :cards, through: :card_chips
     has_many :card_chips
-
     enum level: [:high, :higher, :low, :lower, :medium]
-    before_save :set_level, :if => :new_record?
 
     scope :random, -> { order(Arel.sql('random()')) }
-    scope :high, -> { where level: 'high' }
-    scope :higher, -> { where level: 'higher' }
-    scope :low, -> { where level: 'low' }
-    scope :lower, -> { where level: 'lower' }
-    scope :medium, -> { where level: 'medium' }
+    before_save :set_level, :if => :new_record?
 
     def self.with_level(l)
         where(:level => l)
@@ -54,10 +48,6 @@ class Chip < ActiveRecord::Base
         end
         
         return in_words + argument + value.to_s, state_of_chip
-    end
-    
-    def check
-        
     end
     
     def check_parse

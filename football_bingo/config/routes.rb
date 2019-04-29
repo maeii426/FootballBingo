@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
   get '/score_board' => 'games#score_board'
   post '/send_email' => 'games#send_email'
-  #get '/active_card' => :user_cards, controller: 'cards'
 
   resources :users do
     get '/share' => 'users#share'    

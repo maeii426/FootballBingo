@@ -1,0 +1,288 @@
+= content_for(:title, @game.game_name)
+%h1 Game Statistics
+%p=link_to '<button type="button">Return to Profile</button>'.html_safe, user_path(current_user)
+
+.center
+  .row
+    .col-md-6.col-md-offset-3
+      %table{:border=>0, :width=>"100%"}
+        %tr
+          %td{:bgcolor=>"#c0c0c0"}
+        %h3 Overall Team Statistics 
+
+.row
+  .col-md-12.col-md-offset-4
+    - if !@game.nil?
+      .center
+        %table
+          %thead
+            %tr{:bgcolor=>"#800000"}
+              %th{:bgcolor=>"#800000"}
+                %font{:color=>"#ffffff"}
+                  %b TEAM STATISTICS
+              %th{:bgcolor=>"#800000"}
+                %font{:color=>"#ffffff"}
+                  &nbsp;
+                  %b= @game.hometeam 
+                  &nbsp;
+              %th{:bgcolor=>"#800000"}
+                %font{:color=>"#ffffff"}
+                  &nbsp;
+                  %b= @game.visteam
+                  &nbsp;
+          %tbody
+            %tr
+              %th 
+                %b SCORING
+              %td 287
+              %td 449
+            %tr
+              %th &nbsp;&nbsp;  Points Per Game
+              %td 23.9
+              %td 37.4  
+            %tr 
+              %th &nbsp;&nbsp;  Points Off Turnovers
+              %td 30
+              %td 89
+            %tr
+              %th 
+                %b FIRST DOWNS
+              %td= get_stats("firstdowns_no", true).to_i
+              %td= get_stats("firstdowns_no", false).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Rushing
+              %td= get_stats("firstdowns_rush", true).to_i
+              %td= get_stats("firstdowns_rush", false).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Passing
+              %td= get_stats("firstdowns_pass", true).to_i
+              %td= get_stats("firstdowns_pass", false).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Penalty
+              %td= get_stats("firstdowns_penalty", true).to_i
+              %td= get_stats("firstdowns_penalty", false).to_i
+            %tr 
+              %th 
+                %b RUSHING YARDAGE
+              %td= get_stats("rush_yds", true).to_i
+              %td= get_stats("rush_yds", false).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Yards gained rushing
+              %td= get_stats("rush_gain", true).to_i
+              %td= get_stats("rush_gain", false).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Yards lost rushing
+              %td= get_stats("rush_loss", true).to_i
+              %td= get_stats("rush_loss", true).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Rushing Attempts
+              %td= get_stats("rush_att", true).to_i
+              %td= get_stats("rush_att", false).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Average Per Rush
+              %td 
+              %td 
+            %tr 
+              %th &nbsp;&nbsp;  Average Per Game
+              %td .4
+              %td .0
+            %tr 
+              %th &nbsp;&nbsp;  TDs Rushing
+              %td= get_stats("rush_td", true).to_i
+              %td= get_stats("rush_td", false).to_i
+            %tr 
+              %th <b>PASSING YARDAGE
+              %td= get_stats("pass_yds", true).to_i
+              %td= get_stats("pass_yds", false).to_i
+            %tr 
+              %th &nbsp;&nbsp;  Comp-Att-Int
+              %td
+                = get_stats("pass_comp", true).to_i.to_s+"-"+get_stats("pass_att", true).to_i.to_s+"-"+get_stats("pass_int", true).to_i.to_s
+              %td
+                = get_stats("pass_comp", false).to_i.to_s+"-"+get_stats("pass_att", false).to_i.to_s+"-"+get_stats("pass_int", false).to_i.to_s
+            %tr 
+              %th &nbsp;&nbsp;  Average Per Catch
+              %td 0
+              %td 1
+            %tr 
+              %th &nbsp;&nbsp;  Average Per Game
+              %td .8
+              %td .5
+            %tr
+              %th &nbsp;&nbsp;  TDs Passing
+              %td= get_stats("pass_td", true).to_i
+              %td= get_stats("pass_td", false).to_i
+            %tr
+              %th 
+                %b TOTAL OFFENSE
+              %td 
+                - if !@home_totals.nil?
+                  = @home_totals.totoff_yards
+              %td
+                - if !@vis_totals.nil?
+                  =@vis_totals.totoff_yards
+            %tr 
+              %th &nbsp;&nbsp;  Total Plays
+              %td
+                - if !@home_totals.nil?
+                  =@home_totals.totoff_plays
+              %td 
+                - if !@vis_totals.nil?
+                  =@vis_totals.totoff_plays
+            %tr 
+              %th &nbsp;&nbsp;  Average Per Play
+              %td 
+              %td
+            %tr 
+              %th &nbsp;&nbsp;  Average Per Game
+              %td
+              %td
+              %tr 
+              %th 
+                %b KICK RETURNS: #-Yards
+              %td 
+              %td 
+            %tr 
+              %th 
+                %b PUNT RETURNS: #-Yards
+              %td
+                = get_stats("punt_no", true).to_i.to_s+"-"+get_stats("punt_yds", true).to_i.to_s
+              %td
+                = get_stats("punt_no", true).to_i.to_s+"-"+get_stats("punt_yds", true).to_i.to_s
+            %tr 
+              %th 
+                %b INT RETURNS: #-Yards
+              %td 6
+              %td 6
+            %tr 
+              %th
+                %b KICK RETURN AVERAGE
+              %td .4
+              %td .5
+            %tr 
+              %th 
+                %b PUNT RETURN AVERAGE
+              %td
+              %td
+            %tr 
+              %th 
+                %b INT RETURN AVERAGE
+              %td
+              %td
+            %tr 
+            %th 
+              %b FUMBLES-LOST
+            %td
+              = get_stats("fumbles_no", true).to_i.to_s+"-"+get_stats("fumbles_lost", true).to_i.to_s
+            %td
+              = get_stats("fumbles_no", false).to_i.to_s+"-"+get_stats("fumbles_lost", false).to_i.to_s
+          %tr 
+            %th 
+              %b PENALTIES-Yards
+            %td
+              = get_stats("penalties_no", true).to_i.to_s+"-"+get_stats("penalties_yds", true).to_i.to_s
+            %td
+              = get_stats("penalties_no", false).to_i.to_s+"-"+get_stats("penalties_yds", false).to_i.to_s
+          %tr 
+            %th &nbsp;&nbsp;  Average Per Game
+            %td .1
+            %td .9
+          %tr 
+            %th <b>PUNTS-Yards
+            %td
+              = get_stats("punt_no", true).to_i.to_s+"-"+get_stats("punt_yds", true).to_i.to_s
+            %td
+              = get_stats("punt_no", false).to_i.to_s+"-"+get_stats("punt_yds", false).to_i.to_s
+          %tr 
+            %th &nbsp;&nbsp;  Average Per Punt
+            %td 
+            %td 
+          %tr 
+            %th &nbsp;&nbsp;  Net punt average
+            %td= get_stats("punt_avg", true)
+            %td= get_stats("punt_avg", false)
+          %tr 
+            %th <b>KICKOFFS-Yards
+            %td
+              = get_stats("ko_no", true).to_i.to_s+"-"+get_stats("ko_yds", true).to_i.to_s
+            %td
+              = get_stats("ko_no", false).to_i.to_s+"-"+get_stats("ko_yds", false).to_i.to_s
+          %tr 
+            %th &nbsp;&nbsp;  Average Per Kick
+            %td 
+            %td 
+          %tr 
+            %th &nbsp;&nbsp;  Net kick average
+            %td 
+            %td 
+          %tr 
+            %th 
+              %b TIME OF POSSESSION/Game
+            %td
+            %td
+          %tr 
+            %th 
+              %b 3RD-DOWN Conversions
+            %td
+              = get_stats("conversions_thirdconv", true).to_i.to_s+"-"+get_stats("conversions_thirdatt", true).to_i.to_s
+            %td
+              = get_stats("conversions_thirdconv", false).to_i.to_s+"-"+get_stats("conversions_thirdatt", false).to_i.to_s
+          %tr 
+            %th &nbsp;&nbsp;  3rd-Down Pct
+            %td
+            %td
+          %tr 
+            %th 
+              %b 4TH-DOWN Conversions
+            %td
+              = get_stats("conversions_fourthconv", true).to_i.to_s+"-"+get_stats("conversions_fourthatt", true).to_i.to_s
+            %td
+              = get_stats("conversions_fourthconv", false).to_i.to_s+"-"+get_stats("conversions_fourthatt", false).to_i.to_s
+          %tr 
+            %th &nbsp;&nbsp;  4th-Down Pct
+            %td
+            %td
+          %tr 
+            %th 
+              %b SACKS BY-Yards
+            %td
+            %td
+          %tr 
+            %th 
+              %b MISC YARDS
+            %td= get_stats("misc_yds", true).to_i.to_s
+            %td= get_stats("misc_yds", false).to_i.to_s
+          %tr 
+            %th
+              %b TOUCHDOWNS SCORED
+            %td= get_stats("scoring_td", true).to_i.to_s
+            %td= get_stats("scoring_td", false).to_i.to_s
+          %tr 
+            %th
+              %b FIELD GOALS-ATTEMPTS
+            %td
+              =get_stats("fg_made", true).to_i.to_s+"-"+get_stats("fg_att", true).to_i.to_s
+            %td
+              =get_stats("fg_made", false).to_i.to_s+"-"+get_stats("fg_att", false).to_i.to_s
+          %tr 
+            %th 
+              %b ON-SIDE KICKS
+            %td 
+            %td
+          %tr 
+            %th 
+              %b RED-ZONE SCORES
+            %td 
+            %td
+          %tr 
+            %th 
+              %b RED-ZONE TOUCHDOWNS
+            %td
+            %td 
+          %tr 
+            %th 
+              %b PAT-ATTEMPTS
+            %td
+              =(get_stats("pat_kickatt", true).to_i + get_stats("pat_passatt", true).to_i + get_stats("pat_rcvatt", true).to_i).to_s+"-"+(get_stats("pat_kickmade", true).to_i + get_stats("pat_passmade", true).to_i + get_stats("pat_rcvmade", true).to_i).to_s
+            %td
+              =(get_stats("pat_kickatt", false).to_i + get_stats("pat_passatt", false).to_i + get_stats("pat_rcvatt", false).to_i).to_s+"-"+(get_stats("pat_kickmade", false).to_i + get_stats("pat_passmade", false).to_i + get_stats("pat_rcvmade", false).to_i).to_s

@@ -15,15 +15,11 @@ namespace :import do
 				:generated => node['generated'],
 				:hometeam => hometeam,
 				:visteam => visteam,
-				:game_name => hometeam + " vs " + visteam
+				:game_name => "#{hometeam} vs #{visteam}"
 			}
 
 			game = Game.new(game_param)
-			if game.save
-				puts "game imported!"
-			else
-				puts "game failed!"
-			end
+			game.save ? puts "game imported!" : puts "game failed!"
   			game.update(state: 'ongoing')
 
 			sections.css('venue').each do |v|		# there should only be one venue
@@ -36,13 +32,8 @@ namespace :import do
 				}
 
 				venue = Venue.new(venue_param) 				
-				if venue.save
-					puts "venue imported!"
-				else
-					puts "venue failed!"
-				end
+				venue.save ? puts "venue imported!" : puts "venue failed!"
 				venue.update_attributes(:game => game)
-				game.update_attributes(:venue => venue)
 			end
 
 			sections.css('team').each do |t|					# there sould be two team sections
@@ -51,11 +42,7 @@ namespace :import do
 					:nameid => t['id']
 				}
 				team = Team.new(team_param) 
-				if team.save
-					puts "team imported!"
-				else
-					puts "team failed!"
-				end
+				team.save ? puts "team imported!" : puts "team failed!"
 				
 				team_stuff = t.children
 				team_stuff.css('linescore').each do |ls|		# there should only be one per team!
@@ -63,17 +50,11 @@ namespace :import do
 						:prds => ls['prds'].to_i,
 						:score => ls['score'].to_i
 					}
-					linescore = Linescore.new(linescore_param) 
-					
-					if linescore.save
-						puts "linescore imported!"
-					else
-						puts "linescore failed!"
-					end
+					linescore = Linescore.new(linescore_param) 			
+					linescore.save ? puts "linescore imported!" : puts "linescore failed!"
 
-					linescore.update_attributes(:game => game)
-					linescore.update_attributes(:team => team)
-					#game.update_attributes(:linescore =>linescore)
+					game.linescores << linescore
+					team.linescores << linescore
 				
 					ttt = ls.children
 					ttt.css('lineprd').each do |lp|
@@ -88,13 +69,10 @@ namespace :import do
 						:class_attr => py['class']
 					}	
 					player = Player.new(player_param)
-					if player.save
-						puts "player imported!"
-					else
-						puts "player failed!"
-					end
-					player.update_attributes(:game => game)
-					player.update_attributes(:team => team)
+					player.save ? puts "player imported!" : puts "player failed!"
+
+					game.players << player
+					team.players << player
 				end
 				
 				team_stuff.css('totals').each do |tot|			# there should only be one per team!
@@ -105,13 +83,9 @@ namespace :import do
 						:totoff_avg => tot["totoff_avg"].to_f
 					}
 					total = Total.new(total_param) 
-					if total.save
-						puts "total imported!"
-					else
-						puts "total failed!"
-					end
-					total.update_attributes(:game => game)
-					total.update_attributes(:team => team)
+					total.save ? puts "total imported!" : puts "total failed!"
+					game.totals << total
+					team.totals << total
 					
 					tot_misc = tot.children
 					
@@ -131,41 +105,29 @@ namespace :import do
 								col_name = tag + '_' + atr_name
 								# current_value = t[atr_name].to_i
 								totalcon = Totalcondition.new({:value => t[atr_name].to_i})
-								if totalcon.save
-									puts col_name+" imported!"
-								else
-									puts col_name+" failed!"
-								end
+								totalcon.save ? puts "#{col_name} imported!" : puts "#{col_name} failed!"
 
 								# find the associated translation
 								trans = Translation.where(:tag => col_name).first
 								if trans.nil?
-									trans = Translation.new({:tag => col_name, :words => col_name})
-									if trans.save
-										puts col_name + " saved and need to be updated in translation! "
-									else
-										puts col_name + " translation not saved! "
-									end
+									trans = Translation.create!({:tag => col_name, :words => col_name})
+									puts "#{col_name} saved and need to be updated in translation!"
 								end
 
 								# Generate some chips with some prob based on the current states
 								probs = [0.85, 0.65, 0.45, 0.25, 0.05]
 								$t = 0
-								for i in probs do
+								probs.each do |i|
 									$t += 2
 									chip = trans.chips.create!(:argument => '>', :value => (t[atr_name].to_i+$t), :probablity => i)	
-									chip.update_attributes(:game => game)
+									game.chips << chip
 								end
-
-								totalcon.update_attributes(:total => total)
-								totalcon.update_attributes(:translation => trans)
+								trans.totalconditions << totalcon
+								total.totalconditions << totalcon
 							end
 						end
-
 					end
-
 				end
-
 			end
 
 			sections.css("scores").each do |s| 					# there should only be one 'scores' section
@@ -190,25 +152,18 @@ namespace :import do
 						:hscore => score["hscore"].to_i
 					}	
 					score_ = Score.new(score_param)
-					if score_.save
-						puts "score imported!"
-					else
-						puts "score failed!"
-					end
-					score_.update_attributes(:game => game)
+					score_.save ? puts "score imported!" : puts "score failed!"
+
 					team = Team.where(:name => score["team"]).first
-					score_.update_attributes(:team => team)
+					team.scores << score_
+					game.scores << score_
 				end
 			end
 
 			sections.css("fgas").each do |f| 			# there should only be one 'fgas' section
 				fgas = f.children
 				fgas.css('fga').each do |fga|
-					if fga["result"] == "good"
-						result = true
-					else
-						result = false
-					end
+					result = (fga["result"] == "good") 
 
 					fga_param = {
 						:kicker => fga["kicker"],
@@ -218,17 +173,10 @@ namespace :import do
 						:result => result
 					}
 					fga = Fga.new(fga_param)
-
-					if fga.save
-						puts "fga imported!"
-					else
-						puts "fga failed!"
-					end
-
-					fga.update_attributes(:game => game)
+					fga.save ? puts "fga imported!" : puts "fga failed!"
+					game.fgas << fga
 					team = Team.where(:name => fga["team"]).first
-					fga.update_attributes(:team => team)
-
+					team.fgas << fga
 				end
 			end
 
@@ -252,32 +200,12 @@ namespace :import do
 						:end_spot => dr["end_spot"]
 					}
 					drive = Drife.new(drive_param)
-
-					if drive.save
-						puts "drive imported!"
-					else
-						puts "drive failed!"
-					end
-
-					drive.update_attributes(:game => game)
+					drive.save ? puts "drive imported!" : puts "drive failed!"
+					game.drives << drive
 					team = Team.where(:name => dr["team"]).first
-					drive.update_attributes(:team => team)
-
+					team.drives << drive
 				end
 			end
-
-			# sections.css('team').first do |t|
-			# 	ls = t.children
-			# 	linescore_param = {
-			# 		:prds => ls['prds'].to_i,
-			# 		:score => ls['score'].to_i
-			# 	}
-			# 	linescore = Linescore.new(linescore_param) 
-			# 	linescore.save
-			# 	linescore.update_attributes(:game => game)
-			# 	game.update_attributes(:linescore =>linescore)
-			# end
-
 		end
 	end
 end
