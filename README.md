@@ -9,20 +9,34 @@ Github Repo: https://github.com/maeii426/FootballBingo
 Pivotal Tracker: https://www.pivotaltracker.com/n/projects/2316586
 
 
-bundle install&nbsp;&nbsp;
-bundle update&nbsp;&nbsp;
-sudo service postgresql start&nbsp;&nbsp;
--- rails db:reset&nbsp;&nbsp;
-rails db:setup&nbsp;&nbsp;
-rails db:migrate&nbsp;&nbsp;
-rails db:seed&nbsp;&nbsp;
-rails import:getxmlgame&nbsp;&nbsp;
-rails server -p $PORT -b $IP&nbsp;&nbsp;
+bundle install
+
+bundle update
+
+sudo service postgresql start
+
+-- rails db:reset
+
+rails db:setup
+
+rails db:migrate
+
+rails db:seed
+
+rails import:getxmlgame
+
+rails server -p $PORT -b $IP
 
 
-git push heroku master&nbsp;&nbsp;
---  heroku pg:reset&nbsp;&nbsp;
-heroku rake db:migrate&nbsp;&nbsp;
-heroku run rake db:seed&nbsp;&nbsp;
-heroku run rake import:getxmlgame&nbsp;&nbsp;
--- heroku git:remote -a&nbsp;&nbsp;
+git push heroku master
+
+--  heroku pg:reset
+
+heroku rake db:migrate
+
+heroku run rake db:seed
+
+heroku run rake import:getxmlgame
+
+-- heroku git:remote -a
+
