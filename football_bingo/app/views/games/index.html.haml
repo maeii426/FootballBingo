@@ -3,31 +3,35 @@
 .center
   %h3 All Games
 
-.row
-  .col-md-12.col-md-offset-0
-    %table.table.table-hover#all-games
-      %thead
-        %tr
-          %th Game
-          %th Date
-          %th Home Team
-          %th Visiting Team
-          %th Status
-          %th Play Now?
-          %th More Info
-      %tbody
-        - @games.each do |game|
-          %tr
-            %td= game.game_name 
-            %td= game.date.to_date
-            %td= game.hometeam
-            %td= game.visteam
-            %td= get_state(game)
-            %td 
-              - if game.ongoing?
-                = link_to 'Play!'.html_safe, user_game_join_path(current_user, game), :method => :post, class: "btn btn-primary maroon"
-              - elsif game.upcoming?
-                Wait ..
-              - else
-                = link_to 'Check play history'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
-            %td= link_to "More about", game_path(game), class: "btn btn-primary maroon"
+.panel.panel-default
+  .panel-heading
+    %h3 All Games
+  .panel-body
+    .row
+      .col-md-12.col-md-offset-0
+        %table.table.table-hover#all-games
+          %thead
+            %tr
+              %th Game
+              %th Date
+              %th Home Team
+              %th Visiting Team
+              %th Status
+              %th Play Now?
+              %th More Info
+          %tbody
+            - @games.each do |game|
+              %tr
+                %td= game.game_name 
+                %td= game.date.to_date
+                %td= game.hometeam
+                %td= game.visteam
+                %td= get_state(game)
+                %td 
+                  - if game.ongoing?
+                    = link_to 'Play!'.html_safe, user_game_join_path(current_user, game), :method => :post, class: "btn btn-primary maroon"
+                  - elsif game.upcoming?
+                    Wait ..
+                  - else
+                    = link_to 'Check play history'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
+                %td= link_to "More about", game_path(game), class: "btn btn-primary maroon"
