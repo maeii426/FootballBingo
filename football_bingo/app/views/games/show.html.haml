@@ -1,35 +1,36 @@
 = content_for(:title, @game.game_name)
-%h1 Game Statistics
-%p=link_to '<button type="button">Return to Profile</button>'.html_safe, user_path(current_user)
-
-.center
-  .row
-    .col-md-6.col-md-offset-3
-      %table{:border=>0, :width=>"100%"}
-        %tr
-          %td{:bgcolor=>"#c0c0c0"}
-        %h3 Overall Team Statistics 
+.row
+  .center
+    %br/
+    %h1 Game Statistics
+.row
+  .col-md-5.col-md-offset-9
+    =link_to 'Return to Profile'.html_safe, user_path(current_user), class: "btn btn-primary maroon"
 
 .row
-  .col-md-12.col-md-offset-4
+  .col-md-6.col-md-offset-3
+    %table.table.table-borderless.game-stats-title
+      %tr
+        %td{:bgcolor=>"#c0c0c0"}
+          .center
+            %h3 Overall Team Statistics 
+.row
+  .col-md-6.col-md-offset-3
     - if !@game.nil?
       .center
-        %table
+        %table.table.table-hover.game-stats
           %thead
-            %tr{:bgcolor=>"#800000"}
-              %th{:bgcolor=>"#800000"}
-                %font{:color=>"#ffffff"}
-                  %b TEAM STATISTICS
-              %th{:bgcolor=>"#800000"}
-                %font{:color=>"#ffffff"}
-                  &nbsp;
-                  %b= @game.hometeam 
-                  &nbsp;
-              %th{:bgcolor=>"#800000"}
-                %font{:color=>"#ffffff"}
-                  &nbsp;
-                  %b= @game.visteam
-                  &nbsp;
+            %tr
+              %th
+                %b TEAM STATISTICS
+              %th
+                &nbsp;
+                %b= @game.hometeam 
+                &nbsp;
+              %th
+                &nbsp;
+                %b= @game.visteam
+                &nbsp;
           %tbody
             %tr
               %th 

@@ -1,19 +1,44 @@
-body {
-  font-size: 100%;
-}
 
-table {
-	
-}
-
-th {
+.game-stats thead{
+	color: white;
 	text-align: left;
+	background-color: #800000;
 }
 
-tr {
+.game-stats tbody{
 	font-color: black;
 	background-color: white;
 	text-align: center;
+}
+
+.score-board thead{
+	color: white;
+	background-color: #800000;
+}
+
+.score-board tbody{
+	font-color: black;
+	background-color: white;
+}
+
+.all-games thead{
+	color: white;
+	background-color: #800000;
+}
+
+.all-games tbody{
+	font-color: black;
+	background-color: white;
+}
+
+.game-history thead{
+	color: white;
+	background-color: #800000;
+}
+
+.game-history tbody{
+	font-color: black;
+	background-color: white;
 }
 
 td {

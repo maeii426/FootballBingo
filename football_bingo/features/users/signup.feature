@@ -16,7 +16,7 @@ Scenario: Sign up with new email
   When I fill in "Email" with "user2@whoop.com"
   When I fill in "Password" with "11111111"
   When I fill in "Password confirmation" with "11111111"
-  And I press "Create my account"
+  And I press "Submit"
   Then I should see "user2"
   Then I should see "Welcome to the FootballBingo App!"
 
@@ -27,7 +27,7 @@ Scenario: Sign up with existing email
   When I fill in "Email" with "user0@whoop.com"
   When I fill in "Password" with "12345678"
   When I fill in "Password confirmation" with "12345678"
-  And I press "Create my account"
+  And I press "Submit"
   Then I should see "Email has already been taken"
   
 Scenario: Sign up with new email but wrong password confirmation
@@ -36,5 +36,5 @@ Scenario: Sign up with new email but wrong password confirmation
   When I fill in "Email" with "user2@whoop.com"
   When I fill in "Password" with "12345678"
   When I fill in "Password confirmation" with "00000000"
-  And I press "Create my account"
+  And I press "Submit"
   Then I should see "Password confirmation doesn't match"

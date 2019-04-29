@@ -3,26 +3,27 @@
 %h2 Score Board
 
 .row
-  .col-md-10.col-md-offset-1
-    %table.table{:border => 2}
+  .col-md-8.col-md-offset-2
+    %table.table.score-board.table-hover
       %thead
         %tr
-          %th Game
-          %th Date
-          %th Instant Winner
-          %th Whoop Winner
+          %th &nbsp;Game&nbsp;&nbsp;&nbsp;
+          %th &nbsp;Date&nbsp;&nbsp;&nbsp;
+          %th &nbsp;Instant Winner&nbsp;
+          %th &nbsp;Whoop Winner&nbsp;
           - if admin_user?
-            %th Send Email?
+            %th &nbsp;Send Email?
       %tbody
         - @games.each do |game|
           %tr
             %td= game.game_name 
-            %td= game.date
+            %td= game.date.to_date
             %td
               - if instant_winner?(game) 
                 = instant_winner(game).name
             %td 
               - if whoop_winner?(game)
                 = whoop_winner(game).name
-            - if admin_user? 
-              %td= button_to 'Send', send_email_path(:whoop_winner_id => whoop_winner(game).id)
+            - if admin_user?           
+              %td
+                = button_to 'Send', send_email_path(:whoop_winner_id => whoop_winner(game).id), class: "btn btn-primary maroon"

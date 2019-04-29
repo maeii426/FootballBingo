@@ -1,0 +1,17 @@
+= content_for(:title, "Users")
+
+%h2 All Users
+.row
+  .col-md-6.col-md-offset-4
+    %table.table.user-table
+      %thead
+        %tr
+          %th Name
+          %th Email
+          %th Delete?
+      %tbody
+        - @users.each do |user|
+          %tr
+            %td= user.name
+            %td= user.email
+            %td= link_to 'Delete'.html_safe, user_path(user.id), :method => :delete, class: "btn btn-primary maroon"

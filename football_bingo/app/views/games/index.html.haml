@@ -4,7 +4,7 @@
 
 .row
   .col-md-10.col-md-offset-1
-    %table.table{:border => 2}
+    %table.table.table-hover.all-games
       %thead
         %tr
           %th Game
@@ -18,15 +18,15 @@
         - @games.each do |game|
           %tr
             %td= game.game_name 
-            %td= game.date
+            %td= game.date.to_date
             %td= game.hometeam
             %td= game.visteam
             %td= get_state(game)
             %td 
               - if game.ongoing? 
-                = button_to 'Play!', user_game_join_path(current_user, game)
+                = button_to 'Play!', user_game_join_path(current_user, game), class: "btn btn-primary maroon"
               - elsif game.upcoming?
                 Wait ..
               - else
-                = link_to '<button type="button">Check play history</button>'.html_safe, user_game_play_path(current_user, game)
+                = link_to 'Check play history'.html_safe, user_game_play_path(current_user, game)
             %td= link_to "More about #{game.game_name}", game_path(game)

@@ -11,8 +11,8 @@ Scenario: Edit with wrong email format
   Then I fill in "Name" with "newname"
   And I fill in "Email" with "newemail"
   And I fill in "Password" with "newpassword"
-  And I fill in "Confirmation" with "newpassword"
-  And I press "Save changes"
+  And I fill in "Password confirmation" with "newpassword"
+  And I press "Submit"
   Then I should see "Email is invalid"
 
 Scenario: Edit with correct information
@@ -22,8 +22,8 @@ Scenario: Edit with correct information
   Then I fill in "Name" with "newname"
   And I fill in "Email" with "newemail@whoop.com"
   And I fill in "Password" with "newpassword"
-  And I fill in "Confirmation" with "newpassword"
-  And I press "Save changes"
+  And I fill in "Password confirmation" with "newpassword"
+  And I press "Submit"
   Then I should see "User was successfully updated."
 
 Scenario: Edit with unmatched password
@@ -31,6 +31,6 @@ Scenario: Edit with unmatched password
   When I go to the edit page for "newuser"
   Then I should see "Update your profile"
   Then I fill in "Password" with "newpassword"
-  And I fill in "Confirmation" with "newpassword1"
-  And I press "Save changes"
+  And I fill in "Password confirmation" with "newpassword1"
+  And I press "Submit"
   Then I should see "Password confirmation doesn't match"
