@@ -28,6 +28,8 @@ rails import:getxmlgame
 rails server -p $PORT -b $IP
 
 
+
+
 git push heroku master
 
 --  heroku pg:reset
