@@ -2,18 +2,18 @@
 
 %h1 Show all the cards associated with this game
 %p
-  .row
-  .col-md-8.col-md-offset-2
+  .center
+    .row
     - if @game.ongoing?
       %h4 
-        = button_to 'Get a new card!', user_game_get_new_card_path(current_user, @game), class: "btn btn-primary maroon"
-        = button_to 'Get a whoop card!', user_game_get_whoop_card_path(current_user, @game), class: "btn btn-primary maroon"
-      = link_to 'Return to Profile'.html_safe, user_path(current_user), class: "btn btn-primary maroon"
-    - if @game.ongoing?
-      %h4 
-        = button_to 'Do I Win?', user_game_check_win_path(current_user, @game), class: "btn btn-primary maroon"
+        = link_to 'Get a new card!'.html_safe, user_game_get_new_card_path(current_user, @game), :method => :post, class: "btn btn-primary maroon"
+        = link_to 'Get a whoop card!'.html_safe, user_game_get_whoop_card_path(current_user, @game), :method => :post, class: "btn btn-primary maroon"
+        = link_to 'Return to Profile'.html_safe, user_path(current_user), class: "btn btn-primary maroon"
+        = link_to 'Do I Win?'.html_safe, user_game_check_win_path(current_user, @game), :method => :post, class: "btn btn-primary maroon"
   .row
   .col-md-8.col-md-offset-2
+    %h1
+      %br/
     - @cards.each do |card|
       - show_card(card)
       = render 'cards/card'

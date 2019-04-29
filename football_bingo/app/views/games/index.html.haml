@@ -1,10 +1,11 @@
 = content_for(:title, "Games")
-
-%h2 All Games
+%br/
+.center
+  %h3 All Games
 
 .row
-  .col-md-10.col-md-offset-1
-    %table.table.table-hover.all-games
+  .col-md-12.col-md-offset-0
+    %table.table.table-hover#all-games
       %thead
         %tr
           %th Game
@@ -23,10 +24,10 @@
             %td= game.visteam
             %td= get_state(game)
             %td 
-              - if game.ongoing? 
-                = button_to 'Play!', user_game_join_path(current_user, game), class: "btn btn-primary maroon"
+              - if game.ongoing?
+                = link_to 'Play!'.html_safe, user_game_join_path(current_user, game), :method => :post, class: "btn btn-primary maroon"
               - elsif game.upcoming?
                 Wait ..
               - else
-                = link_to 'Check play history'.html_safe, user_game_play_path(current_user, game)
-            %td= link_to "More about #{game.game_name}", game_path(game)
+                = link_to 'Check play history'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
+            %td= link_to "More about", game_path(game), class: "btn btn-primary maroon"

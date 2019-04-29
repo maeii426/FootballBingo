@@ -15,9 +15,11 @@
         as an instant winner and 
         =whoop_games(@user).length 
         as a whoop winner.
+.center
+  %h3 Play History
 .row
-  .col-md-12.col-md-offset-0
-    %table.table.table-hover.game-history
+  .col-md-10.col-md-offset-1
+    %table.table.table-hover#game-history
       %thead
         %tr
           %th Game  
@@ -40,9 +42,9 @@
           %td= check_num_whoop_cards(game, current_user)
           %td 
             - if game.ongoing?
-              =link_to 'Play!'.html_safe, user_game_play_path(current_user, game)
+              =link_to 'Play!'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
             - elsif game.upcoming?
               Wait ..
             - else
-              =link_to 'Check play history'.html_safe, user_game_play_path(current_user, game)
-          %td= link_to "More about #{game.game_name}", game_path(game)
+              =link_to 'Check play history'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
+          %td= link_to "More about", game_path(game), class: "btn btn-primary maroon"
