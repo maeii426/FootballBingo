@@ -19,7 +19,6 @@ Rails.application.routes.draw do
       post '/join' => 'games#join'
       post '/get_new_card' => 'games#get_new_card'
       post '/get_whoop_card' => 'games#get_whoop_card'
-
     end
   end
 

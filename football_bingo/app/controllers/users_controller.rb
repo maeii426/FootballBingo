@@ -77,7 +77,7 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   def destroy
-    @user = User.find(params[:id])
+    # @user = User.find(params[:id])
     @user.destroy
     flash[:success] = "User was successfully destroyed."
     redirect_to users_url
@@ -100,7 +100,7 @@ class UsersController < ApplicationController
           flash[:warning] = "Not yet. Good luck is on your way!"
         end
     end
-    redirect_to users_url
+    redirect_to @user
   end
 
   private
