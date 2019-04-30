@@ -43,7 +43,7 @@ RSpec.describe GamesController, type: :controller do
       @gu = create(:game_user, user_id: @user.id, game_id: @game.id)
     end
     it 'redirect to user game play page' do
-      get :join , params: {:user_id => @user.id, :game_id => @game.id}
+      post :join , params: {:user_id => @user.id, :game_id => @game.id}
       expect(flash[:warning]).to eq('You can continue this game!')
     end
   end

@@ -84,7 +84,7 @@ RSpec.describe UsersController, type: :controller do
     end
 
     it "should show 'success' message when  win" do
-      post :check_win
+      post :check_win ,  params: {:user_id => @user.id, :game_id => @game.id}
       expect(flash[:success]).to eq('Whoop! You are the winner! Go to check score board!')
     end
 
