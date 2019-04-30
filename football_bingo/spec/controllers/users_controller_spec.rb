@@ -43,6 +43,15 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
+  describe "#create" do
+    it 'create user account' do
+      user_params = {"name" => 'xx', "email" => 'ga@gmail.com', "password" => '123456', "password_confirmation" => '123456'}
+      post :create,  params:{:user => user_params}
+      expect(flash[:success]).to eq('Welcome to the FootballBingo App!')
+    end
+  end
+
+
   describe "check win or not" do
     before(:each) do
       @user = create(:user, :id => 1,:name => 'xx', :email => 'ga@gmail.com', :role => 'admin')

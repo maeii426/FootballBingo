@@ -9,7 +9,6 @@ RSpec.describe GamesController, type: :controller do
     end
   end
 
-
   describe "#show" do
     before(:each) do
       @game = create(:game, id: 1, state: 'ongoing',hometeam: "TAMU",visteam: "RICE")
