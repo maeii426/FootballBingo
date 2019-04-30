@@ -45,7 +45,6 @@ def check_states_winner_rule
   $win_card_num=0
 
   @cards.each do|card|
-     # chip_ids = card.chip_ids
     s = Array.new
 
     ccs = CardChip.where(:card => card)
@@ -53,10 +52,7 @@ def check_states_winner_rule
       words, state = Chip.find(cc.chip_id).translate 
       s.push(state)
     end
-    # chip_ids.each do|chip_id|
-    #   words, state = Chip.find(chip_id).translate
-    #   s.push(state)
-    # end
+
      t1=s[0] && s[1] && s[2]
      t2=s[3] && s[4] && s[5]
      t3=s[6] && s[7] && s[8]

@@ -1,0 +1,14 @@
+#card_container
+  - size = 5
+  - (0..size-1).each do |row|
+    .btn-group{:role=>"group", "aria-label"=>"Block#{row}", :style=>"width:100%;font-size:12px"}
+      - id_s = size * row
+      - id_e = size * (row + 1) - 1
+      - (id_s..id_e).each do |i|
+        %button.btn.btn-default.noHover#cardstyle{:type=>"button", :class=>"#{@chip_states[i] ? "bingotrue" : "bingofalse" }" }
+          =@chips_in_words[i]
+          =@chip_probs[i]
+          \%
+#gap_card
+  %h1
+    %br/
