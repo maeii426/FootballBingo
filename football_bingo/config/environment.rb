@@ -5,8 +5,8 @@ require File.expand_path('../application', __FILE__)
 Rails.application.initialize!
 
 begin
-    #listener_grabber = Listen.to('../../stat-share\\ftb', only: /tam.xml/) do |modified, added, removed|
-    listener_grabber = Listen.to('', only: /tampp.xml/) do |modified, added, removed|
+    listener_grabber = Listen.to('../../stat-share\\ftb', only: /tam.xml/) do |modified, added, removed|
+    #listener_grabber = Listen.to('', only: /tamtest.xml/) do |modified, added, removed|
       if !modified.nil? && !modified.empty?
           begin
             require 'nokogiri'
@@ -60,8 +60,5 @@ listener_local = Listen.to('XML') do |modified, added, removed|
             get_xml_game(filename)
         end
     end
-    puts "modified absolute path: #{modified}"
-    puts "added absolute path: #{added}"
-    puts "removed absolute path: #{removed}"
 end
-  listener_local.start # not blocking
+listener_local.start # not blocking

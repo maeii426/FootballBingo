@@ -55,17 +55,17 @@ def get_xml_game(filepath)
 			}
 
 			venues = Venue.where(venue_param) 		
-			if venues.length != 0
-            puts "exising venue found"
-            if venues.length != 1
-                puts "SERIOUS PROBLEMS"
+    		if venues.length != 0
+                puts "exising venue found"
+                if venues.length != 1
+                    puts "SERIOUS PROBLEMS"
+                end
+                venue = venues.first
+                venue.update(venue_param)
+            else
+                puts "creating new venue"
+                venue = Venue.new(venue_param)
             end
-            venue = venues.first
-            venue.update(venue_param)
-        else
-            puts "creating new venue"
-            venue = Venue.new(venue_param)
-        end
 			
 			if venue.save
 				#puts "venue imported!"
@@ -79,7 +79,7 @@ def get_xml_game(filepath)
 		sections.css('team').each do |t|					# there sould be two team sections
 			team_param = {
 				:name => t['name'],
-				:nameid => t['id']git 
+				:nameid => t['id']
 			}
 			team = Team.new(team_param) 
 			if team.save
