@@ -4,12 +4,13 @@
 %p
   .center
     .row
-    - if @game.ongoing?
       %h4 
+      - if @game.ongoing?
         = link_to 'Get a new card!'.html_safe, user_game_get_new_card_path(current_user, @game), :method => :post, class: "btn btn-primary maroon"
-        = link_to 'Get a whoop card!'.html_safe, user_game_get_whoop_card_path(current_user, @game), :method => :post, class: "btn btn-primary maroon"
-        = link_to 'Return to Profile'.html_safe, user_path(current_user), class: "btn btn-primary maroon"
+        - if admin_user?
+          = link_to 'Get a whoop card!'.html_safe, user_game_get_whoop_card_path(current_user, @game), :method => :post, class: "btn btn-primary maroon"     
         = link_to 'Do I Win?'.html_safe, user_game_check_win_path(current_user, @game), :method => :post, class: "btn btn-primary maroon"
+      = link_to 'Return to Profile'.html_safe, user_path(current_user), class: "btn btn-primary maroon"
   .row
   .col-md-8.col-md-offset-2
     %h1

@@ -1,11 +1,11 @@
 Feature: Join a game
 
-  As a user
+  As an admin
   So that I can get bingo cards
   I want to join an ongoing game
 
 Background: Login the user before every scenario
-  Given I exist as a user
+  Given I exist as an admin
 
 Scenario: I can join an ongoing game for the first time
   Given an ongoing game which I never play exists
