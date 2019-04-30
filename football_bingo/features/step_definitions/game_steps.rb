@@ -128,6 +128,10 @@ Given /^a finished game which I played before exists$/ do
 	set_played
 end
 
+Given /^a finished game which I never played before exists$/ do
+	create_finished_game
+end
+
 Given /^I am a whoop winner$/ do
 	set_whoop_winner
 end

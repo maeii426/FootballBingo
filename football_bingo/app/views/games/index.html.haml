@@ -32,6 +32,6 @@
                     = link_to 'Play!'.html_safe, user_game_join_path(current_user, game), :method => :post, class: "btn btn-primary maroon"
                   - elsif game.upcoming?
                     Wait ..
-                  - else
+                  - elsif played?(current_user, game)
                     = link_to 'Check play history'.html_safe, user_game_play_path(current_user, game), class: "btn btn-primary maroon"
                 %td= link_to "More about", game_path(game), class: "btn btn-primary maroon"

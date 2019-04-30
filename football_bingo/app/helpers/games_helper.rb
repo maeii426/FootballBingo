@@ -76,6 +76,10 @@ def get_state(game)
     end
 end
 
+def played?(user, game)
+  return GameUser.where(user: user, game: game).any?
+end
+
 def instant_winner(game)
     if !game.upcoming?
         gu = GameUser.where(:game => game, :state => "instant_winner").first

@@ -40,3 +40,9 @@ Scenario: I get failed message if I don't win
   When I get a new non-whoop card
   And I follow "Do I Win?"
   Then I should see "Not yet. Good luck is on your way!"
+
+Scenario: I can see the bingo card status of my self
+  Given I joined a game for the first time
+  When I get a new card with two chips which meet the conditions
+  And I follow "Do I win?"
+  Then I should see "You need one more chip!"
