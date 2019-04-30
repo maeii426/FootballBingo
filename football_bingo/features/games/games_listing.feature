@@ -31,7 +31,7 @@ Scenario: I can see more info of the game
 
 Scenario: I cannot see a game I never play in my profile
   Given an ongoing game which I never play exists
-  When I follow "Profile"
+  When I want to see my personal bingo profile page
   Then I should not see the name of the game
 
 Scenario: I cannot check the play history of a finished game I never played before
@@ -41,15 +41,15 @@ Scenario: I cannot check the play history of a finished game I never played befo
 
 Scenario: I can see a game I played in my profile
   Given an ongoing game which I played before exists
-  When I follow "Profile"
+  When I want to see my personal bingo profile page
   Then I should see the name of the game
   And I should see "Ongoing"
-  And I should see "Try!"
+  And I should see "Keep going!"
   And I should see "Play!"
 
 Scenario: A finished game
   Given a finished game which I played before exists
-  When I follow "Profile"
+  When I want to see my personal bingo profile page
   Then I should see "You have played 1 games and won 0 of them, 0 as an instant winner and 0 as a whoop winner"
   And I should see "Good Luck Next Time.."
   And I should see "Finished"
@@ -62,21 +62,21 @@ Scenario: An upcoming game
 
 Scenario: A finished game
   Given a finished game which I played before exists
-  When I follow "Profile"
+  When I want to see my personal bingo profile page
   And I follow "Check play history"
   Then I should not see "Get a new card!"
 
 Scenario: A finished game
   Given a finished game which I played before exists
   And I am a whoop winner
-  When I follow "Profile"
+  When I want to see my personal bingo profile page
   Then I should see "won 1 of them, 0 as an instant winner and 1 as a whoop winner"
   And I should see "Whoop Winner!"
 
 Scenario: Instant winner
   Given a finished game which I played before exists
   And I am a instant winner
-  When I follow "Profile"
+  When I want to see my personal bingo profile page
   Then I should see "won 1 of them, 1 as an instant winner and 0 as a whoop winner"
   And I should see "Instant Winner!"
 

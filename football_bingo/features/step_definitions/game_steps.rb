@@ -179,6 +179,10 @@ When /^I press the more info of the game$/ do
 	click_on "More about"
 end
 
+When /^I want to see my personal bingo profile page$/ do
+	click_on "Bingo"
+end
+
 ### THEN ###
 Then /^I should see the name of the game$/ do
   page.should have_content @game[:game_name]
