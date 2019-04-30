@@ -1,5 +1,6 @@
 module GamesHelper
 
+<<<<<<< HEAD
 def do_something
 end
 
@@ -267,6 +268,53 @@ def game_helper_parse
 			end
 		end
 	end
+=======
+def game_helper_load
+    # Load data somewhere else
+
+    # Fetch and parse HTML document
+    #doc = Nokogiri::XML(open(Rails.root + @game_path))    #('https://nokogiri.org/tutorials/installing_nokogiri.html'))
+
+    # ASSUMPTIONS
+        # no '_' tokens in the XML tag
+        # right now - tags that should have only one instance are assumed to have only one instance
+        # ********* CONDITION IS >
+
+    # Game metadata
+
+    # PER TEAM
+    # Linescore
+    # Totals
+    # Player
+
+    # Scores
+
+    # fgas
+
+    # drives
+
+    # PER QTR
+    # plays
+    # drivestart
+    # drivesum
+    # score
+    # qtr summary
+
+
+    # tokens = @conditional.split('_', 2)
+    # doc_content = doc.at(tokens[0])
+    # if doc_content
+    #     entries = doc_content.to_s
+    #     if entries.include?(tokens[1])
+    #         doc_value = entries.match(/#{tokens[1]}="([^"]*)"/).captures
+    #         #doc_value = entries.match(/(?<#{tokens[1]}>\w+)/)
+    #         if value <= doc_value[0].to_f
+    #             return true
+    #         end
+    #     end
+    # end
+    # false
+>>>>>>> 2ccdadf235d4ebc971ab829241f337ce940e8971
 end
 
 def get_stats(tag_input, is_home)
@@ -277,7 +325,7 @@ def get_stats(tag_input, is_home)
             return tc.value
         else
             # return 0
-        end 
+        end
     else
         tc = Totalcondition.where(:total => @vis_totals, :translation =>trans).first
         if !tc.nil?
@@ -290,7 +338,7 @@ end
 
 def get_state(game)
     if game.finished?
-        return "Finished" 
+        return "Finished"
     elsif game.ongoing?
         return "Ongoing"
     else
@@ -298,25 +346,31 @@ def get_state(game)
     end
 end
 
+def played?(user, game)
+  return GameUser.where(user: user, game: game).any?
+end
+
 def instant_winner(game)
     if !game.upcoming?
         gu = GameUser.where(:game => game, :state => "instant_winner").first
         if(!gu.nil?)
             return gu.user
-        end  
+        end
     end
 end
 
 def instant_winner?(game)
     if !game.upcoming?
-        gu = GameUser.where(:game => game, :state => "instant_winner").any?
+        return GameUser.where(:game => game, :state => "instant_winner").any?
     end
+    false
 end
 
 def whoop_winner?(game)
     if !game.upcoming?
-        gu = GameUser.where(:game => game, :state => "whoop_winner").any?
+        return GameUser.where(:game => game, :state => "whoop_winner").any?
     end
+    false
 end
 
 def whoop_winner(game)
@@ -358,7 +412,7 @@ def show_card(card)
     @chip_probs = Array.new
     @chip_states = Array.new
     ccs.each do |cc|
-      words, state = Chip.find(cc.chip_id).translate 
+      words, state = Chip.find(cc.chip_id).translate
       prob = Chip.find(cc.chip_id).prob
       @chips_in_words.push(words)
       @chip_states.push(state)

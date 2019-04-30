@@ -4,15 +4,16 @@ Rails.application.routes.draw do
   get  '/help' => 'static_pages#help'
   get  '/signup' => 'users#new'
   post '/signup' => 'users#create'
-  
+
   get    '/login' => 'sessions#new'
   post   '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
   get '/score_board' => 'games#score_board'
   post '/send_email' => 'games#send_email'
+  post '/games' => :show, controller: 'games'
 
   resources :users do
-    get '/share' => 'users#share'    
+    get '/share' => 'users#share'
     resources :games do
       get '/play' => 'games#play_game'
       post '/join' => 'games#join'
@@ -25,5 +26,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   #root 'users#index'
   resources :games do
+
   end
 end

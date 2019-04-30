@@ -4,7 +4,6 @@ ruby '2.6.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'#, '4.2.5'
 gem 'bootstrap-sass'#, '3.3.7'
-# Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.3.7' 
 gem 'pg'#, '~> 0.20'
 # Use SCSS for stylesheets
@@ -73,6 +72,7 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'simplecov', :require => false
+  gem 'rails-controller-testing'
 end
 
 # group :production do

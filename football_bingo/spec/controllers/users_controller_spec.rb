@@ -1,5 +1,18 @@
 require 'rails_helper'
 
+if RUBY_VERSION>='2.6.0'
+  if Rails.version < '5'
+    class ActionController::TestResponse < ActionDispatch::TestResponse
+      def recycle!
+        @mon_mutex_owner_object_id = nil
+        @mon_mutex = nil
+        initialize
+      end
+    end
+  else
+    puts "Monkeypatch for ActionController::TestResponse no longer needed"
+  end
+end
 
 RSpec.describe UsersController, type: :controller do
 
@@ -18,9 +31,30 @@ RSpec.describe UsersController, type: :controller do
   end
 
 
+  describe "#destroy" do
+    before(:each) do
+      @user = create(:user, :id => 1,:name => 'xx', :email => 'ga@gmail.com', :role => 'admin')
+      session[:user_id] = @user.id
+      session[:user] = @user
+    end
+    it 'should delete the user' do
+      delete :destroy,  params: { id: @user.id }
+      response.should redirect_to(users_url)
+    end
+  end
+
+  describe "#create" do
+    it 'create user account' do
+      user_params = {"name" => 'xx', "email" => 'ga@gmail.com', "password" => '123456', "password_confirmation" => '123456'}
+      post :create,  params:{:user => user_params}
+      expect(flash[:success]).to eq('Welcome to the FootballBingo App!')
+    end
+  end
+
+
   describe "check win or not" do
     before(:each) do
-      @user = create(:user)
+      @user = create(:user, :id => 1,:name => 'xx', :email => 'ga@gmail.com', :role => 'admin')
       session[:user_id] = @user.id
       session[:user] = @user
       @game = create(:game, id: 2, state: 'ongoing')
@@ -42,7 +76,6 @@ RSpec.describe UsersController, type: :controller do
       @trans = Translation.create!({:tag => 'firstdowns_rush', :words => 'Total rushing first downs'})
       @trans.chips.create!(:argument => '>', :value => 10, :probablity => 1.0)
 
-
       @chip_ids = [3, 1, 5, 1, 2, 3, 4, 3, 1]
       @chip_ids.each do |i|
         CardChip.create( {:card => @card, :chip_id => i} )
@@ -51,10 +84,8 @@ RSpec.describe UsersController, type: :controller do
     end
 
     it "should show 'success' message when  win" do
-      subject {@user}
-      post subject.check_win
+      post :check_win ,  params: {:user_id => @user.id, :game_id => @game.id}
       expect(flash[:success]).to eq('Whoop! You are the winner! Go to check score board!')
-      expect(response).to redirect_to(@user)
     end
 
 

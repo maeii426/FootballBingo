@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_action :logged_in_user, only: [:edit, :update, :show, :share]
+  before_action :logged_in_user, only: [:edit, :update, :show, :share, :check_win]
   before_action :correct_user, only: [:edit, :update, :show]
   before_action :admin_user, only: [:index, :destroy]
   # GET /users
@@ -73,12 +73,14 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   def destroy
+    # @user = User.find(params[:id])
     @user.destroy
     flash[:success] = "User was successfully destroyed."
     redirect_to users_url
   end
 
   def check_win
+    # @user = User.find(session[:user_id])
     @user = current_user
     @gus = playing_games(@user).first
     if !@gus.nil?
@@ -89,7 +91,7 @@ class UsersController < ApplicationController
           gu = GameUser.where(:user_id => @user.id, :game => game.id).first
           gu.update(:state => "whoop_winner")
           gu.update(:whoops => win_card_num)
-          flash[:success] = "Whoop! You are the winner! Go to check score board!" 
+          flash[:success] = "Whoop! You are the winner! Go to check score board!"
         else
           flash[:warning] = "Not yet. Good luck is on your way!"
         end

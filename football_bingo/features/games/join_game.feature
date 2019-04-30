@@ -1,11 +1,11 @@
 Feature: Join a game
 
-  As a user
+  As an admin
   So that I can get bingo cards
   I want to join an ongoing game
 
 Background: Login the user before every scenario
-  Given I exist as a user
+  Given I exist as an admin
 
 Scenario: I can join an ongoing game for the first time
   Given an ongoing game which I never play exists
@@ -32,11 +32,17 @@ Scenario: I got a new card
 Scenario: I get successful message if I win
   Given I joined a game for the first time
   When I get a new whoop card
-  And I press "Do I Win?"
+  And I follow "Do I Win?"
   Then I should see "Whoop! You are the winner! Go to check score board!"
 
 Scenario: I get failed message if I don't win
   Given I joined a game for the first time
   When I get a new non-whoop card
-  And I press "Do I Win?"
+  And I follow "Do I Win?"
   Then I should see "Not yet. Good luck is on your way!"
+
+Scenario: I can see the bingo card status of my self
+  Given I joined a game for the first time
+  When I get a new card with two chips which meet the conditions
+  And I follow "Do I win?"
+  Then I should see "You need one more chip!"
