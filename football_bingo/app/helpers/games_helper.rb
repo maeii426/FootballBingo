@@ -10,28 +10,28 @@ def game_helper_load
         # no '_' tokens in the XML tag
         # right now - tags that should have only one instance are assumed to have only one instance
         # ********* CONDITION IS >
-        
+
     # Game metadata
-    
+
     # PER TEAM
     # Linescore
     # Totals
     # Player
-    
+
     # Scores
-    
+
     # fgas
-    
+
     # drives
-    
+
     # PER QTR
     # plays
     # drivestart
     # drivesum
     # score
     # qtr summary
-    
-    
+
+
     # tokens = @conditional.split('_', 2)
     # doc_content = doc.at(tokens[0])
     # if doc_content
@@ -55,7 +55,7 @@ def get_stats(tag_input, is_home)
             return tc.value
         else
             # return 0
-        end 
+        end
     else
         tc = Totalcondition.where(:total => @vis_totals, :translation =>trans).first
         if !tc.nil?
@@ -68,7 +68,7 @@ end
 
 def get_state(game)
     if game.finished?
-        return "Finished" 
+        return "Finished"
     elsif game.ongoing?
         return "Ongoing"
     else
@@ -81,7 +81,7 @@ def instant_winner(game)
         gu = GameUser.where(:game => game, :state => "instant_winner").first
         if(!gu.nil?)
             return gu.user
-        end  
+        end
     end
 end
 
@@ -138,7 +138,7 @@ def show_card(card)
     @chip_probs = Array.new
     @chip_states = Array.new
     ccs.each do |cc|
-      words, state = Chip.find(cc.chip_id).translate 
+      words, state = Chip.find(cc.chip_id).translate
       prob = Chip.find(cc.chip_id).prob
       @chips_in_words.push(words)
       @chip_states.push(state)
