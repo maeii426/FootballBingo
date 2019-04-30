@@ -13,10 +13,6 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    # HARDCODED GAME
-    @game_path = 'XML/tam.xml'
-    #game_helper_load
-
     @cards = Card.where(user_id: @user.id)
     # show_user_cards
     render 'show'
