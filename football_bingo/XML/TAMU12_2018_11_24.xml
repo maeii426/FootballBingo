@@ -1,0 +1,9 @@
+<fbgame source="Tas Football" version="4.20.01" generated="11/24/2018">
+ <venue gameid="TAMU12" visid="LSU" homeid="TAMU" visname="LSU" homename="TAMU"
+      date="11/24/2018" location="College Station, TX" stadium="Kyle Field"
+      start="6:39 PM" end="11:32 pm" leaguegame="Y" nitegame="Y"
+      duration="4:53" attend="101501" temp="65" wind="South 6" weather="">
+  <officials ref="Matt Austin" ump="Rodney Lawary" line="Chad Green" lj="Michael Taylor" bj="Jimmy Russell" fj="Blake Parks" sj="Alex Moore" cj="Paul Schardein" alt="Paul Schardein"></officials>
+  <rules qtrs="4" mins="15" downs="4" yds="10" kospot="35" tbspot="20" kotbspot="25" patspot="3" safspot="20" td="6" fg="3" pat="1" patx="2" saf="2" defpat="2" rouge="1" field="100" toh="3" sackrush="Y" fgaplay="Y" netpunttb="Y"></rules>
+ </venue>
+ </fbgame>

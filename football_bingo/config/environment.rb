@@ -4,32 +4,64 @@ require File.expand_path('../application', __FILE__)
 # Initialize the Rails application.
 Rails.application.initialize!
 
-
-
-
-listener = Listen.to('\\165.91.33.68\stat-share\\ftb', only: /tam.xml/) do |modified, added, removed|
-  puts "modified absolute path: #{modified}"
-  puts "added absolute path: #{added}"
-  puts "removed absolute path: #{removed}"
+begin
+    #listener_grabber = Listen.to('../../stat-share\\ftb', only: /tam.xml/) do |modified, added, removed|
+    listener_grabber = Listen.to('', only: /tampp.xml/) do |modified, added, removed|
+      if !modified.nil? && !modified.empty?
+          begin
+            require 'nokogiri'
+            filename = modified.first
+          	doc = Nokogiri::XML(open(filename))
+            sections = doc.css('fbgame').first.children
+          	date = Date.strptime(sections.css('venue').first['date'], '%m/%d/%Y').strftime('%Y_%m_%d')
+          	game = sections.css('venue').first['gameid']
+          	name = (game + "_" + date + ".xml")
+            dest = "XML/#{name}"
+            FileUtils.cp_r(filename, dest, remove_destination: true)
+            puts "[" + Time.now.getutc.to_s + "] LISTENER  update " + name
+          rescue StandardError => err
+            puts "Missed an update?  " + err.to_s
+          end
+      end
+      
+      if !added.nil? && !added.empty?
+        begin
+            require 'nokogiri'
+            filename = added.first
+          	doc = Nokogiri::XML(open(filename))
+            sections = doc.css('fbgame').first.children
+          	date = Date.strptime(sections.css('venue').first['date'], '%m/%d/%Y').strftime('%Y_%m_%d')
+          	game = sections.css('venue').first['gameid']
+          	name = (game + "_" + date + ".xml")
+            dest = "XML/#{name}"
+            FileUtils.cp_r(filename, dest, remove_destination: true)
+            puts "[" + Time.now.getutc.to_s + "] LISTENER  update " + name
+          rescue StandardError => err
+            puts "Missed an update?  " + err.to_s
+          end
+      end
+    end
+    listener_grabber.start # not blocking
+rescue StandardError => err
+    puts ("------- XML game listener broken -- " + err.to_s + " -------")
 end
-listener.start # not blocking
 
 
-listener_local = Listen.to('XML', only: /tam.xml/) do |modified, added, removed|
-  puts "modified absolute path: #{modified}"
-  puts "added absolute path: #{added}"
-  puts "removed absolute path: #{removed}"
+listener_local = Listen.to('XML') do |modified, added, removed|
+    include ImportXML
+    if !modified.nil? && !modified.empty?
+        modified.each do |filename|
+            get_xml_game(filename)
+        end
+    end
+    
+    if !added.nil? && !added.empty?
+        added.each do |filename|
+            get_xml_game(filename)
+        end
+    end
+    puts "modified absolute path: #{modified}"
+    puts "added absolute path: #{added}"
+    puts "removed absolute path: #{removed}"
 end
-listener_local.start # not blocking
-
-
-
-
-# initializer "watch_game_file" do |app|
-#   # Watch for changes to javascript files:
-#   app.reloaders << ActiveSupport::FileUpdateChecker.new(["XML/tam.xml"])
-
-#   config.to_prepare do
-#     game_helper_parse
-#   end
-# end
+  listener_local.start # not blocking

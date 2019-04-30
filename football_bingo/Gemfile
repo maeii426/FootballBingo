@@ -29,7 +29,10 @@ gem 'bcrypt'#, '~> 3.1.7'
 
 # Use for listening to .xml
 gem 'listen', '~> 3.0' # NOTE: for TCP functionality, use '~> 2.10' for now
-gem 'net-ssh'
+gem 'fileutils'
+#gem 'net-ssh'
+#gem 'samba', '> 3.6'
+#gem 'net-smb'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

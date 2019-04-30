@@ -9,7 +9,17 @@ Github Repo: https://github.com/maeii426/FootballBingo
 Pivotal Tracker: https://www.pivotaltracker.com/n/projects/2316586
 
 
-### Local with postgres
+### Dependencies
+-- python 2.7
+
+-- watchdog
+
+ruby 2.6.2
+
+bundler
+
+
+### Build locally with postgres
 bundle install
 
 bundle update
@@ -30,7 +40,7 @@ rails server -p $PORT -b $IP
 
 
 
-### For heroku
+### Build for heroku
 git push heroku master
 
 --  heroku pg:reset
