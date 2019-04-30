@@ -87,14 +87,16 @@ end
 
 def instant_winner?(game)
     if !game.upcoming?
-        gu = GameUser.where(:game => game, :state => "instant_winner").any?
+        return GameUser.where(:game => game, :state => "instant_winner").any?
     end
+    false
 end
 
 def whoop_winner?(game)
     if !game.upcoming?
-        gu = GameUser.where(:game => game, :state => "whoop_winner").any?
+        return GameUser.where(:game => game, :state => "whoop_winner").any?
     end
+    false
 end
 
 def whoop_winner(game)

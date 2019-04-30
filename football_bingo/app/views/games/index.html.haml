@@ -23,7 +23,7 @@
             - @games.each do |game|
               %tr
                 %td= game.game_name 
-                %td= game.date.to_date
+                %td= game.date
                 %td= game.hometeam
                 %td= game.visteam
                 %td= get_state(game)

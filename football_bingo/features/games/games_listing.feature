@@ -58,7 +58,7 @@ Scenario: An upcoming game
 Scenario: A finished game
   Given a finished game which I played before exists
   When I follow "Profile"
-  And I press "Check play history"
+  And I follow "Check play history"
   Then I should not see "Get a new card!"
 
 Scenario: A finished game

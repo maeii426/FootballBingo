@@ -37,7 +37,7 @@
             %tr
             - game = gu.game
               %td= game.game_name
-              %td= game.date.to_date
+              %td= game.date
               %td= get_state(game)
               %td= game.game_user_ids.length
               %td= check_winner(game, current_user)

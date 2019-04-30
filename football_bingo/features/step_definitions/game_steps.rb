@@ -98,7 +98,7 @@ end
 
 def join
   visit '/games'
-  click_button "Play!"
+  click_on "Play!"
 end
 
 ### GIVEN ###
@@ -153,7 +153,7 @@ When /^I play the game$/ do
 end
 
 When /^I want to know more about the game$/ do
-	click_link "More about " + @game[:game_name]
+	click_link "More about"
 end
 
 When /^I get a new card$/ do
@@ -172,7 +172,7 @@ When /^I get a new non-whoop card$/ do
 end
 
 When /^I press the more info of the game$/ do
-	click_on "More about " + @game[:game_name]
+	click_on "More about"
 end
 
 ### THEN ###
@@ -203,7 +203,7 @@ Then /^I should see the status of the game$/ do
 end
 
 Then /^I should see the more info of the game$/ do
-  page.should have_content "More about " + @game[:game_name]
+  page.should have_content "More about"
 end
 
 Then /^I should not see the name of the game$/ do

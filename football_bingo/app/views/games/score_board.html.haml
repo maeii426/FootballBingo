@@ -20,7 +20,7 @@
             - @games.each do |game|
               %tr
                 %td= game.game_name 
-                %td= game.date.to_date
+                %td= game.date
                 %td
                   - if instant_winner?(game) 
                     = instant_winner(game).name
@@ -29,4 +29,5 @@
                     = whoop_winner(game).name
                 - if admin_user?           
                   %td
-                    = button_to 'Send', send_email_path(:whoop_winner_id => whoop_winner(game).id), class: "btn btn-primary maroon"
+                    - if whoop_winner?(game)
+                      = button_to 'Send', send_email_path(:whoop_winner_id => whoop_winner(game).id), class: "btn btn-primary maroon"

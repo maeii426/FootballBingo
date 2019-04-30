@@ -32,11 +32,11 @@ Scenario: I got a new card
 Scenario: I get successful message if I win
   Given I joined a game for the first time
   When I get a new whoop card
-  And I press "Do I Win?"
+  And I follow "Do I Win?"
   Then I should see "Whoop! You are the winner! Go to check score board!"
 
 Scenario: I get failed message if I don't win
   Given I joined a game for the first time
   When I get a new non-whoop card
-  And I press "Do I Win?"
+  And I follow "Do I Win?"
   Then I should see "Not yet. Good luck is on your way!"

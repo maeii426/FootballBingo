@@ -24,7 +24,7 @@ def sign_up
   fill_in "Email", :with => @visitor[:email]
   fill_in "Password", :with => @visitor[:password]
   fill_in "Password confirmation", :with => @visitor[:password_confirmation]
-  click_button "Create my account"
+  click_button "Submit"
   find_user
 end
 

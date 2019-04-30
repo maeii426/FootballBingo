@@ -2,7 +2,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
   def change
     create_table :games do |t|
       t.string :game_name
-      t.datetime :date
+      t.date :date
       t.integer :notify_by_email
       t.string :source
       t.string :version
