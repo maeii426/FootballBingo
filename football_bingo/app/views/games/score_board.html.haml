@@ -28,9 +28,9 @@
                   - if whoop_winner?(game)
                     - gus = whoop_winners(game)
                     - gus.each do |gu|
+                      %br/
                       = gu.user.name
-                      %br/
-                      %br/
+
                       / = whoop_winners(game).name
                 - if admin_user?           
                   %td

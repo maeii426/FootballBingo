@@ -24,10 +24,18 @@
               %tr
                 %td= game.game_name 
                 %td= game.date
-                %td= game.hometeam
-                %td= game.visteam
+                %td
+                  - home_logo_name = game.hometeam.downcase + "logo"
+                  = image_tag(home_logo_name + ".png", alt: home_logo_name, style:"height:50px")
+                  &nbsp;
+                  = game.hometeam
+                %td
+                  - vis_logo_name = game.visteam.downcase + "logo"
+                  = image_tag(vis_logo_name + ".png", alt: vis_logo_name, style:"height:50px")
+                  &nbsp;
+                  = game.visteam
                 %td= get_state(game)
-                %td 
+                %td
                   - if game.ongoing?
                     = link_to 'Play!'.html_safe, user_game_join_path(current_user, game), :method => :post, class: "btn btn-primary maroon"
                   - elsif game.upcoming?

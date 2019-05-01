@@ -54,6 +54,30 @@ games.each do |game|
   g.update(state: 'finished')
 end
 
+team_params = [
+    {
+      :name => 'TAMU',
+      :nameid => 'TAMU'
+    },
+    {
+      :name => 'GEORGIA',
+      :nameid => 'GEORGIA'
+    },
+    {
+      :name => 'CLEMSON',
+      :nameid => 'CLEMSON'
+    },
+    {
+      :name => 'LSU',
+      :nameid => 'LSU'
+    }
+  ]
+
+team_params.each do |team_param|
+  t = Team.create!(team_param)
+end 
+
+
 gu = GameUser.create!({:user_id => 1, :game_id => 1, :state => 'whoop_winner'})
 gu.update(:whoops => 1)
 GameUser.create!({:user_id => 1, :game_id => 2, :state => 'instant_winner'})

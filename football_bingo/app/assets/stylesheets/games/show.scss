@@ -24,6 +24,10 @@
 	background-color: white;
 }
 
+#score-board td{
+	vertical-align: bottom;
+}
+
 #all-games thead{
 	color: white;
 	background-color: #800000;
@@ -32,6 +36,10 @@
 #all-games tbody{
 	font-color: black;
 	background-color: white;
+}
+
+#all-games td{
+	vertical-align: middle;
 }
 
 #game-history thead{
@@ -44,9 +52,15 @@
 	background-color: white;
 }
 
+#game-history td{
+	vertical-align: middle;
+}
+
+
 td {
 	font-color: black;
 	font-size: 13px;
+	vertical-align: middle;
 }
 
 
