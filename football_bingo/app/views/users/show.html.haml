@@ -5,10 +5,22 @@
     %section.user-info
       %h3= @user.name
       %p
-        %br
+        %br/
         You have played 
-        =played_games(@user).length 
-        games and won 
+        =num_played_games(@user)
+        - if num_played_games(@user) == 1
+          game.
+        - else
+          games.
+        %br/
+        You are playing 
+        =num_playing_games(@user) 
+        - if num_playing_games(@user) == 1
+          game.
+        - else
+          games.
+        %br/
+        You won
         =win_games(@user).length 
         of them, 
         =instant_games(@user).length 

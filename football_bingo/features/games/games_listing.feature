@@ -50,7 +50,7 @@ Scenario: I can see a game I played in my profile
 Scenario: A finished game
   Given a finished game which I played before exists
   When I want to see my personal bingo profile page
-  Then I should see "You have played 1 games and won 0 of them, 0 as an instant winner and 0 as a whoop winner"
+  Then I should see "You have played 1 game. You are playing 0 games. You won 0 of them, 0 as an instant winner and 0 as a whoop winner."
   And I should see "Good Luck Next Time.."
   And I should see "Finished"
   And I should see "Check play history"
@@ -70,7 +70,7 @@ Scenario: A finished game
   Given a finished game which I played before exists
   And I am a whoop winner
   When I want to see my personal bingo profile page
-  Then I should see "won 1 of them, 0 as an instant winner and 1 as a whoop winner"
+  Then I should see "You have played 1 game. You are playing 0 games. You won 1 of them, 0 as an instant winner and 1 as a whoop winner."
   And I should see "Whoop Winner!"
 
 Scenario: Instant winner

@@ -14,6 +14,26 @@ def playing_games(user)
   return GameUser.where(user: user, game: ongoing_games )#state: 'player'
 end
 
+def num_playing_games(user)
+  ongoing_games = Game.where(state: 'ongoing')
+  gu = GameUser.where(user: user, game: ongoing_games )
+  if gu.any?
+    return gu.length
+  else
+    return 0
+  end
+end
+
+def num_played_games(user)
+  gus = all_games(user)
+  g = Game.where(game_users: gus, state: "finished")
+  if g.any?
+    return g.length
+  else
+    return 0
+  end
+end
+
 def win_games(user)
   return GameUser.where(user: user, state: ['whoop_winner', 'instant_winner'])
 end
@@ -84,18 +104,6 @@ def check_states_winner_rule
       win_card_num += 1
     end
 
-     # t1=s[0] && s[1] && s[2]
-     # t2=s[3] && s[4] && s[5]
-     # t3=s[6] && s[7] && s[8]
-     # t4=s[0] && s[3] && s[6]
-     # t5=s[1] && s[4] && s[7]
-     # t6=s[2] && s[5] && s[8]
-     # t7=s[0] && s[4] && s[8]
-     # t8=s[2] && s[4] && s[6]
-
-     # if (t1 || t2 || t3 || t4 || t5 || t6 || t7 || t8)
-     #   win_card_num=win_card_num+1
-     # end
   end
   return win_card_num
 end
