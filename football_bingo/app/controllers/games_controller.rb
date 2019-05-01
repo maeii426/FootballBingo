@@ -37,14 +37,24 @@ class GamesController < ApplicationController
 
   # POST /users/1/games/1/get_whoop_card
   def get_whoop_card
-      chip_ids = [1, 1, 1, 4, 4, 4, 4, 4, 4] #for test case: row one 
+      chip_ids = [4, 1, 1, 1, 1,
+                  1, 4, 1, 1, 1, 
+                  1, 1, 4, 1, 1,
+                  1, 1, 1, 4, 1,
+                  1, 1, 1, 1, 4] 
+      #for test case:  
+      # chip_ids = [1, 1, 1, 1, 4,
+      #             1, 1, 1, 4, 1, 
+      #             1, 1, 4, 1, 1,
+      #             1, 4, 1, 1, 1,
+      #             4, 1, 1, 1, 1] 
       get_card(chip_ids)
       redirect_to (user_game_play_path(@user, @game))
   end
 
   # POST /users/1/games/1/get_new_card
   def get_new_card
-      list = { "higher" => 1, "high" => 1, "medium" => 5, "low" => 1, "lower" => 1} # They add up to #chips in one card
+      list = { "higher" => 2, "high" => 4, "medium" => 13, "low" => 4, "lower" => 2} # They add up to #chips in one card
       get_card(get_random_chips(list))
       redirect_to (user_game_play_path(@user, @game))
   end

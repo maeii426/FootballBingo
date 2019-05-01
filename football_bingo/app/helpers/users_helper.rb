@@ -28,7 +28,7 @@ end
 
 def check_states_winner_rule
   win_card_num=0
-  size = 3 # the size of the card
+  size = 5 # the size of the card
 
   @cards.each do|card|
     s = Array.new

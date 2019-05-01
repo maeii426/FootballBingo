@@ -76,19 +76,19 @@ GameUser.create!({:user_id => 3, :game_id => 1, :state => 'instant_winner'})
 #   	 ]
 
 @trans = Translation.create!({:tag => 'penalties_yds', :words => 'Number of penalty yards'})
-@trans.chips.create(:argument => '>', :value => 100, :probablity => 0.7)
+@trans.chips.create(:argument => '>', :value => 100, :probablity => 0.7) #false
 
 @trans = Translation.create!({:tag => 'firstdowns_no', :words => 'Total first downs'})
-@trans.chips.create(:argument => '>', :value => 30, :probablity => 0.5)
+@trans.chips.create(:argument => '>', :value => 30, :probablity => 0.5) #true
 
 @trans = Translation.create!({:tag => 'totals_totoff_yards', :words => 'Total offensive yards gained'})
-@trans.chips.create!(:argument => '>', :value => 500, :probablity => 0.2)
+@trans.chips.create!(:argument => '>', :value => 500, :probablity => 0.2) #false
 
 @trans = Translation.create!({:tag => 'fg_made', :words => 'Number of field goals made'})
-@trans.chips.create!(:argument => '>', :value => 2, :probablity => 0.3)
+@trans.chips.create!(:argument => '>', :value => 2, :probablity => 0.3) #true
 
 @trans = Translation.create!({:tag => 'firstdowns_rush', :words => 'Total rushing first downs'})
-@trans.chips.create!(:argument => '>', :value => 10, :probablity => 1.0)
+@trans.chips.create!(:argument => '>', :value => 10, :probablity => 1.0) #true
 
 
 translations = [
