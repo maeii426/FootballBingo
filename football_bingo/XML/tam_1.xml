@@ -1,0 +1,2154 @@
+<fbgame source="Tas Football" version="4.20.01v2" generated="11/24/2018">
+ <venue gameid="TAMU12" visid="LSU" homeid="TAMU" visname="LSU" homename="TAMU"
+      date="11/24/2018" location="College Station, TX" stadium="Kyle Field"
+      start="6:39 PM" end="11:32 pm" leaguegame="Y" nitegame="Y"
+      duration="4:53" attend="101501" temp="65" wind="South 6" weather="">
+  <officials ref="Matt Austin" ump="Rodney Lawary" line="Chad Green" lj="Michael Taylor" bj="Jimmy Russell" fj="Blake Parks" sj="Alex Moore" cj="Paul Schardein" alt="Paul Schardein"></officials>
+  <rules qtrs="4" mins="15" downs="4" yds="10" kospot="35" tbspot="20" kotbspot="25" patspot="3" safspot="20" td="6" fg="3" pat="1" patx="2" saf="2" defpat="2" rouge="1" field="100" toh="3" sackrush="Y" fgaplay="Y" netpunttb="Y"></rules>
+ </venue>
+ <team vh="V" code="" id="LSU" name="LSU" record="9-3" conf-record="5-3" abb="V" rank="7">
+  <linescore prds="11" line="7,3,7,14,3,7,8,3,6,8,6" score="72">
+   <lineprd prd="1" score="7"></lineprd>
+   <lineprd prd="2" score="3"></lineprd>
+   <lineprd prd="3" score="7"></lineprd>
+   <lineprd prd="4" score="14"></lineprd>
+   <lineprd prd="5" score="3"></lineprd>
+   <lineprd prd="6" score="7"></lineprd>
+   <lineprd prd="7" score="8"></lineprd>
+   <lineprd prd="8" score="3"></lineprd>
+   <lineprd prd="9" score="6"></lineprd>
+   <lineprd prd="10" score="8"></lineprd>
+   <lineprd prd="11" score="6"></lineprd>
+  </linescore>
+  <totals totoff_plays="90" totoff_yards="496" totoff_avg="5.5">
+   <firstdowns no="36" rush="17" pass="18" penalty="1"></firstdowns>
+   <penalties no="14" yds="80"></penalties>
+   <conversions thirdconv="10" thirdatt="20" fourthconv="1" fourthatt="1"></conversions>
+   <fumbles no="2" lost="2"></fumbles>
+   <misc yds="0" top="28:30" ona="0" onm="0" ptsto="7"></misc>
+   <redzone att="7" scores="7" points="44" tdrush="3" tdpass="3" fgmade="1" endfga="0" enddowns="0" endint="0" endfumb="0" endhalf="0" endgame="0"></redzone>
+   <rush att="54" yds="225" gain="279" loss="44" td="4" long="46"></rush>
+   <pass comp="26" att="39" int="0" yds="281" td="4" long="25" sacks="6" sackyds="31"></pass>
+   <rcv no="26" yds="281" td="4" long="25"></rcv>
+   <punt no="5" yds="227" long="53" blkd="0" tb="0" fc="4" plus50="2" inside20="2" avg="45.4"></punt>
+   <ko no="5" yds="325" ob="0" tb="5" fcyds="0"></ko>
+   <fg made="3" att="4" long="50" blkd="0"></fg>
+   <pat kickatt="5" kickmade="5" passatt="4" passmade="2" rcvatt="2" rcvmade="2"></pat>
+   <defense tackua="48" tacka="38" tot_tack="86" tflua="12" tfla="2" tflyds="47" sacks="2" sackyds="19" brup="7" qbh="6" ff="1" fr="1" fryds="58"></defense>
+   <kr no="1" yds="26" td="0" long="26"></kr>
+   <pr no="3" yds="-1" td="0" long="3"></pr>
+   <fr no="1" yds="58" td="1" long="58"></fr>
+   <scoring td="12" fg="3" patkick="7" patrcv="3"></scoring>
+  </totals>
+  <player name="JaMarr Chase" shortname="JaMarr Chase" checkname="CHASE,JAMARR" uni="1" class="FR" gp="1" gs="1" opos="WR" code="1">
+   <rcv no="3" yds="31" td="0" long="14"></rcv>
+  </player>
+  <player name="T. Alexander" shortname="T. Alexander" checkname="ALEXANDER,T" uni="1A" class="SR" gp="1" gs="1" dpos="CB" code="1A">
+   <defense tackua="4" tacka="2" tot_tack="6" brup="1"></defense>
+  </player>
+  <player name="Kelvin Joseph" shortname="Kelvin Joseph" checkname="JOSEPH,KELVIN" uni="1K" class="FR" gp="1" code="1K"></player>
+  <player name="Just. Jefferson" shortname="Just. Jefferson" checkname="JEFFERSON,JUST" uni="2" class="SO" gp="1" gs="1" opos="WR" code="2">
+   <rush att="1" yds="3" gain="3" loss="0" td="0" long="3"></rush>
+   <rcv no="5" yds="63" td="1" long="24"></rcv>
+   <pat rcvatt="1" rcvmade="1"></pat>
+   <scoring td="1" patrcv="1"></scoring>
+  </player>
+  <player name="JaCoby Stevens" shortname="JaCoby Stevens" checkname="STEVENS,JACOBY" uni="3" class="SO" gp="1" gs="1" dpos="FS" code="3">
+   <defense tackua="9" tacka="5" tot_tack="14" tflua="4" tfla="0" tflyds="13" brup="1"></defense>
+  </player>
+  <player name="Kody Hall" shortname="Kody Hall" checkname="HALL,KODY" uni="4D" class="JR" gp="1" code="4D"></player>
+  <player name="Nick Brossette" shortname="Nick Brossette" checkname="BROSSETTE,NICK" uni="4" class="SR" gp="1" code="4">
+   <rush att="16" yds="61" gain="70" loss="9" td="1" long="16"></rush>
+   <rcv no="2" yds="7" td="0" long="5"></rcv>
+   <scoring td="1"></scoring>
+  </player>
+  <player name="Z.Von Rosenberg" shortname="Z.Von Rosenberg" checkname="ROSENBERG,ZVON" uni="4F" class="SO" gp="1" code="4F">
+   <punt no="5" yds="227" long="53" blkd="0" tb="0" fc="4" plus50="2" inside20="2" avg="45.4"></punt>
+  </player>
+  <player name="Kary Vincent" shortname="Kary Vincent" checkname="VINCENT,KARY" uni="5" class="SO" gp="1" code="5">
+   <defense tackua="2" tacka="0" tot_tack="2"></defense>
+  </player>
+  <player name="T. Marshall" shortname="T. Marshall" checkname="MARSHALL,T" uni="6T" class="FR" gp="1" code="6T">
+   <rcv no="1" yds="8" td="0" long="8"></rcv>
+  </player>
+  <player name="Jacob Phillips" shortname="Jacob Phillips" checkname="PHILLIPS,JACOB" uni="6" class="SO" gp="1" gs="1" dpos="MLB" code="6">
+   <defense tackua="4" tacka="7" tot_tack="11" tflua="0" tfla="1" tflyds="0"></defense>
+  </player>
+  <player name="Patrick Queen" shortname="Patrick Queen" checkname="QUEEN,PATRICK" uni="8" class="SO" gp="1" gs="1" dpos="LB" code="8">
+   <defense tackua="1" tacka="3" tot_tack="4" tflua="1" tfla="0" tflyds="1"></defense>
+  </player>
+  <player name="Joe Burrow" shortname="Joe Burrow" checkname="BURROW,JOE" uni="9" class="JR" gp="1" gs="1" opos="QB" code="9">
+   <rush att="29" yds="100" gain="132" loss="32" td="3" long="22"></rush>
+   <pass comp="25" att="38" int="0" yds="270" td="3" long="25" sacks="6" sackyds="31"></pass>
+   <pat passatt="4" passmade="2"></pat>
+   <scoring td="3"></scoring>
+  </player>
+  <player name="Grant Delpit" shortname="Grant Delpit" checkname="DELPIT,GRANT" uni="9S" class="SO" gp="1" gs="1" dpos="SS" code="9S">
+   <defense tackua="5" tacka="0" tot_tack="5" brup="3"></defense>
+  </player>
+  <player name="Steph. Sullivan" shortname="Steph. Sullivan" checkname="SULLIVAN,STEPH" uni="10" class="JR" gp="1" gs="1" dpos="ROVR" code="10">
+   <rcv no="1" yds="9" td="0" long="9"></rcv>
+  </player>
+  <player name="Dee Anderson" shortname="Dee Anderson" checkname="ANDERSON,DEE" uni="11" class="JR" gp="1" code="11">
+   <rcv no="2" yds="33" td="1" long="25"></rcv>
+   <pat rcvatt="1" rcvmade="1"></pat>
+   <scoring td="1" patrcv="1"></scoring>
+  </player>
+  <player name="Jonathan Giles" shortname="Jonathan Giles" checkname="GILES,JONATHAN" uni="12" class="JR" gp="1" code="12">
+   <rcv no="2" yds="12" td="0" long="11"></rcv>
+   <pr no="3" yds="-1" td="0" long="3"></pr>
+   <fumbles no="1" lost="1"></fumbles>
+  </player>
+  <player name="Jontre Kirklin" shortname="Jontre Kirklin" checkname="KIRKLIN,JONTRE" uni="13" class="FR" gp="1" code="13"></player>
+  <player name="Racey McMath" shortname="Racey McMath" checkname="MCMATH,RACEY" uni="17" class="SO" gp="1" code="17"></player>
+  <player name="Foster Moreau" shortname="Foster Moreau" checkname="MOREAU,FOSTER" uni="18" class="SR" gp="1" gs="1" opos="TE" code="18">
+   <rcv no="4" yds="51" td="1" long="17"></rcv>
+   <scoring td="1"></scoring>
+  </player>
+  <player name="Derrick Dillon" shortname="Derrick Dillon" checkname="DILLON,DERRICK" uni="19" class="JR" gp="1" gs="1" opos="WR" code="19">
+   <rcv no="2" yds="16" td="0" long="10"></rcv>
+  </player>
+  <player name="Ed Paris" shortname="Ed Paris" checkname="PARIS,ED" uni="21" class="SR" gp="1" code="21"></player>
+  <player name="C. Ed.Helaire" shortname="C. Ed.Helaire" checkname="HELAIRE,C ED" uni="22" class="SO" gp="1" code="22">
+   <rush att="3" yds="3" gain="6" loss="3" td="0" long="3"></rush>
+   <pass comp="1" att="1" int="0" yds="11" td="1" long="11" sacks="0" sackyds="0"></pass>
+   <kr no="1" yds="26" td="0" long="26"></kr>
+  </player>
+  <player name="M. Baskerville" shortname="M. Baskerville" checkname="BASKERVILLE,M" uni="23" class="FR" gp="1" code="23"></player>
+  <player name="La. Fournette" shortname="La. Fournette" checkname="FOURNETTE,LA" uni="27" class="JR" gp="1" gs="1" opos="RB" code="27">
+   <rush att="2" yds="48" gain="48" loss="0" td="0" long="46"></rush>
+   <rcv no="2" yds="28" td="0" long="19"></rcv>
+  </player>
+  <player name="Mannie Netherly" shortname="Mannie Netherly" checkname="NETHERLY,MANNIE" uni="28" class="SO" gp="1" code="28"></player>
+  <player name="Greedy Williams" shortname="Greedy Williams" checkname="WILLIAMS,GREEDY" uni="29" class="SO" gp="1" gs="1" dpos="CB" code="29">
+   <defense tackua="1" tacka="1" tot_tack="2" brup="1"></defense>
+  </player>
+  <player name="Eric Monroe" shortname="Eric Monroe" checkname="MONROE,ERIC" uni="30" class="SO" gp="1" code="30"></player>
+  <player name="Cameron Lewis" shortname="Cameron Lewis" checkname="LEWIS,CAMERON" uni="31" class="SO" gp="1" code="31"></player>
+  <player name="Avery Atkins" shortname="Avery Atkins" checkname="ATKINS,AVERY" uni="32" class="FR" gp="1" code="32">
+   <ko no="5" yds="325" ob="0" tb="5"></ko>
+  </player>
+  <player name="Todd Harris Jr." shortname="Todd Harris Jr." checkname=",TODD HARRIS JR" uni="33" class="SO" gp="1" code="33">
+   <defense tackua="1" tacka="0" tot_tack="1" brup="1"></defense>
+  </player>
+  <player name="Damone Clark" shortname="Damone Clark" checkname="CLARK,DAMONE" uni="35" class="FR" gp="1" code="35"></player>
+  <player name="Cole Tracy" shortname="Cole Tracy" checkname="TRACY,COLE" uni="36" class="SR" gp="1" code="36">
+   <fg made="3" att="4" long="50" blkd="0"></fg>
+   <pat kickatt="5" kickmade="5"></pat>
+   <scoring fg="3" patkick="5"></scoring>
+  </player>
+  <player name="Devin White" shortname="Devin White" checkname="WHITE,DEVIN" uni="40" class="JR" gp="1" code="40">
+   <defense tackua="12" tacka="5" tot_tack="17" tflua="4" tfla="0" tflyds="21" sackua="1" sacka="0" sackyds="12" ff="1"></defense>
+  </player>
+  <player name="David Ducre" shortname="David Ducre" checkname="DUCRE,DAVID" uni="41" class="SR" gp="1" code="41"></player>
+  <player name="Ray Thornton" shortname="Ray Thornton" checkname="THORNTON,RAY" uni="43" class="SO" gp="1" code="43"></player>
+  <player name="Tory Carter" shortname="Tory Carter" checkname="CARTER,TORY" uni="44" class="SO" gp="1" code="44">
+   <rcv no="2" yds="23" td="1" long="12"></rcv>
+   <scoring td="1"></scoring>
+  </player>
+  <player name="M. Divinity" shortname="M. Divinity" checkname="DIVINITY,M" uni="45" class="JR" gp="1" gs="1" dpos="LB" code="45">
+   <defense tackua="2" tacka="2" tot_tack="4" qbh="2" fr="1" fryds="58"></defense>
+   <fr no="1" yds="58" td="1" long="58"></fr>
+   <scoring td="1"></scoring>
+  </player>
+  <player name="Andre Anthony" shortname="Andre Anthony" checkname="ANTHONY,ANDRE" uni="46" class="SO" gp="1" code="46"></player>
+  <player name="Blake Ferguson" shortname="Blake Ferguson" checkname="FERGUSON,BLAKE" uni="48" class="JR" gp="1" code="48"></player>
+  <player name="Damien Lewis" shortname="Damien Lewis" checkname="LEWIS,DAMIEN" uni="68" class="JR" gp="1" gs="1" opos="RG" code="68"></player>
+  <player name="Tyler Shelvin" shortname="Tyler Shelvin" checkname="SHELVIN,TYLER" uni="72" class="FR" gp="1" code="72">
+   <defense tackua="0" tacka="3" tot_tack="3"></defense>
+  </player>
+  <player name="Adrian Magee" shortname="Adrian Magee" checkname="MAGEE,ADRIAN" uni="73" class="JR" gp="1" code="73"></player>
+  <player name="Badara Traore" shortname="Badara Traore" checkname="TRAORE,BADARA" uni="74" class="JR" gp="1" code="74"></player>
+  <player name="Austin Deculus" shortname="Austin Deculus" checkname="DECULUS,AUSTIN" uni="76" class="SO" gp="1" gs="1" opos="RT" code="76"></player>
+  <player name="Saahdiq Charles" shortname="Saahdiq Charles" checkname="CHARLES,SAAHDIQ" uni="77" class="SO" gp="1" gs="1" opos="LT" code="77"></player>
+  <player name="G. Brumfield" shortname="G. Brumfield" checkname="BRUMFIELD,G" uni="78" class="SR" gp="1" gs="1" opos="LG" code="78"></player>
+  <player name="L. Cushenberry" shortname="L. Cushenberry" checkname="CUSHENBERRY,L" uni="79" class="SO" gp="1" gs="1" opos="C" code="79"></player>
+  <player name="Kenan Jones" shortname="Kenan Jones" checkname="JONES,KENAN" uni="82" class="FR" gp="1" code="82"></player>
+  <player name="J. Washington" shortname="J. Washington" checkname="WASHINGTON,J" uni="88" class="SR" gp="1" code="88"></player>
+  <player name="Colby Brunet" shortname="Colby Brunet" checkname="BRUNET,COLBY" uni="89" class="SO" gp="1" code="89"></player>
+  <player name="R. Lawrence" shortname="R. Lawrence" checkname="LAWRENCE,R" uni="90" class="JR" gp="1" gs="1" dpos="DE" code="90">
+   <defense tackua="3" tacka="2" tot_tack="5" tflua="2" tfla="0" tflyds="9" sackua="1" sacka="0" sackyds="7"></defense>
+  </player>
+  <player name="Neil Farrell" shortname="Neil Farrell" checkname="FARRELL,NEIL" uni="92" class="SO" gp="1" code="92">
+   <defense tackua="1" tacka="2" tot_tack="3" tflua="0" tfla="1" tflyds="1" qbh="1"></defense>
+  </player>
+  <player name="Glen Logan" shortname="Glen Logan" checkname="LOGAN,GLEN" uni="97" class="SO" gp="1" gs="1" dpos="DE" code="97">
+   <defense tackua="2" tacka="4" tot_tack="6" qbh="2"></defense>
+  </player>
+  <player name="Ed Alexander" shortname="Ed Alexander" checkname="ALEXANDER,ED" uni="99" class="JR" gp="1" gs="1" dpos="NT" code="99">
+   <defense tackua="1" tacka="2" tot_tack="3" tflua="1" tfla="0" tflyds="2" qbh="1"></defense>
+  </player>
+ </team>
+ <team vh="H" code="" id="TAMU" name="TAMU" record="8-4" conf-record="5-3" abb="H">
+  <linescore prds="11" line="7,10,7,7,3,7,8,3,6,8,8" score="74">
+   <lineprd prd="1" score="7"></lineprd>
+   <lineprd prd="2" score="10"></lineprd>
+   <lineprd prd="3" score="7"></lineprd>
+   <lineprd prd="4" score="7"></lineprd>
+   <lineprd prd="5" score="3"></lineprd>
+   <lineprd prd="6" score="7"></lineprd>
+   <lineprd prd="7" score="8"></lineprd>
+   <lineprd prd="8" score="3"></lineprd>
+   <lineprd prd="9" score="6"></lineprd>
+   <lineprd prd="10" score="8"></lineprd>
+   <lineprd prd="11" score="8"></lineprd>
+  </linescore>
+  <totals totoff_plays="107" totoff_yards="521" totoff_avg="4.9">
+   <firstdowns no="35" rush="17" pass="15" penalty="3"></firstdowns>
+   <penalties no="3" yds="24"></penalties>
+   <conversions thirdconv="11" thirdatt="22" fourthconv="2" fourthatt="3"></conversions>
+   <fumbles no="3" lost="2"></fumbles>
+   <misc yds="0" top="31:30" ona="0" onm="0" ptsto="7"></misc>
+   <redzone att="10" scores="10" points="58" tdrush="3" tdpass="4" fgmade="3" endfga="0" enddowns="0" endint="0" endfumb="0" endhalf="0" endgame="0"></redzone>
+   <rush att="59" yds="242" gain="298" loss="57" td="3" long="24"></rush>
+   <pass comp="23" att="51" int="0" yds="287" td="6" long="36" sacks="2" sackyds="19"></pass>
+   <rcv no="23" yds="287" td="6" long="36"></rcv>
+   <punt no="5" yds="266" long="59" blkd="0" tb="0" fc="1" plus50="4" inside20="1" avg="53.2"></punt>
+   <ko no="5" yds="324" ob="1" tb="3" fcyds="0"></ko>
+   <fg made="3" att="3" long="33" blkd="0"></fg>
+   <pat kickatt="5" kickmade="5" passatt="4" passmade="3" rcvatt="3" rcvmade="3"></pat>
+   <defense tackua="44" tacka="44" tot_tack="88" tflua="5" tfla="14" tflyds="44" sacks="6" sackyds="31" brup="6" qbh="1" fr="1" fryds="0"></defense>
+   <pr no="1" yds="-1" td="0" long="0"></pr>
+   <scoring td="9" fg="3" patkick="5" patrcv="3"></scoring>
+  </totals>
+  <player name="Buddy Johnson" shortname="Buddy Johnson" checkname="JOHNSON,BUDDY" uni="1X" class="SO" gp="1" code="1X">
+   <defense tackua="0" tacka="1" tot_tack="1" fr="1" fryds="0"></defense>
+  </player>
+  <player name="Brian Johnson" shortname="Brian Johnson" checkname="JOHNSON,BRIAN" uni="1F" class="FR" gp="1" code="1F"></player>
+  <player name="Myles Jones" shortname="Myles Jones" checkname="JONES,MYLES" uni="1Z" class="SO" gp="1" gs="1" dpos="CB" code="1Z">
+   <defense tackua="1" tacka="2" tot_tack="3" brup="2"></defense>
+  </player>
+  <player name="Quartney Davis" shortname="Quartney Davis" checkname="DAVIS,QUARTNEY" uni="1" class="SO" gp="1" gs="1" opos="WR" code="1">
+   <rcv no="7" yds="101" td="2" long="20"></rcv>
+   <scoring td="2"></scoring>
+  </player>
+  <player name="Larry Pryor" shortname="Larry Pryor" checkname="PRYOR,LARRY" uni="1A" class="JR" gp="1" gs="1" dpos="SF" code="1A">
+   <defense tackua="4" tacka="3" tot_tack="7" tflua="0" tfla="1" tflyds="0"></defense>
+  </player>
+  <player name="Keldrick Carper" shortname="Keldrick Carper" checkname="CARPER,KELDRICK" uni="1D" class="SO" gp="1" code="1D"></player>
+  <player name="Jhamon Ausbon" shortname="Jhamon Ausbon" checkname="AUSBON,JHAMON" uni="2" class="SO" gp="1" gs="1" opos="WR" code="2">
+   <rcv no="5" yds="37" td="0" long="13"></rcv>
+   <defense tackua="0" tacka="1" tot_tack="1" tflua="0" tfla="1" tflyds="2"></defense>
+  </player>
+  <player name="Tyree Johnson" shortname="Tyree Johnson" checkname="JOHNSON,TYREE" uni="3X" class="FR" gp="1" code="3X">
+   <defense tackua="0" tacka="1" tot_tack="1" tflua="0" tfla="1" tflyds="1" sackua="0" sacka="1" sackyds="1"></defense>
+  </player>
+  <player name="Daylon Mack" shortname="Daylon Mack" checkname="MACK,DAYLON" uni="3D" class="SR" gp="1" gs="1" dpos="DT" code="3D">
+   <defense tackua="2" tacka="1" tot_tack="3" tflua="2" tfla="1" tflyds="14" sackua="2" sacka="0" sackyds="12"></defense>
+  </player>
+  <player name="Vernon Jackson" shortname="Vernon Jackson" checkname="JACKSON,VERNON" uni="3" class="FR" gp="1" code="3"></player>
+  <player name="Derrick Tucker" shortname="Derrick Tucker" checkname="TUCKER,DERRICK" uni="4" class="SO" gp="1" code="4"></player>
+  <player name="Ryan Renick" shortname="Ryan Renick" checkname="RENICK,RYAN" uni="4F" class="SO" gp="1" code="4F"></player>
+  <player name="Bobby Brown" shortname="Bobby Brown" checkname="BROWN,BOBBY" uni="5X" class="FR" gp="1" code="5X">
+   <defense tackua="0" tacka="1" tot_tack="1"></defense>
+  </player>
+  <player name="T. Williams" shortname="T. Williams" checkname="WILLIAMS,T" uni="5" class="JR" gp="1" gs="1" opos="TB" code="5">
+   <rush att="35" yds="198" gain="204" loss="6" td="2" long="24"></rush>
+   <rcv no="1" yds="-2" td="0" long="0"></rcv>
+   <fumbles no="1" lost="1"></fumbles>
+   <scoring td="2"></scoring>
+  </player>
+  <player name="Roshauud Paul" shortname="Roshauud Paul" checkname="PAUL,ROSHAUUD" uni="6X" class="SO" gp="1" code="6X">
+   <pr no="1" yds="-1" td="0" long="0"></pr>
+  </player>
+  <player name="Donovan Wilson" shortname="Donovan Wilson" checkname="WILSON,DONOVAN" uni="6" class="SR" gp="1" gs="1" dpos="SF" code="6">
+   <defense tackua="7" tacka="6" tot_tack="13" tflua="0" tfla="1" tflyds="1" brup="1"></defense>
+  </player>
+  <player name="Jashaun Corbin" shortname="Jashaun Corbin" checkname="CORBIN,JASHAUN" uni="7" class="FR" gp="1" code="7">
+   <rush att="1" yds="-6" gain="0" loss="6" td="0" long="0"></rush>
+  </player>
+  <player name="Kingsley Keke" shortname="Kingsley Keke" checkname="KEKE,KINGSLEY" uni="8" class="SR" gp="1" gs="1" dpos="DE" code="8">
+   <defense tackua="2" tacka="4" tot_tack="6" tflua="0" tfla="1" tflyds="1" brup="1"></defense>
+  </player>
+  <player name="Leon ONeal" shortname="Leon ONeal" checkname="ONEAL,LEON" uni="9X" class="FR" gp="1" code="9X"></player>
+  <player name="Kellen Mond" shortname="Kellen Mond" checkname="MOND,KELLEN" uni="11" class="SO" gp="1" gs="1" opos="QB" code="11">
+   <rush att="20" yds="42" gain="80" loss="38" td="1" long="21"></rush>
+   <pass comp="23" att="49" int="0" yds="287" td="6" long="36" sacks="2" sackyds="19"></pass>
+   <pat passatt="4" passmade="3"></pat>
+   <fumbles no="1" lost="0"></fumbles>
+   <scoring td="1"></scoring>
+  </player>
+  <player name="C. Gillaspia" shortname="C. Gillaspia" checkname="GILLASPIA,C" uni="12" class="SR" gp="1" code="12">
+   <rcv no="1" yds="18" td="0" long="18"></rcv>
+  </player>
+  <player name="Kendrick Rogers" shortname="Kendrick Rogers" checkname="ROGERS,KENDRICK" uni="13" class="SO" gp="1" code="13">
+   <rcv no="3" yds="53" td="2" long="25"></rcv>
+   <pat rcvatt="3" rcvmade="3"></pat>
+   <scoring td="2" patrcv="3"></scoring>
+  </player>
+  <player name="Camron Buckley" shortname="Camron Buckley" checkname="BUCKLEY,CAMRON" uni="14" class="SO" gp="1" code="14">
+   <rcv no="1" yds="5" td="0" long="5"></rcv>
+  </player>
+  <player name="Antonio Howard" shortname="Antonio Howard" checkname="HOWARD,ANTONIO" uni="18" class="JR" gp="1" code="18"></player>
+  <player name="Tyrel Dodson" shortname="Tyrel Dodson" checkname="DODSON,TYREL" uni="25" class="JR" gp="1" gs="1" dpos="SLB" code="25">
+   <defense tackua="3" tacka="3" tot_tack="6" tflua="0" tfla="1" tflyds="1"></defense>
+  </player>
+  <player name="D. Capers-Smith" shortname="D. Capers-Smith" checkname="CAPERS-SMITH,D" uni="26" class="SR" gp="1" gs="1" dpos="SF" code="26">
+   <defense tackua="4" tacka="4" tot_tack="8" tflua="1" tfla="1" tflyds="3" brup="1"></defense>
+  </player>
+  <player name="Roney Elam" shortname="Roney Elam" checkname="ELAM,RONEY" uni="27" class="JR" gp="1" code="27">
+   <defense tackua="0" tacka="1" tot_tack="1"></defense>
+  </player>
+  <player name="Travon Fuller" shortname="Travon Fuller" checkname="FULLER,TRAVON" uni="28" class="SO" gp="1" code="28">
+   <defense tackua="1" tacka="0" tot_tack="1"></defense>
+  </player>
+  <player name="Debione Renfro" shortname="Debione Renfro" checkname="RENFRO,DEBIONE" uni="29" class="SO" gp="1" gs="1" dpos="CB" code="29">
+   <defense tackua="7" tacka="3" tot_tack="10" tflua="1" tfla="0" tflyds="8" sackua="1" sacka="0" sackyds="8" brup="1"></defense>
+  </player>
+  <player name="Braden Mann" shortname="Braden Mann" checkname="MANN,BRADEN" uni="34" class="JR" gp="1" code="34">
+   <punt no="5" yds="266" long="59" blkd="0" tb="0" fc="1" plus50="4" inside20="1" avg="53.2"></punt>
+   <ko no="5" yds="324" ob="1" tb="3"></ko>
+   <defense tackua="1" tacka="0" tot_tack="1"></defense>
+  </player>
+  <player name="Riley Garner" shortname="Riley Garner" checkname="GARNER,RILEY" uni="35" class="SR" gp="1" code="35"></player>
+  <player name="Otaro Alaka" shortname="Otaro Alaka" checkname="ALAKA,OTARO" uni="42" class="SR" gp="1" gs="1" dpos="MLB" code="42">
+   <defense tackua="5" tacka="6" tot_tack="11" tflua="1" tfla="3" tflyds="10" sackua="1" sacka="2" sackyds="8" qbh="1"></defense>
+  </player>
+  <player name="Austin Frey" shortname="Austin Frey" checkname="FREY,AUSTIN" uni="45" class="SR" gp="1" code="45"></player>
+  <player name="Landis Durham" shortname="Landis Durham" checkname="DURHAM,LANDIS" uni="46" class="SR" gp="1" gs="1" dpos="DE" code="46">
+   <defense tackua="2" tacka="1" tot_tack="3" tflua="0" tfla="1" tflyds="0"></defense>
+  </player>
+  <player name="Seth Small" shortname="Seth Small" checkname="SMALL,SETH" uni="47" class="FR" gp="1" code="47">
+   <fg made="3" att="3" long="33" blkd="0"></fg>
+   <pat kickatt="5" kickmade="5"></pat>
+   <scoring fg="3" patkick="5"></scoring>
+  </player>
+  <player name="J. Madubuike" shortname="J. Madubuike" checkname="MADUBUIKE,J" uni="52" class="SO" gp="1" gs="1" dpos="DT" code="52">
+   <defense tackua="4" tacka="6" tot_tack="10" tflua="0" tfla="2" tflyds="3" sackua="0" sacka="1" sackyds="2"></defense>
+  </player>
+  <player name="Carson Green" shortname="Carson Green" checkname="GREEN,CARSON" uni="54" class="SO" gp="1" code="54"></player>
+  <player name="Keeath Magee" shortname="Keeath Magee" checkname="MAGEE,KEEATH" uni="56" class="SO" gp="1" code="56"></player>
+  <player name="Braden White" shortname="Braden White" checkname="WHITE,BRADEN" uni="58" class="SO" gp="1" code="58"></player>
+  <player name="Erik McCoy" shortname="Erik McCoy" checkname="MCCOY,ERIK" uni="64" class="JR" gp="1" gs="1" opos="C" code="64"></player>
+  <player name="Dan Moore" shortname="Dan Moore" checkname="MOORE,DAN" uni="65" class="SO" gp="1" gs="1" opos="LT" code="65"></player>
+  <player name="Connor Lanfear" shortname="Connor Lanfear" checkname="LANFEAR,CONNOR" uni="70" class="SR" gp="1" code="70"></player>
+  <player name="Kellen Diesch" shortname="Kellen Diesch" checkname="DIESCH,KELLEN" uni="74" class="SO" gp="1" code="74"></player>
+  <player name="Colton Prater" shortname="Colton Prater" checkname="PRATER,COLTON" uni="76" class="JR" gp="1" code="76"></player>
+  <player name="Ryan McCollum" shortname="Ryan McCollum" checkname="MCCOLLUM,RYAN" uni="77" class="SO" gp="1" gs="1" opos="LG" code="77"></player>
+  <player name="K. Sutherland" shortname="K. Sutherland" checkname="SUTHERLAND,K" uni="78" class="SR" gp="1" gs="1" opos="RG" code="78"></player>
+  <player name="Trevor Wood" shortname="Trevor Wood" checkname="WOOD,TREVOR" uni="80" class="SR" gp="1" gs="1" opos="TE" code="80"></player>
+  <player name="J. Sternberger" shortname="J. Sternberger" checkname="STERNBERGER,J" uni="81" class="JR" gp="1" gs="1" opos="TE" code="81">
+   <rcv no="5" yds="75" td="2" long="36"></rcv>
+   <scoring td="2"></scoring>
+  </player>
+  <player name="Jayden Peevy" shortname="Jayden Peevy" checkname="PEEVY,JAYDEN" uni="92" class="SO" gp="1" code="92">
+   <defense tackua="1" tacka="0" tot_tack="1"></defense>
+  </player>
+  <player name="Max Wright" shortname="Max Wright" checkname="WRIGHT,MAX" uni="93" class="FR" gp="1" code="93"></player>
+  <!-- <player name="Team" shortname="Team" checkname="TEAM" uni="TM" class="FR" gp="1" code="198">
+   <pass comp="0" att="2" int="0" yds="0" td="0" long="0" sacks="0" sackyds="0"></pass>
+  </player> -->
+ </team>
+ <scores>
+  <score vh="H" team="TAMU" qtr="1" clock="06:31" type="TD" how="RUSH" yds="10" scorer="T. Williams" patby="Seth Small" pattype="KICK" patres="GOOD" plays="10" drive="95" top="4:28" vscore="0" hscore="7" driveindex="4"></score>
+  <score vh="V" team="LSU" qtr="1" clock="00:48" type="TD" how="RUSH" yds="22" scorer="Joe Burrow" patby="Cole Tracy" pattype="KICK" patres="GOOD" plays="12" drive="75" top="5:43" vscore="7" hscore="7" driveindex="5"></score>
+  <score vh="H" team="TAMU" qtr="2" clock="10:31" type="TD" how="PASS" yds="10" scorer="J. Sternberger" passer="Kellen Mond" patby="Seth Small" pattype="KICK" patres="GOOD" plays="12" drive="75" top="5:17" vscore="7" hscore="14" driveindex="6"></score>
+  <score vh="H" team="TAMU" qtr="2" clock="01:52" type="FG" yds="33" scorer="Seth Small" plays="8" drive="53" top="3:38" vscore="7" hscore="17" driveindex="8"></score>
+  <score vh="V" team="LSU" qtr="2" clock="00:00" type="FG" yds="47" scorer="Cole Tracy" plays="12" drive="36" top="1:52" vscore="10" hscore="17" driveindex="9"></score>
+  <score vh="V" team="LSU" qtr="3" clock="07:42" type="TD" how="PASS" yds="7" scorer="Just. Jefferson" passer="Joe Burrow" patby="Cole Tracy" pattype="KICK" patres="GOOD" plays="15" drive="90" top="6:15" vscore="17" hscore="17" driveindex="11"></score>
+  <score vh="H" team="TAMU" qtr="3" clock="03:33" type="TD" how="RUSH" yds="1" scorer="T. Williams" patby="Seth Small" pattype="KICK" patres="GOOD" plays="8" drive="29" top="3:43" vscore="17" hscore="24" driveindex="14"></score>
+  <score vh="V" team="LSU" qtr="4" clock="10:12" type="TD" how="FUMB" yds="58" scorer="M. Divinity" patby="Cole Tracy" pattype="KICK" patres="GOOD" vscore="24" hscore="24" driveindex="19"></score>
+  <score vh="V" team="LSU" qtr="4" clock="06:41" type="TD" how="PASS" yds="14" scorer="Foster Moreau" passer="Joe Burrow" patby="Cole Tracy" pattype="KICK" patres="GOOD" plays="4" drive="76" top="2:00" vscore="31" hscore="24" driveindex="21"></score>
+  <score vh="H" team="TAMU" qtr="4" clock="00:00" type="TD" how="PASS" yds="19" scorer="Quartney Davis" passer="Kellen Mond" patby="Seth Small" pattype="KICK" patres="GOOD" plays="12" drive="78" top="1:29" vscore="31" hscore="31" driveindex="24"></score>
+  <score vh="V" team="LSU" qtr="5" clock="15:00" type="FG" yds="50" scorer="Cole Tracy" plays="4" drive="-7" top="0:00" vscore="34" hscore="31" driveindex="25"></score>
+  <score vh="H" team="TAMU" qtr="5" clock="15:00" type="FG" yds="23" scorer="Seth Small" plays="8" drive="19" top="0:00" vscore="34" hscore="34" driveindex="26"></score>
+  <score vh="H" team="TAMU" qtr="5" clock="15:00" type="TD" how="RUSH" yds="3" scorer="Kellen Mond" patby="Seth Small" pattype="KICK" patres="GOOD" plays="4" drive="25" top="0:00" vscore="34" hscore="41" driveindex="27"></score>
+  <score vh="V" team="LSU" qtr="5" clock="15:00" type="TD" how="RUSH" yds="3" scorer="Nick Brossette" patby="Cole Tracy" pattype="KICK" patres="GOOD" plays="6" drive="25" top="0:00" vscore="41" hscore="41" driveindex="28"></score>
+  <score vh="V" team="LSU" qtr="5" clock="15:00" type="TD" how="PASS" yds="25" scorer="Dee Anderson" passer="Joe Burrow" patby="Just. Jefferson" pattype="PASS" patres="GOOD" plays="1" drive="25" top="0:00" vscore="49" hscore="41" driveindex="29"></score>
+  <score vh="H" team="TAMU" qtr="5" clock="15:00" type="TD" how="PASS" yds="25" scorer="Kendrick Rogers" passer="Kellen Mond" patby="Kendrick Rogers" pattype="PASS" patres="GOOD" plays="2" drive="25" top="0:00" vscore="49" hscore="49" driveindex="30"></score>
+  <score vh="H" team="TAMU" qtr="5" clock="15:00" type="FG" yds="21" scorer="Seth Small" plays="7" drive="21" top="0:00" vscore="49" hscore="52" driveindex="31"></score>
+  <score vh="V" team="LSU" qtr="5" clock="15:00" type="FG" yds="26" scorer="Cole Tracy" plays="5" drive="17" top="0:00" vscore="52" hscore="52" driveindex="32"></score>
+  <score vh="V" team="LSU" qtr="5" clock="15:00" type="TD" how="PASS" yds="11" scorer="Tory Carter" passer="C. Ed.Helaire" patby="Joe Burrow" pattype="PASS" patres="FAIL" plays="3" drive="25" top="0:00" vscore="58" hscore="52" driveindex="33"></score>
+  <score vh="H" team="TAMU" qtr="5" clock="15:00" type="TD" how="PASS" yds="6" scorer="Kendrick Rogers" passer="Kellen Mond" patby="Kellen Mond" pattype="PASS" patres="FAIL" plays="5" drive="25" top="0:00" vscore="58" hscore="58" driveindex="34"></score>
+  <score vh="H" team="TAMU" qtr="5" clock="15:00" type="TD" how="PASS" yds="25" scorer="J. Sternberger" passer="Kellen Mond" patby="Kendrick Rogers" pattype="PASS" patres="GOOD" plays="1" drive="25" top="0:00" vscore="58" hscore="66" driveindex="35"></score>
+  <score vh="V" team="LSU" qtr="5" clock="15:00" type="TD" how="RUSH" yds="4" scorer="Joe Burrow" patby="Dee Anderson" pattype="PASS" patres="GOOD" plays="4" drive="25" top="0:00" vscore="66" hscore="66" driveindex="36"></score>
+  <score vh="V" team="LSU" qtr="5" clock="15:00" type="TD" how="RUSH" yds="10" scorer="Joe Burrow" patby="Joe Burrow" pattype="PASS" patres="FAIL" plays="2" drive="25" top="0:00" vscore="72" hscore="66" driveindex="37"></score>
+  <score vh="H" team="TAMU" qtr="5" clock="15:00" type="TD" how="PASS" yds="17" scorer="Quartney Davis" passer="Kellen Mond" patby="Kendrick Rogers" pattype="PASS" patres="GOOD" plays="4" drive="25" top="0:00" vscore="72" hscore="74" driveindex="38"></score>
+ </scores>
+ <fgas>
+  <fga vh="V" team="LSU" kicker="Cole Tracy" qtr="2" clock="05:30" distance="49" result="missed"></fga>
+  <fga vh="H" team="TAMU" kicker="Seth Small" qtr="2" clock="01:52" distance="33" result="good"></fga>
+  <fga vh="V" team="LSU" kicker="Cole Tracy" qtr="2" clock="00:00" distance="47" result="good"></fga>
+  <fga vh="V" team="LSU" kicker="Cole Tracy" qtr="5" clock="15:00" distance="50" result="good"></fga>
+  <fga vh="H" team="TAMU" kicker="Seth Small" qtr="5" clock="15:00" distance="23" result="good"></fga>
+  <fga vh="H" team="TAMU" kicker="Seth Small" qtr="5" clock="15:00" distance="21" result="good"></fga>
+  <fga vh="V" team="LSU" kicker="Cole Tracy" qtr="5" clock="15:00" distance="26" result="good"></fga>
+ </fgas>
+ <drives>
+  <drive vh="V" team="LSU" start="KO,1,15:00,25" end="PUNT,1,14:01,32" plays="3" yards="7" top="0:59" start_how="KO" start_qtr="1" start_time="15:00" start_spot="LSU25" end_how="PUNT" end_qtr="1" end_time="14:01" end_spot="LSU32" driveindex="1"></drive>
+  <drive vh="H" team="TAMU" start="PUNT,1,14:01,21" end="PUNT,1,12:05,10" plays="3" yards="-11" top="1:56" start_how="PUNT" start_qtr="1" start_time="14:01" start_spot="TAMU21" end_how="PUNT" end_qtr="1" end_time="12:05" end_spot="TAMU10" driveindex="2"></drive>
+  <drive vh="V" team="LSU" start="PUNT,1,12:05,37" end="PUNT,1,10:59,44" plays="3" yards="7" top="1:06" start_how="PUNT" start_qtr="1" start_time="12:05" start_spot="LSU37" end_how="PUNT" end_qtr="1" end_time="10:59" end_spot="LSU44" driveindex="3"></drive>
+  <drive vh="H" team="TAMU" start="PUNT,1,10:59,5" end="TD,1,06:31,100" plays="10" yards="95" top="4:28" start_how="PUNT" start_qtr="1" start_time="10:59" start_spot="TAMU05" end_how="TD" end_qtr="1" end_time="06:31" end_spot="LSU00" rz="1" driveindex="4"></drive>
+  <drive vh="V" team="LSU" start="KO,1,06:31,25" end="TD,1,00:48,100" plays="12" yards="75" top="5:43" start_how="KO" start_qtr="1" start_time="06:31" start_spot="LSU25" end_how="TD" end_qtr="1" end_time="00:48" end_spot="TAMU00" driveindex="5"></drive>
+  <drive vh="H" team="TAMU" start="KO,1,00:48,25" end="TD,2,10:31,100" plays="12" yards="75" top="5:17" start_how="KO" start_qtr="1" start_time="00:48" start_spot="TAMU25" end_how="TD" end_qtr="2" end_time="10:31" end_spot="LSU00" rz="1" driveindex="6"></drive>
+  <drive vh="V" team="LSU" start="KO,2,10:31,25" end="FGA,2,05:30,69" plays="10" yards="44" top="5:01" start_how="KO" start_qtr="2" start_time="10:31" start_spot="LSU25" end_how="FGA" end_qtr="2" end_time="05:30" end_spot="TAMU31" driveindex="7"></drive>
+  <drive vh="H" team="TAMU" start="FGA,2,05:30,31" end="FG,2,01:52,84" plays="8" yards="53" top="3:38" start_how="FGA" start_qtr="2" start_time="05:30" start_spot="TAMU31" end_how="FG" end_qtr="2" end_time="01:52" end_spot="LSU16" rz="1" driveindex="8"></drive>
+  <drive vh="V" team="LSU" start="KO,2,01:52,35" end="FG,3,15:00,71" plays="12" yards="36" top="1:52" start_how="KO" start_qtr="2" start_time="01:52" start_spot="LSU35" end_how="FG" end_qtr="3" end_time="15:00" end_spot="TAMU29" driveindex="9"></drive>
+  <drive vh="H" team="TAMU" start="KO,3,15:00,25" end="PUNT,3,13:57,27" plays="3" yards="2" top="1:03" start_how="KO" start_qtr="3" start_time="15:00" start_spot="TAMU25" end_how="PUNT" end_qtr="3" end_time="13:57" end_spot="TAMU27" driveindex="10"></drive>
+  <drive vh="V" team="LSU" start="PUNT,3,13:57,10" end="TD,3,07:42,100" plays="15" yards="90" top="6:15" start_how="PUNT" start_qtr="3" start_time="13:57" start_spot="LSU10" end_how="TD" end_qtr="3" end_time="07:42" end_spot="TAMU00" rz="1" driveindex="11"></drive>
+  <drive vh="H" team="TAMU" start="KO,3,07:42,25" end="PUNT,3,07:16,25" plays="3" yards="0" top="0:26" start_how="KO" start_qtr="3" start_time="07:42" start_spot="TAMU25" end_how="PUNT" end_qtr="3" end_time="07:16" end_spot="TAMU25" driveindex="12"></drive>
+  <drive vh="V" team="LSU" start="PUNT,3,00:00,29" end="FUMB,3,07:16,29" plays="0" yards="0" top="0:00" start_how="PUNT" start_qtr="3" start_time="00:00" start_spot="LSU29" end_how="FUMB" end_qtr="3" end_time="07:16" end_spot="LSU29" driveindex="13"></drive>
+  <drive vh="H" team="TAMU" start="FUMB,3,07:16,71" end="TD,3,03:33,100" plays="8" yards="29" top="3:43" start_how="FUMB" start_qtr="3" start_time="07:16" start_spot="LSU29" end_how="TD" end_qtr="3" end_time="03:33" end_spot="LSU00" rz="1" driveindex="14"></drive>
+  <drive vh="V" team="LSU" start="KO,3,03:33,26" end="PUNT,3,01:26,22" plays="3" yards="-4" top="2:07" start_how="KO" start_qtr="3" start_time="03:33" start_spot="LSU26" end_how="PUNT" end_qtr="3" end_time="01:26" end_spot="LSU22" driveindex="15"></drive>
+  <drive vh="H" team="TAMU" start="PUNT,3,01:26,24" end="PUNT,4,14:48,18" plays="3" yards="-6" top="1:38" start_how="PUNT" start_qtr="3" start_time="01:26" start_spot="TAMU24" end_how="PUNT" end_qtr="4" end_time="14:48" end_spot="TAMU18" driveindex="16"></drive>
+  <drive vh="V" team="LSU" start="PUNT,4,14:48,19" end="PUNT,4,12:24,44" plays="5" yards="25" top="2:24" start_how="PUNT" start_qtr="4" start_time="14:48" start_spot="LSU19" end_how="PUNT" end_qtr="4" end_time="12:24" end_spot="LSU44" driveindex="17"></drive>
+  <drive vh="H" team="TAMU" start="PUNT,4,12:24,19" end="FUMB,4,10:12,58" plays="5" yards="39" top="2:12" start_how="PUNT" start_qtr="4" start_time="12:24" start_spot="TAMU19" end_how="FUMB" end_qtr="4" end_time="10:12" end_spot="LSU42" driveindex="18"></drive>
+  <drive vh="V" team="LSU" start="FUMB,4,10:12,42" end="TD,4,10:12,42" plays="0" yards="0" top="0:00" start_how="FUMB" start_qtr="4" start_time="10:12" start_spot="LSU42" end_how="TD" end_qtr="4" end_time="10:12" end_spot="LSU42" driveindex="19"></drive>
+  <drive vh="H" team="TAMU" start="KO,4,10:12,25" end="PUNT,4,08:41,24" plays="3" yards="-1" top="1:31" start_how="KO" start_qtr="4" start_time="10:12" start_spot="TAMU25" end_how="PUNT" end_qtr="4" end_time="08:41" end_spot="TAMU24" driveindex="20"></drive>
+  <drive vh="V" team="LSU" start="PUNT,4,08:41,24" end="TD,4,06:41,100" plays="4" yards="76" top="2:00" start_how="PUNT" start_qtr="4" start_time="08:41" start_spot="LSU24" end_how="TD" end_qtr="4" end_time="06:41" end_spot="TAMU00" rz="1" driveindex="21"></drive>
+  <drive vh="H" team="TAMU" start="KO,4,06:41,25" end="DOWNS,4,02:32,66" plays="11" yards="41" top="4:09" start_how="KO" start_qtr="4" start_time="06:41" start_spot="TAMU25" end_how="DOWNS" end_qtr="4" end_time="02:32" end_spot="LSU34" driveindex="22"></drive>
+  <drive vh="V" team="LSU" start="DOWNS,4,02:32,34" end="PUNT,4,01:29,39" plays="3" yards="5" top="1:03" start_how="DOWNS" start_qtr="4" start_time="02:32" start_spot="LSU34" end_how="PUNT" end_qtr="4" end_time="01:29" end_spot="LSU39" driveindex="23"></drive>
+  <drive vh="H" team="TAMU" start="PUNT,4,01:29,22" end="TD,4,00:00,100" plays="12" yards="78" top="1:29" start_how="PUNT" start_qtr="4" start_time="01:29" start_spot="TAMU22" end_how="TD" end_qtr="4" end_time="00:00" end_spot="LSU00" rz="1" driveindex="24"></drive>
+  <drive vh="V" team="LSU" start="POSS,5,15:00,75" end="FG,5,15:00,68" plays="4" yards="-7" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="TAMU25" end_how="FG" end_qtr="5" end_time="15:00" end_spot="TAMU32" driveindex="25"></drive>
+  <drive vh="H" team="TAMU" start="POSS,5,15:00,75" end="FG,5,15:00,94" plays="8" yards="19" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="LSU25" end_how="FG" end_qtr="5" end_time="15:00" end_spot="LSU06" rz="1" driveindex="26"></drive>
+  <drive vh="H" team="TAMU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="4" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="LSU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="LSU00" rz="1" driveindex="27"></drive>
+  <drive vh="V" team="LSU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="6" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="TAMU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="TAMU00" rz="1" driveindex="28"></drive>
+  <drive vh="V" team="LSU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="1" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="TAMU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="TAMU00" driveindex="29"></drive>
+  <drive vh="H" team="TAMU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="2" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="LSU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="LSU00" driveindex="30"></drive>
+  <drive vh="H" team="TAMU" start="POSS,5,15:00,75" end="FG,5,15:00,96" plays="7" yards="21" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="LSU25" end_how="FG" end_qtr="5" end_time="15:00" end_spot="LSU04" rz="1" driveindex="31"></drive>
+  <drive vh="V" team="LSU" start="POSS,5,15:00,75" end="FG,5,15:00,92" plays="5" yards="17" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="TAMU25" end_how="FG" end_qtr="5" end_time="15:00" end_spot="TAMU08" rz="1" driveindex="32"></drive>
+  <drive vh="V" team="LSU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="3" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="TAMU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="TAMU00" rz="1" driveindex="33"></drive>
+  <drive vh="H" team="TAMU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="5" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="LSU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="LSU00" rz="1" driveindex="34"></drive>
+  <drive vh="H" team="TAMU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="1" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="LSU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="LSU00" driveindex="35"></drive>
+  <drive vh="V" team="LSU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="4" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="TAMU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="TAMU00" rz="1" driveindex="36"></drive>
+  <drive vh="V" team="LSU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="2" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="TAMU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="TAMU00" rz="1" driveindex="37"></drive>
+  <drive vh="H" team="TAMU" start="POSS,5,15:00,75" end="TD,5,15:00,100" plays="4" yards="25" top="0:00" start_how="POSS" start_qtr="5" start_time="15:00" start_spot="LSU25" end_how="TD" end_qtr="5" end_time="15:00" end_spot="LSU00" rz="1" driveindex="38"></drive>
+ </drives>
+ <plays format="summary">
+  <qtr number="1" text="1st">
+   <play hasball="LSU" down="1" togo="10" spot="LSU35" context="V,1,10,V35" playid="0,1,0" tokens="CMT:A&amp;M wins the toss and defers.  LSU to receive at the south end."
+      text="A&amp;M wins the toss and defers.  LSU to receive at the south end." newcontext="V,1,10,V35">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU35" context="V,1,10,V35" playid="0,2,1" type="K" tokens="SPOT:H,H35,N KO:34,V00 TB:"
+      text="TAMU ball on TAMU35, Braden Mann kickoff 65 yards to the LSU0, touchback." newcontext="V,1,10,V25">
+    <p_ko vh="H" name="Braden Mann" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="V,V25,15:00" vh="V" spot="V25" clock="15:00" driveindex="1,1"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU25" context="V,1,10,V25" playid="1,1,2" type="P" tokens="PASS:9,C,27,V34 TACK:26"
+      text="Joe Burrow pass complete to La. Fournette for 9 yards to the LSU34 (D. Capers-Smith)." newcontext="V,2,1,V34">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="La. Fournette" gain="9"></p_pa>
+    <p_tk vh="H" name="D. Capers-Smith"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="1" spot="LSU34" context="V,2,1,V34" playid="1,2,3" type="R" tokens="RUSH:4,V32, TACK:26,52"
+      text="Nick Brossette rush for loss of 2 yards to the LSU32 (D. Capers-Smith;J. Madubuike)." newcontext="V,3,3,V32">
+    <p_ru vh="V" name="Nick Brossette" gain="-2"></p_ru>
+    <p_tk vh="H" name="D. Capers-Smith" assist="Y"></p_tk>
+    <p_tk vh="H" name="J. Madubuike" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="3" spot="LSU32" context="V,3,3,V32" playid="1,3,4" type="P" tokens="PASS:9,I,1,*"
+      text="Joe Burrow pass incomplete to JaMarr Chase." newcontext="V,4,3,V32">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="JaMarr Chase"></p_pa>
+   </play>
+   <play hasball="LSU" down="4" togo="3" spot="LSU32" context="V,4,3,V32" playid="1,4,5" type="U" tokens="PUNT:4F,H21 FC:6X"
+      text="Z.Von Rosenberg punt 47 yards to the TAMU21, fair catch by Roshauud Paul." newcontext="H,1,10,H21">
+    <p_pu vh="V" name="Z.Von Rosenberg" gain="47" fc="Roshauud Paul"></p_pu>
+   </play>
+   <drivesum plays="3" yards="7" top="0:59" driveindex="1" complete="Y"></drivesum>
+   <drivestart poss="H,H21,14:01" vh="H" spot="H21" clock="14:01" driveindex="2,5"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU21" context="H,1,10,H21" playid="2,1,6" clock="14:01" tokens="{DRIVE}:14:01"
+      text="TAMU drive start at 14:01." newcontext="H,1,10,H21">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU21" context="H,1,10,H21" playid="2,2,7" type="R" tokens="RUSH:5,H25, TACK:90"
+      text="T. Williams rush for 4 yards to the TAMU25 (R. Lawrence)." newcontext="H,2,6,H25">
+    <p_ru vh="H" name="T. Williams" gain="4"></p_ru>
+    <p_tk vh="V" name="R. Lawrence"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="6" spot="TAMU25" context="H,2,6,H25" playid="2,3,8" type="P" tokens="PASS:11,C,81,H22 TACK:3"
+      text="Kellen Mond pass complete to J. Sternberger for loss of 3 yards to the TAMU22 (JaCoby Stevens)." newcontext="H,3,9,H22">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="J. Sternberger" gain="-3"></p_pa>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="9" spot="TAMU22" context="H,3,9,H22" playid="2,4,9" type="P" tokens="PASS:11,S,TM,H10 SACK:40"
+      text="Kellen Mond sacked for loss of 12 yards to the TAMU10 (Devin White)." newcontext="H,4,21,H10">
+    <p_pa vh="H" qb="Kellen Mond" result="SACK" gain="-12"></p_pa>
+    <p_tk vh="V" name="Devin White" sack="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="4" togo="21" spot="TAMU10" context="H,4,21,H10" playid="2,5,10" type="U" tokens="PUNT:34,V37 DN:"
+      text="Braden Mann punt 53 yards to the LSU37, downed." newcontext="V,1,10,V37">
+    <p_pu vh="H" name="Braden Mann" gain="53"></p_pu>
+   </play>
+   <drivesum plays="3" yards="-11" top="1:56" driveindex="2" complete="Y"></drivesum>
+   <drivestart poss="V,V37,12:05" vh="V" spot="V37" clock="12:05" driveindex="3,10"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU37" context="V,1,10,V37" playid="3,1,11" clock="12:05" tokens="{DRIVE}:12:05"
+      text="LSU drive start at 12:05." newcontext="V,1,10,V37">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU37" context="V,1,10,V37" playid="3,2,12" type="P" tokens="PASS:9,C,10,V46 OB: TACK:1Z,42"
+      text="Joe Burrow pass complete to Steph. Sullivan for 9 yards to the LSU46, out-of-bounds (Myles Jones;Otaro Alaka)." ob="Y" newcontext="V,2,1,V46">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Steph. Sullivan" gain="9"></p_pa>
+    <p_tk vh="H" name="Myles Jones" assist="Y"></p_tk>
+    <p_tk vh="H" name="Otaro Alaka" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="1" spot="LSU46" context="V,2,1,V46" playid="3,3,13" type="R" tokens="RUSH:4,V44, TACK:26"
+      text="Nick Brossette rush for loss of 2 yards to the LSU44 (D. Capers-Smith)." newcontext="V,3,3,V44">
+    <p_ru vh="V" name="Nick Brossette" gain="-2"></p_ru>
+    <p_tk vh="H" name="D. Capers-Smith"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="3" spot="LSU44" context="V,3,3,V44" playid="3,4,14" type="P" tokens="PASS:9,I,6T,* BRUP:29 QBH:H,42"
+      text="Joe Burrow pass incomplete to T. Marshall (Debione Renfro), QB hurry by Otaro Alaka." newcontext="V,4,3,V44">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="T. Marshall"></p_pa>
+    <p_bu vh="H" name="Debione Renfro"></p_bu>
+    <p_qbh vh="H" name="Otaro Alaka"></p_qbh>
+   </play>
+   <play hasball="LSU" down="4" togo="3" spot="LSU44" context="V,4,3,V44" playid="3,5,15" type="U" tokens="PUNT:4F,H05 FC:6X"
+      text="Z.Von Rosenberg punt 51 yards to the TAMU5, fair catch by Roshauud Paul." newcontext="H,1,10,H05">
+    <p_pu vh="V" name="Z.Von Rosenberg" gain="51" in20="Y" fc="Roshauud Paul"></p_pu>
+   </play>
+   <drivesum plays="3" yards="7" top="1:06" driveindex="3" complete="Y"></drivesum>
+   <drivestart poss="H,H05,10:59" vh="H" spot="H05" clock="10:59" driveindex="4,15"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU05" context="H,1,10,H05" playid="4,1,16" clock="10:59" tokens="{DRIVE}:10:59"
+      text="TAMU drive start at 10:59." newcontext="H,1,10,H05">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU05" context="H,1,10,H05" playid="4,2,17" type="R" tokens="RUSH:5,H08, TACK:40"
+      text="T. Williams rush for 3 yards to the TAMU8 (Devin White)." newcontext="H,2,7,H08">
+    <p_ru vh="H" name="T. Williams" gain="3"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="7" spot="TAMU08" context="H,2,7,H08" playid="4,3,18" type="P" tokens="PASS:11,C,2,H14 TACK:3"
+      text="Kellen Mond pass complete to Jhamon Ausbon for 6 yards to the TAMU14 (JaCoby Stevens)." newcontext="H,3,1,H14">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Jhamon Ausbon" gain="6"></p_pa>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="1" spot="TAMU14" context="H,3,1,H14" playid="4,4,19" type="R" first="R" tokens="RUSH:5,H21, TACK:3"
+      text="T. Williams rush for 7 yards to the TAMU21, 1ST DOWN TAMU (JaCoby Stevens)." newcontext="H,1,10,H21">
+    <p_ru vh="H" name="T. Williams" gain="7"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU21" context="H,1,10,H21" playid="4,5,20" type="P" tokens="PASS:11,C,1,H28 TACK:29"
+      text="Kellen Mond pass complete to Quartney Davis for 7 yards to the TAMU28 (Greedy Williams)." newcontext="H,2,3,H28">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Quartney Davis" gain="7"></p_pa>
+    <p_tk vh="V" name="Greedy Williams"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="3" spot="TAMU28" context="H,2,3,H28" playid="4,6,21" type="P" first="P" tokens="PASS:11,C,1,H41 TACK:6,1A"
+      text="Kellen Mond pass complete to Quartney Davis for 13 yards to the TAMU41, 1ST DOWN TAMU (Jacob Phillips;T. Alexander)." newcontext="H,1,10,H41">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Quartney Davis" gain="13"></p_pa>
+    <p_tk vh="V" name="Jacob Phillips" assist="Y"></p_tk>
+    <p_tk vh="V" name="T. Alexander" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU41" context="H,1,10,H41" playid="4,7,22" type="P" tokens="PASS:11,I,81,*"
+      text="Kellen Mond pass incomplete to J. Sternberger." newcontext="H,2,10,H41">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="TAMU41" context="H,2,10,H41" playid="4,8,23" type="R" first="R" tokens="RUSH:5,V35, OB: TACK:5 PEN:V,PF,A,5,V20,1"
+      text="T. Williams rush for 24 yards to the LSU35, 1ST DOWN TAMU, out-of-bounds (Kary Vincent), PENALTY LSU personal foul (Kary Vincent) 15 yards to the LSU20, 1ST DOWN TAMU." ob="Y" newcontext="H,1,10,V20">
+    <p_ru vh="H" name="T. Williams" gain="24"></p_ru>
+    <p_tk vh="V" name="Kary Vincent"></p_tk>
+    <p_pn vh="V" code="PF" type="personal foul" name="Kary Vincent" result="ACCEPT" at="V35" yards="15"></p_pn>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU20" context="H,1,10,V20" playid="4,9,24" tokens="D:1,10"
+      text="1st and 10." newcontext="H,1,10,V20">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU20" context="H,1,10,V20" playid="4,10,25" type="R" tokens="RUSH:5,V11, TACK:9S"
+      text="T. Williams rush for 9 yards to the LSU11 (Grant Delpit)." newcontext="H,2,1,V11">
+    <p_ru vh="H" name="T. Williams" gain="9"></p_ru>
+    <p_tk vh="V" name="Grant Delpit"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="1" spot="LSU11" context="H,2,1,V11" playid="4,11,26" type="P" first="P" tokens="PASS:11,C,2,V10 TACK:9S"
+      text="Kellen Mond pass complete to Jhamon Ausbon for 1 yard to the LSU10, 1ST DOWN TAMU (Grant Delpit)." newcontext="H,1,0,V10">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Jhamon Ausbon" gain="1"></p_pa>
+    <p_tk vh="V" name="Grant Delpit"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU10" context="H,1,0,V10" playid="4,12,27" type="R" score="Y" vscore="0" hscore="6" clock="06:31" tokens="RUSH:5,V00, T:06:31"
+      text="T. Williams rush for 10 yards to the LSU0, TOUCHDOWN, clock 06:31." newcontext="H,1,0,V03">
+    <p_ru vh="H" name="T. Williams" gain="10"></p_ru>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="4,13,28" type="X" score="Y" vscore="0" hscore="7" tokens="PAT:K,47,G"
+      text="Seth Small kick attempt good." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Seth Small" qb="Seth Small" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="0" H="7"></score>
+   <drivesum plays="10" yards="95" top="4:28" driveindex="4" complete="Y"></drivesum>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="4,14,29" type="K" tokens="KO:34,V00 TB:"
+      text="Braden Mann kickoff 65 yards to the LSU0, touchback." newcontext="V,1,10,V25">
+    <p_ko vh="H" name="Braden Mann" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="V,V25,06:31" vh="V" spot="V25" clock="06:31" driveindex="5,29"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU25" context="V,1,10,V25" playid="5,1,30" clock="06:31" tokens="{DRIVE}:06:31"
+      text="LSU drive start at 06:31." newcontext="V,1,10,V25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU25" context="V,1,10,V25" playid="5,2,31" type="P" tokens="PASS:9,C,11,V33 OB: TACK:6"
+      text="Joe Burrow pass complete to Dee Anderson for 8 yards to the LSU33, out-of-bounds (Donovan Wilson)." ob="Y" newcontext="V,2,2,V33">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Dee Anderson" gain="8"></p_pa>
+    <p_tk vh="H" name="Donovan Wilson"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="2" spot="LSU33" context="V,2,2,V33" playid="5,3,32" type="P" tokens="PASS:9,C,12,V34 OB: TACK:29"
+      text="Joe Burrow pass complete to Jonathan Giles for 1 yard to the LSU34, out-of-bounds (Debione Renfro)." ob="Y" newcontext="V,3,1,V34">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Jonathan Giles" gain="1"></p_pa>
+    <p_tk vh="H" name="Debione Renfro"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="1" spot="LSU34" context="V,3,1,V34" playid="5,4,33" type="R" first="R" tokens="RUSH:22,V37, TACK:42,25"
+      text="C. Ed.Helaire rush for 3 yards to the LSU37, 1ST DOWN LSU (Otaro Alaka;Tyrel Dodson)." newcontext="V,1,10,V37">
+    <p_ru vh="V" name="C. Ed.Helaire" gain="3"></p_ru>
+    <p_tk vh="H" name="Otaro Alaka" assist="Y"></p_tk>
+    <p_tk vh="H" name="Tyrel Dodson" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU37" context="V,1,10,V37" playid="5,5,34" type="R" tokens="RUSH:22,V40, TACK:92"
+      text="C. Ed.Helaire rush for 3 yards to the LSU40 (Jayden Peevy)." newcontext="V,2,7,V40">
+    <p_ru vh="V" name="C. Ed.Helaire" gain="3"></p_ru>
+    <p_tk vh="H" name="Jayden Peevy"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="7" spot="LSU40" context="V,2,7,V40" playid="5,6,35" type="R" first="R" tokens="RUSH:9,V50, TACK:42"
+      text="Joe Burrow rush for 10 yards to the 50 yardline, 1ST DOWN LSU (Otaro Alaka)." newcontext="V,1,10,V50">
+    <p_ru vh="V" name="Joe Burrow" gain="10"></p_ru>
+    <p_tk vh="H" name="Otaro Alaka"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU50" context="V,1,10,V50" playid="5,7,36" type="#" clock="04:03" tokens="TOUT:V T:04:03"
+      text="Timeout LSU, clock 04:03." newcontext="V,1,10,V50">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU50" context="V,1,10,V50" playid="5,8,37" type="E" tokens="RUSH:9,V48, TACK:42 PEN:H,OD,A,3D,H45,N NOPLAY:"
+      text="Joe Burrow rush for loss of 2 yards to the LSU48 (Otaro Alaka), PENALTY TAMU offside defense (Daylon Mack) 5 yards to the TAMU45, NO PLAY." newcontext="V,1,5,H45">
+    <p_pn vh="H" code="OD" type="offside defense" name="Daylon Mack" result="ACCEPT" at="V50" yards="5"></p_pn>
+   </play>
+   <play hasball="LSU" down="1" togo="5" spot="TAMU45" context="V,1,5,H45" playid="5,9,38" type="R" tokens="RUSH:22,H48, TACK:42,6"
+      text="C. Ed.Helaire rush for loss of 3 yards to the TAMU48 (Otaro Alaka;Donovan Wilson)." newcontext="V,2,8,H48">
+    <p_ru vh="V" name="C. Ed.Helaire" gain="-3"></p_ru>
+    <p_tk vh="H" name="Otaro Alaka" assist="Y"></p_tk>
+    <p_tk vh="H" name="Donovan Wilson" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="8" spot="TAMU48" context="V,2,8,H48" playid="5,10,39" type="P" first="P" tokens="PASS:9,C,12,H37 TACK:6"
+      text="Joe Burrow pass complete to Jonathan Giles for 11 yards to the TAMU37, 1ST DOWN LSU (Donovan Wilson)." newcontext="V,1,10,H37">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Jonathan Giles" gain="11"></p_pa>
+    <p_tk vh="H" name="Donovan Wilson"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU37" context="V,1,10,H37" playid="5,11,40" type="P" tokens="PASS:9,I,2,*"
+      text="Joe Burrow pass incomplete to Just. Jefferson." newcontext="V,2,10,H37">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Just. Jefferson"></p_pa>
+   </play>
+   <play hasball="LSU" down="2" togo="10" spot="TAMU37" context="V,2,10,H37" playid="5,12,41" type="P" tokens="PASS:9,C,4,H32 TACK:26,27"
+      text="Joe Burrow pass complete to Nick Brossette for 5 yards to the TAMU32 (D. Capers-Smith;Roney Elam)." newcontext="V,3,5,H32">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Nick Brossette" gain="5"></p_pa>
+    <p_tk vh="H" name="D. Capers-Smith" assist="Y"></p_tk>
+    <p_tk vh="H" name="Roney Elam" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="5" spot="TAMU32" context="V,3,5,H32" playid="5,13,42" type="R" first="R" tokens="RUSH:9,H25, TACK:25"
+      text="Joe Burrow rush for 7 yards to the TAMU25, 1ST DOWN LSU (Tyrel Dodson)." newcontext="V,1,10,H25">
+    <p_ru vh="V" name="Joe Burrow" gain="7"></p_ru>
+    <p_tk vh="H" name="Tyrel Dodson"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="5,14,43" type="R" tokens="RUSH:4,H22, TACK:42,6"
+      text="Nick Brossette rush for 3 yards to the TAMU22 (Otaro Alaka;Donovan Wilson)." newcontext="V,2,7,H22">
+    <p_ru vh="V" name="Nick Brossette" gain="3"></p_ru>
+    <p_tk vh="H" name="Otaro Alaka" assist="Y"></p_tk>
+    <p_tk vh="H" name="Donovan Wilson" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="7" spot="TAMU22" context="V,2,7,H22" playid="5,15,44" type="R" first="R" score="Y" vscore="6" hscore="7" clock="00:48" tokens="RUSH:9,H00, T:00:48"
+      text="Joe Burrow rush for 22 yards to the TAMU0, 1ST DOWN LSU, TOUCHDOWN, clock 00:48." newcontext="V,1,0,H03">
+    <p_ru vh="V" name="Joe Burrow" gain="22"></p_ru>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="5,16,45" type="X" score="Y" vscore="7" hscore="7" tokens="PAT:K,36,G"
+      text="Cole Tracy kick attempt good." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Cole Tracy" qb="Cole Tracy" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="7" H="7"></score>
+   <drivesum plays="12" yards="75" top="5:43" driveindex="5" complete="Y"></drivesum>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="5,17,46" type="K" tokens="KO:32,H00 TB:"
+      text="Avery Atkins kickoff 65 yards to the TAMU0, touchback." newcontext="H,1,10,H25">
+    <p_ko vh="V" name="Avery Atkins" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="H,H25,00:48" vh="H" spot="H25" clock="00:48" driveindex="6,46"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="6,1,47" clock="00:48" tokens="{DRIVE}:00:48"
+      text="TAMU drive start at 00:48." newcontext="H,1,10,H25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="6,2,48" type="P" tokens="PASS:11,I,81,* QBH:V,99"
+      text="Kellen Mond pass incomplete to J. Sternberger, QB hurry by Ed Alexander." newcontext="H,2,10,H25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+    <p_qbh vh="V" name="Ed Alexander"></p_qbh>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="TAMU25" context="H,2,10,H25" playid="6,3,49" type="R" first="R" tokens="RUSH:5,H45, OB: TACK:9S"
+      text="T. Williams rush for 20 yards to the TAMU45, 1ST DOWN TAMU, out-of-bounds (Grant Delpit)." ob="Y" newcontext="H,1,10,H45">
+    <p_ru vh="H" name="T. Williams" gain="20"></p_ru>
+    <p_tk vh="V" name="Grant Delpit"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU45" context="H,1,10,H45" playid="6,4,50" type="R" tokens="RUSH:5,H47, TACK:97,6"
+      text="T. Williams rush for 2 yards to the TAMU47 (Glen Logan;Jacob Phillips)." newcontext="H,2,8,H47">
+    <p_ru vh="H" name="T. Williams" gain="2"></p_ru>
+    <p_tk vh="V" name="Glen Logan" assist="Y"></p_tk>
+    <p_tk vh="V" name="Jacob Phillips" assist="Y"></p_tk>
+   </play>
+   <score qtr="1" V="7" H="7"></score>
+   <endqtr></endqtr>
+   <qtrsummary vh="V" id="LSU">
+    <firstdowns no="5" rush="4" pass="1" penalty="0"></firstdowns>
+    <penalties no="1" yds="15"></penalties>
+    <conversions thirdconv="2" thirdatt="4" fourthconv="0" fourthatt="0"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="07:48"></misc>
+    <rush att="10" yds="44" gain="55" loss="7" td="1" long="22"></rush>
+    <pass comp="6" att="9" int="0" yds="43" td="0" long="11" sacks="0" sackyds="0"></pass>
+    <rcv no="6" yds="43" td="0" long="11"></rcv>
+    <punt no="2" yds="98" long="51" blkd="0" tb="0" fc="2" plus50="1" inside20="1" avg="49.0"></punt>
+    <ko no="1" yds="65" ob="0" tb="1" fcyds="24912"></ko>
+    <pat kickatt="1" kickmade="1"></pat>
+    <defense tackua="11" tacka="4" tot_tack="15" tflua="2" tfla="0" tflyds="15" sacks="1" sackyds="12" qbh="1"></defense>
+    <scoring td="1" patkick="1"></scoring>
+   </qtrsummary>
+   <qtrsummary vh="H" id="TAMU">
+    <firstdowns no="6" rush="3" pass="2" penalty="1"></firstdowns>
+    <penalties no="1" yds="5"></penalties>
+    <conversions thirdconv="1" thirdatt="2" fourthconv="0" fourthatt="0"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="07:12"></misc>
+    <rush att="9" yds="67" gain="79" loss="12" td="1" long="24"></rush>
+    <pass comp="5" att="7" int="0" yds="24" td="0" long="13" sacks="1" sackyds="12"></pass>
+    <rcv no="5" yds="24" td="0" long="13"></rcv>
+    <punt no="1" yds="53" long="53" blkd="0" tb="0" fc="0" plus50="1" inside20="0" avg="53.0"></punt>
+    <ko no="2" yds="130" ob="0" tb="2" fcyds="8224"></ko>
+    <pat kickatt="1" kickmade="1"></pat>
+    <defense tackua="8" tacka="12" tot_tack="20" tflua="1" tfla="4" tflyds="7" sacks="0" sackyds="0" brup="1" qbh="1"></defense>
+    <scoring td="1" patkick="1"></scoring>
+   </qtrsummary>
+  </qtr>
+  <qtr number="2" text="2nd">
+   <play hasball="TAMU" down="2" togo="8" spot="TAMU47" context="H,2,8,H47" playid="6,5,51" type="#" clock="15:00" tokens="Q:2 T:15:00"
+      text="Start of 2nd quarter, clock 15:00." newcontext="H,2,8,H47">
+   </play>
+   <play hasball="TAMU" down="2" togo="8" spot="TAMU47" context="H,2,8,H47" playid="6,6,52" type="P" tokens="PASS:11,I,81,* QBH:V,97"
+      text="Kellen Mond pass incomplete to J. Sternberger, QB hurry by Glen Logan." newcontext="H,3,8,H47">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+    <p_qbh vh="V" name="Glen Logan"></p_qbh>
+   </play>
+   <play hasball="TAMU" down="3" togo="8" spot="TAMU47" context="H,3,8,H47" playid="6,7,53" type="P" first="P" tokens="PASS:11,C,2,V40 TACK:29,40"
+      text="Kellen Mond pass complete to Jhamon Ausbon for 13 yards to the LSU40, 1ST DOWN TAMU (Greedy Williams;Devin White)." newcontext="H,1,10,V40">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Jhamon Ausbon" gain="13"></p_pa>
+    <p_tk vh="V" name="Greedy Williams" assist="Y"></p_tk>
+    <p_tk vh="V" name="Devin White" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU40" context="H,1,10,V40" playid="6,8,54" type="R" first="R" tokens="RUSH:11,V20, OB:"
+      text="Kellen Mond rush for 20 yards to the LSU20, 1ST DOWN TAMU, out-of-bounds." ob="Y" newcontext="H,1,10,V20">
+    <p_ru vh="H" name="Kellen Mond" gain="20"></p_ru>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU20" context="H,1,10,V20" playid="6,9,55" type="P" tokens="PASS:11,I,1,*"
+      text="Kellen Mond pass incomplete to Quartney Davis." newcontext="H,2,10,V20">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Quartney Davis"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU20" context="H,2,10,V20" playid="6,10,56" type="R" tokens="RUSH:11,V11, TACK:3"
+      text="Kellen Mond rush for 9 yards to the LSU11 (JaCoby Stevens)." newcontext="H,3,1,V11">
+    <p_ru vh="H" name="Kellen Mond" gain="9"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="1" spot="LSU11" context="H,3,1,V11" playid="6,11,57" type="#" clock="12:56" tokens="TOUT:H T:12:56"
+      text="Timeout TAMU, clock 12:56." newcontext="H,3,1,V11">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="TAMU" down="3" togo="1" spot="LSU11" context="H,3,1,V11" playid="6,12,58" type="R" first="R" tokens="RUSH:11,V10, TACK:97,99"
+      text="Kellen Mond rush for 1 yard to the LSU10, 1ST DOWN TAMU (Glen Logan;Ed Alexander)." newcontext="H,1,0,V10">
+    <p_ru vh="H" name="Kellen Mond" gain="1"></p_ru>
+    <p_tk vh="V" name="Glen Logan" assist="Y"></p_tk>
+    <p_tk vh="V" name="Ed Alexander" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU10" context="H,1,0,V10" playid="6,13,59" type="R" tokens="RUSH:5,V12, TACK:99"
+      text="T. Williams rush for loss of 2 yards to the LSU12 (Ed Alexander)." newcontext="H,2,0,V12">
+    <p_ru vh="H" name="T. Williams" gain="-2"></p_ru>
+    <p_tk vh="V" name="Ed Alexander"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="0" spot="LSU12" context="H,2,0,V12" playid="6,14,60" type="R" tokens="RUSH:11,V10, TACK:45"
+      text="Kellen Mond rush for 2 yards to the LSU10 (M. Divinity)." newcontext="H,3,0,V10">
+    <p_ru vh="H" name="Kellen Mond" gain="2"></p_ru>
+    <p_tk vh="V" name="M. Divinity"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="0" spot="LSU10" context="H,3,0,V10" playid="6,15,61" type="P" score="Y" vscore="7" hscore="13" clock="10:31" tokens="PASS:11,C,81,V00 T:10:31"
+      text="Kellen Mond pass complete to J. Sternberger for 10 yards to the LSU0, TOUCHDOWN, clock 10:31." newcontext="H,1,0,V03">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="J. Sternberger" gain="10"></p_pa>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="6,16,62" type="X" score="Y" vscore="7" hscore="14" tokens="PAT:K,47,G"
+      text="Seth Small kick attempt good." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Seth Small" qb="Seth Small" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="7" H="14"></score>
+   <drivesum plays="12" yards="75" top="5:17" driveindex="6" complete="Y"></drivesum>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="6,17,63" type="K" tokens="KO:34,V00 TB:"
+      text="Braden Mann kickoff 65 yards to the LSU0, touchback." newcontext="V,1,10,V25">
+    <p_ko vh="H" name="Braden Mann" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="V,V25,10:31" vh="V" spot="V25" clock="10:31" driveindex="7,63"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU25" context="V,1,10,V25" playid="7,1,64" clock="10:31" tokens="{DRIVE}:10:31"
+      text="LSU drive start at 10:31." newcontext="V,1,10,V25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU25" context="V,1,10,V25" playid="7,2,65" type="P" first="P" tokens="PASS:9,C,18,V38 TACK:6"
+      text="Joe Burrow pass complete to Foster Moreau for 13 yards to the LSU38, 1ST DOWN LSU (Donovan Wilson)." newcontext="V,1,10,V38">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Foster Moreau" gain="13"></p_pa>
+    <p_tk vh="H" name="Donovan Wilson"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU38" context="V,1,10,V38" playid="7,3,66" type="P" first="P" tokens="PASS:9,C,1,H48"
+      text="Joe Burrow pass complete to JaMarr Chase for 14 yards to the TAMU48, 1ST DOWN LSU." newcontext="V,1,10,H48">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="JaMarr Chase" gain="14"></p_pa>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU48" context="V,1,10,H48" playid="7,4,67" type="R" tokens="RUSH:9,H43, TACK:29"
+      text="Joe Burrow rush for 5 yards to the TAMU43 (Debione Renfro)." newcontext="V,2,5,H43">
+    <p_ru vh="V" name="Joe Burrow" gain="5"></p_ru>
+    <p_tk vh="H" name="Debione Renfro"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="5" spot="TAMU43" context="V,2,5,H43" playid="7,5,68" type="P" tokens="PASS:9,I,1,*"
+      text="Joe Burrow pass incomplete to JaMarr Chase." newcontext="V,3,5,H43">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="JaMarr Chase"></p_pa>
+   </play>
+   <play hasball="LSU" down="3" togo="5" spot="TAMU43" context="V,3,5,H43" playid="7,6,69" type="E" tokens="PEN:V,FS,A,76,H48,N"
+      text="PENALTY LSU false start (Austin Deculus) 5 yards to the TAMU48." newcontext="V,3,10,H48">
+    <p_pn vh="V" code="FS" type="false start" name="Austin Deculus" result="ACCEPT" at="H43" yards="5"></p_pn>
+   </play>
+   <play hasball="LSU" down="3" togo="10" spot="TAMU48" context="V,3,10,H48" playid="7,7,70" type="P" first="P" tokens="PASS:9,C,19,H38 TACK:6,29"
+      text="Joe Burrow pass complete to Derrick Dillon for 10 yards to the TAMU38, 1ST DOWN LSU (Donovan Wilson;Debione Renfro)." newcontext="V,1,10,H38">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Derrick Dillon" gain="10"></p_pa>
+    <p_tk vh="H" name="Donovan Wilson" assist="Y"></p_tk>
+    <p_tk vh="H" name="Debione Renfro" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU38" context="V,1,10,H38" playid="7,8,71" type="P" first="P" tokens="PASS:9,C,27,H19 TACK:25"
+      text="Joe Burrow pass complete to La. Fournette for 19 yards to the TAMU19, 1ST DOWN LSU (Tyrel Dodson)." newcontext="V,1,10,H19">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="La. Fournette" gain="19"></p_pa>
+    <p_tk vh="H" name="Tyrel Dodson"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU19" context="V,1,10,H19" playid="7,9,72" type="E" tokens="PEN:V,DG,A,TM,H24,N"
+      text="PENALTY LSU delay of game 5 yards to the TAMU24." newcontext="V,1,15,H24">
+    <p_pn vh="V" code="DG" type="delay of game" result="ACCEPT" at="H19" yards="5"></p_pn>
+   </play>
+   <play hasball="LSU" down="1" togo="15" spot="TAMU24" context="V,1,15,H24" playid="7,10,73" type="P" tokens="PASS:9,S,TM,H33 SACK:3D"
+      text="Joe Burrow sacked for loss of 9 yards to the TAMU33 (Daylon Mack)." newcontext="V,2,24,H33">
+    <p_pa vh="V" qb="Joe Burrow" result="SACK" gain="-9"></p_pa>
+    <p_tk vh="H" name="Daylon Mack" sack="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="24" spot="TAMU33" context="V,2,24,H33" playid="7,11,74" type="R" tokens="RUSH:9,H31, TACK:52"
+      text="Joe Burrow rush for 2 yards to the TAMU31 (J. Madubuike)." newcontext="V,3,22,H31">
+    <p_ru vh="V" name="Joe Burrow" gain="2"></p_ru>
+    <p_tk vh="H" name="J. Madubuike"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="22" spot="TAMU31" context="V,3,22,H31" playid="7,12,75" type="P" tokens="PASS:9,I,11,*"
+      text="Joe Burrow pass incomplete to Dee Anderson." newcontext="V,4,22,H31">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Dee Anderson"></p_pa>
+   </play>
+   <play hasball="LSU" down="4" togo="22" spot="TAMU31" context="V,4,22,H31" playid="7,13,76" type="F" clock="05:30" tokens="FGA:36,49,M,H31,1 T:05:30"
+      text="Cole Tracy field goal attempt from 49 MISSED - hit left upright, spot at TAMU31, clock 05:30." newcontext="H,1,10,H31">
+    <p_fg vh="V" name="Cole Tracy" distance="49" result="MISSED"></p_fg>
+   </play>
+   <drivesum plays="10" yards="44" top="5:01" driveindex="7" complete="Y"></drivesum>
+   <drivestart poss="H,H31,05:30" vh="H" spot="H31" clock="05:30" driveindex="8,76"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU31" context="H,1,10,H31" playid="8,1,77" clock="05:30" tokens="{DRIVE}:05:30"
+      text="TAMU drive start at 05:30." newcontext="H,1,10,H31">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU31" context="H,1,10,H31" playid="8,2,78" type="R" first="R" tokens="RUSH:5,H43, TACK:9S"
+      text="T. Williams rush for 12 yards to the TAMU43, 1ST DOWN TAMU (Grant Delpit)." newcontext="H,1,10,H43">
+    <p_ru vh="H" name="T. Williams" gain="12"></p_ru>
+    <p_tk vh="V" name="Grant Delpit"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU43" context="H,1,10,H43" playid="8,3,79" type="R" tokens="RUSH:5,H47, TACK:72,6"
+      text="T. Williams rush for 4 yards to the TAMU47 (Tyler Shelvin;Jacob Phillips)." newcontext="H,2,6,H47">
+    <p_ru vh="H" name="T. Williams" gain="4"></p_ru>
+    <p_tk vh="V" name="Tyler Shelvin" assist="Y"></p_tk>
+    <p_tk vh="V" name="Jacob Phillips" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="6" spot="TAMU47" context="H,2,6,H47" playid="8,4,80" type="R" tokens="RUSH:11,H45, TACK:40"
+      text="Kellen Mond rush for loss of 2 yards to the TAMU45 (Devin White)." newcontext="H,3,8,H45">
+    <p_ru vh="H" name="Kellen Mond" gain="-2"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="8" spot="TAMU45" context="H,3,8,H45" playid="8,5,81" type="P" first="P" tokens="PASS:11,C,81,V19 TACK:6"
+      text="Kellen Mond pass complete to J. Sternberger for 36 yards to the LSU19, 1ST DOWN TAMU (Jacob Phillips)." newcontext="H,1,10,V19">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="J. Sternberger" gain="36"></p_pa>
+    <p_tk vh="V" name="Jacob Phillips"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU19" context="H,1,10,V19" playid="8,6,82" type="R" tokens="RUSH:5,V16, TACK:40"
+      text="T. Williams rush for 3 yards to the LSU16 (Devin White)." newcontext="H,2,7,V16">
+    <p_ru vh="H" name="T. Williams" gain="3"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="7" spot="LSU16" context="H,2,7,V16" playid="8,7,83" type="P" tokens="PASS:11,I,80,*"
+      text="Kellen Mond pass incomplete to Trevor Wood." newcontext="H,3,7,V16">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Trevor Wood"></p_pa>
+   </play>
+   <play hasball="TAMU" down="3" togo="7" spot="LSU16" context="H,3,7,V16" playid="8,8,84" type="R" tokens="RUSH:11,V16, TACK:40"
+      text="Kellen Mond rush for no gain to the LSU16 (Devin White)." newcontext="H,4,7,V16">
+    <p_ru vh="H" name="Kellen Mond" gain="0"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="4" togo="7" spot="LSU16" context="H,4,7,V16" playid="8,9,85" type="#" clock="01:56" tokens="TOUT:V T:01:56"
+      text="Timeout LSU, clock 01:56." newcontext="H,4,7,V16">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="TAMU" down="4" togo="7" spot="LSU16" context="H,4,7,V16" playid="8,10,86" type="F" score="Y" vscore="7" hscore="17" clock="01:52" tokens="FGA:47,33,G T:01:52"
+      text="Seth Small field goal attempt from 33 GOOD, clock 01:52." newcontext="H,1,0,H35">
+    <p_fg vh="H" name="Seth Small" distance="33" result="GOOD" score="Y"></p_fg>
+   </play>
+   <score V="7" H="17"></score>
+   <drivesum plays="8" yards="53" top="3:38" driveindex="8" complete="Y"></drivesum>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="8,11,87" type="K" tokens="KO:34,V01 OB: SPOT:V,V35,Y"
+      text="Braden Mann kickoff 64 yards to the LSU1, out-of-bounds, LSU ball on LSU35." ob="Y" newcontext="V,1,10,V35">
+    <p_ko vh="H" name="Braden Mann" gain="64" result="O"></p_ko>
+   </play>
+   <drivestart poss="V,V35,01:52" vh="V" spot="V35" clock="01:52" driveindex="9,87"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU35" context="V,1,10,V35" playid="9,1,88" clock="01:52" tokens="{DRIVE}:01:52"
+      text="LSU drive start at 01:52." newcontext="V,1,10,V35">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU35" context="V,1,10,V35" playid="9,2,89" type="P" tokens="PASS:9,I,10,* BRUP:26"
+      text="Joe Burrow pass incomplete to Steph. Sullivan (D. Capers-Smith)." newcontext="V,2,10,V35">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Steph. Sullivan"></p_pa>
+    <p_bu vh="H" name="D. Capers-Smith"></p_bu>
+   </play>
+   <play hasball="LSU" down="2" togo="10" spot="LSU35" context="V,2,10,V35" playid="9,3,90" type="P" tokens="PASS:9,I,2,*"
+      text="Joe Burrow pass incomplete to Just. Jefferson." newcontext="V,3,10,V35">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Just. Jefferson"></p_pa>
+   </play>
+   <play hasball="LSU" down="3" togo="10" spot="LSU35" context="V,3,10,V35" playid="9,4,91" type="P" first="P" tokens="PASS:9,C,1,V46 OB:"
+      text="Joe Burrow pass complete to JaMarr Chase for 11 yards to the LSU46, 1ST DOWN LSU, out-of-bounds." ob="Y" newcontext="V,1,10,V46">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="JaMarr Chase" gain="11"></p_pa>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU46" context="V,1,10,V46" playid="9,5,92" type="R" tokens="RUSH:9,H47, OB:"
+      text="Joe Burrow rush for 7 yards to the TAMU47, out-of-bounds." ob="Y" newcontext="V,2,3,H47">
+    <p_ru vh="V" name="Joe Burrow" gain="7"></p_ru>
+   </play>
+   <play hasball="LSU" down="2" togo="3" spot="TAMU47" context="V,2,3,H47" playid="9,6,93" type="P" first="P" tokens="PASS:9,C,1,H41 TACK:29"
+      text="Joe Burrow pass complete to JaMarr Chase for 6 yards to the TAMU41, 1ST DOWN LSU (Debione Renfro)." newcontext="V,1,10,H41">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="JaMarr Chase" gain="6"></p_pa>
+    <p_tk vh="H" name="Debione Renfro"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU41" context="V,1,10,H41" playid="9,7,94" type="P" tokens="PASS:9,I,2,* BRUP:6"
+      text="Joe Burrow pass incomplete to Just. Jefferson (Donovan Wilson)." newcontext="V,2,10,H41">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Just. Jefferson"></p_pa>
+    <p_bu vh="H" name="Donovan Wilson"></p_bu>
+   </play>
+   <play hasball="LSU" down="2" togo="10" spot="TAMU41" context="V,2,10,H41" playid="9,8,95" type="P" tokens="PASS:9,C,2,H37 OB: TACK:6"
+      text="Joe Burrow pass complete to Just. Jefferson for 4 yards to the TAMU37, out-of-bounds (Donovan Wilson)." ob="Y" newcontext="V,3,6,H37">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Just. Jefferson" gain="4"></p_pa>
+    <p_tk vh="H" name="Donovan Wilson"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="6" spot="TAMU37" context="V,3,6,H37" playid="9,9,96" type="R" first="R" tokens="RUSH:9,H30, TACK:52"
+      text="Joe Burrow rush for 7 yards to the TAMU30, 1ST DOWN LSU (J. Madubuike)." newcontext="V,1,10,H30">
+    <p_ru vh="V" name="Joe Burrow" gain="7"></p_ru>
+    <p_tk vh="H" name="J. Madubuike"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU30" context="V,1,10,H30" playid="9,10,97" type="P" tokens="PASS:9,I,10,* BRUP:1Z"
+      text="Joe Burrow pass incomplete to Steph. Sullivan (Myles Jones)." newcontext="V,2,10,H30">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Steph. Sullivan"></p_pa>
+    <p_bu vh="H" name="Myles Jones"></p_bu>
+   </play>
+   <play hasball="LSU" down="2" togo="10" spot="TAMU30" context="V,2,10,H30" playid="9,11,98" type="P" tokens="PASS:9,I,11,*"
+      text="Joe Burrow pass incomplete to Dee Anderson." newcontext="V,3,10,H30">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Dee Anderson"></p_pa>
+   </play>
+   <play hasball="LSU" down="3" togo="10" spot="TAMU30" context="V,3,10,H30" playid="9,12,99" type="R" tokens="RUSH:9,H29, TACK:46"
+      text="Joe Burrow rush for 1 yard to the TAMU29 (Landis Durham)." newcontext="V,4,9,H29">
+    <p_ru vh="V" name="Joe Burrow" gain="1"></p_ru>
+    <p_tk vh="H" name="Landis Durham"></p_tk>
+   </play>
+   <play hasball="LSU" down="4" togo="9" spot="TAMU29" context="V,4,9,H29" playid="9,13,100" type="#" clock="00:03" tokens="TOUT:V T:00:03"
+      text="Timeout LSU, clock 00:03." newcontext="V,4,9,H29">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="LSU" down="4" togo="9" spot="TAMU29" context="V,4,9,H29" playid="9,14,101" type="F" score="Y" vscore="10" hscore="17" clock="00:00" tokens="FGA:36,47,G T:00:00"
+      text="Cole Tracy field goal attempt from 47 GOOD, clock 00:00." newcontext="V,1,0,V35">
+    <p_fg vh="V" name="Cole Tracy" distance="47" result="GOOD" score="Y"></p_fg>
+   </play>
+   <score V="10" H="17"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="9,15,102" type="#" clock="00:00" tokens="HALF: T:00:00"
+      text="End of half, clock 00:00." newcontext="V,1,0,V35">
+   </play>
+   <drivesum plays="12" yards="36" top="1:52" driveindex="9" complete="Y"></drivesum>
+   <score qtr="2" V="10" H="17"></score>
+   <endqtr></endqtr>
+   <qtrsummary vh="V" id="LSU">
+    <firstdowns no="7" rush="1" pass="6" penalty="0"></firstdowns>
+    <penalties no="2" yds="10"></penalties>
+    <conversions thirdconv="3" thirdatt="5" fourthconv="0" fourthatt="0"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="06:53"></misc>
+    <rush att="6" yds="13" gain="22" loss="9" td="0" long="0"></rush>
+    <pass comp="7" att="14" int="0" yds="77" td="0" long="8" sacks="1" sackyds="9"></pass>
+    <rcv no="7" yds="77" td="0" long="8"></rcv>
+    <ko no="1" yds="65" ob="0" tb="1" fcyds="24912"></ko>
+    <fg made="1" att="2" long="47" blkd="0"></fg>
+    <defense tackua="8" tacka="6" tot_tack="14" tflua="2" tfla="0" tflyds="4" sacks="0" sackyds="0" qbh="1"></defense>
+    <scoring fg="1"></scoring>
+   </qtrsummary>
+   <qtrsummary vh="H" id="TAMU">
+    <firstdowns no="5" rush="3" pass="2" penalty="0"></firstdowns>
+    <penalties no="0" yds="0"></penalties>
+    <conversions thirdconv="4" thirdatt="5" fourthconv="0" fourthatt="0"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="08:07"></misc>
+    <rush att="10" yds="47" gain="51" loss="4" td="0" long="0"></rush>
+    <pass comp="3" att="6" int="0" yds="59" td="1" long="23" sacks="0" sackyds="0"></pass>
+    <rcv no="3" yds="59" td="1" long="23"></rcv>
+    <ko no="2" yds="129" ob="1" tb="1" fcyds="8224"></ko>
+    <fg made="1" att="1" long="33" blkd="0"></fg>
+    <pat kickatt="1" kickmade="1"></pat>
+    <defense tackua="9" tacka="2" tot_tack="11" tflua="1" tfla="0" tflyds="9" sacks="1" sackyds="9" brup="3"></defense>
+    <scoring td="1" fg="1" patkick="1"></scoring>
+   </qtrsummary>
+  </qtr>
+  <qtr number="3" text="3rd">
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="9,16,103" type="K" clock="15:00" tokens="Q:3 T:15:00 SPOT:V,V35,N KO:32,H00 TB:"
+      text="Start of 3rd quarter, clock 15:00, LSU ball on LSU35, Avery Atkins kickoff 65 yards to the TAMU0, touchback." newcontext="H,1,10,H25">
+    <p_ko vh="V" name="Avery Atkins" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="H,H25,15:00" vh="H" spot="H25" clock="15:00" driveindex="10,103"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="10,1,104" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,H25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="10,2,105" type="R" tokens="RUSH:5,H27, TACK:90,3"
+      text="T. Williams rush for 2 yards to the TAMU27 (R. Lawrence;JaCoby Stevens)." newcontext="H,2,8,H27">
+    <p_ru vh="H" name="T. Williams" gain="2"></p_ru>
+    <p_tk vh="V" name="R. Lawrence" assist="Y"></p_tk>
+    <p_tk vh="V" name="JaCoby Stevens" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="8" spot="TAMU27" context="H,2,8,H27" playid="10,3,106" type="P" tokens="PASS:11,I,2,* BRUP:1A"
+      text="Kellen Mond pass incomplete to Jhamon Ausbon (T. Alexander)." newcontext="H,3,8,H27">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Jhamon Ausbon"></p_pa>
+    <p_bu vh="V" name="T. Alexander"></p_bu>
+   </play>
+   <play hasball="TAMU" down="3" togo="8" spot="TAMU27" context="H,3,8,H27" playid="10,4,107" type="P" tokens="PASS:11,I,2,* BRUP:33 QBH:V,45"
+      text="Kellen Mond pass incomplete to Jhamon Ausbon (Todd Harris Jr.), QB hurry by M. Divinity." newcontext="H,4,8,H27">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Jhamon Ausbon"></p_pa>
+    <p_bu vh="V" name="Todd Harris Jr."></p_bu>
+    <p_qbh vh="V" name="M. Divinity"></p_qbh>
+   </play>
+   <play hasball="TAMU" down="4" togo="8" spot="TAMU27" context="H,4,8,H27" playid="10,5,108" type="U" tokens="PUNT:34,V14 RET:12,V10 TACK:28"
+      text="Braden Mann punt 59 yards to the LSU14, Jonathan Giles return -4 yards to the LSU10 (Travon Fuller)." newcontext="V,1,10,V10">
+    <p_pu vh="H" name="Braden Mann" gain="59" in20="Y"></p_pu>
+    <p_pr vh="V" name="Jonathan Giles" gain="-4"></p_pr>
+    <p_tk vh="H" name="Travon Fuller"></p_tk>
+   </play>
+   <drivesum plays="3" yards="2" top="1:03" driveindex="10" complete="Y"></drivesum>
+   <drivestart poss="V,V10,13:57" vh="V" spot="V10" clock="13:57" driveindex="11,108"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU10" context="V,1,10,V10" playid="11,1,109" clock="13:57" tokens="{DRIVE}:13:57"
+      text="LSU drive start at 13:57." newcontext="V,1,10,V10">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU10" context="V,1,10,V10" playid="11,2,110" type="R" tokens="RUSH:4,V19, TACK:6,1A"
+      text="Nick Brossette rush for 9 yards to the LSU19 (Donovan Wilson;Larry Pryor)." newcontext="V,2,1,V19">
+    <p_ru vh="V" name="Nick Brossette" gain="9"></p_ru>
+    <p_tk vh="H" name="Donovan Wilson" assist="Y"></p_tk>
+    <p_tk vh="H" name="Larry Pryor" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="1" spot="LSU19" context="V,2,1,V19" playid="11,3,111" type="R" first="R" tokens="RUSH:4,V26, TACK:1A"
+      text="Nick Brossette rush for 7 yards to the LSU26, 1ST DOWN LSU (Larry Pryor)." newcontext="V,1,10,V26">
+    <p_ru vh="V" name="Nick Brossette" gain="7"></p_ru>
+    <p_tk vh="H" name="Larry Pryor"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU26" context="V,1,10,V26" playid="11,4,112" type="P" first="P" tokens="PASS:9,C,2,H50 TACK:26,1Z"
+      text="Joe Burrow pass complete to Just. Jefferson for 24 yards to the 50 yardline, 1ST DOWN LSU (D. Capers-Smith;Myles Jones)." newcontext="V,1,10,V50">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Just. Jefferson" gain="24"></p_pa>
+    <p_tk vh="H" name="D. Capers-Smith" assist="Y"></p_tk>
+    <p_tk vh="H" name="Myles Jones" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU50" context="V,1,10,V50" playid="11,5,113" type="P" tokens="PASS:9,I,27,*"
+      text="Joe Burrow pass incomplete to La. Fournette." newcontext="V,2,10,V50">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="La. Fournette"></p_pa>
+   </play>
+   <play hasball="LSU" down="2" togo="10" spot="LSU50" context="V,2,10,V50" playid="11,6,114" type="P" tokens="PASS:9,C,19,H44"
+      text="Joe Burrow pass complete to Derrick Dillon for 6 yards to the TAMU44." newcontext="V,3,4,H44">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Derrick Dillon" gain="6"></p_pa>
+   </play>
+   <play hasball="LSU" down="3" togo="4" spot="TAMU44" context="V,3,4,H44" playid="11,7,115" type="P" first="P" tokens="PASS:9,C,6T,H36 TACK:1Z PEN:H,SU,D"
+      text="Joe Burrow pass complete to T. Marshall for 8 yards to the TAMU36, 1ST DOWN LSU (Myles Jones), PENALTY TAMU substitution infraction declined." newcontext="V,1,10,H36">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="T. Marshall" gain="8"></p_pa>
+    <p_tk vh="H" name="Myles Jones"></p_tk>
+    <p_pn vh="H" code="SU" type="substitution infraction" result="DECLINE"></p_pn>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU36" context="V,1,10,H36" playid="11,8,116" type="P" tokens="PASS:9,C,4,H34 TACK:8"
+      text="Joe Burrow pass complete to Nick Brossette for 2 yards to the TAMU34 (Kingsley Keke)." newcontext="V,2,8,H34">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Nick Brossette" gain="2"></p_pa>
+    <p_tk vh="H" name="Kingsley Keke"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="8" spot="TAMU34" context="V,2,8,H34" playid="11,9,117" type="R" tokens="RUSH:9,H34, TACK:52"
+      text="Joe Burrow rush for no gain to the TAMU34 (J. Madubuike)." newcontext="V,3,8,H34">
+    <p_ru vh="V" name="Joe Burrow" gain="0"></p_ru>
+    <p_tk vh="H" name="J. Madubuike"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="8" spot="TAMU34" context="V,3,8,H34" playid="11,10,118" type="R" first="R" tokens="RUSH:9,H22, TACK:26"
+      text="Joe Burrow rush for 12 yards to the TAMU22, 1ST DOWN LSU (D. Capers-Smith)." newcontext="V,1,10,H22">
+    <p_ru vh="V" name="Joe Burrow" gain="12"></p_ru>
+    <p_tk vh="H" name="D. Capers-Smith"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU22" context="V,1,10,H22" playid="11,11,119" type="R" tokens="RUSH:4,H13, TACK:1A"
+      text="Nick Brossette rush for 9 yards to the TAMU13 (Larry Pryor)." newcontext="V,2,1,H13">
+    <p_ru vh="V" name="Nick Brossette" gain="9"></p_ru>
+    <p_tk vh="H" name="Larry Pryor"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="1" spot="TAMU13" context="V,2,1,H13" playid="11,12,120" type="R" tokens="RUSH:4,H13, TACK:29,1A"
+      text="Nick Brossette rush for no gain to the TAMU13 (Debione Renfro;Larry Pryor)." newcontext="V,3,1,H13">
+    <p_ru vh="V" name="Nick Brossette" gain="0"></p_ru>
+    <p_tk vh="H" name="Debione Renfro" assist="Y"></p_tk>
+    <p_tk vh="H" name="Larry Pryor" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="1" spot="TAMU13" context="V,3,1,H13" playid="11,13,121" type="R" first="R" tokens="RUSH:9,H11, TACK:52,8"
+      text="Joe Burrow rush for 2 yards to the TAMU11, 1ST DOWN LSU (J. Madubuike;Kingsley Keke)." newcontext="V,1,10,H11">
+    <p_ru vh="V" name="Joe Burrow" gain="2"></p_ru>
+    <p_tk vh="H" name="J. Madubuike" assist="Y"></p_tk>
+    <p_tk vh="H" name="Kingsley Keke" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU11" context="V,1,10,H11" playid="11,14,122" type="R" tokens="RUSH:4,H12, TACK:25,1A"
+      text="Nick Brossette rush for loss of 1 yard to the TAMU12 (Tyrel Dodson;Larry Pryor)." newcontext="V,2,11,H12">
+    <p_ru vh="V" name="Nick Brossette" gain="-1"></p_ru>
+    <p_tk vh="H" name="Tyrel Dodson" assist="Y"></p_tk>
+    <p_tk vh="H" name="Larry Pryor" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="11" spot="TAMU12" context="V,2,11,H12" playid="11,15,123" type="R" tokens="RUSH:9,H07, TACK:6"
+      text="Joe Burrow rush for 5 yards to the TAMU7 (Donovan Wilson)." newcontext="V,3,6,H07">
+    <p_ru vh="V" name="Joe Burrow" gain="5"></p_ru>
+    <p_tk vh="H" name="Donovan Wilson"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="6" spot="TAMU07" context="V,3,6,H07" playid="11,16,124" type="P" first="P" score="Y" vscore="16" hscore="17" clock="07:42" tokens="PASS:9,C,2,H00 T:07:42"
+      text="Joe Burrow pass complete to Just. Jefferson for 7 yards to the TAMU0, 1ST DOWN LSU, TOUCHDOWN, clock 07:42." newcontext="V,1,0,H03">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Just. Jefferson" gain="7"></p_pa>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="11,17,125" type="X" score="Y" vscore="17" hscore="17" tokens="PAT:K,36,G"
+      text="Cole Tracy kick attempt good." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Cole Tracy" qb="Cole Tracy" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="17" H="17"></score>
+   <drivesum plays="15" yards="90" top="6:15" driveindex="11" complete="Y"></drivesum>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="11,18,126" type="K" tokens="KO:32,H00 TB:"
+      text="Avery Atkins kickoff 65 yards to the TAMU0, touchback." newcontext="H,1,10,H25">
+    <p_ko vh="V" name="Avery Atkins" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="H,H25,07:42" vh="H" spot="H25" clock="07:42" driveindex="12,126"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="12,1,127" clock="07:42" tokens="{DRIVE}:07:42"
+      text="TAMU drive start at 07:42." newcontext="H,1,10,H25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="12,2,128" type="P" tokens="PASS:11,I,13,*"
+      text="Kellen Mond pass incomplete to Kendrick Rogers." newcontext="H,2,10,H25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Kendrick Rogers"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="TAMU25" context="H,2,10,H25" playid="12,3,129" type="P" tokens="PASS:11,I,1,* BRUP:3"
+      text="Kellen Mond pass incomplete to Quartney Davis (JaCoby Stevens)." newcontext="H,3,10,H25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Quartney Davis"></p_pa>
+    <p_bu vh="V" name="JaCoby Stevens"></p_bu>
+   </play>
+   <play hasball="TAMU" down="3" togo="10" spot="TAMU25" context="H,3,10,H25" playid="12,4,130" type="P" tokens="PASS:11,I,1,*"
+      text="Kellen Mond pass incomplete to Quartney Davis." newcontext="H,4,10,H25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Quartney Davis"></p_pa>
+   </play>
+   <play hasball="TAMU" down="4" togo="10" spot="TAMU25" context="H,4,10,H25" playid="12,5,131" type="U" turnover="F" tokens="PUNT:34,V29 RET:12,V29 FUMB:H,V29,1X"
+      text="Braden Mann punt 46 yards to the LSU29, Jonathan Giles return 0 yards to the LSU29, fumble by Jonathan Giles recovered by TAMU Buddy Johnson at LSU29." newcontext="H,1,10,V29">
+    <p_pu vh="H" name="Braden Mann" gain="46"></p_pu>
+    <p_pr vh="V" name="Jonathan Giles" gain="0"></p_pr>
+    <p_fumb vh="V" name="Jonathan Giles" at="V29" frvh="H" frname="Buddy Johnson"></p_fumb>
+   </play>
+   <drivesum plays="3" yards="0" top="0:26" driveindex="12" complete="Y"></drivesum>
+   <drivestart poss="H,V29,07:16" vh="H" spot="V29" clock="07:16" driveindex="14,131"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU29" context="H,1,10,V29" playid="14,1,132" clock="07:16" tokens="{DRIVE}:07:16"
+      text="TAMU drive start at 07:16." newcontext="H,1,10,V29">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU29" context="H,1,10,V29" playid="14,2,133" type="R" tokens="RUSH:5,V25, TACK:3,6"
+      text="T. Williams rush for 4 yards to the LSU25 (JaCoby Stevens;Jacob Phillips)." newcontext="H,2,6,V25">
+    <p_ru vh="H" name="T. Williams" gain="4"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens" assist="Y"></p_tk>
+    <p_tk vh="V" name="Jacob Phillips" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="6" spot="LSU25" context="H,2,6,V25" playid="14,3,134" type="R" first="R" tokens="RUSH:5,V19, TACK:6,8"
+      text="T. Williams rush for 6 yards to the LSU19, 1ST DOWN TAMU (Jacob Phillips;Patrick Queen)." newcontext="H,1,10,V19">
+    <p_ru vh="H" name="T. Williams" gain="6"></p_ru>
+    <p_tk vh="V" name="Jacob Phillips" assist="Y"></p_tk>
+    <p_tk vh="V" name="Patrick Queen" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU19" context="H,1,10,V19" playid="14,4,135" type="P" tokens="PASS:11,I,2,*"
+      text="Kellen Mond pass incomplete to Jhamon Ausbon." newcontext="H,2,10,V19">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Jhamon Ausbon"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU19" context="H,2,10,V19" playid="14,5,136" type="R" tokens="RUSH:5,V16, TACK:72,40"
+      text="T. Williams rush for 3 yards to the LSU16 (Tyler Shelvin;Devin White)." newcontext="H,3,7,V16">
+    <p_ru vh="H" name="T. Williams" gain="3"></p_ru>
+    <p_tk vh="V" name="Tyler Shelvin" assist="Y"></p_tk>
+    <p_tk vh="V" name="Devin White" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="7" spot="LSU16" context="H,3,7,V16" playid="14,6,137" type="R" first="R" tokens="RUSH:11,V08, TACK:40"
+      text="Kellen Mond rush for 8 yards to the LSU8, 1ST DOWN TAMU (Devin White)." newcontext="H,1,0,V08">
+    <p_ru vh="H" name="Kellen Mond" gain="8"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU08" context="H,1,0,V08" playid="14,7,138" type="R" tokens="RUSH:5,V05, TACK:97,99"
+      text="T. Williams rush for 3 yards to the LSU5 (Glen Logan;Ed Alexander)." newcontext="H,2,0,V05">
+    <p_ru vh="H" name="T. Williams" gain="3"></p_ru>
+    <p_tk vh="V" name="Glen Logan" assist="Y"></p_tk>
+    <p_tk vh="V" name="Ed Alexander" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="0" spot="LSU05" context="H,2,0,V05" playid="14,8,139" type="R" tokens="RUSH:5,V01, TACK:8,6"
+      text="T. Williams rush for 4 yards to the LSU1 (Patrick Queen;Jacob Phillips)." newcontext="H,3,0,V01">
+    <p_ru vh="H" name="T. Williams" gain="4"></p_ru>
+    <p_tk vh="V" name="Patrick Queen" assist="Y"></p_tk>
+    <p_tk vh="V" name="Jacob Phillips" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="0" spot="LSU01" context="H,3,0,V01" playid="14,9,140" type="R" score="Y" vscore="17" hscore="23" clock="03:33" tokens="RUSH:5,V00, T:03:33"
+      text="T. Williams rush for 1 yard to the LSU0, TOUCHDOWN, clock 03:33." newcontext="H,1,0,V03">
+    <p_ru vh="H" name="T. Williams" gain="1"></p_ru>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="14,10,141" type="X" score="Y" vscore="17" hscore="24" tokens="PAT:K,47,G"
+      text="Seth Small kick attempt good." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Seth Small" qb="Seth Small" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="17" H="24"></score>
+   <drivesum plays="8" yards="29" top="3:43" driveindex="14" complete="Y"></drivesum>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="14,11,142" type="K" tokens="KO:34,V00 RET:22,V26 OB: TACK:34"
+      text="Braden Mann kickoff 65 yards to the LSU0, C. Ed.Helaire return 26 yards to the LSU26, out-of-bounds (Braden Mann)." ob="Y" newcontext="V,1,10,V26">
+    <p_ko vh="H" name="Braden Mann" gain="65"></p_ko>
+    <p_kr vh="V" name="C. Ed.Helaire" gain="26"></p_kr>
+    <p_tk vh="H" name="Braden Mann"></p_tk>
+   </play>
+   <drivestart poss="V,V26,03:33" vh="V" spot="V26" clock="03:33" driveindex="15,142"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU26" context="V,1,10,V26" playid="15,1,143" clock="03:33" tokens="{DRIVE}:03:33"
+      text="LSU drive start at 03:33." newcontext="V,1,10,V26">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU26" context="V,1,10,V26" playid="15,2,144" type="P" tokens="PASS:9,S,TM,V18 SACK:29"
+      text="Joe Burrow sacked for loss of 8 yards to the LSU18 (Debione Renfro)." newcontext="V,2,18,V18">
+    <p_pa vh="V" qb="Joe Burrow" result="SACK" gain="-8"></p_pa>
+    <p_tk vh="H" name="Debione Renfro" sack="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="18" spot="LSU18" context="V,2,18,V18" playid="15,3,145" type="P" tokens="PASS:9,C,18,V25 OB: TACK:29"
+      text="Joe Burrow pass complete to Foster Moreau for 7 yards to the LSU25, out-of-bounds (Debione Renfro)." ob="Y" newcontext="V,3,11,V25">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Foster Moreau" gain="7"></p_pa>
+    <p_tk vh="H" name="Debione Renfro"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="11" spot="LSU25" context="V,3,11,V25" playid="15,4,146" type="P" tokens="PASS:9,S,TM,V22 SACK:42,3X"
+      text="Joe Burrow sacked for loss of 3 yards to the LSU22 (Otaro Alaka;Tyree Johnson)." newcontext="V,4,14,V22">
+    <p_pa vh="V" qb="Joe Burrow" result="SACK" gain="-3"></p_pa>
+    <p_tk vh="H" name="Otaro Alaka" sack="Y" assist="Y"></p_tk>
+    <p_tk vh="H" name="Tyree Johnson" sack="Y" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="4" togo="14" spot="LSU22" context="V,4,14,V22" playid="15,5,147" type="U" tokens="PUNT:4F,H25 RET:6X,H24 TACK:6"
+      text="Z.Von Rosenberg punt 53 yards to the TAMU25, Roshauud Paul return -1 yards to the TAMU24 (Jacob Phillips)." newcontext="H,1,10,H24">
+    <p_pu vh="V" name="Z.Von Rosenberg" gain="53"></p_pu>
+    <p_pr vh="H" name="Roshauud Paul" gain="-1"></p_pr>
+    <p_tk vh="V" name="Jacob Phillips"></p_tk>
+   </play>
+   <drivesum plays="3" yards="-4" top="2:07" driveindex="15" complete="Y"></drivesum>
+   <drivestart poss="H,H24,01:26" vh="H" spot="H24" clock="01:26" driveindex="16,147"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU24" context="H,1,10,H24" playid="16,1,148" clock="01:26" tokens="{DRIVE}:01:26"
+      text="TAMU drive start at 01:26." newcontext="H,1,10,H24">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU24" context="H,1,10,H24" playid="16,2,149" type="R" tokens="RUSH:5,H25, TACK:92"
+      text="T. Williams rush for 1 yard to the TAMU25 (Neil Farrell)." newcontext="H,2,9,H25">
+    <p_ru vh="H" name="T. Williams" gain="1"></p_ru>
+    <p_tk vh="V" name="Neil Farrell"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="9" spot="TAMU25" context="H,2,9,H25" playid="16,3,150" type="P" tokens="PASS:11,I,14,*"
+      text="Kellen Mond pass incomplete to Camron Buckley." newcontext="H,3,9,H25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Camron Buckley"></p_pa>
+   </play>
+   <play hasball="TAMU" down="3" togo="9" spot="TAMU25" context="H,3,9,H25" playid="16,4,151" type="P" tokens="PASS:11,S,TM,H18 SACK:90"
+      text="Kellen Mond sacked for loss of 7 yards to the TAMU18 (R. Lawrence)." newcontext="H,4,16,H18">
+    <p_pa vh="H" qb="Kellen Mond" result="SACK" gain="-7"></p_pa>
+    <p_tk vh="V" name="R. Lawrence" sack="Y"></p_tk>
+   </play>
+   <score qtr="3" V="17" H="24"></score>
+   <endqtr></endqtr>
+   <qtrsummary vh="V" id="LSU">
+    <firstdowns no="6" rush="3" pass="3" penalty="0"></firstdowns>
+    <penalties no="0" yds="0"></penalties>
+    <conversions thirdconv="4" thirdatt="5" fourthconv="0" fourthatt="0"></conversions>
+    <fumbles no="1" lost="1"></fumbles>
+    <misc yds="0" top="08:22"></misc>
+    <rush att="11" yds="32" gain="44" loss="12" td="0" long="0"></rush>
+    <pass comp="6" att="7" int="0" yds="54" td="1" long="5" sacks="2" sackyds="11"></pass>
+    <rcv no="6" yds="54" td="1" long="5"></rcv>
+    <punt no="1" yds="53" long="2" blkd="0" tb="0" fc="0" plus50="1" inside20="0" avg="53.0"></punt>
+    <ko no="1" yds="65" ob="0" tb="1" fcyds="24912"></ko>
+    <pat kickatt="1" kickmade="1"></pat>
+    <defense tackua="4" tacka="12" tot_tack="16" tflua="1" tfla="0" tflyds="7" sacks="1" sackyds="7" brup="3" qbh="1"></defense>
+    <kr no="1" yds="26" td="0" long="26"></kr>
+    <pr no="2" yds="-4" td="0" long="0"></pr>
+    <fumbles no="1" lost="1"></fumbles>
+    <scoring td="1" patkick="1"></scoring>
+   </qtrsummary>
+   <qtrsummary vh="H" id="TAMU">
+    <firstdowns no="2" rush="2" pass="0" penalty="0"></firstdowns>
+    <penalties no="0" yds="0"></penalties>
+    <conversions thirdconv="2" thirdatt="4" fourthconv="0" fourthatt="0"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="06:38"></misc>
+    <rush att="10" yds="25" gain="32" loss="7" td="1" long="0"></rush>
+    <pass comp="0" att="7" int="0" yds="0" td="0" long="0" sacks="1" sackyds="7"></pass>
+    <punt no="2" yds="105" long="6" blkd="0" tb="0" fc="0" plus50="1" inside20="1" avg="52.5"></punt>
+    <ko no="1" yds="65" ob="0" tb="0" fcyds="8224"></ko>
+    <pat kickatt="1" kickmade="1"></pat>
+    <defense tackua="11" tacka="12" tot_tack="23" tflua="1" tfla="4" tflyds="12" sacks="2" sackyds="11" fr="1" fryds="0"></defense>
+    <pr no="1" yds="-1" td="0" long="0"></pr>
+    <scoring td="1" patkick="1"></scoring>
+   </qtrsummary>
+  </qtr>
+  <qtr number="4" text="4th">
+   <play hasball="TAMU" down="4" togo="16" spot="TAMU18" context="H,4,16,H18" playid="16,5,152" type="#" clock="15:00" tokens="Q:4 T:15:00"
+      text="Start of 4th quarter, clock 15:00." newcontext="H,4,16,H18">
+   </play>
+   <play hasball="TAMU" down="4" togo="16" spot="TAMU18" context="H,4,16,H18" playid="16,6,153" type="U" tokens="PUNT:34,V26 RET:12,V29 OB: PEN:V,BL,A,31,V19,N D:1,10 SPOT:V,V19,Y"
+      text="Braden Mann punt 56 yards to the LSU26, Jonathan Giles return 3 yards to the LSU29, out-of-bounds, PENALTY LSU illegal block (Cameron Lewis) 10 yards to the LSU19, 1st and 10, LSU ball on LSU19." ob="Y" newcontext="V,1,10,V19">
+    <p_pu vh="H" name="Braden Mann" gain="56"></p_pu>
+    <p_pr vh="V" name="Jonathan Giles" gain="3"></p_pr>
+    <p_pn vh="V" code="BL" type="illegal block" name="Cameron Lewis" result="ACCEPT" at="V29" yards="10"></p_pn>
+   </play>
+   <drivesum plays="3" yards="-6" top="1:38" driveindex="16" complete="Y"></drivesum>
+   <drivestart poss="V,V19,14:48" vh="V" spot="V19" clock="14:48" driveindex="17,153"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU19" context="V,1,10,V19" playid="17,1,154" clock="14:48" tokens="{DRIVE}:14:48"
+      text="LSU drive start at 14:48." newcontext="V,1,10,V19">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU19" context="V,1,10,V19" playid="17,2,155" type="R" first="R" tokens="RUSH:4,V35, TACK:1A"
+      text="Nick Brossette rush for 16 yards to the LSU35, 1ST DOWN LSU (Larry Pryor)." newcontext="V,1,10,V35">
+    <p_ru vh="V" name="Nick Brossette" gain="16"></p_ru>
+    <p_tk vh="H" name="Larry Pryor"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU35" context="V,1,10,V35" playid="17,3,156" type="P" first="P" tokens="PASS:9,C,2,V46 OB:"
+      text="Joe Burrow pass complete to Just. Jefferson for 11 yards to the LSU46, 1ST DOWN LSU, out-of-bounds." ob="Y" newcontext="V,1,10,V46">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Just. Jefferson" gain="11"></p_pa>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU46" context="V,1,10,V46" playid="17,4,157" type="R" tokens="RUSH:4,V50, TACK:29"
+      text="Nick Brossette rush for 4 yards to the 50 yardline (Debione Renfro)." newcontext="V,2,6,V50">
+    <p_ru vh="V" name="Nick Brossette" gain="4"></p_ru>
+    <p_tk vh="H" name="Debione Renfro"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="6" spot="LSU50" context="V,2,6,V50" playid="17,5,158" type="P" tokens="PASS:9,S,TM,V47 SACK:3D"
+      text="Joe Burrow sacked for loss of 3 yards to the LSU47 (Daylon Mack)." newcontext="V,3,9,V47">
+    <p_pa vh="V" qb="Joe Burrow" result="SACK" gain="-3"></p_pa>
+    <p_tk vh="H" name="Daylon Mack" sack="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="9" spot="LSU47" context="V,3,9,V47" playid="17,6,159" type="P" tokens="PASS:9,S,TM,V44 SACK:52,42"
+      text="Joe Burrow sacked for loss of 3 yards to the LSU44 (J. Madubuike;Otaro Alaka)." newcontext="V,4,12,V44">
+    <p_pa vh="V" qb="Joe Burrow" result="SACK" gain="-3"></p_pa>
+    <p_tk vh="H" name="J. Madubuike" sack="Y" assist="Y"></p_tk>
+    <p_tk vh="H" name="Otaro Alaka" sack="Y" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="4" togo="12" spot="LSU44" context="V,4,12,V44" playid="17,7,160" type="U" tokens="PUNT:4F,H19 FC:6X"
+      text="Z.Von Rosenberg punt 37 yards to the TAMU19, fair catch by Roshauud Paul." newcontext="H,1,10,H19">
+    <p_pu vh="V" name="Z.Von Rosenberg" gain="37" in20="Y" fc="Roshauud Paul"></p_pu>
+   </play>
+   <drivesum plays="5" yards="25" top="2:24" driveindex="17" complete="Y"></drivesum>
+   <drivestart poss="H,H19,12:24" vh="H" spot="H19" clock="12:24" driveindex="18,160"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU19" context="H,1,10,H19" playid="18,1,161" clock="12:24" tokens="{DRIVE}:12:24"
+      text="TAMU drive start at 12:24." newcontext="H,1,10,H19">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU19" context="H,1,10,H19" playid="18,2,162" type="E" first="E" tokens="PEN:V,UC,A,6,H34,1"
+      text="PENALTY LSU unsportsmanlike conduct (Jacob Phillips) 15 yards to the TAMU34, 1ST DOWN TAMU." newcontext="H,1,10,H34">
+    <p_pn vh="V" code="UC" type="unsportsmanlike conduct" name="Jacob Phillips" result="ACCEPT" at="H19" yards="15"></p_pn>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU34" context="H,1,10,H34" playid="18,3,163" type="R" tokens="RUSH:5,H38, TACK:1A,40"
+      text="T. Williams rush for 4 yards to the TAMU38 (T. Alexander;Devin White)." newcontext="H,2,6,H38">
+    <p_ru vh="H" name="T. Williams" gain="4"></p_ru>
+    <p_tk vh="V" name="T. Alexander" assist="Y"></p_tk>
+    <p_tk vh="V" name="Devin White" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="6" spot="TAMU38" context="H,2,6,H38" playid="18,4,164" type="R" tokens="RUSH:5,H42, TACK:92,40"
+      text="T. Williams rush for 4 yards to the TAMU42 (Neil Farrell;Devin White)." newcontext="H,3,2,H42">
+    <p_ru vh="H" name="T. Williams" gain="4"></p_ru>
+    <p_tk vh="V" name="Neil Farrell" assist="Y"></p_tk>
+    <p_tk vh="V" name="Devin White" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="2" spot="TAMU42" context="H,3,2,H42" playid="18,5,165" type="P" first="P" tokens="PASS:11,C,12,V40 TACK:40"
+      text="Kellen Mond pass complete to C. Gillaspia for 18 yards to the LSU40, 1ST DOWN TAMU (Devin White)." newcontext="H,1,10,V40">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="C. Gillaspia" gain="18"></p_pa>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU40" context="H,1,10,V40" playid="18,6,166" type="#" clock="10:27" tokens="TOUT:V T:10:27"
+      text="Timeout LSU, clock 10:27." newcontext="H,1,10,V40">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU40" context="H,1,10,V40" playid="18,7,167" type="P" score="Y" vscore="23" hscore="24" turnover="F" clock="10:12" tokens="PASS:11,C,5,V42 FORCE:40 FUMB:V,V42,45 +:45,H00 T:10:12"
+      text="Kellen Mond pass complete to T. Williams for loss of 2 yards to the LSU42, fumble forced by Devin White, fumble by T. Williams recovered by LSU M. Divinity at LSU42, M. Divinity for 58 yards to the TAMU0, TOUCHDOWN, clock 10:12." newcontext="V,1,0,H03">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="T. Williams" gain="-2"></p_pa>
+    <p_fr vh="V" name="M. Divinity" gain="58"></p_fr>
+    <p_fumb vh="H" name="T. Williams" at="V42" frvh="V" frname="M. Divinity"></p_fumb>
+    <p_tk vh="V" name="Devin White" ff="Y"></p_tk>
+   </play>
+   <drivesum plays="5" yards="39" top="2:12" driveindex="18" complete="Y"></drivesum>
+   <drivestart poss="V,H03,10:12" vh="V" spot="H03" clock="10:12" driveindex="19,167"></drivestart>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="19,1,168" type="X" score="Y" vscore="24" hscore="24" tokens="PAT:K,36,G"
+      text="Cole Tracy kick attempt good." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Cole Tracy" qb="Cole Tracy" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="24" H="24"></score>
+   <drivesum plays="0" yards="0" top="0:00" driveindex="19" complete="Y"></drivesum>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="19,2,169" type="K" tokens="KO:32,H00 TB:"
+      text="Avery Atkins kickoff 65 yards to the TAMU0, touchback." newcontext="H,1,10,H25">
+    <p_ko vh="V" name="Avery Atkins" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="H,H25,10:12" vh="H" spot="H25" clock="10:12" driveindex="20,169"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="20,1,170" clock="10:12" tokens="{DRIVE}:10:12"
+      text="TAMU drive start at 10:12." newcontext="H,1,10,H25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="20,2,171" type="R" tokens="RUSH:7,H19, TACK:3"
+      text="Jashaun Corbin rush for loss of 6 yards to the TAMU19 (JaCoby Stevens)." newcontext="H,2,16,H19">
+    <p_ru vh="H" name="Jashaun Corbin" gain="-6"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="16" spot="TAMU19" context="H,2,16,H19" playid="20,3,172" type="P" tokens="PASS:11,I,5,*"
+      text="Kellen Mond pass incomplete to T. Williams." newcontext="H,3,16,H19">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="T. Williams"></p_pa>
+   </play>
+   <play hasball="TAMU" down="3" togo="16" spot="TAMU19" context="H,3,16,H19" playid="20,4,173" type="R" tokens="RUSH:5,H24, TACK:90,45"
+      text="T. Williams rush for 5 yards to the TAMU24 (R. Lawrence;M. Divinity)." newcontext="H,4,11,H24">
+    <p_ru vh="H" name="T. Williams" gain="5"></p_ru>
+    <p_tk vh="V" name="R. Lawrence" assist="Y"></p_tk>
+    <p_tk vh="V" name="M. Divinity" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="4" togo="11" spot="TAMU24" context="H,4,11,H24" playid="20,5,174" type="U" tokens="PUNT:34,V24 FC:12"
+      text="Braden Mann punt 52 yards to the LSU24, fair catch by Jonathan Giles." newcontext="V,1,10,V24">
+    <p_pu vh="H" name="Braden Mann" gain="52" fc="Jonathan Giles"></p_pu>
+   </play>
+   <drivesum plays="3" yards="-1" top="1:31" driveindex="20" complete="Y"></drivesum>
+   <drivestart poss="V,V24,08:41" vh="V" spot="V24" clock="08:41" driveindex="21,174"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU24" context="V,1,10,V24" playid="21,1,175" clock="08:41" tokens="{DRIVE}:08:41"
+      text="LSU drive start at 08:41." newcontext="V,1,10,V24">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU24" context="V,1,10,V24" playid="21,2,176" type="R" first="R" tokens="RUSH:27,H30, TACK:42"
+      text="La. Fournette rush for 46 yards to the TAMU30, 1ST DOWN LSU (Otaro Alaka)." newcontext="V,1,10,H30">
+    <p_ru vh="V" name="La. Fournette" gain="46"></p_ru>
+    <p_tk vh="H" name="Otaro Alaka"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU30" context="V,1,10,H30" playid="21,3,177" type="R" tokens="RUSH:4,H21, TACK:29,6"
+      text="Nick Brossette rush for 9 yards to the TAMU21 (Debione Renfro;Donovan Wilson)." newcontext="V,2,1,H21">
+    <p_ru vh="V" name="Nick Brossette" gain="9"></p_ru>
+    <p_tk vh="H" name="Debione Renfro" assist="Y"></p_tk>
+    <p_tk vh="H" name="Donovan Wilson" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="1" spot="TAMU21" context="V,2,1,H21" playid="21,4,178" type="R" first="R" tokens="RUSH:4,H14, OB: TACK:29"
+      text="Nick Brossette rush for 7 yards to the TAMU14, 1ST DOWN LSU, out-of-bounds (Debione Renfro)." ob="Y" newcontext="V,1,10,H14">
+    <p_ru vh="V" name="Nick Brossette" gain="7"></p_ru>
+    <p_tk vh="H" name="Debione Renfro"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU14" context="V,1,10,H14" playid="21,5,179" type="P" first="P" score="Y" vscore="30" hscore="24" clock="06:41" tokens="PASS:9,C,18,H00 T:06:41"
+      text="Joe Burrow pass complete to Foster Moreau for 14 yards to the TAMU0, 1ST DOWN LSU, TOUCHDOWN, clock 06:41." newcontext="V,1,0,H03">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Foster Moreau" gain="14"></p_pa>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="21,6,180" type="X" score="Y" vscore="31" hscore="24" tokens="PAT:K,36,G"
+      text="Cole Tracy kick attempt good." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Cole Tracy" qb="Cole Tracy" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="31" H="24"></score>
+   <drivesum plays="4" yards="76" top="2:00" driveindex="21" complete="Y"></drivesum>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="21,7,181" type="K" tokens="KO:32,H00 TB:"
+      text="Avery Atkins kickoff 65 yards to the TAMU0, touchback." newcontext="H,1,10,H25">
+    <p_ko vh="V" name="Avery Atkins" gain="65" result="T"></p_ko>
+   </play>
+   <drivestart poss="H,H25,06:41" vh="H" spot="H25" clock="06:41" driveindex="22,181"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="22,1,182" clock="06:41" tokens="{DRIVE}:06:41"
+      text="TAMU drive start at 06:41." newcontext="H,1,10,H25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU25" context="H,1,10,H25" playid="22,2,183" type="P" tokens="PASS:11,C,81,H32 TACK:6"
+      text="Kellen Mond pass complete to J. Sternberger for 7 yards to the TAMU32 (Jacob Phillips)." newcontext="H,2,3,H32">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="J. Sternberger" gain="7"></p_pa>
+    <p_tk vh="V" name="Jacob Phillips"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="3" spot="TAMU32" context="H,2,3,H32" playid="22,3,184" type="R" first="R" tokens="RUSH:5,H35, TACK:45"
+      text="T. Williams rush for 3 yards to the TAMU35, 1ST DOWN TAMU (M. Divinity)." newcontext="H,1,10,H35">
+    <p_ru vh="H" name="T. Williams" gain="3"></p_ru>
+    <p_tk vh="V" name="M. Divinity"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU35" context="H,1,10,H35" playid="22,4,185" type="R" tokens="RUSH:11,H39, OB:"
+      text="Kellen Mond rush for 4 yards to the TAMU39, out-of-bounds." ob="Y" newcontext="H,2,6,H39">
+    <p_ru vh="H" name="Kellen Mond" gain="4"></p_ru>
+   </play>
+   <play hasball="TAMU" down="2" togo="6" spot="TAMU39" context="H,2,6,H39" playid="22,5,186" type="P" first="P" tokens="PASS:11,C,2,H47 TACK:1A"
+      text="Kellen Mond pass complete to Jhamon Ausbon for 8 yards to the TAMU47, 1ST DOWN TAMU (T. Alexander)." newcontext="H,1,10,H47">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Jhamon Ausbon" gain="8"></p_pa>
+    <p_tk vh="V" name="T. Alexander"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU47" context="H,1,10,H47" playid="22,6,187" type="P" tokens="PASS:11,I,81,* QBH:V,45"
+      text="Kellen Mond pass incomplete to J. Sternberger, QB hurry by M. Divinity." newcontext="H,2,10,H47">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+    <p_qbh vh="V" name="M. Divinity"></p_qbh>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="TAMU47" context="H,2,10,H47" playid="22,7,188" type="P" tokens="PASS:11,C,2,V44 TACK:1A"
+      text="Kellen Mond pass complete to Jhamon Ausbon for 9 yards to the LSU44 (T. Alexander)." newcontext="H,3,1,V44">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Jhamon Ausbon" gain="9"></p_pa>
+    <p_tk vh="V" name="T. Alexander"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="1" spot="LSU44" context="H,3,1,V44" playid="22,8,189" type="R" first="R" tokens="RUSH:5,V42, TACK:97"
+      text="T. Williams rush for 2 yards to the LSU42, 1ST DOWN TAMU (Glen Logan)." newcontext="H,1,10,V42">
+    <p_ru vh="H" name="T. Williams" gain="2"></p_ru>
+    <p_tk vh="V" name="Glen Logan"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU42" context="H,1,10,V42" playid="22,9,190" type="P" tokens="PASS:11,C,14,V37 OB: TACK:6"
+      text="Kellen Mond pass complete to Camron Buckley for 5 yards to the LSU37, out-of-bounds (Jacob Phillips)." ob="Y" newcontext="H,2,5,V37">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Camron Buckley" gain="5"></p_pa>
+    <p_tk vh="V" name="Jacob Phillips"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="5" spot="LSU37" context="H,2,5,V37" playid="22,10,191" type="P" tokens="PASS:11,I,2,* QBH:V,97"
+      text="Kellen Mond pass incomplete to Jhamon Ausbon, QB hurry by Glen Logan." newcontext="H,3,5,V37">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Jhamon Ausbon"></p_pa>
+    <p_qbh vh="V" name="Glen Logan"></p_qbh>
+   </play>
+   <play hasball="TAMU" down="3" togo="5" spot="LSU37" context="H,3,5,V37" playid="22,11,192" type="R" tokens="RUSH:11,V37, TACK:97"
+      text="Kellen Mond rush for no gain to the LSU37 (Glen Logan)." newcontext="H,4,5,V37">
+    <p_ru vh="H" name="Kellen Mond" gain="0"></p_ru>
+    <p_tk vh="V" name="Glen Logan"></p_tk>
+   </play>
+   <play hasball="TAMU" down="4" togo="5" spot="LSU37" context="H,4,5,V37" playid="22,12,193" type="#" clock="02:40" tokens="TOUT:H T:02:40"
+      text="Timeout TAMU, clock 02:40." newcontext="H,4,5,V37">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="TAMU" down="4" togo="5" spot="LSU37" context="H,4,5,V37" playid="22,13,194" type="R" tokens="RUSH:11,V34, TACK:40"
+      text="Kellen Mond rush for 3 yards to the LSU34 (Devin White)." newcontext="V,1,10,V34">
+    <p_ru vh="H" name="Kellen Mond" gain="3"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <drivesum plays="11" yards="41" top="4:09" driveindex="22" complete="Y"></drivesum>
+   <drivestart poss="V,V34,02:32" vh="V" spot="V34" clock="02:32" driveindex="23,194"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="LSU34" context="V,1,10,V34" playid="23,1,195" clock="02:32" tokens="{DRIVE}:02:32"
+      text="LSU drive start at 02:32." newcontext="V,1,10,V34">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="LSU34" context="V,1,10,V34" playid="23,2,196" type="R" tokens="RUSH:4,V35, TACK:5X,52"
+      text="Nick Brossette rush for 1 yard to the LSU35 (Bobby Brown;J. Madubuike)." newcontext="V,2,9,V35">
+    <p_ru vh="V" name="Nick Brossette" gain="1"></p_ru>
+    <p_tk vh="H" name="Bobby Brown" assist="Y"></p_tk>
+    <p_tk vh="H" name="J. Madubuike" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="9" spot="LSU35" context="V,2,9,V35" playid="23,3,197" type="#" clock="02:27" tokens="TOUT:H T:02:27"
+      text="Timeout TAMU, clock 02:27." newcontext="V,2,9,V35">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="LSU" down="2" togo="9" spot="LSU35" context="V,2,9,V35" playid="23,4,198" type="R" tokens="RUSH:9,V40, TACK:8"
+      text="Joe Burrow rush for 5 yards to the LSU40 (Kingsley Keke)." newcontext="V,3,4,V40">
+    <p_ru vh="V" name="Joe Burrow" gain="5"></p_ru>
+    <p_tk vh="H" name="Kingsley Keke"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="4" spot="LSU40" context="V,3,4,V40" playid="23,5,199" type="#" clock="02:22" tokens="TOUT:H T:02:22"
+      text="Timeout TAMU, clock 02:22." newcontext="V,3,4,V40">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="LSU" down="3" togo="4" spot="LSU40" context="V,3,4,V40" playid="23,6,200" type="R" tokens="RUSH:9,V39, TACK:8,46"
+      text="Joe Burrow rush for loss of 1 yard to the LSU39 (Kingsley Keke;Landis Durham)." newcontext="V,4,5,V39">
+    <p_ru vh="V" name="Joe Burrow" gain="-1"></p_ru>
+    <p_tk vh="H" name="Kingsley Keke" assist="Y"></p_tk>
+    <p_tk vh="H" name="Landis Durham" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="4" togo="5" spot="LSU39" context="V,4,5,V39" playid="23,7,201" type="#" clock="01:36" tokens="TOUT:V T:01:36"
+      text="Timeout LSU, clock 01:36." newcontext="V,4,5,V39">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="LSU" down="4" togo="5" spot="LSU39" context="V,4,5,V39" playid="23,8,202" type="U" tokens="PUNT:4F,H22 FC:6X"
+      text="Z.Von Rosenberg punt 39 yards to the TAMU22, fair catch by Roshauud Paul." newcontext="H,1,10,H22">
+    <p_pu vh="V" name="Z.Von Rosenberg" gain="39" fc="Roshauud Paul"></p_pu>
+   </play>
+   <drivesum plays="3" yards="5" top="1:03" driveindex="23" complete="Y"></drivesum>
+   <drivestart poss="H,H22,01:29" vh="H" spot="H22" clock="01:29" driveindex="24,202"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU22" context="H,1,10,H22" playid="24,1,203" clock="01:29" tokens="{DRIVE}:01:29"
+      text="TAMU drive start at 01:29." newcontext="H,1,10,H22">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU22" context="H,1,10,H22" playid="24,2,204" type="P" tokens="PASS:11,I,14,*"
+      text="Kellen Mond pass incomplete to Camron Buckley." newcontext="H,2,10,H22">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Camron Buckley"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="TAMU22" context="H,2,10,H22" playid="24,3,205" type="P" tokens="PASS:11,I,1,* BRUP:9S"
+      text="Kellen Mond pass incomplete to Quartney Davis (Grant Delpit)." newcontext="H,3,10,H22">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Quartney Davis"></p_pa>
+    <p_bu vh="V" name="Grant Delpit"></p_bu>
+   </play>
+   <play hasball="TAMU" down="3" togo="10" spot="TAMU22" context="H,3,10,H22" playid="24,4,206" type="P" first="P" tokens="PASS:11,C,1,H34 TACK:1A"
+      text="Kellen Mond pass complete to Quartney Davis for 12 yards to the TAMU34, 1ST DOWN TAMU (T. Alexander)." newcontext="H,1,10,H34">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Quartney Davis" gain="12"></p_pa>
+    <p_tk vh="V" name="T. Alexander"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU34" context="H,1,10,H34" playid="24,5,207" type="P" first="P" tokens="PASS:11,C,1,H47 TACK:5"
+      text="Kellen Mond pass complete to Quartney Davis for 13 yards to the TAMU47, 1ST DOWN TAMU (Kary Vincent)." newcontext="H,1,10,H47">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Quartney Davis" gain="13"></p_pa>
+    <p_tk vh="V" name="Kary Vincent"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="TAMU47" context="H,1,10,H47" playid="24,6,208" type="P" tokens="PASS:11,I,13,* BRUP:29"
+      text="Kellen Mond pass incomplete to Kendrick Rogers (Greedy Williams)." newcontext="H,2,10,H47">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Kendrick Rogers"></p_pa>
+    <p_bu vh="V" name="Greedy Williams"></p_bu>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="TAMU47" context="H,2,10,H47" playid="24,7,209" type="R" tokens="RUSH:11,H39, MISC-FUMB:11"
+      text="Kellen Mond rush for loss of 8 yards to the TAMU39, fumble by Kellen Mond." newcontext="H,3,18,H39">
+    <p_ru vh="H" name="Kellen Mond" gain="-8"></p_ru>
+   </play>
+   <play hasball="TAMU" down="3" togo="18" spot="TAMU39" context="H,3,18,H39" playid="24,8,210" type="P" tokens="PASS:11,I,81,* BRUP:9S"
+      text="Kellen Mond pass incomplete to J. Sternberger (Grant Delpit)." newcontext="H,4,18,H39">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+    <p_bu vh="V" name="Grant Delpit"></p_bu>
+   </play>
+   <play hasball="TAMU" down="4" togo="18" spot="TAMU39" context="H,4,18,H39" playid="24,9,211" type="P" first="P" tokens="PASS:11,C,1,V41"
+      text="Kellen Mond pass complete to Quartney Davis for 20 yards to the LSU41, 1ST DOWN TAMU." newcontext="H,1,10,V41">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Quartney Davis" gain="20"></p_pa>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU41" context="H,1,10,V41" playid="24,10,212" type="P" tokens="PASS:TM,I,TM,*"
+      text="Team pass incomplete." newcontext="H,2,10,V41">
+    <p_pa vh="H" qb="Team" result="INC"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU41" context="H,2,10,V41" playid="24,11,213" type="P" first="P" tokens="PASS:11,C,13,V19 TACK:1A"
+      text="Kellen Mond pass complete to Kendrick Rogers for 22 yards to the LSU19, 1ST DOWN TAMU (T. Alexander)." newcontext="H,1,10,V19">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Kendrick Rogers" gain="22"></p_pa>
+    <p_tk vh="V" name="T. Alexander"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU19" context="H,1,10,V19" playid="24,12,214" type="P" tokens="PASS:TM,I,TM,*"
+      text="Team pass incomplete." newcontext="H,2,10,V19">
+    <p_pa vh="H" qb="Team" result="INC"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU19" context="H,2,10,V19" playid="24,13,215" type="#" clock="00:01" tokens="TOUT:V T:00:01"
+      text="Timeout LSU, clock 00:01." newcontext="H,2,10,V19">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU19" context="H,2,10,V19" playid="24,14,216" type="P" first="P" score="Y" vscore="31" hscore="30" clock="00:00" tokens="PASS:11,C,1,V00 T:00:00"
+      text="Kellen Mond pass complete to Quartney Davis for 19 yards to the LSU0, 1ST DOWN TAMU, TOUCHDOWN, clock 00:00." newcontext="H,1,0,V03">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Quartney Davis" gain="19"></p_pa>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="24,15,217" type="X" score="Y" vscore="31" hscore="31" tokens="PAT:K,47,G PEN:V,OD,D"
+      text="Seth Small kick attempt good, PENALTY LSU offside defense declined." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Seth Small" qb="Seth Small" type="K" result="GOOD" score="Y"></p_pat>
+    <p_pn vh="V" code="OD" type="offside defense" result="DECLINE"></p_pn>
+   </play>
+   <score V="31" H="31"></score>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="24,16,218" type="#" clock="00:00" tokens="HALF: T:00:00"
+      text="End of game, clock 00:00." newcontext="H,1,0,H35">
+   </play>
+   <drivesum plays="12" yards="78" top="1:29" driveindex="24" complete="Y"></drivesum>
+   <score qtr="4" V="31" H="31"></score>
+   <endqtr></endqtr>
+   <qtrsummary vh="V" id="LSU">
+    <firstdowns no="5" rush="3" pass="2" penalty="0"></firstdowns>
+    <penalties no="2" yds="25"></penalties>
+    <conversions thirdconv="0" thirdatt="2" fourthconv="0" fourthatt="0"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="05:27"></misc>
+    <rush att="10" yds="81" gain="88" loss="7" td="0" long="24"></rush>
+    <pass comp="2" att="2" int="0" yds="25" td="1" long="0" sacks="2" sackyds="6"></pass>
+    <rcv no="2" yds="25" td="1" long="0"></rcv>
+    <punt no="2" yds="76" long="0" blkd="0" tb="0" fc="2" plus50="0" inside20="1" avg="38.0"></punt>
+    <ko no="2" yds="130" ob="0" tb="2" fcyds="24912"></ko>
+    <pat kickatt="2" kickmade="2"></pat>
+    <defense tackua="14" tacka="6" tot_tack="20" tflua="2" tfla="0" tflyds="8" sacks="0" sackyds="0" brup="3" qbh="2" ff="1" fr="1" fryds="58"></defense>
+    <pr no="1" yds="3" td="0" long="3"></pr>
+    <fr no="1" yds="58" td="1" long="58"></fr>
+    <scoring td="2" patkick="2"></scoring>
+   </qtrsummary>
+   <qtrsummary vh="H" id="TAMU">
+    <firstdowns no="10" rush="2" pass="7" penalty="1"></firstdowns>
+    <penalties no="0" yds="0"></penalties>
+    <conversions thirdconv="3" thirdatt="7" fourthconv="1" fourthatt="2"></conversions>
+    <fumbles no="2" lost="1"></fumbles>
+    <misc yds="0" top="09:33"></misc>
+    <rush att="10" yds="11" gain="25" loss="14" td="0" long="0"></rush>
+    <pass comp="11" att="20" int="0" yds="131" td="1" long="0" sacks="0" sackyds="0"></pass>
+    <rcv no="11" yds="131" td="1" long="0"></rcv>
+    <punt no="2" yds="108" long="0" blkd="0" tb="0" fc="1" plus50="2" inside20="0" avg="54.0"></punt>
+    <pat kickatt="1" kickmade="1"></pat>
+    <defense tackua="6" tacka="8" tot_tack="14" tflua="1" tfla="4" tflyds="7" sacks="2" sackyds="6"></defense>
+    <fumbles no="2" lost="1"></fumbles>
+    <scoring td="1" patkick="1"></scoring>
+   </qtrsummary>
+  </qtr>
+  <qtr number="5" text="OT">
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="24,17,219" type="#" clock="15:00" tokens="Q:5 T:15:00"
+      text="Start of OT  quarter, clock 15:00." newcontext="H,1,0,H35">
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="24,18,220" tokens="POSS: SPOT:V,H25,Y D:1,10"
+      text="Change of possession, LSU ball on TAMU25, 1st and 10." newcontext="V,1,10,H25">
+   </play>
+   <drivestart poss="V,H25,15:00" vh="V" spot="H25" clock="15:00" driveindex="25,220"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="25,1,221" clock="15:00" tokens="{DRIVE}:15:00"
+      text="LSU drive start at 15:00." newcontext="V,1,10,H25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="25,2,222" type="R" tokens="RUSH:2,H22, TACK:52"
+      text="Just. Jefferson rush for 3 yards to the TAMU22 (J. Madubuike)." newcontext="V,2,7,H22">
+    <p_ru vh="V" name="Just. Jefferson" gain="3"></p_ru>
+    <p_tk vh="H" name="J. Madubuike"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="7" spot="TAMU22" context="V,2,7,H22" playid="25,3,223" type="P" tokens="PASS:9,I,18,* BRUP:8"
+      text="Joe Burrow pass incomplete to Foster Moreau (Kingsley Keke)." newcontext="V,3,7,H22">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="Foster Moreau"></p_pa>
+    <p_bu vh="H" name="Kingsley Keke"></p_bu>
+   </play>
+   <play hasball="LSU" down="3" togo="7" spot="TAMU22" context="V,3,7,H22" playid="25,4,224" type="E" tokens="PEN:V,FS,A,76,H27,N"
+      text="PENALTY LSU false start (Austin Deculus) 5 yards to the TAMU27." newcontext="V,3,12,H27">
+    <p_pn vh="V" code="FS" type="false start" name="Austin Deculus" result="ACCEPT" at="H22" yards="5"></p_pn>
+   </play>
+   <play hasball="LSU" down="3" togo="12" spot="TAMU27" context="V,3,12,H27" playid="25,5,225" type="P" tokens="PASS:9,S,TM,H32 SACK:42"
+      text="Joe Burrow sacked for loss of 5 yards to the TAMU32 (Otaro Alaka)." newcontext="V,4,17,H32">
+    <p_pa vh="V" qb="Joe Burrow" result="SACK" gain="-5"></p_pa>
+    <p_tk vh="H" name="Otaro Alaka" sack="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="4" togo="17" spot="TAMU32" context="V,4,17,H32" playid="25,6,226" type="F" score="Y" vscore="34" hscore="31" clock="15:00" tokens="FGA:36,50,G T:15:00"
+      text="Cole Tracy field goal attempt from 50 GOOD, clock 15:00." newcontext="V,1,0,V35">
+    <p_fg vh="V" name="Cole Tracy" distance="50" result="GOOD" score="Y"></p_fg>
+   </play>
+   <score V="34" H="31"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="25,7,227" tokens="POSS: SPOT:H,V25,Y D:1,10"
+      text="Change of possession, TAMU ball on LSU25, 1st and 10." newcontext="H,1,10,V25">
+   </play>
+   <drivesum plays="4" yards="-7" top="0:00" driveindex="25" complete="Y"></drivesum>
+   <drivestart poss="H,V25,15:00" vh="H" spot="V25" clock="15:00" driveindex="26,227"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="26,1,228" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,V25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="26,2,229" type="P" tokens="PASS:11,I,81,* BRUP:9S"
+      text="Kellen Mond pass incomplete to J. Sternberger (Grant Delpit)." newcontext="H,2,10,V25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+    <p_bu vh="V" name="Grant Delpit"></p_bu>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU25" context="H,2,10,V25" playid="26,3,230" type="R" first="R" tokens="RUSH:5,V13, OB: TACK:40"
+      text="T. Williams rush for 12 yards to the LSU13, 1ST DOWN TAMU, out-of-bounds (Devin White)." ob="Y" newcontext="H,1,10,V13">
+    <p_ru vh="H" name="T. Williams" gain="12"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU13" context="H,1,10,V13" playid="26,4,231" type="R" tokens="RUSH:11,V04, TACK:3"
+      text="Kellen Mond rush for 9 yards to the LSU4 (JaCoby Stevens)." newcontext="H,2,1,V04">
+    <p_ru vh="H" name="Kellen Mond" gain="9"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="1" spot="LSU04" context="H,2,1,V04" playid="26,5,232" type="R" first="R" tokens="RUSH:5,V01, TACK:97,45"
+      text="T. Williams rush for 3 yards to the LSU1, 1ST DOWN TAMU (Glen Logan;M. Divinity)." newcontext="H,1,0,V01">
+    <p_ru vh="H" name="T. Williams" gain="3"></p_ru>
+    <p_tk vh="V" name="Glen Logan" assist="Y"></p_tk>
+    <p_tk vh="V" name="M. Divinity" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU01" context="H,1,0,V01" playid="26,6,233" type="R" tokens="RUSH:5,V03, TACK:90"
+      text="T. Williams rush for loss of 2 yards to the LSU3 (R. Lawrence)." newcontext="H,2,0,V03">
+    <p_ru vh="H" name="T. Williams" gain="-2"></p_ru>
+    <p_tk vh="V" name="R. Lawrence"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="0" spot="LSU03" context="H,2,0,V03" playid="26,7,234" type="R" tokens="RUSH:11,V06, TACK:3"
+      text="Kellen Mond rush for loss of 3 yards to the LSU6 (JaCoby Stevens)." newcontext="H,3,0,V06">
+    <p_ru vh="H" name="Kellen Mond" gain="-3"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="0" spot="LSU06" context="H,3,0,V06" playid="26,8,235" type="P" tokens="PASS:11,I,13,*"
+      text="Kellen Mond pass incomplete to Kendrick Rogers." newcontext="H,4,0,V06">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Kendrick Rogers"></p_pa>
+   </play>
+   <play hasball="TAMU" down="4" togo="0" spot="LSU06" context="H,4,0,V06" playid="26,9,236" type="F" score="Y" vscore="34" hscore="34" clock="15:00" tokens="FGA:47,23,G T:15:00"
+      text="Seth Small field goal attempt from 23 GOOD, clock 15:00." newcontext="H,1,0,H35">
+    <p_fg vh="H" name="Seth Small" distance="23" result="GOOD" score="Y"></p_fg>
+   </play>
+   <score V="34" H="34"></score>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="26,10,237" tokens="POSS: SPOT:H,V25,Y D:1,10"
+      text="Change of possession, TAMU ball on LSU25, 1st and 10." newcontext="H,1,10,V25">
+   </play>
+   <drivesum plays="8" yards="19" top="0:00" driveindex="26" complete="Y"></drivesum>
+   <drivestart poss="H,V25,15:00" vh="H" spot="V25" clock="15:00" driveindex="27,237"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="27,1,238" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,V25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="27,2,239" type="P" tokens="PASS:11,I,1,*"
+      text="Kellen Mond pass incomplete to Quartney Davis." newcontext="H,2,10,V25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Quartney Davis"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU25" context="H,2,10,V25" playid="27,3,240" type="R" first="R" tokens="RUSH:5,V08, TACK:33"
+      text="T. Williams rush for 17 yards to the LSU8, 1ST DOWN TAMU (Todd Harris Jr.)." newcontext="H,1,0,V08">
+    <p_ru vh="H" name="T. Williams" gain="17"></p_ru>
+    <p_tk vh="V" name="Todd Harris Jr."></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU08" context="H,1,0,V08" playid="27,4,241" type="R" tokens="RUSH:5,V03, TACK:3,40"
+      text="T. Williams rush for 5 yards to the LSU3 (JaCoby Stevens;Devin White)." newcontext="H,2,0,V03">
+    <p_ru vh="H" name="T. Williams" gain="5"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens" assist="Y"></p_tk>
+    <p_tk vh="V" name="Devin White" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="0" spot="LSU03" context="H,2,0,V03" playid="27,5,242" type="R" score="Y" vscore="34" hscore="40" clock="15:00" tokens="RUSH:11,V00, T:15:00"
+      text="Kellen Mond rush for 3 yards to the LSU0, TOUCHDOWN, clock 15:00." newcontext="H,1,0,V03">
+    <p_ru vh="H" name="Kellen Mond" gain="3"></p_ru>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="27,6,243" type="X" score="Y" vscore="34" hscore="41" tokens="PAT:K,47,G"
+      text="Seth Small kick attempt good." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Seth Small" qb="Seth Small" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="34" H="41"></score>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="27,7,244" tokens="POSS: SPOT:V,H25,Y D:1,10"
+      text="Change of possession, LSU ball on TAMU25, 1st and 10." newcontext="V,1,10,H25">
+   </play>
+   <drivesum plays="4" yards="25" top="0:00" driveindex="27" complete="Y"></drivesum>
+   <drivestart poss="V,H25,15:00" vh="V" spot="H25" clock="15:00" driveindex="28,244"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="28,1,245" clock="15:00" tokens="{DRIVE}:15:00"
+      text="LSU drive start at 15:00." newcontext="V,1,10,H25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="28,2,246" type="R" tokens="RUSH:9,H19, TACK:42"
+      text="Joe Burrow rush for 6 yards to the TAMU19 (Otaro Alaka)." newcontext="V,2,4,H19">
+    <p_ru vh="V" name="Joe Burrow" gain="6"></p_ru>
+    <p_tk vh="H" name="Otaro Alaka"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="4" spot="TAMU19" context="V,2,4,H19" playid="28,3,247" type="R" first="R" tokens="RUSH:9,H11, TACK:25"
+      text="Joe Burrow rush for 8 yards to the TAMU11, 1ST DOWN LSU (Tyrel Dodson)." newcontext="V,1,10,H11">
+    <p_ru vh="V" name="Joe Burrow" gain="8"></p_ru>
+    <p_tk vh="H" name="Tyrel Dodson"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU11" context="V,1,10,H11" playid="28,4,248" type="P" tokens="PASS:9,I,1,* BRUP:1Z"
+      text="Joe Burrow pass incomplete to JaMarr Chase (Myles Jones)." newcontext="V,2,10,H11">
+    <p_pa vh="V" qb="Joe Burrow" result="INC" rcv="JaMarr Chase"></p_pa>
+    <p_bu vh="H" name="Myles Jones"></p_bu>
+   </play>
+   <play hasball="LSU" down="2" togo="10" spot="TAMU11" context="V,2,10,H11" playid="28,5,249" type="#" clock="15:00" tokens="TOUT:V T:15:00"
+      text="Timeout LSU, clock 15:00." newcontext="V,2,10,H11">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="LSU" down="2" togo="10" spot="TAMU11" context="V,2,10,H11" playid="28,6,250" type="R" tokens="RUSH:9,H05, OB: TACK:6"
+      text="Joe Burrow rush for 6 yards to the TAMU5, out-of-bounds (Donovan Wilson)." ob="Y" newcontext="V,3,4,H05">
+    <p_ru vh="V" name="Joe Burrow" gain="6"></p_ru>
+    <p_tk vh="H" name="Donovan Wilson"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="4" spot="TAMU05" context="V,3,4,H05" playid="28,7,251" type="R" tokens="RUSH:9,H03, TACK:46"
+      text="Joe Burrow rush for 2 yards to the TAMU3 (Landis Durham)." newcontext="V,4,2,H03">
+    <p_ru vh="V" name="Joe Burrow" gain="2"></p_ru>
+    <p_tk vh="H" name="Landis Durham"></p_tk>
+   </play>
+   <play hasball="LSU" down="4" togo="2" spot="TAMU03" context="V,4,2,H03" playid="28,8,252" type="R" first="R" score="Y" vscore="40" hscore="41" clock="15:00" tokens="RUSH:4,H00, T:15:00"
+      text="Nick Brossette rush for 3 yards to the TAMU0, 1ST DOWN LSU, TOUCHDOWN, clock 15:00." newcontext="V,1,0,H03">
+    <p_ru vh="V" name="Nick Brossette" gain="3"></p_ru>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="28,9,253" type="X" score="Y" vscore="41" hscore="41" tokens="PAT:K,36,G"
+      text="Cole Tracy kick attempt good." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Cole Tracy" qb="Cole Tracy" type="K" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="41" H="41"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="28,10,254" tokens="POSS: SPOT:V,H25,Y D:1,10"
+      text="Change of possession, LSU ball on TAMU25, 1st and 10." newcontext="V,1,10,H25">
+   </play>
+   <drivesum plays="6" yards="25" top="0:00" driveindex="28" complete="Y"></drivesum>
+   <drivestart poss="V,H25,15:00" vh="V" spot="H25" clock="15:00" driveindex="29,254"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="29,1,255" clock="15:00" tokens="{DRIVE}:15:00"
+      text="LSU drive start at 15:00." newcontext="V,1,10,H25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="29,2,256" type="P" first="P" score="Y" vscore="47" hscore="41" clock="15:00" tokens="PASS:9,C,11,H00 T:15:00"
+      text="Joe Burrow pass complete to Dee Anderson for 25 yards to the TAMU0, 1ST DOWN LSU, TOUCHDOWN, clock 15:00." newcontext="V,1,0,H03">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Dee Anderson" gain="25"></p_pa>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="29,3,257" type="X" score="Y" vscore="49" hscore="41" tokens="PAT:P,9/2,G"
+      text="Joe Burrow pass attempt to Just. Jefferson good." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Just. Jefferson" qb="Joe Burrow" type="P" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="49" H="41"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="29,4,258" tokens="POSS: SPOT:H,V25,Y D:1,10"
+      text="Change of possession, TAMU ball on LSU25, 1st and 10." newcontext="H,1,10,V25">
+   </play>
+   <drivesum plays="1" yards="25" top="0:00" driveindex="29" complete="Y"></drivesum>
+   <drivestart poss="H,V25,15:00" vh="H" spot="V25" clock="15:00" driveindex="30,258"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="30,1,259" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,V25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="30,2,260" type="P" tokens="PASS:11,I,2,*"
+      text="Kellen Mond pass incomplete to Jhamon Ausbon." newcontext="H,2,10,V25">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Jhamon Ausbon"></p_pa>
+   </play>
+   <play hasball="TAMU" down="2" togo="10" spot="LSU25" context="H,2,10,V25" playid="30,3,261" type="P" first="P" score="Y" vscore="49" hscore="47" clock="15:00" tokens="PASS:11,C,13,V00 T:15:00 PEN:V,PI,D"
+      text="Kellen Mond pass complete to Kendrick Rogers for 25 yards to the LSU0, 1ST DOWN TAMU, TOUCHDOWN, clock 15:00, PENALTY LSU pass interference declined." newcontext="H,1,0,V03">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Kendrick Rogers" gain="25"></p_pa>
+    <p_pn vh="V" code="PI" type="pass interference" name="Jontre Kirklin" result="DECLINE"></p_pn>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="30,4,262" type="X" score="Y" vscore="49" hscore="49" tokens="PAT:P,11/13,G"
+      text="Kellen Mond pass attempt to Kendrick Rogers good." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Kendrick Rogers" qb="Kellen Mond" type="P" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="49" H="49"></score>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="30,5,263" tokens="POSS: SPOT:H,V25,Y D:1,10"
+      text="Change of possession, TAMU ball on LSU25, 1st and 10." newcontext="H,1,10,V25">
+   </play>
+   <drivesum plays="2" yards="25" top="0:00" driveindex="30" complete="Y"></drivesum>
+   <drivestart poss="H,V25,15:00" vh="H" spot="V25" clock="15:00" driveindex="31,263"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="31,1,264" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,V25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="31,2,265" type="R" first="R" tokens="RUSH:5,V15, TACK:3"
+      text="T. Williams rush for 10 yards to the LSU15, 1ST DOWN TAMU (JaCoby Stevens)." newcontext="H,1,10,V15">
+    <p_ru vh="H" name="T. Williams" gain="10"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU15" context="H,1,10,V15" playid="31,3,266" type="R" tokens="RUSH:5,V16, TACK:92,6"
+      text="T. Williams rush for loss of 1 yard to the LSU16 (Neil Farrell;Jacob Phillips)." newcontext="H,2,11,V16">
+    <p_ru vh="H" name="T. Williams" gain="-1"></p_ru>
+    <p_tk vh="V" name="Neil Farrell" assist="Y"></p_tk>
+    <p_tk vh="V" name="Jacob Phillips" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="11" spot="LSU16" context="H,2,11,V16" playid="31,4,267" type="E" first="E" tokens="PASS:11,I,2,* BRUP:1A PEN:V,PF,A,6,V08,1 NOPLAY:"
+      text="Kellen Mond pass incomplete to Jhamon Ausbon (T. Alexander), PENALTY LSU personal foul (Jacob Phillips) 8 yards to the LSU8, 1ST DOWN TAMU, NO PLAY." newcontext="H,1,0,V08">
+    <p_pn vh="V" code="PF" type="personal foul" name="Jacob Phillips" result="ACCEPT" at="V16" yards="8"></p_pn>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU08" context="H,1,0,V08" playid="31,5,268" type="R" tokens="RUSH:5,V04, TACK:72,3"
+      text="T. Williams rush for 4 yards to the LSU4 (Tyler Shelvin;JaCoby Stevens)." newcontext="H,2,0,V04">
+    <p_ru vh="H" name="T. Williams" gain="4"></p_ru>
+    <p_tk vh="V" name="Tyler Shelvin" assist="Y"></p_tk>
+    <p_tk vh="V" name="JaCoby Stevens" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="0" spot="LSU04" context="H,2,0,V04" playid="31,6,269" type="R" tokens="RUSH:11,V04, TACK:3,8"
+      text="Kellen Mond rush for no gain to the LSU4 (JaCoby Stevens;Patrick Queen)." newcontext="H,3,0,V04">
+    <p_ru vh="H" name="Kellen Mond" gain="0"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens" assist="Y"></p_tk>
+    <p_tk vh="V" name="Patrick Queen" assist="Y"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="0" spot="LSU04" context="H,3,0,V04" playid="31,7,270" type="P" tokens="PASS:11,I,81,* QBH:V,92"
+      text="Kellen Mond pass incomplete to J. Sternberger, QB hurry by Neil Farrell." newcontext="H,4,0,V04">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+    <p_qbh vh="V" name="Neil Farrell"></p_qbh>
+   </play>
+   <play hasball="TAMU" down="4" togo="0" spot="LSU04" context="H,4,0,V04" playid="31,8,271" type="F" score="Y" vscore="49" hscore="52" clock="15:00" tokens="FGA:47,21,G T:15:00"
+      text="Seth Small field goal attempt from 21 GOOD, clock 15:00." newcontext="H,1,0,H35">
+    <p_fg vh="H" name="Seth Small" distance="21" result="GOOD" score="Y"></p_fg>
+   </play>
+   <score V="49" H="52"></score>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="31,9,272" tokens="POSS: SPOT:V,H25,Y D:1,10"
+      text="Change of possession, LSU ball on TAMU25, 1st and 10." newcontext="V,1,10,H25">
+   </play>
+   <drivesum plays="7" yards="21" top="0:00" driveindex="31" complete="Y"></drivesum>
+   <drivestart poss="V,H25,15:00" vh="V" spot="H25" clock="15:00" driveindex="32,272"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="32,1,273" clock="15:00" tokens="{DRIVE}:15:00"
+      text="LSU drive start at 15:00." newcontext="V,1,10,H25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="32,2,274" type="P" first="P" tokens="PASS:9,C,18,H08 TACK:1A"
+      text="Joe Burrow pass complete to Foster Moreau for 17 yards to the TAMU8, 1ST DOWN LSU (Larry Pryor)." newcontext="V,1,0,H08">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Foster Moreau" gain="17"></p_pa>
+    <p_tk vh="H" name="Larry Pryor"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU08" context="V,1,0,H08" playid="32,3,275" type="#" clock="15:00" tokens="TOUT:H T:15:00"
+      text="Timeout TAMU, clock 15:00." newcontext="V,1,0,H08">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU08" context="V,1,0,H08" playid="32,4,276" type="R" tokens="RUSH:27,H06, TACK:8,52"
+      text="La. Fournette rush for 2 yards to the TAMU6 (Kingsley Keke;J. Madubuike)." newcontext="V,2,0,H06">
+    <p_ru vh="V" name="La. Fournette" gain="2"></p_ru>
+    <p_tk vh="H" name="Kingsley Keke" assist="Y"></p_tk>
+    <p_tk vh="H" name="J. Madubuike" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="0" spot="TAMU06" context="V,2,0,H06" playid="32,5,277" type="R" tokens="RUSH:9,H06, TACK:25,52"
+      text="Joe Burrow rush for no gain to the TAMU6 (Tyrel Dodson;J. Madubuike)." newcontext="V,3,0,H06">
+    <p_ru vh="V" name="Joe Burrow" gain="0"></p_ru>
+    <p_tk vh="H" name="Tyrel Dodson" assist="Y"></p_tk>
+    <p_tk vh="H" name="J. Madubuike" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="0" spot="TAMU06" context="V,3,0,H06" playid="32,6,278" type="#" clock="15:00" tokens="TOUT:V T:15:00"
+      text="Timeout LSU, clock 15:00." newcontext="V,3,0,H06">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="LSU" down="3" togo="0" spot="TAMU06" context="V,3,0,H06" playid="32,7,279" type="R" tokens="RUSH:9,H03, TACK:8,26"
+      text="Joe Burrow rush for 3 yards to the TAMU3 (Kingsley Keke;D. Capers-Smith)." newcontext="V,4,0,H03">
+    <p_ru vh="V" name="Joe Burrow" gain="3"></p_ru>
+    <p_tk vh="H" name="Kingsley Keke" assist="Y"></p_tk>
+    <p_tk vh="H" name="D. Capers-Smith" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="4" togo="0" spot="TAMU03" context="V,4,0,H03" playid="32,8,280" type="E" tokens="PEN:V,DG,A,TM,H08,N"
+      text="PENALTY LSU delay of game 5 yards to the TAMU8." newcontext="V,4,0,H08">
+    <p_pn vh="V" code="DG" type="delay of game" result="ACCEPT" at="H03" yards="5"></p_pn>
+   </play>
+   <play hasball="LSU" down="4" togo="0" spot="TAMU08" context="V,4,0,H08" playid="32,9,281" type="F" score="Y" vscore="52" hscore="52" clock="15:00" tokens="FGA:36,26,G T:15:00"
+      text="Cole Tracy field goal attempt from 26 GOOD, clock 15:00." newcontext="V,1,0,V35">
+    <p_fg vh="V" name="Cole Tracy" distance="26" result="GOOD" score="Y"></p_fg>
+   </play>
+   <score V="52" H="52"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="32,10,282" tokens="POSS: SPOT:V,H25,Y D:1,10"
+      text="Change of possession, LSU ball on TAMU25, 1st and 10." newcontext="V,1,10,H25">
+   </play>
+   <drivesum plays="5" yards="17" top="0:00" driveindex="32" complete="Y"></drivesum>
+   <drivestart poss="V,H25,15:00" vh="V" spot="H25" clock="15:00" driveindex="33,282"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="33,1,283" clock="15:00" tokens="{DRIVE}:15:00"
+      text="LSU drive start at 15:00." newcontext="V,1,10,H25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="33,2,284" type="P" first="P" tokens="PASS:9,C,44,H13 TACK:1X,6"
+      text="Joe Burrow pass complete to Tory Carter for 12 yards to the TAMU13, 1ST DOWN LSU (Buddy Johnson;Donovan Wilson)." newcontext="V,1,10,H13">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Tory Carter" gain="12"></p_pa>
+    <p_tk vh="H" name="Buddy Johnson" assist="Y"></p_tk>
+    <p_tk vh="H" name="Donovan Wilson" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU13" context="V,1,10,H13" playid="33,3,285" type="R" tokens="RUSH:4,H11, TACK:42"
+      text="Nick Brossette rush for 2 yards to the TAMU11 (Otaro Alaka)." newcontext="V,2,8,H11">
+    <p_ru vh="V" name="Nick Brossette" gain="2"></p_ru>
+    <p_tk vh="H" name="Otaro Alaka"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="8" spot="TAMU11" context="V,2,8,H11" playid="33,4,286" type="P" first="P" score="Y" vscore="58" hscore="52" clock="15:00" tokens="PASS:22,C,44,H00 T:15:00"
+      text="C. Ed.Helaire pass complete to Tory Carter for 11 yards to the TAMU0, 1ST DOWN LSU, TOUCHDOWN, clock 15:00." newcontext="V,1,0,H03">
+    <p_pa vh="V" qb="C. Ed.Helaire" result="COMP" rcv="Tory Carter" gain="11"></p_pa>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="33,5,287" type="X" tokens="PAT:P,9,M"
+      text="Joe Burrow pass attempt failed." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Joe Burrow" qb="Joe Burrow" type="P" result="MISSED"></p_pat>
+   </play>
+   <score V="58" H="52"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="33,6,288" tokens="POSS: SPOT:H,V25,Y D:1,10"
+      text="Change of possession, TAMU ball on LSU25, 1st and 10." newcontext="H,1,10,V25">
+   </play>
+   <drivesum plays="3" yards="25" top="0:00" driveindex="33" complete="Y"></drivesum>
+   <drivestart poss="H,V25,15:00" vh="H" spot="V25" clock="15:00" driveindex="34,288"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="34,1,289" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,V25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="34,2,290" type="R" first="R" tokens="RUSH:11,V04, TACK:40"
+      text="Kellen Mond rush for 21 yards to the LSU4, 1ST DOWN TAMU (Devin White)." newcontext="H,1,0,V04">
+    <p_ru vh="H" name="Kellen Mond" gain="21"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU04" context="H,1,0,V04" playid="34,3,291" type="R" tokens="RUSH:5,V05, TACK:3"
+      text="T. Williams rush for loss of 1 yard to the LSU5 (JaCoby Stevens)." newcontext="H,2,0,V05">
+    <p_ru vh="H" name="T. Williams" gain="-1"></p_ru>
+    <p_tk vh="V" name="JaCoby Stevens"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="0" spot="LSU05" context="H,2,0,V05" playid="34,4,292" type="R" tokens="RUSH:11,V06, TACK:8"
+      text="Kellen Mond rush for loss of 1 yard to the LSU6 (Patrick Queen)." newcontext="H,3,0,V06">
+    <p_ru vh="H" name="Kellen Mond" gain="-1"></p_ru>
+    <p_tk vh="V" name="Patrick Queen"></p_tk>
+   </play>
+   <play hasball="TAMU" down="3" togo="0" spot="LSU06" context="H,3,0,V06" playid="34,5,293" type="P" tokens="PASS:11,I,13,*"
+      text="Kellen Mond pass incomplete to Kendrick Rogers." newcontext="H,4,0,V06">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="Kendrick Rogers"></p_pa>
+   </play>
+   <play hasball="TAMU" down="4" togo="0" spot="LSU06" context="H,4,0,V06" playid="34,6,294" type="#" clock="15:00" tokens="TOUT:H T:15:00"
+      text="Timeout TAMU, clock 15:00." newcontext="H,4,0,V06">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="TAMU" down="4" togo="0" spot="LSU06" context="H,4,0,V06" playid="34,7,295" type="#" clock="15:00" tokens="TOUT:V T:15:00"
+      text="Timeout LSU, clock 15:00." newcontext="H,4,0,V06">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="TAMU" down="4" togo="0" spot="LSU06" context="H,4,0,V06" playid="34,8,296" type="P" score="Y" vscore="58" hscore="58" clock="15:00" tokens="PASS:11,C,13,V00 T:15:00"
+      text="Kellen Mond pass complete to Kendrick Rogers for 6 yards to the LSU0, TOUCHDOWN, clock 15:00." newcontext="H,1,0,V03">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Kendrick Rogers" gain="6"></p_pa>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="34,9,297" type="X" tokens="PAT:P,11,M"
+      text="Kellen Mond pass attempt failed." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Kellen Mond" qb="Kellen Mond" type="P" result="MISSED"></p_pat>
+   </play>
+   <score V="58" H="58"></score>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="34,10,298" tokens="POSS: SPOT:H,V25,Y D:1,10"
+      text="Change of possession, TAMU ball on LSU25, 1st and 10." newcontext="H,1,10,V25">
+   </play>
+   <drivesum plays="5" yards="25" top="0:00" driveindex="34" complete="Y"></drivesum>
+   <drivestart poss="H,V25,15:00" vh="H" spot="V25" clock="15:00" driveindex="35,298"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="35,1,299" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,V25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="35,2,300" type="P" first="P" score="Y" vscore="58" hscore="64" clock="15:00" tokens="PASS:11,C,81,V00 T:15:00"
+      text="Kellen Mond pass complete to J. Sternberger for 25 yards to the LSU0, 1ST DOWN TAMU, TOUCHDOWN, clock 15:00." newcontext="H,1,0,V03">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="J. Sternberger" gain="25"></p_pa>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="35,3,301" type="#" clock="15:00" tokens="TOUT:H T:15:00"
+      text="Timeout TAMU, clock 15:00." newcontext="H,1,0,V03">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="35,4,302" type="X" score="Y" vscore="58" hscore="66" tokens="PAT:P,11/13,G"
+      text="Kellen Mond pass attempt to Kendrick Rogers good." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Kendrick Rogers" qb="Kellen Mond" type="P" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="58" H="66"></score>
+   <play hasball="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" playid="35,5,303" tokens="POSS: SPOT:V,H25,Y D:1,10"
+      text="Change of possession, LSU ball on TAMU25, 1st and 10." newcontext="V,1,10,H25">
+   </play>
+   <drivesum plays="1" yards="25" top="0:00" driveindex="35" complete="Y"></drivesum>
+   <drivestart poss="V,H25,15:00" vh="V" spot="H25" clock="15:00" driveindex="36,303"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="36,1,304" clock="15:00" tokens="{DRIVE}:15:00"
+      text="LSU drive start at 15:00." newcontext="V,1,10,H25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="36,2,305" type="R" tokens="RUSH:9,H17, OB: TACK:26"
+      text="Joe Burrow rush for 8 yards to the TAMU17, out-of-bounds (D. Capers-Smith)." ob="Y" newcontext="V,2,2,H17">
+    <p_ru vh="V" name="Joe Burrow" gain="8"></p_ru>
+    <p_tk vh="H" name="D. Capers-Smith"></p_tk>
+   </play>
+   <play hasball="LSU" down="2" togo="2" spot="TAMU17" context="V,2,2,H17" playid="36,3,306" type="R" tokens="RUSH:4,H21, TACK:2,3D"
+      text="Nick Brossette rush for loss of 4 yards to the TAMU21 (Jhamon Ausbon;Daylon Mack)." newcontext="V,3,6,H21">
+    <p_ru vh="V" name="Nick Brossette" gain="-4"></p_ru>
+    <p_tk vh="H" name="Jhamon Ausbon" assist="Y"></p_tk>
+    <p_tk vh="H" name="Daylon Mack" assist="Y"></p_tk>
+   </play>
+   <play hasball="LSU" down="3" togo="6" spot="TAMU21" context="V,3,6,H21" playid="36,4,307" type="P" first="P" tokens="PASS:9,C,2,H04 TACK:6"
+      text="Joe Burrow pass complete to Just. Jefferson for 17 yards to the TAMU4, 1ST DOWN LSU (Donovan Wilson)." newcontext="V,1,0,H04">
+    <p_pa vh="V" qb="Joe Burrow" result="COMP" rcv="Just. Jefferson" gain="17"></p_pa>
+    <p_tk vh="H" name="Donovan Wilson"></p_tk>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU04" context="V,1,0,H04" playid="36,5,308" type="R" score="Y" vscore="64" hscore="66" clock="15:00" tokens="RUSH:9,H00, T:15:00"
+      text="Joe Burrow rush for 4 yards to the TAMU0, TOUCHDOWN, clock 15:00." newcontext="V,1,0,H03">
+    <p_ru vh="V" name="Joe Burrow" gain="4"></p_ru>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="36,6,309" type="#" clock="15:00" tokens="TOUT:V T:15:00"
+      text="Timeout LSU, clock 15:00." newcontext="V,1,0,H03">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="36,7,310" type="X" score="Y" vscore="66" hscore="66" tokens="PAT:P,9/11,G"
+      text="Joe Burrow pass attempt to Dee Anderson good." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Dee Anderson" qb="Joe Burrow" type="P" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="66" H="66"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="36,8,311" tokens="POSS: SPOT:V,H25,Y D:1,10"
+      text="Change of possession, LSU ball on TAMU25, 1st and 10." newcontext="V,1,10,H25">
+   </play>
+   <drivesum plays="4" yards="25" top="0:00" driveindex="36" complete="Y"></drivesum>
+   <drivestart poss="V,H25,15:00" vh="V" spot="H25" clock="15:00" driveindex="37,311"></drivestart>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="37,1,312" clock="15:00" tokens="{DRIVE}:15:00"
+      text="LSU drive start at 15:00." newcontext="V,1,10,H25">
+   </play>
+   <play hasball="LSU" down="1" togo="10" spot="TAMU25" context="V,1,10,H25" playid="37,2,313" type="E" first="E" tokens="PASS:9,I,11,* PEN:H,PI,A,21,H10,1 NOPLAY:"
+      text="Joe Burrow pass incomplete to Dee Anderson, PENALTY TAMU pass interference (Charles Oliver) 15 yards to the TAMU10, 1ST DOWN LSU, NO PLAY." newcontext="V,1,0,H10">
+    <p_pn vh="H" code="PI" type="pass interference" name="Charles Oliver" result="ACCEPT" at="H25" yards="15"></p_pn>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU10" context="V,1,0,H10" playid="37,3,314" type="R" score="Y" vscore="72" hscore="66" clock="15:00" tokens="RUSH:9,H00, T:15:00"
+      text="Joe Burrow rush for 10 yards to the TAMU0, TOUCHDOWN, clock 15:00." newcontext="V,1,0,H03">
+    <p_ru vh="V" name="Joe Burrow" gain="10"></p_ru>
+   </play>
+   <play hasball="LSU" down="1" togo="0" spot="TAMU03" context="V,1,0,H03" playid="37,4,315" type="X" tokens="PAT:P,9,M"
+      text="Joe Burrow pass attempt failed." newcontext="V,1,0,V35">
+    <p_pat vh="V" name="Joe Burrow" qb="Joe Burrow" type="P" result="MISSED"></p_pat>
+   </play>
+   <score V="72" H="66"></score>
+   <play hasball="LSU" down="1" togo="0" spot="LSU35" context="V,1,0,V35" playid="37,5,316" tokens="POSS: SPOT:H,V25,Y D:1,10"
+      text="Change of possession, TAMU ball on LSU25, 1st and 10." newcontext="H,1,10,V25">
+   </play>
+   <drivesum plays="2" yards="25" top="0:00" driveindex="37" complete="Y"></drivesum>
+   <drivestart poss="H,V25,15:00" vh="H" spot="V25" clock="15:00" driveindex="38,316"></drivestart>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="38,1,317" clock="15:00" tokens="{DRIVE}:15:00"
+      text="TAMU drive start at 15:00." newcontext="H,1,10,V25">
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU25" context="H,1,10,V25" playid="38,2,318" type="R" first="R" tokens="RUSH:5,V12, TACK:9S"
+      text="T. Williams rush for 13 yards to the LSU12, 1ST DOWN TAMU (Grant Delpit)." newcontext="H,1,10,V12">
+    <p_ru vh="H" name="T. Williams" gain="13"></p_ru>
+    <p_tk vh="V" name="Grant Delpit"></p_tk>
+   </play>
+   <play hasball="TAMU" down="1" togo="10" spot="LSU12" context="H,1,10,V12" playid="38,3,319" type="R" tokens="RUSH:11,V17, TACK:40"
+      text="Kellen Mond rush for loss of 5 yards to the LSU17 (Devin White)." newcontext="H,2,15,V17">
+    <p_ru vh="H" name="Kellen Mond" gain="-5"></p_ru>
+    <p_tk vh="V" name="Devin White"></p_tk>
+   </play>
+   <play hasball="TAMU" down="2" togo="15" spot="LSU17" context="H,2,15,V17" playid="38,4,320" type="P" tokens="PASS:11,I,81,*"
+      text="Kellen Mond pass incomplete to J. Sternberger." newcontext="H,3,15,V17">
+    <p_pa vh="H" qb="Kellen Mond" result="INC" rcv="J. Sternberger"></p_pa>
+   </play>
+   <play hasball="TAMU" down="3" togo="15" spot="LSU17" context="H,3,15,V17" playid="38,5,321" type="P" first="P" score="Y" vscore="72" hscore="72" clock="15:00" tokens="PASS:11,C,1,V00 T:15:00"
+      text="Kellen Mond pass complete to Quartney Davis for 17 yards to the LSU0, 1ST DOWN TAMU, TOUCHDOWN, clock 15:00." newcontext="H,1,0,V03">
+    <p_pa vh="H" qb="Kellen Mond" result="COMP" rcv="Quartney Davis" gain="17"></p_pa>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="38,6,322" type="#" clock="15:00" tokens="TOUT:H T:15:00"
+      text="Timeout TAMU, clock 15:00." newcontext="H,1,0,V03">
+    <p_to vh="H" team="TAMU"></p_to>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU03" context="H,1,0,V03" playid="38,7,323" type="E" tokens="PAT:P,11,M PEN:V,PI,A,29,V01,N NOPLAY:"
+      text="Kellen Mond pass attempt failed, PENALTY LSU pass interference (Greedy Williams) 2 yards to the LSU1, NO PLAY." newcontext="H,1,0,V01">
+    <p_pn vh="V" code="PI" type="pass interference" name="Greedy Williams" result="ACCEPT" at="V03" yards="2"></p_pn>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU01" context="H,1,0,V01" playid="38,8,324" type="E" tokens="PEN:V,UC,A,29,V01,N"
+      text="PENALTY LSU unsportsmanlike conduct (Greedy Williams) 0 yards to the LSU1." newcontext="H,1,0,V01">
+    <p_pn vh="V" code="UC" type="unsportsmanlike conduct" name="Greedy Williams" result="ACCEPT"></p_pn>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU01" context="H,1,0,V01" playid="38,9,325" type="#" clock="15:00" tokens="TOUT:V T:15:00"
+      text="Timeout LSU, clock 15:00." newcontext="H,1,0,V01">
+    <p_to vh="V" team="LSU"></p_to>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU01" context="H,1,0,V01" playid="38,10,326" type="E" tokens="PEN:H,FS,A,78,V05,N"
+      text="PENALTY TAMU false start (K. Sutherland) 4 yards to the LSU5." newcontext="H,1,0,V05">
+    <p_pn vh="H" code="FS" type="false start" name="K. Sutherland" result="ACCEPT" at="V01" yards="4"></p_pn>
+   </play>
+   <play hasball="TAMU" down="1" togo="0" spot="LSU05" context="H,1,0,V05" playid="38,11,327" type="X" score="Y" vscore="72" hscore="74" tokens="PAT:P,11/13,G"
+      text="Kellen Mond pass attempt to Kendrick Rogers good." newcontext="H,1,0,H35">
+    <p_pat vh="H" name="Kendrick Rogers" qb="Kellen Mond" type="P" result="GOOD" score="Y"></p_pat>
+   </play>
+   <score V="72" H="74"></score>
+   <drivesum plays="4" yards="25" top="0:00" driveindex="38" complete="Y"></drivesum>
+   <score V="72" H="74"></score>
+   <qtrsummary vh="V" id="LSU">
+    <firstdowns no="8" rush="2" pass="5" penalty="1"></firstdowns>
+    <penalties no="5" yds="20"></penalties>
+    <conversions thirdconv="1" thirdatt="4" fourthconv="1" fourthatt="1"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="00:00"></misc>
+    <rush att="15" yds="48" gain="57" loss="9" td="3" long="0"></rush>
+    <pass comp="5" att="7" int="0" yds="82" td="2" long="1" sacks="1" sackyds="5"></pass>
+    <rcv no="5" yds="82" td="2" long="1"></rcv>
+    <fg made="2" att="2" long="3" blkd="0"></fg>
+    <pat kickatt="1" kickmade="1" passatt="4" passmade="2" rcvatt="2" rcvmade="2"></pat>
+    <defense tackua="11" tacka="10" tot_tack="21" tflua="5" tfla="2" tflyds="13" sacks="0" sackyds="0" brup="1" qbh="1"></defense>
+    <scoring td="5" fg="2" patkick="1" patrcv="2"></scoring>
+   </qtrsummary>
+   <qtrsummary vh="H" id="TAMU">
+    <firstdowns no="10" rush="6" pass="3" penalty="1"></firstdowns>
+    <penalties no="2" yds="19"></penalties>
+    <conversions thirdconv="1" thirdatt="4" fourthconv="1" fourthatt="1"></conversions>
+    <fumbles no="0" lost="0"></fumbles>
+    <misc yds="0" top="00:00"></misc>
+    <rush att="17" yds="84" gain="97" loss="13" td="1" long="0"></rush>
+    <pass comp="4" att="11" int="0" yds="73" td="4" long="0" sacks="0" sackyds="0"></pass>
+    <rcv no="4" yds="73" td="4" long="0"></rcv>
+    <fg made="2" att="2" long="0" blkd="0"></fg>
+    <pat kickatt="1" kickmade="1" passatt="4" passmade="3" rcvatt="3" rcvmade="3"></pat>
+    <defense tackua="10" tacka="10" tot_tack="20" tflua="1" tfla="2" tflyds="9" sacks="1" sackyds="5" brup="2"></defense>
+    <scoring td="5" fg="2" patkick="1" patrcv="3"></scoring>
+   </qtrsummary>
+  </qtr>
+  <downtogo hasball="H" id="TAMU" down="1" togo="0" spot="TAMU35" context="H,1,0,H35" qtr="5" clock="15:00"
+       lastplay="Kellen Mond pass attempt to Kendrick Rogers good."></downtogo>
+ </plays>
+ <message text=""></message>
+</fbgame>

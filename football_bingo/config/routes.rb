@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get '/score_board' => 'games#score_board'
   post '/send_email' => 'games#send_email'
   # post '/games' => :show, controller: 'games'
-  get '/games/refresh' => 'games#refresh'
+  get '/refresh' => 'games#refresh'
 
   resources :users do
     get '/share' => 'users#share'

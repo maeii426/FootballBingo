@@ -36,11 +36,20 @@ class GamesController < ApplicationController
       render 'play'
   end
 
-  # POST /games/refresh
+  # POST /games/1/refresh
   def refresh
-      update_xml_game("./XML/tam.xml")
+      if $update_times.nil?
+        $update_times = 1
+      end
+      puts $update_times
+      @game = Game.find_by(id: params[:id])
+      update_xml_game("./XML/tam_#{$update_times}.xml")
       # redirect_to games_path
-      redirect_back(fallback_location: root_path)
+      # render 'refresh'
+
+      $update_times += 1
+      redirect_to game_path(@game)
+
   end
 
   # POST /users/1/games/1/get_whoop_card
