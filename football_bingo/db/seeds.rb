@@ -28,6 +28,9 @@ general_users.each do |general_user|
     User.create!(general_user)
 end
 
+admin_user_param2 = {:name => 'admin2', :email => 'admin2@gmail.com', :password => '123456', :role => :admin}
+admin_user2 = User.create!(admin_user_param2)
+
 games = [
     {
       :game_name => 'TAMU vs GEORGIA', 
@@ -252,7 +255,18 @@ end
 #     ]
 
 cards_ids = [1, 2]
-chips_ids = [5, 2, 5, 1, 1, 3, 4, 3, 1]
+
+# for 3x3
+# chips_ids = [5, 1, 5, 
+#              1, 4, 3,
+#              2, 3, 2]
+
+# for 5x5 
+chips_ids = [5, 2, 5, 1, 1, 
+             2, 2, 3, 1, 3,
+             1, 1, 5, 3, 1,
+             5, 3, 1, 4, 2,
+             3, 1, 2, 1, 5]
 for j in cards_ids do
   for i in chips_ids do
     cc_param = {

@@ -56,17 +56,17 @@ def whoop_winner?(game)
     false
 end
 
-def whoop_winner(game)
+def whoop_winners(game)
     if !game.upcoming?
-        gu = GameUser.where(:game => game, :state => "whoop_winner").first
-        if(!gu.nil?)
-            return gu.user
+        gus = GameUser.where(:game => game, :state => "whoop_winner")
+        if(gus.any?)
+            return gus
         end
     end
 end
 
 def check_winner(game, user)
-    if whoop_winner?(game) && user == whoop_winner(game)
+    if whoop_winner?(game) && whoop_winners(game).where(:user => user).any?
         return "Whoop Winner!"
     elsif instant_winner?(game) && user == instant_winner(game)
         return "Instant Winner!"
@@ -80,8 +80,8 @@ def check_winner(game, user)
 end
 
 def check_num_whoop_cards(game, user)
-    if whoop_winner?(game) && user == whoop_winner(game)
-        return GameUser.where(:game => game, :state => "whoop_winner").first.whoops
+    if whoop_winner?(game) && whoop_winners(game).where(:user => user).any?
+        return GameUser.where(:game => game, :state => "whoop_winner", :user=>user).first.whoops
     else
         return 0
     end

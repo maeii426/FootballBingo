@@ -45,6 +45,11 @@ def get_xml_game(filepath)
   		    game.update(state: 'finished')
   		end
 
+  		### To Delete
+  		### Import as ongoing to test
+  		game.update(state: 'ongoing')
+
+
 		sections.css('venue').each do |v|		# there should only be one venue
 
 			venue_param = {

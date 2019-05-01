@@ -26,8 +26,15 @@
                     = instant_winner(game).name
                 %td 
                   - if whoop_winner?(game)
-                    = whoop_winner(game).name
+                    - gus = whoop_winners(game)
+                    - gus.each do |gu|
+                      = gu.user.name
+                      %br/
+                      %br/
+                      / = whoop_winners(game).name
                 - if admin_user?           
                   %td
                     - if whoop_winner?(game)
-                      = button_to 'Send', send_email_path(:whoop_winner_id => whoop_winner(game).id), class: "btn btn-primary maroon"
+                      - gus = whoop_winners(game)
+                      - gus.each do |gu|
+                        = button_to 'Send', send_email_path(:whoop_winner_id => gu.user.id), class: "btn btn-primary maroon"
