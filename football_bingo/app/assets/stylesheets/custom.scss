@@ -3,6 +3,14 @@
 
 /* mixins, variables, etc. */
 
+ion-icon {
+  font-size: 24px;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 5px;
+  left: 5px;
+}
+
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {

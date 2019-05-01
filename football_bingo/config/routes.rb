@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
   get '/score_board' => 'games#score_board'
   post '/send_email' => 'games#send_email'
-  post '/games' => :show, controller: 'games'
+  # post '/games' => :show, controller: 'games'
+  get '/games/refresh' => 'games#refresh'
 
   resources :users do
     get '/share' => 'users#share'
@@ -26,6 +27,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   #root 'users#index'
   resources :games do
-
+    
   end
 end

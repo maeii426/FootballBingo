@@ -1,11 +1,14 @@
 = content_for(:title, "Games")
 %br/
 .center
-  %h3 All Games
+  %p
+    %h3 All Games
 
 .panel.panel-default
   .panel-heading
-    %h3 All Games
+    %font{:style=>"font-size: 1.77em; margin: 0.83em;"}All Games
+    %a{:href=>games_refresh_path, :method=>:post}
+      %ion-icon{:name=>"refresh-circle"}
   .panel-body
     .row
       .col-md-12.col-md-offset-0

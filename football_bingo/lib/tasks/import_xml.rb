@@ -18,7 +18,9 @@ def get_xml_game(filepath)
 			:game_name => sections.css('venue').first['gameid']
 		}
 
-        games = Game.where(game_param)
+        # games = Game.where(game_param)
+        games = Game.where({:game_name => sections.css('venue').first['gameid']})
+
         if games.length != 0
             puts "exising game found"
             if games.length != 1
@@ -29,15 +31,16 @@ def get_xml_game(filepath)
         else
             puts "creating new game"
             game = Game.new(game_param)
+            game.save		
+            #game = Game.first_or_create(game_param)
+			if game.save
+				#puts "game imported!"
+			else
+				puts "game failed!"
+			end
         end
 
-		#game = Game.first_or_create(game_param)
-		if game.save
-			#puts "game imported!"
-		else
-			puts "game failed!"
-		end
-
+		game = Game.where(game_param).first
 		end_time = sections.css('venue').first['date']
 		if end_time.nil? || end_time.empty?
   		    game.update(state: 'ongoing')
@@ -91,6 +94,10 @@ def get_xml_game(filepath)
 				#puts "team imported!"
 			else
 				puts "team failed!"
+				team = Team.where(team_param).first
+				if !team.nil?
+					puts "associated with existing team!"
+				end
 			end
 
 			team_stuff = t.children

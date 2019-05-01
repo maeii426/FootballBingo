@@ -4,6 +4,7 @@ class GamesController < ApplicationController
   before_action :set_user_and_game, only: [:get_new_card, :get_whoop_card, :join, :play_game]
 
   def index
+    render 'index'
   end
 
   def show
@@ -33,6 +34,12 @@ class GamesController < ApplicationController
   def play_game
       @cards = Card.where(:user => @user, :game => @game)
       render 'play'
+  end
+
+  # POST /games/refresh
+  def refresh
+      get_xml_game("./XML/tam.xml")
+      redirect_to games_path
   end
 
   # POST /users/1/games/1/get_whoop_card
