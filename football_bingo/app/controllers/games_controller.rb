@@ -38,8 +38,9 @@ class GamesController < ApplicationController
 
   # POST /games/refresh
   def refresh
-      get_xml_game("./XML/tam.xml")
-      redirect_to games_path
+      update_xml_game("./XML/tam.xml")
+      # redirect_to games_path
+      redirect_back(fallback_location: root_path)
   end
 
   # POST /users/1/games/1/get_whoop_card

@@ -10,6 +10,9 @@
             %h3 Overall Team Statistics 
 .center
   .row
+    %a{:href=>games_refresh_path, :method=>:post}
+      %ion-icon{:name=>"refresh-circle"}
+      &nbsp; &nbsp;
     =link_to 'Return to Profile'.html_safe, user_path(current_user), class: "btn btn-primary maroon"
 %br/
 .row
