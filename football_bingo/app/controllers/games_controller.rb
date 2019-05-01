@@ -37,7 +37,7 @@ class GamesController < ApplicationController
 
   # POST /users/1/games/1/get_whoop_card
   def get_whoop_card
-      chip_ids = [3, 1, 5, 1, 2, 3, 4, 3, 1]
+      chip_ids = [1, 1, 1, 4, 4, 4, 4, 4, 4] #for test case: row one 
       get_card(chip_ids)
       redirect_to (user_game_play_path(@user, @game))
   end

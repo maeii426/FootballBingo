@@ -26,23 +26,9 @@ def instant_games(user)
   return GameUser.where(user: user, state: 'instant_winner')
 end
 
-# def show_user_cards
-#    @cards.each do|card|
-#       chip_ids = card.chip_ids
-#       chips_in_words = Array.new
-#       chip_states = Array.new
-#       chip_ids.each do|chip_id|
-#         words, state = Chip.find(chip_id).translate
-#         chips_in_words.push(words)
-#         chip_states.push(state)
-#       end
-#       # flash[:notice] = "help"
-#       render 'cards/_card', locals: { plays:chips_in_words, states:chip_states }
-#     end
-# end
-
 def check_states_winner_rule
-  $win_card_num=0
+  win_card_num=0
+  size = 3 # the size of the card
 
   @cards.each do|card|
     s = Array.new
@@ -53,21 +39,65 @@ def check_states_winner_rule
       s.push(state)
     end
 
-     t1=s[0] && s[1] && s[2]
-     t2=s[3] && s[4] && s[5]
-     t3=s[6] && s[7] && s[8]
-     t4=s[0] && s[3] && s[6]
-     t5=s[1] && s[4] && s[7]
-     t6=s[2] && s[5] && s[8]
-     t7=s[0] && s[4] && s[8]
-     t8=s[2] && s[4] && s[6]
+    all_conditions = []
 
-     if (t1 || t2 || t3 || t4 || t5 || t6 || t7 || t8)
-       $win_card_num=$win_card_num+1
-     end
+    (0..size-1).each do |d|
+      # all the winning conditions in rows
+      win_in_row = true
+      (size*d..size*(d+1)-1).each do |i|
+        win_in_row &&= s[i]
+      end
+      all_conditions.push(win_in_row)
+
+      # all the winning conditions in cols
+      win_in_col = true
+      col_ids_j = Array.new(size) { |s| s = size * s + d }
+      col_ids_j.each do |j|
+        win_in_col &&= s[j]
+      end
+      all_conditions.push(win_in_col)
+    end
+
+    # all the winning condition in diagonals
+    win_in_diag0 = true
+    diag_ids0 = Array.new(size) { |s| s = size * s + s}
+    diag_ids0.each do |i|
+      win_in_diag0 &&= s[i]
+    end
+    all_conditions.push(win_in_diag0)
+
+    win_in_diag1 = true
+    diag_ids1 = Array.new(size) { |s| s = size * (s+1) - 1 - s }
+    diag_ids1.each do |i|
+      win_in_diag1 &&= s[i]
+    end
+    all_conditions.push(win_in_diag1)
+
+    # check all the conditions
+    win_condition = false
+    all_conditions.each do |cond|
+      win_condition ||= cond
+      puts cond
+    end
+
+    if win_condition
+      win_card_num += 1
+    end
+
+     # t1=s[0] && s[1] && s[2]
+     # t2=s[3] && s[4] && s[5]
+     # t3=s[6] && s[7] && s[8]
+     # t4=s[0] && s[3] && s[6]
+     # t5=s[1] && s[4] && s[7]
+     # t6=s[2] && s[5] && s[8]
+     # t7=s[0] && s[4] && s[8]
+     # t8=s[2] && s[4] && s[6]
+
+     # if (t1 || t2 || t3 || t4 || t5 || t6 || t7 || t8)
+     #   win_card_num=win_card_num+1
+     # end
   end
-
-  return $win_card_num
+  return win_card_num
 end
 
 end

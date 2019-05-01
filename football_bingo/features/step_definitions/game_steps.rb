@@ -33,14 +33,14 @@ end
 
 def create_whoop_chips
 	create_trans
-	FactoryBot.create(:chip, :median, :value => 30)	
-	FactoryBot.create(:chip, :median, :value => 30)
-	FactoryBot.create(:chip, :lower, :value => 30)
-	FactoryBot.create(:chip, :lower, :value => 100)
-	FactoryBot.create(:chip, :higher, :value => 0)
-	FactoryBot.create(:chip, :median, :value => 34)
-	FactoryBot.create(:chip, :low, :value => 34)
-	FactoryBot.create(:chip, :high, :value => 34)
+	FactoryBot.create(:chip, :median, :value => 30)	#t
+	FactoryBot.create(:chip, :median, :value => 30) #t
+	FactoryBot.create(:chip, :lower, :value => 30)	#t
+	FactoryBot.create(:chip, :lower, :value => 100) #f
+	FactoryBot.create(:chip, :higher, :value => 0) 	#t
+	FactoryBot.create(:chip, :median, :value => 34) #f
+	FactoryBot.create(:chip, :low, :value => 34) 	#f
+	FactoryBot.create(:chip, :high, :value => 34) 	#f
 
 	dispatch_chips
 end
@@ -48,12 +48,12 @@ end
 def create_non_whoop_chips
 	create_trans
 
-	FactoryBot.create(:chip, :median, :value => 100)
-	FactoryBot.create(:chip, :median, :value => 30)
-	FactoryBot.create(:chip, :lower, :value => 30)
-	FactoryBot.create(:chip, :lower, :value => 100)
-	FactoryBot.create(:chip, :higher, :value => 0)
-	FactoryBot.create(:chip, :midian, :value => 34)
+	FactoryBot.create(:chip, :median, :value => 100)	#f
+	FactoryBot.create(:chip, :median, :value => 30)		#t
+	FactoryBot.create(:chip, :lower, :value => 30)		#t
+	FactoryBot.create(:chip, :lower, :value => 100)		#f
+	FactoryBot.create(:chip, :higher, :value => 0)		#t
+	FactoryBot.create(:chip, :midian, :value => 34)		#f
 
 	dispatch_chips
 end
