@@ -76,7 +76,11 @@ RSpec.describe UsersController, type: :controller do
       @trans = Translation.create!({:tag => 'firstdowns_rush', :words => 'Total rushing first downs'})
       @trans.chips.create!(:argument => '>', :value => 10, :probablity => 1.0)
 
-      @chip_ids = [3, 1, 5, 1, 2, 3, 4, 3, 1]
+      @chip_ids = [4, 1, 1, 1, 1,
+                  1, 4, 1, 1, 1,
+                  1, 1, 4, 1, 1,
+                  1, 1, 1, 4, 1,
+                  1, 1, 1, 1, 4]
       @chip_ids.each do |i|
         CardChip.create( {:card => @card, :chip_id => i} )
       end

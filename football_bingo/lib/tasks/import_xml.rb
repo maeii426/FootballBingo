@@ -2,9 +2,9 @@ module ImportXML
 
 def get_xml_game(filepath)
     require 'nokogiri'
-	require 'date'
-	doc = Nokogiri::XML(open(filepath))
-	doc.css('fbgame').each do |node|
+    require 'date'
+	  doc = Nokogiri::XML(open(filepath))
+	  doc.css('fbgame').each do |node|
 		sections = node.children
 		hometeam = sections.css('venue').first['homeid']
 		visteam = sections.css('venue').first['visid']
@@ -30,14 +30,14 @@ def get_xml_game(filepath)
             puts "creating new game"
             game = Game.new(game_param)
         end
-		
+
 		#game = Game.first_or_create(game_param)
 		if game.save
 			#puts "game imported!"
 		else
 			puts "game failed!"
 		end
-		
+
 		end_time = sections.css('venue').first['date']
 		if end_time.nil? || end_time.empty?
   		    game.update(state: 'ongoing')
@@ -56,10 +56,10 @@ def get_xml_game(filepath)
 				:gameid => v['gameid'],
 				:date => Date.strptime(v['date'], '%m/%d/%Y'),
 				:attend => v['attend'].to_i,
-				:location => v['location']				
+				:location => v['location']
 			}
 
-			venues = Venue.where(venue_param) 		
+			venues = Venue.where(venue_param)
     		if venues.length != 0
                 puts "exising venue found"
                 if venues.length != 1
@@ -71,7 +71,7 @@ def get_xml_game(filepath)
                 puts "creating new venue"
                 venue = Venue.new(venue_param)
             end
-			
+
 			if venue.save
 				#puts "venue imported!"
 			else
@@ -86,21 +86,21 @@ def get_xml_game(filepath)
 				:name => t['name'],
 				:nameid => t['id']
 			}
-			team = Team.new(team_param) 
+			team = Team.new(team_param)
 			if team.save
 				#puts "team imported!"
 			else
 				puts "team failed!"
 			end
-			
+
 			team_stuff = t.children
 			team_stuff.css('linescore').each do |ls|		# there should only be one per team!
 				linescore_param = {
 					:prds => ls['prds'].to_i,
 					:score => ls['score'].to_i
 				}
-				linescore = Linescore.new(linescore_param) 
-				
+				linescore = Linescore.new(linescore_param)
+
 				if linescore.save
 					#puts "linescore imported!"
 				else
@@ -110,7 +110,7 @@ def get_xml_game(filepath)
 				linescore.update_attributes(:game => game)
 				linescore.update_attributes(:team => team)
 				#game.update_attributes(:linescore =>linescore)
-			
+
 				ttt = ls.children
 				ttt.css('lineprd').each do |lp|
 					#UPDATE linescoreconditions to migration of lineprds for timestamps on the scores :)
@@ -122,7 +122,7 @@ def get_xml_game(filepath)
 					:name => py['name'],
 					:shortname => py['shortname'],
 					:class_attr => py['class']
-				}	
+				}
 				player = Player.new(player_param)
 				if player.save
 					#puts "player imported!"
@@ -132,7 +132,7 @@ def get_xml_game(filepath)
 				player.update_attributes(:game => game)
 				player.update_attributes(:team => team)
 			end
-			
+
 			team_stuff.css('totals').each do |tot|			# there should only be one per team!
 				total_param = {
 					:qtr => "all",
@@ -140,7 +140,7 @@ def get_xml_game(filepath)
 					:totoff_yards => tot["totoff_yards"].to_i,
 					:totoff_avg => tot["totoff_avg"].to_f
 				}
-				total = Total.new(total_param) 
+				total = Total.new(total_param)
 				if total.save
 					#puts "total imported!"
 				else
@@ -148,9 +148,9 @@ def get_xml_game(filepath)
 				end
 				total.update_attributes(:game => game)
 				total.update_attributes(:team => team)
-				
+
 				tot_misc = tot.children
-				
+
 				# Get all the tags: tags = ['firstdowns', ...]
 				tags = []
 				tot_misc.each do |t|
@@ -189,7 +189,7 @@ def get_xml_game(filepath)
 							$t = 0
 							for i in probs do
 								$t += 2
-								chip = trans.chips.create!(:argument => '>', :value => (t[atr_name].to_i+$t), :probablity => i)	
+								chip = trans.chips.create!(:argument => '>', :value => (t[atr_name].to_i+$t), :probablity => i)
 								chip.set_level
 								chip.update_attributes(:game => game)
 							end
@@ -204,7 +204,7 @@ def get_xml_game(filepath)
 
 		sections.css("scores").each do |s| 					# there should only be one 'scores' section
 			scores = s.children
-			
+
 			scores.css('score').each do |score|
 				score_param = {
 					:qtr => score["qtr"],
@@ -222,7 +222,7 @@ def get_xml_game(filepath)
 					:top => score["top"],
 					:vscore => score["vscore"].to_i,
 					:hscore => score["hscore"].to_i
-				}	
+				}
 				score_ = Score.new(score_param)
 				if score_.save
 					#puts "score imported!"
@@ -299,6 +299,7 @@ def get_xml_game(filepath)
 
 			end
 		end
+    puts("ye!")
 	end
 end
 
