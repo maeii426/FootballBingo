@@ -6,6 +6,9 @@
       %h3= @user.name
       %p
         %br/
+        =link_to "Current Games", games_path
+        %br/
+        %br/
         You have played 
         =num_played_games(@user)
         - if num_played_games(@user) == 1

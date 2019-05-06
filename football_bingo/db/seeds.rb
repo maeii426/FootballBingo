@@ -7,82 +7,91 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 admin_user_param = {:name => 'admin', :email => 'admin@gmail.com', :password => '123456', :role => :admin}
-admin_user = User.create!(admin_user_param)
+admin_user = User.where(admin_user_param)
+if admin_user.nil?
+  admin_user = User.create!(admin_user_param)
+end
 
-general_users = [
-  {
-    :name => 'Frank Flanigan', 
-    :email => 'whoop606super@gmail.com', 
-    :password => '123123', 
-    :role => :user
-  },
-  {
-    :name => 'Jeffrey Hoberman',
-    :email => 'instant@gmail.com',
-    :password => '123456',
-    :role => :user
-  },
-]
+# general_users = [
+#   {
+#     :name => 'Frank Flanigan', 
+#     :email => 'whoop606super@gmail.com', 
+#     :password => '123123', 
+#     :role => :user
+#   },
+#   {
+#     :name => 'Jeffrey Hoberman',
+#     :email => 'instant@gmail.com',
+#     :password => '123456',
+#     :role => :user
+#   },
+# ]
+
+general_users = []
 
 general_users.each do |general_user|
     User.create!(general_user)
 end
 
-admin_user_param2 = {:name => 'admin2', :email => 'admin2@gmail.com', :password => '123456', :role => :admin}
-admin_user2 = User.create!(admin_user_param2)
+#admin_user_param2 = {:name => 'admin2', :email => 'admin2@gmail.com', :password => '123456', :role => :admin}
+#admin_user2 = User.create!(admin_user_param2)
 
-games = [
-    {
-      :game_name => 'TAMU vs GEORGIA', 
-      :date => '24-Nov-2018', 
-      :hometeam => 'TAMU',
-      :visteam => 'GEORGIA',
-      :notify_by_email => 0
-    },
+# games = [
+#     {
+#       :game_name => 'TAMU vs GEORGIA', 
+#       :date => '24-Nov-2018', 
+#       :hometeam => 'TAMU',
+#       :visteam => 'GEORGIA',
+#       :notify_by_email => 0
+#     },
     	 
-    {
-      :game_name => 'TAMU vs CLEMSON', 
-      :date => '10-Nov-2018', 
-      :hometeam => 'TAMU',
-      :visteam => 'CLEMSON',
-      :notify_by_email => 0
-    },
-	]
+#     {
+#       :game_name => 'TAMU vs CLEMSON', 
+#       :date => '10-Nov-2018', 
+#       :hometeam => 'TAMU',
+#       :visteam => 'CLEMSON',
+#       :notify_by_email => 0
+#     },
+# 	]
+
+games = []
 
 games.each do |game|
   g = Game.create!(game)
   g.update(state: 'finished')
 end
 
-team_params = [
-    {
-      :name => 'TAMU',
-      :nameid => 'TAMU'
-    },
-    {
-      :name => 'GEORGIA',
-      :nameid => 'GEORGIA'
-    },
-    {
-      :name => 'CLEMSON',
-      :nameid => 'CLEMSON'
-    },
-    {
-      :name => 'LSU',
-      :nameid => 'LSU'
-    }
-  ]
+# team_params = [
+#     {
+#       :name => 'TAMU',
+#       :nameid => 'TAMU'
+#     },
+#     {
+#       :name => 'GEORGIA',
+#       :nameid => 'GEORGIA'
+#     },
+#     {
+#       :name => 'CLEMSON',
+#       :nameid => 'CLEMSON'
+#     },
+#     {
+#       :name => 'LSU',
+#       :nameid => 'LSU'
+#     }
+#   ]
+
+team_params = []
 
 team_params.each do |team_param|
   t = Team.create!(team_param)
 end 
 
 
-gu = GameUser.create!({:user_id => 1, :game_id => 1, :state => 'whoop_winner'})
-gu.update(:whoops => 1)
-GameUser.create!({:user_id => 1, :game_id => 2, :state => 'instant_winner'})
-GameUser.create!({:user_id => 2, :game_id => 2, :state => 'whoop_winner'})
-GameUser.create!({:user_id => 3, :game_id => 1, :state => 'instant_winner'})
+# gu = GameUser.create!({:user_id => 1, :game_id => 1, :state => 'whoop_winner'})
+# gu.update(:whoops => 1)
+# GameUser.create!({:user_id => 1, :game_id => 2, :state => 'instant_winner'})
+# GameUser.create!({:user_id => 2, :game_id => 2, :state => 'whoop_winner'})
+# GameUser.create!({:user_id => 3, :game_id => 1, :state => 'instant_winner'})
 
 # translations = [{:tag => 'penalties_yds', :words => 'Number of penalty yards'},
 #     	 {:tag => 'firstdowns_no', :words => 'Total first downs'},
@@ -245,16 +254,18 @@ end
 #   Chip.create!(chip)
 # end
 
-cards = [
-  {
-    :user_id => admin_user.id,
-    :game_id => 1
-  },
-  {
-    :user_id => admin_user.id,
-    :game_id => 2
-  },
-]
+# cards = [
+#   {
+#     :user_id => admin_user.id,
+#     :game_id => 1
+#   },
+#   {
+#     :user_id => admin_user.id,
+#     :game_id => 2
+#   },
+# ]
+
+cards = []
 
 
 cards.each do|card|
